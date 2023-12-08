@@ -177,4 +177,47 @@ const Box = styled.div`
 
 - 기본적으로 모든 색상들을 가지고 있는 *object* 이다.
 - 색상을 변경할때 theme만 바꿔주면 된다.
-- 
+
+```javascript
+import {ThemeProvider} from "styled-components";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const darkTheme = {
+    textColor: "whitesmoke",
+    backgroundColor: "#111",
+}
+
+const lightTheme = {
+    textColor: "#111",
+    backgroundColor: "whitesmoke",
+}
+
+root.render(
+    <React.StrictMode>
+        <ThemeProvider theme={darkTheme}>
+            <App/>
+        </ThemeProvider>
+    </React.StrictMode>
+);
+```
+
+- ThemeProvider 를 추가하고 theme props를 추가한다.
+
+```javascript
+const Title = styled.h1`
+  color: ${props => props.theme.textColor}
+`;
+
+const Wrapper = styled.div`
+  background-color: ${props => props.theme.backgroundColor};
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+```
+
+- 그후 ThemeProvider 내부에 있는 화면은 해당 theme props에 접근할수 있다.
