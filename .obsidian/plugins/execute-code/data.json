@@ -46,7 +46,7 @@
   "golangArgs": "run",
   "golangFileExtension": "go",
   "goInject": "",
-  "javaPath": "java",
+  "javaPath": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java",
   "javaArgs": "-ea",
   "javaFileExtension": "java",
   "javaInject": "",
