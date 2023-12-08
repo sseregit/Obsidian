@@ -1,9 +1,9 @@
 {
-  "lastOpenLanguageTab": "java",
+  "lastOpenLanguageTab": "js",
   "timeout": 10000,
   "allowInput": true,
   "wslMode": false,
-  "nodePath": "node",
+  "nodePath": "/Users/yeonsigjang/.nvm/versions/node/v16.16.0/bin/node",
   "nodeArgs": "",
   "jsFileExtension": "js",
   "jsInject": "",
