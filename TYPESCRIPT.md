@@ -79,3 +79,41 @@ const requiredFiled = {optionalField ?? defaultField}
 
 ```
 
+## useState to Typescript
+
+```typescript
+    const [value, setValue] = useState<number|string>(0);
+    setValue(2);
+    setValue("hello");
+
+```
+- 제네릭을 사용해 여러타입을 지정할수 있다.
+- default value를 지정하면 typescript는 해당 타입으로 타입을 지정한다.
+
+## Forms to Typescript
+
+```typescript
+function App() {
+    const [value, setValue] = useState("");
+    const onChange = (event: React.FormEvent<HTMLInputElement>) => {
+        const {currentTarget: {value}} = event;
+        setValue(value);
+    }
+    const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        console.log("hello", value);
+    }
+    return (
+        <div>
+            <form onSubmit={onSubmit}>
+                <input onChange={onChange} value={value} type={"text"} placeholder={"username"}/>
+                <button>Log in</button>
+            </form>
+        </div>
+    );
+}
+
+```
+
+## Theme to Typescript
+
