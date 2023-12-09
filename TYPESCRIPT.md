@@ -134,3 +134,5 @@ declare module 'styled-components' {
 ```
 
 - export interface에 그냥 Field를 추가할시 해당 Field에 대한 strongly typed를 적용 받지 못함
+
+## [SyntheticEvent](https://ko.legacy.reactjs.org/docs/events.html)
