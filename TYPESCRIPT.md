@@ -115,5 +115,22 @@ function App() {
 
 ```
 
-## Theme to Typescript
+## [Theme to Typescript](https://styled-components.com/docs/api#typescript)
 
+```typescript
+// import original module declarations
+import 'styled-components';
+
+// and extend them!
+declare module 'styled-components' {
+    export interface DefaultTheme {
+        color: {
+            backGround: string;
+            text: string;
+            btn: string;
+        }
+    }
+}
+```
+
+- export interface에 그냥 Field를 추가할시 해당 Field에 대한 strongly typed를 적용 받지 못함
