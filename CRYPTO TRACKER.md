@@ -188,3 +188,9 @@ function App() {
 }
 ```
 ![[Pasted image 20231211195204.png]]
+```typescript
+    const {isLoading: infoLoading, data: infoData, } = useQuery<Info>(["info",coinId], () => fetchCoinInfo(coinId));
+    const {isLoading: tickersLoading, data: tickersData, } = useQuery<Price>(["tickers",coinId], () => fetchCoinTickers(coinId));
+
+```
+- alias 하는법
