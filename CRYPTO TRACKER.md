@@ -138,4 +138,53 @@ state?.name
 - 특정한 URL에 있는지의 여부를 알려준다.
 
 ## React Query
-- 
+```typescript
+import {QueryClient, QueryClientProvider} from "react-query";
+
+const queryClient = new QueryClient();
+
+root.render(
+    <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={theme}>
+            <App/>
+        </ThemeProvider>
+    </QueryClientProvider>
+);
+```
+- 스스로 실행하고 있었던 로직들을 축약해준다.
+- 사용법
+	1.  fetcher함수를 만든다.
+		1. fetcher 함수란 fetch를 통해 api등을 호출하는것
+		2. fetcher함수는 꼭 fetch promise를 return 해야한다.
+```typescript
+export function fetchCoins() {
+    return fetch("https://api.coinpaprika.com/v1/coins")
+        .then((response) => response.json());
+}	
+```
+
+		2. useQuery
+			1. 2가지의 argument를 필요로한다.
+				1. queryKey
+					1. query의 고유 식별자
+				2. fetcher 함수
+```typescript
+const { isLoading, data} = useQuery("allCoints", fetchCoins);
+```
+- react query는 데이터를 캐시에 저장해둔다.
+	- 또다시 로딩이 생기지 않는 이유
+- 좀더 시각화 하기위해서 **Devtools**를 가지고있다.
+	- render할 수 있는 component이다.
+	- Import 해오면 캐시에 있는 query를 볼수 있다.
+```typescript
+function App() {
+    return (
+        <>
+            <GlobalStyle />
+            <Router/>
+            <ReactQueryDevtools initialIsOpen={true}/>
+        </>
+    );
+}
+```
+![[Pasted image 20231211195204.png]]
