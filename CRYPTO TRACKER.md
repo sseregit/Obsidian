@@ -107,3 +107,18 @@ or
     console.log(location);
 ```
 - 해당 state를 확인할수 있다.
+
+## TypeScript Interface 생성 Tip
+
+1. 해당 Json을 console.log()로 찍는다.
+2. 해당 결과를 마우스 우측 클릭 *전역변수로 Object 저장*한다.
+```typescript
+// key를 가져오는법
+Object.key(저장한 Object).join();
+
+// value의 type을 가져오는법
+Object.values(저장한 Object).map(v => typeof v);
+```
+3. 모든키가 , 구분자로 나오게 된다.
+
+
