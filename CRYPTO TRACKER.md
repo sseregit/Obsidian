@@ -211,3 +211,8 @@ data?.map(price => parseFloat(price.close)) ?? []
 	- 이 방법이 확실하게 배열을 리턴받는다고 보장이 되기 때문에 더 안전함.
 	- ??
 		- nullish 병합 연산자
+
+## [React helmet](https://www.npmjs.com/package/react-helmet)
+
+- Component
+	- 무엇을 render하던 그게 문서의 head로 가는것
