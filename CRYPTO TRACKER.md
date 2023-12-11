@@ -193,4 +193,4 @@ function App() {
     const {isLoading: tickersLoading, data: tickersData, } = useQuery<Price>(["tickers",coinId], () => fetchCoinTickers(coinId));
 
 ```
-- alias 하는법
+- 
