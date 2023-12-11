@@ -122,3 +122,14 @@ Object.values(저장한 Object).map(v => typeof v);
 3. 모든키가 , 구분자로 나오게 된다.
 
 
+Hooks
+- 최선의 성능을 위해서 hook 안에서 사용한 것은 그게 어떤 것이든 dependency에 넣어야 한다고 한다.
+
+```typescript
+state?.name
+```
+- state가 존재 하는 경우에만 name을 찾는다.
+
+## Nested router or Nested Route
+- route안에 있는 또 다른 route
+- 스크린 안에 섹션이 나뉘어진곳 or TaB등
