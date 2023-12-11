@@ -87,3 +87,17 @@ or
 }
 ```
 - 이 방법으로 곧바로 펑션을 호출할수도 있다.
+
+## [Crpto Icon API](https://coinicons-api.vercel.app/)
+- 암호화폐 아이콘을 가져올수 있음.
+
+## State
+- 비하인드 더 씬 소통
+- Link 경로 간에 데이터를 전달하고 받는법
+```typescript
+	<Link to={{
+		pathname:`/${coin.id}`,
+		state: { name:coin.name}
+	}}>
+	</Link>
+```
