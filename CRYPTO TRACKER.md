@@ -101,3 +101,9 @@ or
 	}}>
 	</Link>
 ```
+
+```typescript
+    const location = useLocation();
+    console.log(location);
+```
+- 해당 state를 확인할수 있다.
