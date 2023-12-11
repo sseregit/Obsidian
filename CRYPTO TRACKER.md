@@ -76,3 +76,14 @@ function App() {
 
 [flatuicolors](https://flatuicolors.com/)
 - 색상을 사용할수 있다.
+
+```javascript
+(() => console.log("abc"))();
+
+or 
+
+() => {
+	(() => console.log("function"))();
+}
+```
+- 이 방법으로 곧바로 펑션을 호출할수도 있다.
