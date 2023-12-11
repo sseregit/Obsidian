@@ -195,3 +195,19 @@ function App() {
 ```
 
 ## [APEXCHARTS](https://apexcharts.com/)
+
+```typescript
+data?.map(price => parseFloat(price.close)) as number[]
+```
+- as number[]
+	- 결과가 숫자 배열이 될것으로 예상함을 나타내는 유형 주장이다.
+	- 배열이 필요한 컨텍스트에서 이 결과를 사용하려고 하면 런타임 에러가 날수 있음
+		- 결과가 undifine인 경우 undefine으로 이어질수 있다.
+```typescript
+data?.map(price => parseFloat(price.close)) ?? []
+```
+- ?? []
+	- 결과가 null or undefine 이라면 null 병합 연산자(??) 를 활용해 기본값 [] 을 제공한다.
+	- 이 방법이 확실하게 배열을 리턴받는다고 보장이 되기 때문에 더 안전함.
+	- ??
+		- nullish 병합 연산자
