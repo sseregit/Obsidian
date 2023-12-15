@@ -1,4 +1,6 @@
 {
   "accentColor": "",
-  "cssTheme": "Things"
+  "cssTheme": "Things",
+  "baseFontSize": 14,
+  "textFontFamily": "D2Coding ligature"
 }
