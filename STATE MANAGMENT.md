@@ -74,7 +74,9 @@ npm install react-hook-form
 - useForm
 ```typescript
 function ToDoList() {
-    const { register, watch, handleSubmit, formState } = useForm();
+    const { register, watch, handleSubmit, formState } = useForm<>({defaultValues: {
+                email: "@naver.com",
+            });
     const onValid = (data) => ...;
     console.log(register("toDo"));
 	    return (
@@ -94,6 +96,9 @@ function ToDoList() {
 
 }
 ```
+- useForm
+	- defaultValues
+		- 기본값을 설정한다.
 - register
 	- 넣은 문자가 name이 되고
 	- onBlur 와 onChange를 가지고 있는 오브젝트가 된다.
@@ -104,6 +109,7 @@ function ToDoList() {
 		- 자동 focus
 		- value에 문자열을 입력시 formState.errors의 message가 된다.
 		- value가 필요한 경우 value와 message의 object를 보낼수 있다.
+		- pattern으로 정규표현식을 사용할 수 있다.
 - watch
 	- form의 입력값을 추척할 수 있다.
 		- 하나의 input이 아닌 form안에 있는 모든 input값을 추척한다.
@@ -116,3 +122,34 @@ function ToDoList() {
 - formState
 	- errors
 		- 에러가 어떤 에러인지에 대한 정보가 담긴다.
+
+## Custom Validation
+```typescript
+    const {setError} = useForm<IForm>();
+
+    const onValid = (data: IForm) => {
+        if(data.password !== data.password1) {
+            setError("password", 
+            {message: "Password are not the same"},
+            {shouldFocus: true});
+        }
+    }
+	...
+	<input {...register("firstName", 
+	{required: "write here", 
+	validate: {
+		noNico: (value) =>
+			value.includes("nico") ? "no nicos allowed" : true,
+		noNick: async (value) =>
+			await fetch...,
+		} />
+```
+
+- setError
+	- 특정한 에러를 발생시키게 해준다.
+	- 첫번째 파라미터는 register의 name이다.
+- register의 validate
+	- true는 통과 false는 error
+	- message를 보내기위해서는 false를 message로 보내면 된다.
+	- Object형식으로 여러개의 validate를 보낼수 있다.
+	- async 비동기로 만들어서 서버와의 검증도 가능하다.
