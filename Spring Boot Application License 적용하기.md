@@ -22,4 +22,7 @@
 #### AuthoizationManager
 - #### AccessDecisionManager와 AccessDecisionVoters 대체한다.
 - AuthoizationManager로 작업해야함
-- 
+
+#### SecurityMetadataSource
+- 지정된 보안 객체 호출에 적용되는 구성 속성을 저장하고 식별할 수 있는 클래스에 의해 구현된다.
+
