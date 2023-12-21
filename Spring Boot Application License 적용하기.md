@@ -82,3 +82,41 @@ License에 사용할 암호화
 		- 256비트의 길이의 키를 사용하기 때문에 무차별 대입 공격에 강하다.
 	- 속도
 		- 대량의 데이터를 빠르게 암호화 하거나 복호화할때 유리하다.
+	- java 1.8 version 일경우 버전에 따라 AES-256을 사용못할수 있음 버전 확인
+	- 설정하는 키는 반드시 16자리 이상이여야한다
+```java
+static String privateKey = "1234567890123456";  
+  
+public String encode(String plainText) throws Exception {  
+    SecretKeySpec aes = new SecretKeySpec(privateKey.getBytes(StandardCharsets.UTF_8), "AES");  
+    IvParameterSpec ivParameterSpec = new IvParameterSpec(privateKey.substring(0, 16).getBytes());  
+  
+    Cipher instance = Cipher.getInstance("AES/CBC/PKCS5Padding");  
+  
+    instance.init(Cipher.ENCRYPT_MODE, aes, ivParameterSpec);  
+  
+    byte[] bytes = instance.doFinal(plainText.getBytes("UTF-8"));  
+  
+    String s = Hex.encodeHexString(bytes);  
+    System.out.println("s = " + s);  
+    return s;  
+}
+```
+- encode 예시
+	- Hex.encodeHexString
+		- `implementation 'commons-codec:commons-codec:1.9'`추가해야 사용할수 있다.
+```java
+public String decode(String encodeText) throws Exception {  
+    SecretKeySpec aes = new SecretKeySpec(privateKey.getBytes("UTF-8"), "AES");  
+    IvParameterSpec ivParameterSpec = new IvParameterSpec(privateKey.substring(0, 16).getBytes("UTF-8"));  
+  
+    Cipher instance = Cipher.getInstance("AES/CBC/PKCS5Padding");  
+    instance.init(Cipher.DECRYPT_MODE, aes, ivParameterSpec);  
+  
+    byte[] bytes = Hex.decodeHex(encodeText.toCharArray());  
+    String s = new String(instance.doFinal(bytes), "UTF-8");  
+    System.out.println("s = " + s);  
+    return s;  
+}
+```
+- decode 예시
