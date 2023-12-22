@@ -166,3 +166,17 @@ const [value, modFn] = useRecoilState(toDoState);
 #### TypeScript에서 옵션을 제한하는법
 `category: "TO_DO"|"DOING"|"DONE";`
 - 3개의 옵션만을 받을수 있게된다.
+
+```typescript
+    const onClick = (event:React.MouseEvent<HTMLButtonElement>) => {
+        const newCategory = event.currentTarget.name;
+        console.log(newCategory);
+    }
+
+
+	{category !== "TO_DO" && <button name={"TO_DO"} onClick={onClick}>To Do</button>}
+```
+1. 단축평가
+		1. || or && 연산자는 왼쪽부터 오른쪽으로 평가를 진행하는데 중간에 평가 결과가 나오면 오른쪽 끝까지 가지 않고 평가결과를 반환해버린다.
+		2. 그래서 위에 조건이 true가 되면 버튼이 보여지는것.
+2. 익명함수로써도 값을 전달할수 있지만 event를 활용해 해당 태그의 값을 가져올수 있다.
