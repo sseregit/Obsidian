@@ -153,3 +153,16 @@ function ToDoList() {
 	- message를 보내기위해서는 false를 message로 보내면 된다.
 	- Object형식으로 여러개의 validate를 보낼수 있다.
 	- async 비동기로 만들어서 서버와의 검증도 가능하다.
+
+## 다시 Recoil
+```typescript
+const value = useRecoilValue(toDoState);  
+const modFn = useSetRecoilState(toDoState);
+
+const [value, modFn] = useRecoilState(toDoState);  
+```
+- useRecoilState를 활용해 useState를 활용하듯이 한번에 받을수 있다.
+
+#### TypeScript에서 옵션을 제한하는법
+`category: "TO_DO"|"DOING"|"DONE";`
+- 3개의 옵션만을 받을수 있게된다.
