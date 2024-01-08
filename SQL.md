@@ -31,3 +31,7 @@
 
 - Window 절에 between이 주어지지 않고 시작 범위만 주어질 때 종료범위는 자동으로 current row가 된다.
 
+## range와 rows 적용 시 유의 사항
+- 집계 계열 analytic 함수는 order by 절이 있을 경우 window 절은 기본적으로 **range between unbounded preceding and current row**이다.
+	- **range를 적용할 경우 order by에서 동일 값이 있을 경우**
+		- current row를 자신의 row가 아닌 동일 값이 있는 전체 row를 동일 그룹으로 간주하여 집계 analytic을 적용하므로 **rows를 명시적으로 사용하는 경우와 값이 달라질 수 있음.**
