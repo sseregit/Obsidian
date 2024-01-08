@@ -28,3 +28,6 @@
 - RANGE + value 표현 PRECEDING *or* value 표현 FOLLOWING
 	- 단순한 숫자외에도 논리적인 값을 적용해야함 **interval값**이 사용됨
 	- Order by 절의 컬럼도 numberic 또는 (대부분) date/timestamp가 되어야 한다.
+
+- Window 절에 between이 주어지지 않고 시작 범위만 주어질 때 종료범위는 자동으로 current row가 된다.
+
