@@ -55,3 +55,17 @@ LEAD(expr [,offset] [,default]) OVER([partition_by_clause]) order_by_claues)
 	- offset이 1이라더라도 함께 작성해야함.
 - partition by는 생략 가능하지만, **order by 는 반드시 필요하다**
 - **window절은 사용되지 않는다.**
+
+## first_value() 와 last_value() Analytic SQL
+- window에서 order by로 기술된 순으로 가장 첫번째/가장 마지막에 **위치**한 데이터를 가져온다.
+	- 값에 대한 first와 last가 아니다.
+- partition by는 생략 가능하지만, **order by는 반드시 필요하다**
+- window절은 생략 가능 생략 시 range between unbounded preceding and current row
+
+## 순위 함수
+- cume_dist()
+	- 분위수를 파티션내의 건수로 적용 0 ~ 1 사이 값으로 변환
+- percent_rank()
+	- Rank()를 0 ~ 1 사이 값으로 정규화 시킴
+- ntile
+	- 지정된 숫자만큼의 분위를 정하여 그룹핑하는데 적용
