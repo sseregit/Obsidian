@@ -35,3 +35,23 @@
 - 집계 계열 analytic 함수는 order by 절이 있을 경우 window 절은 기본적으로 **range between unbounded preceding and current row**이다.
 	- **range를 적용할 경우 order by에서 동일 값이 있을 경우**
 		- current row를 자신의 row가 아닌 동일 값이 있는 전체 row를 동일 그룹으로 간주하여 집계 analytic을 적용하므로 **rows를 명시적으로 사용하는 경우와 값이 달라질 수 있음.**
+
+## LAG() 와 LEAD() Analytic SQL
+- LAG
+	- 현재 행 보다 이전 행의 값을 가져온다.
+- LEAD
+	- 현재 행보다 다음 행의 값을 가져온다.
+```
+LAG(expr [,offset] [,default]) OVER([partition_by_clause]) order_by_claues)
+
+LEAD(expr [,offset] [,default]) OVER([partition_by_clause]) order_by_claues)
+```
+- expr
+	- 적용할 컬럼명
+- offset
+	- 값을 가져올 행의 위치 offset값 기본값 1
+- default
+	- 행의 위치 offset으로 Null값 일 때 대체할 값. 기본값은 Null
+	- offset이 1이라더라도 함께 작성해야함.
+- partition by는 생략 가능하지만, **order by 는 반드시 필요하다**
+- **window절은 사용되지 않는다.**
