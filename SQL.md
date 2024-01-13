@@ -161,3 +161,5 @@ from hr.emp_dept_hist_01
 	- True and Null = Null
 	- True or Null = True
 - Null에 연산을 적용 시 Null이 된다.
+
+## 스칼라 서브쿼리 (Scalar Sub-query)
