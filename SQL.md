@@ -154,3 +154,10 @@ from hr.emp_dept_hist_01
 
 - 성능상 상관 서브쿼리가 더 빠르다.
 - 하지만 분석/배치는 Analytic sql이더 빠르다.
+
+## Not In 과 not exists의 차이
+- Not In
+	- **NOT(조건=) AND NOT(조건=)**
+	- True and Null = Null
+	- True or Null = True
+- Null에 연산을 적용 시 Null이 된다.
