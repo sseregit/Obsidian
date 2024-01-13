@@ -139,3 +139,18 @@ LEAD(expr [,offset] [,default]) OVER([partition_by_clause]) order_by_claues)
 - exists는 다중행 상관 서브쿼리에서 사용되는 대표적인 연산자
 - 메인쿼리의 레코드별로 **서브쿼리의 결과가 한건이라도 존재하면** true가 되어 메인쿼리의 결과를 반환
 
+```sql
+-- 상관 서브쿼리
+select * from hr.emp_dept_hist_01 a where todate = (select max(todate) from hr.emp_dept_hist_01 x where x.empno=a.empno);
+
+-- Analytic SQL
+select *
+from (
+select * 
+	, row_number() over (partition by empno order by todate desc) as rnum
+from hr.emp_dept_hist_01
+)a where rnum = 1;
+```
+
+- 성능상 상관 서브쿼리가 더 빠르다.
+- 하지만 분석/배치는 Analytic sql이더 빠르다.
