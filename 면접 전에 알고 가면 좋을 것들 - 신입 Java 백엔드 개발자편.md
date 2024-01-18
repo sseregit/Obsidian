@@ -39,3 +39,35 @@ Web client -> Web servce -> WAS -> Database
 - **사용자 입력**
 	- 신뢰 하면 안됨 절대
 	- 반드시 검증해야 한다.
+
+- APM
+	- 응답 시간이나 JVM을 관리함
+	- 프로그램
+		- 제니퍼
+		- Scouter
+		- Xlog
+
+- 보안요소 3가지
+	- IPS
+		- 가장 기초적인 수준 1차
+	- SSL
+	- WAF
+		- 2차
+	- 1차와 2차 보안을 최소한 갖춰야지만 ISMSP 인증을 받을수 있다.
+
+- Native Code
+	- CPU 와 OS에 작정하고 의존적일때
+	- C와 C++
+
+- Java
+	- Managed code
+	- Machine이아닌 다른곳에 의존적
+
+- Machine과 VM
+	- Big endian system
+	- JVM
+		- OS + MEM + CPU 관련된 모은것을 한곳에 다 가지고 있는 형태
+
+- 비동기 입출력과 Multi threading은 서로 따로 생각해야한다.
+
+- 
