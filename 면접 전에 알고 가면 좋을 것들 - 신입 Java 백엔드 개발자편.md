@@ -70,4 +70,52 @@ Web client -> Web servce -> WAS -> Database
 
 - 비동기 입출력과 Multi threading은 서로 따로 생각해야한다.
 
-- 
+### 브라우저에 URL을 입력하면 일어나는 일?
+1. 브라우저에 URL을 입력한다.
+	1. URL
+		1. https://www.abc.com
+			1. www : host
+			2. abc.com : domain
+	2. IP주소를 기반으로 접속한다.
+		1. HTTP통신에 앞서 TCP/IP통신이 가능해야 한다.
+2. IP주소를 알아내는 순서 (Local Machine)
+	1. hosts file을 먼저 읽는다.
+		1. **보안관리 매우 중요하다!**
+	2. DNS Cache를 참고한다.
+		1. 질의에 대한 결과를 저장하고 있다.
+	3. DNS Query
+3. IP를 알아내고 TCP/IP연결을 한다.
+	1. HTTP통신 프로토콜은 기본적은로 TCP/IP 베이스로 작동한다.
+4. HTTP.request
+5. HTTP.response
+6. HTML + CSS + img... + JS 를 브라우저에 랜더링한다.
+7. Disk에 Web Resource를 cache한다.
+
+- DNS의 작동원리
+	- Root DNS
+		- 전세계에 13대
+		- host를 알려주는곳이 아니다.
+
+## Web server와 HTTP
+
+### HTTP 1.1 vs HTTP/2
+- HTTP 1.1
+	- 요청과 응답이 한 세트로 이루어져 있다.
+	- 직렬적
+
+- HTTP/2
+	- 속도가 압도적으로 빠르다.
+	- Application (HTTP 2.0)
+		- **Binary Framing**
+			- 중첩 전송이 가능하게 한다.
+		- Session TLS (optional)
+		- Transport (TCP)
+		- Network (IP)
+	- 서버 푸시
+	- 헤더 압축
+		- 중복요소 압축으로 최적화
+
+- HTTP3
+	- Flow-control -> QuIC
+	- TLS 필수!
+	-  TCP -> UDP
