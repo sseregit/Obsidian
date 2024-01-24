@@ -119,3 +119,18 @@ Web client -> Web servce -> WAS -> Database
 	- Flow-control -> QuIC
 	- TLS 필수!
 	-  TCP -> UDP
+
+### 네트워크 보안 솔루션 종류별 대응 계층
+- Inline
+	- Packet Filtering
+	- IPS
+- Out of path
+- SSL 인증서
+	- Web Server
+	- IPS 에도 설치할수도 있다.
+	- LB 에도 설치 될수 있음.
+
+### WAF와 Proxy 구조
+- Proxy 구조 (우회)
+- Proxy 구조 (서버 보호)
+	- WAF
