@@ -134,3 +134,28 @@ Web client -> Web servce -> WAS -> Database
 - Proxy 구조 (우회)
 - Proxy 구조 (서버 보호)
 	- WAF
+
+### SSL 인증서
+- 접속하는 대상이 **공증**하는것에 쓰인다.
+- PKI
+	- Public Key infrastructure
+	- 평문 <-> 암호문
+	- 비대칭키
+		- 대표적인 알고리즘 RSA
+	- X.509이 인증서 파일
+	- 인증 체계
+		- CA
+		- RA
+		- PAA
+		- PCA
+- Session key
+	- Client가 생성한 Session key로 Http를 암호화 시킨다.
+- SSL 인증서란?
+	- Public Key이고 해당 Key를 CA로 부터 발급을 받아 위/변조가 되지 않은것을 보장하기위해 디지털 서명이 포함되어 있다.
+	- HTTP 암호화는 Client가 생성한 Session key로 한다.
+
+### JVM 기본구조
+- Stack + 자동
+- **Heap Area**
+	- 메모리를 사용할때 가장 많은 영역을 차지하는 영역.
+	- Instance는 Heap에 저장되고 메모리를 관리 하지않고 관리는 **G.C**가 관리르 해준다.
