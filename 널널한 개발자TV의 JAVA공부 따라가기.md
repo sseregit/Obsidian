@@ -66,3 +66,48 @@
 		- Liunx, MacOS...등 파일명의 대/소문자를 구분한다.
 
 ## Java 공부 05. 흥미로운 점 - 첫번째
+- C++ 개발자 관점에서 흥미로운 점
+	- 멤버 데이터 대신 **필드**
+	- 참조형 필드의 경우 class 선언 코드에서 new 연산 초기화 가능
+	- 생성자에서 다른 생성자 호출 시 this();
+	- 부모 클래스의 경우 super();
+	- 배열(객체)를 매개변수로 전달
+	- **심볼릭 상수** 정의시 final 키워드와 정적 멤버 선언을 조합해 사용
+	- 심볼릭 상수라 하더라도 반드시 클래스에 소속되어야 가능
+		- 전역 X
+	- Package로 namespace와 접근제어 이슈 friend 통합(주관적 견해)
+		- 하나의 라이브러리로 인정된다.
+	- default 접근 제한자 존재
+	- 상속 관련 키워드와 특징
+		- extends, abstract
+		- instance of 연산자 (dynamic_cast)
+		- 다중 상속 불가
+	- 순수 가상 개념이 있으며 좀 더 세분화
+		- interface, implements
+		- 다중 상속 허용
+
+## Java 공부 06. 흥미로운 점 - 두 번째
+- C++ 개발자 관점에서 흥미로운 점
+	- 재정의에 대한 표기법 존재
+		- @Override annotation
+		- Called by framework
+	- 중첩 클래스나 로컬 클래스 활용도가 높은 예제가 많음
+	- Event -> Handler
+		- Event driven 구현된 체계에서 다 적용
+		- 특히 GUI
+	- toString() 메소드로 클래스 이름을 추출 할수 있음
+		- 디버그 모드처럼 보임
+	- Runtime 오류
+		- JVM -> Dump + Stack
+		- 구체적으로 어떤 클래스 어떤 메서드에서 특정된다.
+	- 참조의 구현은 결국 포인터
+	- hashCode()와 equals() 이슈의 본질은 결국 포인터
+	- Native thread와 JVM thread 둘 다 알아야 문제 해결 가능
+		- JVM 덤프분석
+	- 오픈 소스 라이브러리와 패키지 수준 의존성 관리
+	- 의존성에 따른 이슈를 관리해주는 전문 빌드 도구 존재
+		- Maven
+			- 가져오기만한다
+			- pom.xml
+		- Gradle
+			- 가져오면서 Sciript를 추가할수 있다.
