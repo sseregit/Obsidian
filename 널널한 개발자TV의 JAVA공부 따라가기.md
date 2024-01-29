@@ -111,3 +111,51 @@
 			- pom.xml
 		- Gradle
 			- 가져오면서 Sciript를 추가할수 있다.
+
+## Java 공부 - 07.JVM 구조
+- S/W 구현된 CPU
+- Java Byte Code
+	- 기계어 -> JVM -> CPU
+	- 문자열을 가지고 있다.
+		- 상수
+		- Class의 이름
+		- 메소드의 이름
+- Class Loader
+	- .class의 의존성 연결을 해준다.
+	- Loading
+	- Linking
+	- Initialization
+- Runtime Data Area
+	- Memory 영역
+		- Method Area
+		- Heap Area
+			- 객체가 생성되면 사용되는 공간 관리체계가 자동(GC)
+			- Young Generation
+			- Tenured Generation
+			- Permanent Generation
+				- Java SE 8 버전부터 PermGen 영역은 제거되었고 Metaspace로 대체 되었다.
+				- 리플렉션과 관련이 있다.
+				- Class 혹은 Method Code가 저장되는 영역
+				- Default로 제한된 크기를 가지고 있다.
+		- Metaspace
+			- Java 클래스 로더가 현재까지 로드한 Class들의 메타 데이터가 저장되는 공간
+			- JVM에 의해 관리는 Heap영역이 아니라 OS레벨에서 관리되는 Native 메모리 영역에 위치
+			- Default로 제한된 크기를 가지고 있지 않고, 필요한 만큼 늘어난다.
+		- Stack Area
+		- PC Register
+			- PC
+				- Program Counter
+		- Native Method Stack
+- Execution Engine
+	- Interpreter
+		- Byte Code를 실제 기계어로 바꾼다.
+	- JIT Compiler
+		- 코드 캐싱, 성능향상 등...
+		- JVM Oracle HotSpot
+	- Garbage Collector
+- Native Method Interface(JNI)
+	- JVM은 C/C++로 개발되었을것이고 그안에 Module 수준에 라이브러리가 있다.
+		- .dll 등..
+	- 해당 Module들을 인터페이스 형태로 가지고 있다.
+	- JVM이 가질수 없는 추가 기능을 가질수 있게 해준다.
+	- 보안과 매우 관련있다.
