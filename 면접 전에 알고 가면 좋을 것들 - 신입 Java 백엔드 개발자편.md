@@ -159,3 +159,83 @@ Web client -> Web servce -> WAS -> Database
 - **Heap Area**
 	- 메모리를 사용할때 가장 많은 영역을 차지하는 영역.
 	- Instance는 Heap에 저장되고 메모리를 관리 하지않고 관리는 **G.C**가 관리르 해준다.
+
+### CG 원리
+
+- Java 8 JVM heap 영역
+	- Total Size가 정해져 있는 유한자원
+- GC -> 속도이슈가 생긴다.
+- Young Generation
+- Old Generation
+	- 사리지지 않은 객체가 늘면서 이순간 많이 소모 하게 된다.
+- Metaspace
+- JVM heap 영역
+	- Metaspace (Java 8)
+		- 로드되는 클래스, 메소드 등에 관한 메타 정보 저장(자동확장 기능)
+		- **Java heap이 아닌 Native 메모리 영역사용**
+		- 리플렉션 클래스 로드 시 사용 (Spring)
+		- 메모리가 더 커져야 할 경우 생긴다.
+			- 얼마나 메모리를 소모하는 계산해야한다.
+				- 계산의 기준
+					- Request
+					- 단위시간 -> TPS
+	- New (Young generation)
+		- 새로 생성한 개체가 사용하는 영역
+		- Minor GC 대상 영역
+		- Eden, From, To 요소로 구성
+			- 인스턴스 최초 생성시 Eden에 생성
+			- 그후 From 이나 To로 이동
+			- 남겨야할 것이 남겨지면 To로 옮겨놓고
+			- From을 Flush해서 싹 비워버린다.
+			- 그후엔 다시 To를 From으로 두는식으로 반복
+		- Eden
+			- 객체 생성 직후 저장되는 영역
+			- Minor GC 발생 시 Survivor 영역으로 이동
+			- Copy & Scavenge 알고리즘
+		- Survivor 0, 1
+			- Minor GC 발생 시 Eden, SO에서 살아남은 객체는 S1로 이동
+			- S1에서 살아남은 객체는 Old 영역으로 이동
+			- age bit 사용 (참조계수)
+	- Old (Old generation)
+		- Young generation 영역에서 소멸하지 않고 남은 개체들이 사용하는 영역
+		- **Full GC** 발생 시 개체 회수
+			- Full GC발생시 **지연**이 발생했다고 보면된다.
+		- Mark & Compact 알고리즘
+- JVM Garbage collector
+	- Heap 영역에서 참조되지 않는 개체를 수집 및 제거해 메모리 회수
+	- Minor/Major(Full) GC
+	- GC수행 시 프로그램 일시정지
+		- JVM에 따라 다를수 있다.
+		- stop-the world
+	- GC 속도
+		- Minor GC가 보통 1초 이내 완료
+		- Full GC는 수초 이상 진행되기도 하며 이 지연 때문에 DB 연결이 끊기는 등 운영문제가 발생할 수 있음
+	- GC Roots (규칙)
+		- Stack 데이터
+		- 메서드 static 데이터
+			- static 데이터는 Old까지 갈 확률이 높음.
+		- JNI로 만들어진 데이터
+
+### GC 종류
+- Minor와 Full 장애로 이어지고 그걸 해결할 능력이 있나 없나
+- Serial GC
+	- 단일 스레드 환경 및 소규모 응용 프로그램을 위한 간단한 GC
+- Parallel GC
+	- JVM 기본 옵션(Java 8 기본)
+	- 멀티스레드 기반(개수 지정 가능)으로 작동해 효율을 높임
+	- Low-pause(응용 프로그램 중단 최소화)
+	- Throughput(Mark & Compact알고리즘을 기반으로 신속성 최대화5)
+
+### APM과 NPM
+- Application Performance Management
+	- 제니퍼(유료), Scouter(무료 오픈소스)
+- Network Performance Management
+
+### Apache JMeter
+- 웹 서비스 시스템 성능 계측을 위한 부하 생성 동구
+- Java 기본 오픈소스
+- HTTP, HTTPS 모두 지원
+- CLI 지원
+- 외부 플러그인 지원
+
+부하테스트!!! 부하스테스트!!! 부하테스트!!! 는 엄청난 도움이 될것이다.
