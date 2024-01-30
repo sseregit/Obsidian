@@ -203,3 +203,36 @@
 		- **생성자에서 멀티스레드에 관련된 동기화와 관련된 코드를 넣으면 안된다.**
 
 ## Java 공부 - 09.JVM Runtime data area
+- JVM Runtime data area
+	- Virtual 에서 Native가 나오면 OS수준 이라 생각하면 된다.
+	- Method Area
+		- **상수 풀**
+		- 필드
+		- 메서드 코드 등이 저장되는 영역
+	- Heap Area
+		- 클래스 인스턴스들이 저장되는 런타임 데이터 영역으로 GC가 관리
+		- new 연산으로 생성된 모든 클래스 인스턴스가 저장되는 영역
+		- 멀티스레드 환경에서 Heap영역은 모든 스레드가 공유 (동기화 필수)
+	- Stack Area
+		- 각 스레드마다. 별도의 스택을 가진다.
+		- 메서드 호출 시 스택 프레임이 증가하며 각 반환시 프레임 자동 소멸
+		- 지역변수, **피연산자**, 스택 프레임 데이터등 세 가지 요소로 구성
+			- JVM = Stack Based Machine
+		- 피연산자와 프레임
+			- 스택기반 머신 형태로 작동하도록 구성
+			- 연산의 중간결과도 스택에 저장
+			- 스택의 최대 크기는 컴파일 타임에 결정
+				- 자바 컴파일러가 bytecode를 변환할때 스택의 크기가 결정됨
+			- 메서드에 대한 모든 심볼정보 및 예외처리 관련 catch 블록 정보 등은 프레임 데이터 영역 사용
+	- PC(Program Counter) Register
+		- 일반 CPU(EIP register)처럼 Program Counter를 가지며 같은 역할 수행
+			- EIP register가 보통 문맥
+		- 스레드 마다 별도 문맥을 가질 수 있도록 개별 PC register를 가진다.
+	- Native Method Stack
+		- Native == OS와 관련된 영역
+		- C/C++같은 Native 언어로 개발된 메서드를 지원하기 위한 스택
+		- 스레드 마다 별도로 제공
+		- JNI(Java Native Interface)
+			- 안드로이드에서는 굉장히 신중히 다루는 영역이다.
+
+## Java 공부 - 10. JVM heap 영역
