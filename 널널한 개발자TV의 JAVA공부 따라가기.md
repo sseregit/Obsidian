@@ -80,7 +80,7 @@
 	- default 접근 제한자 존재
 	- 상속 관련 키워드와 특징
 		- extends, abstract
-		- instance of 연산자 (dynamic_cast)
+		- instance of 연산자 (C++의 dynamic_cast)
 		- 다중 상속 불가
 	- 순수 가상 개념이 있으며 좀 더 세분화
 		- interface, implements
