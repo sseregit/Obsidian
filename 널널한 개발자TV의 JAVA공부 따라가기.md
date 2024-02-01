@@ -236,3 +236,37 @@
 			- 안드로이드에서는 굉장히 신중히 다루는 영역이다.
 
 ## Java 공부 - 10. JVM heap 영역
+- Java SE 8 버전 부터는 PermGen 영역이 제거되고 Metaspace로 대체 되었다.
+- Permanent Generation
+	- Permanet Generation은 Class 혹은 Method Code가 저장되는 영역
+	- PermGen은 Heap 영역에 속함
+	- **Default로 제한도니 크기를 가지고 있다.**
+- Metaspace
+	- Metaspace는 Java 클래스 로더가 현재까지 로드한 Class들의 메타데이터가 저장되는 공간
+	- JVM에 의해 관리되는 Heap 영역이 아니라 OS 레벨에서 관리되는 Native 메모리 영역에 위치
+	- Default로 제한된 크기를 가지고 있지 않으며, 필요한 만큼 늘어난다.
+- JVM heap 영역
+	- Metaspace (Java 8)
+		- 로드되는 클래스, 메소드 등에 관한 메타 정보 저장 (자동확장 기능)
+		- **Java heap이 아닌 Native 메모리 영역 사용**
+		- 리플랙션 클래스 로드 시 사용 (Spring)
+	- Permanent generation (Java 7)
+		- 로드되는 클래스, 메소드 등에 관한 메타 정보 저장(**고정 크기**)
+		- 리플렉션 클래스 로드 시 사용 (Spring)
+	- New (Young generation)
+		- 새로 생성한 개체가 사용하는 영역
+		- **Minor GC** 대상 영역
+		- Eden, From, To 요소로 구성
+		- Eden
+			- 객체 생성 직후 저장되는 영역
+			- Minor GC 발생 시 Survivor 영역으로 이동
+			- Copy & Scavenge 알고리즘
+		- Survivor 0, 1
+			- Minor GC 발생 시 Eden, SO에서 살아남은 객체는 S1로 이동
+			- S1에서 살아남은 객체는 Old 영역으로 이동
+			- age bit 사용 (참조계수)
+	- Old (Old generation)
+		- Young generation 영역에서 소멸하지 않고 남은 개체들이 사용하는 영역
+		- **Full GC** 발생 시 개체 회수
+		- Mark & Compact 알고리즘
+		- 정적인 정보를 많이 사용하면 Old를 사용하게 된다.
