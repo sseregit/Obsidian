@@ -454,3 +454,9 @@
 	- Extended, Reserved
 
 ## Java 공부를 위해 구매한 책 3권 (내돈내산)
+- 혼자 공부하는 자바
+	- 입문서
+	- 추천으로는 애매하다.
+- Modern Java in Action
+- 자바 성능 튜닝 이야기
+	- **강력 추천**
