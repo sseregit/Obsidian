@@ -427,3 +427,28 @@
 	- Java9부터 사용하지 않다가 Java 14에서 G1GC를 지원하고자 완전히 제거
 
 ## Java 공부 - 13. Execution engine
+- Java는 Hybrid??
+- Interpreter
+	- Interpreter를 통해서 실제 기계어로 변환이 된다.
+	- 바이트 코드 명령을 실행
+	- 메소드가 여러 번 호출되면 ==매번 번역
+- JIT Compiler
+	- 성능을 최적화 하는 방법론 때문에 중요한 의미를 갖는다.
+	- Java bytecode를 실제 기계어로 번역
+	- JVM이 반복되는 코드를 발견할 경우 효율을 높일 목적으로 사용
+		- Compiler 이론
+			- Intermediate code generator
+			- Code optimizer
+			- Target code generator
+			- Profiler (Hotspot)
+	- 실행 기록을 모아 자주 사용되는 코드에 주로 적용 (반복문)
+	- 프로그램을 오래 실행 할 수록 성능개선에 유리
+	- [읽어 보면 좋을 참고 자료](https://inspirit941.tistory.com/352)
+- Garbage collector
+- JVM instruction set
+	- Constants
+	- Loads, Stores
+	- Stack
+	- Math, Conversions
+	- Comparisons, Controls, References
+	- Extended, Reserved
