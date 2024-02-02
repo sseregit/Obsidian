@@ -400,3 +400,30 @@
 			- CMS GC 사용
 		- -XX+UseG1GC
 			- G1 사용
+
+## Java 공부 - 12. GC 종류와 특징
+- Serial GC
+	- **단일 스레드** 환경 및 소규모 응용 프로그램을 위한 간단한 GC
+	- Minor GC에서 Copy & Scavenge 알고리즘 적용
+	- Full GC에서 Mark & Compact 알고리즘 적용
+- Parallel GC
+	- JVM 기본 옵션(Java 8 기본)
+	- **멀티스레드 기반**(개수 지정 가능)으로 작동해 효율을 높임
+	- Low-pause
+		- 응용 프로그램 중단 최소화
+	- Throughput
+		- Mark & Compact알고리즘을 기반으로 신속성 최대화
+- Concurrent GC
+	- Low-pause와 유사하며 응용 프로그램 실행 중 GC 실시
+	- 동작 중지 최소화
+- Incremental GC (Train GC)
+	- Concurrent GC와 유사하나 Minor GC 발생 시 Full GC를 일부 병행
+	- 경우에 따라 오히려 더 느려지는 부작용
+- G1(Garbage First) GC
+	- **4GB 이상 대용량 Heap** 메모리를 사용하는 멀티스레드 기반 응용 프로그램에 특화된 GC
+	- **Heap을 영역(1~32MB)단위로 분할**한 후 멀티스레드로 스캔
+	- 가비지가 가장 많은 영역부터 수집 실시
+- CMS(Concurrent Mark Sweep) GC
+	- Java9부터 사용하지 않다가 Java 14에서 G1GC를 지원하고자 완전히 제거
+
+## Java 공부 - 13. Execution engine
