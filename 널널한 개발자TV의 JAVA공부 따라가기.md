@@ -446,7 +446,7 @@
 	- [읽어 보면 좋을 참고 자료](https://inspirit941.tistory.com/352)
 - Garbage collector
 - JVM instruction set
-	- Constants
+	- Constants-
 	- Loads, Stores
 	- Stack
 	- Math, Conversions
