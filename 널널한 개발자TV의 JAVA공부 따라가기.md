@@ -270,3 +270,133 @@
 		- **Full GC** 발생 시 개체 회수
 		- Mark & Compact 알고리즘
 		- 정적인 정보를 많이 사용하면 Old를 사용하게 된다.
+
+## 조엘의 GC
+- GC가 왜 필요하지?
+	- 프로그램이 **동적으로 할당했던 메모리 영역** 중 **필요 없게 된 영역**을 알아서 해제
+		- 동적으로 할당했던 메모리
+			- 프로그램 런타임에 사용되는 Heap 영역 메모리
+		- 필요 없게 된 영역
+			- 어떤 변수도 가리키지 않게 된 영역
+	- Java와 Javascript는 동적 메모리 영역 해제를 GC가 알아서 해준다.
+	- 장점
+		- 메모리 누수 멈춰
+		- 해제된 메모리에 접근 멈춰
+		- 해제한 메모리 또 해제 멈춰
+	- 단점
+		- GC 작업은 순수 오버헤드
+			- 어떠한 메모리 영역이 해제의 대상이 될지 검사하고 해제하는 일은 우리의 프로그램이 해야 하는 일을 못하도록 방해하는 오버헤드이다.
+		- 개발자는 언제 GC가 메모리를 해제하는지 모름
+- GC 알고리즘
+	- Reference Counting
+		- Heap 영역에 선언된 객체들이 각각 reference count라는 별도 숫자를 가지고 있다고 생각하는것이 좋다
+			- reference count
+				- 몇가지 방법으로 해당 객체에 접근할 수 있는지를 뜻한다. 
+				- 해당 객체에 접근할 수 있는 방법이 하나도 없다면 즉 reference count가 0에 다다르면 GC의 대상이 된다.
+		- 한계점
+			- 순환 참조 문제
+	- Mark & Sweep
+		- Reference Counting의 순환 참조 문제를 해결할 수 있다.
+		- 루트에서부터 해당 객체에 접근 가능한지를 해제의 기준으로 삼는다.
+		- Mark
+			- 루트부터 그래프 순회를 통해 연결된 객체들을 찾아낸다
+		- Sweep
+			- 연결이 끊어진 객체들은 지우는 방식이다.
+		- 루트로부터 연결된 객체는 Reachable 연결되지 않았다면 Unreachable
+		- Compaction
+			- Mark & Sweep에선 필수는 아니다.
+			- 분산되어 있던 메모리가 정리되는것 메모리 파편화를 막는것
+		- Java와 Javascript가 Mark & Sweep으로 메모리를 관리한다.
+		- 특징
+			- 의도적으로 GC를 실행시켜야 한다.
+			- 어플리케이션 실행과 GC 실행이 병행된다.
+- JVM의 GC
+	- Java 8 기준
+	- 모든 쓰레드가 공유하는 영역
+		- Method Area
+			- 프로그램의 클래스 구조를 메타데이터처럼 가지며, 메서드의 코드들을 저장해둔다.
+		- Heap
+			- 어플리케이션 실행 중에 생성되는 객체 인스턴스를 저장하는 영역
+			- Garbage Collector에 의해 관리되는 영역
+	- 각 쓰레드마다 고유하게 생성
+		- JVM Language Stacks
+			- 메서드 호출을 스택 프레임이라는 블록으로 쌓으며, 로컬 변수, 중간 연산 결과들이 저장되는 영역이다.
+		- PC Registers
+			- 쓰레드가 현재 실행할 스택 프레임의 주소를 저장하고 있다.
+		- Native Method Stacks
+			- C/C++ 등의 Low level 코드를 실행하는 스택
+	- Root Space
+		- Stack의 로컬 변수
+		- Method Area의 Static 변수
+		- Native Method Stack의 JNI 참조
+	- Young Generation
+		- GC
+			- Minor GC
+		- Eden의 새로생성된 객체들이 꽉차면 Minor GC가 일어난다
+		- Survival0, 1은 둘중에 하나는 반드시 비어있어야 한다.
+		- 루트로 부터 Reachable이라 판된 객체는 Survival 0 영역으로 옮겨진다.
+		- Minor GC에서 살아남을때마다 age bit가 하나씩 오른다.
+		- JVM GC에서는 일정 수준의 age-bit를 넘어가면 오래도록 참조될 객체구나 라고 판단하여 Old Generation으로 옮긴다 
+			- 이과정을 Promotion이라 한다.
+		- Java 8에서는 Parallel GC 방식 사용 기준 age-bit 15가 되면 promotion이 진행된다.
+	- Old generation
+		- GC
+			- Major GC
+	- Stop The World
+		- GC를 실행하기 위해 JVM이 어플리케이션 실행을 멈추는 것
+	- JVM의 GC - GC 방식 살펴보기
+		- Serial GC
+			- 하나의 쓰레드로 GC를 실행
+			- Stop The World 시간이 긺
+			- 싱글 쓰레드 환경 및 Heap이 매우 작을 때 사용
+		- Parallel GC
+			- 여러 개의 쓰레드로 GC를 실행
+			- 멀티코어 환경에서 사용
+			- Java 8의 default GC 방식
+		- CMS GC
+			- Stop The World 최소화를 위해 고안
+			- GC 작업을 어플리케이션과 동시에 실행
+			- G1 GC 등장에 따라 Deprecated
+		- G1 GC
+			- Garbage First (G1)
+			- Heap을 Region으로 나누어 사용
+			- Java 9 부터 Default GC 사용
+			- 런타임에 G1 GC가 필요에 따라 영역별 Region 개수를 튜닝한다.
+- JVM GC 튜닝 맛보기
+	- GC 튜닝은 성능 개선의 최종 단계
+	- 목표
+		- Old Generation으로 넘어가는 객체 최소화하기
+		- Major GC 시간을 짧게 유지하기
+	- 메모리가 너무 크면 GC는 가끔 일어나겠지만 오래걸릴 것이고 메모리가 자긍면 GC는 자주 일어 나겠지만 금방 끝난다.
+	- 튜닝 과정
+		- GC 상태 모니터링 하기
+		- 알맞은 GC 방식과 메모리 크기 설정
+		- 적용하기
+	- jstat -gcutill
+	- Heap 크기 설정
+		- -Xms
+			- JVM 시작시 힙 영역의 크기
+		- -Xmx
+			- 최대 힙 영역 크기
+	- New 영역의 크기 설정
+		- -XX:NewRatio
+			- New 영역과 Old 영역의 비율
+				- -XX:NewRatio=1
+					- New 영역 : Old 영역 == 1:1
+				- -XX:NewRatio=2
+					- New 영역 : Old 영역 == 1:2
+		- -XX:NewSize
+			- New 영역의 크기
+		- -XX:SurvivorRatio
+			- Eden 영역과 Survivor 영역의 비율
+	- GC 실행 방식 설정
+		- -XX:+UseSerialGC
+			- SerialGC 사용
+		- -XX:ParallelGCThreads=value
+			- ParallelGC 사용
+		- -XX:+UseParallelOldGC
+			- ParallelGC + Compacting
+		- -XX:+UseGMSInitialingOccupancyOnly
+			- CMS GC 사용
+		- -XX+UseG1GC
+			- G1 사용
