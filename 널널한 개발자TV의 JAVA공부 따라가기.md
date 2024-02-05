@@ -469,3 +469,27 @@
 	- 이상민 지음
 
 ## Java 공부 - 11. GC 작동원리
+- JVM Garbage collector
+	- Heap 영역에서 사용되지 않는 객체(메모리)를 식별하고 회수하는 자동화된 메모리 관리 체계
+		- 식별
+			- **의존관계 분석**
+				- 최적화
+	- **Mark & Sweep + Compact**
+		- Mark
+			- 사용되지 않는 개체 식별
+		- Sweep
+			- 식별한 개체 제거
+		- 필요 시 Compact 실시
+	- Heap 영역에서 참조되지 않는 개체를 수집 및 제거해 메모리 회수
+	- Minor/Major(Full) GC
+	- GC수행 시 프로그램 일시 저징
+		- stop-the-world
+	- GC 속도
+		- Minor GC가 보통 1초 이내 완료
+		- Full GC는 수 초 이상 진행되기도 하며 이 지연 때문에 DB 연결이 끊기는 등 운영 문제가 발생할 수 있음
+	- 살아남는 객체를 선정하는 방법
+		- GC는 객체 참조의 유효(Reachable)함과 그렇지 않음(Unreachable)을 근거로 대상 식별
+		- GC Roots
+			- Stack 데이터
+			- 메서드 static 데이터
+			- JNI로 만들어진 데이터
