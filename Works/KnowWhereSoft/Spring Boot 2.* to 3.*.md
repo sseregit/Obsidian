@@ -39,19 +39,26 @@ CheckList
 	- `implementation group: "commons-codec", name: "commons-codec", version: "1.9"`
 		- 있음
 	- `implementation group: "commons-io", name: "commons-io", version: "2.13.0"`
+		- 버전업
 	- `implementation "jdbc.tibero:tibero:6"`
+		- 관련없음
 	- mapstruct
+		- java 17과 관련 없음
 ```groovy
 annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"  
 implementation "org.mapstruct:mapstruct:1.5.3.Final"  
 annotationProcessor "org.mapstruct:mapstruct-processor:1.5.3.Final"
 ```
 - `implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.1'`
+	- 버전업 
 - implementation ('org.springdoc:springdoc-openapi-ui:1.6.6'){  
     exclude group: 'com.fasterxml.jackson.dataformat', module:'jackson-dataformat-yaml'}
+	- spring boot 3 에서는 2버전을 사용해야한다.
 - `implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2'`
 	- 있음
 - `implementation 'org.dhatim:fastexcel:0.15.6'`
 - `implementation 'org.dhatim:fastexcel-reader:0.15.6'`
+	- 최신 버전으로 변경
 - `implementation 'org.apache.poi:poi:5.2.3'`
+	- 지원한다 최신버전으로 변경
 - `implementation 'org.apache.poi:poi-ooxml:5.2.3'`
