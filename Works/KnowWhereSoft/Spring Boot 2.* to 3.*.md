@@ -34,3 +34,24 @@ CheckList
 		- javax.servlet.*
 		- **스프링부트와 스프링프레임워크가 버전이 올라가면 달라질수 있음.**
 		- javax.sql,javax.crypto._ 패키지는 jakarta로 변화가 없습니다. Java EE에서 제공하는 패키지가 아닌 JDK 에서 제공하는 패키지이기 때문입니다.
+- 직접 버전이 명시 되어 있는 종속성 체크하기
+	- [종속성 버전](https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html#appendix.dependency-versions)
+	- `implementation group: "commons-codec", name: "commons-codec", version: "1.9"`
+		- 있음
+	- `implementation group: "commons-io", name: "commons-io", version: "2.13.0"`
+	- `implementation "jdbc.tibero:tibero:6"`
+	- mapstruct
+```groovy
+annotationProcessor "org.projectlombok:lombok-mapstruct-binding:0.2.0"  
+implementation "org.mapstruct:mapstruct:1.5.3.Final"  
+annotationProcessor "org.mapstruct:mapstruct-processor:1.5.3.Final"
+```
+- `implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.8.1'`
+- implementation ('org.springdoc:springdoc-openapi-ui:1.6.6'){  
+    exclude group: 'com.fasterxml.jackson.dataformat', module:'jackson-dataformat-yaml'}
+- `implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.13.2'`
+	- 있음
+- `implementation 'org.dhatim:fastexcel:0.15.6'`
+- `implementation 'org.dhatim:fastexcel-reader:0.15.6'`
+- `implementation 'org.apache.poi:poi:5.2.3'`
+- `implementation 'org.apache.poi:poi-ooxml:5.2.3'`
