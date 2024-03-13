@@ -62,3 +62,11 @@ annotationProcessor "org.mapstruct:mapstruct-processor:1.5.3.Final"
 - `implementation 'org.apache.poi:poi:5.2.3'`
 	- 지원한다 최신버전으로 변경
 - `implementation 'org.apache.poi:poi-ooxml:5.2.3'`
+
+
+## 작업하기
+1. spring-boot version 확인한 2.7.* 가장 최신 버전으로 빌드
+2. spring security version 변경
+`ext['spring-security.version']='5.8.10'`
+- build.gradle에 추가한다.
+- 
