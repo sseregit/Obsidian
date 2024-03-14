@@ -82,3 +82,11 @@ annotationProcessor "org.mapstruct:mapstruct-processor:1.5.3.Final"
 	4. Intellij 컴파일러 version Java17로 변경
 	5. build.gradle에 Java 버전 17로 변경
 	6. import javax.* => import jakarta.*
+4. 시련
+	1. hibernate Custom function 방법이 달라졌다.
+		1. [FunctionContributor](https://discourse.hibernate.org/t/migration-of-dialect-to-hibernate-6/6956)를 사용해야한다.
+		2. 제대로 호출하는지 확인이 필요하다.
+	2. querydsl
+		1. `implementation "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"`
+		2. `annotationProcessor "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"`
+		3. 1번에서 2번으로 변경 
