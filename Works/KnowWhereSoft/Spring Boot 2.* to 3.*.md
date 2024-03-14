@@ -74,11 +74,11 @@ annotationProcessor "org.mapstruct:mapstruct-processor:1.5.3.Final"
 		1. [grale plugin io.spring.dependency-management 의 최신 버전을 확인한다.](https://plugins.gradle.org/plugin/io.spring.dependency-management)
 		2. 해당 버전의 [Dependency Versions](https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html#appendix.dependency-versions)으로 버전이 명시되어 있는 종속성들이 나와 있는지 확인후 변경
 		3. 없다면 찾아서 최신화
-	3. Query DSL
+	2. Query DSL
 		1. jakarta version으로 설정
-	4. application.properties와 application.yml 업데이트를 위한 모듈 추가
+	3. application.properties와 application.yml 업데이트를 위한 모듈 추가
 		1. `runtime("org.springframework.boot:spring-boot-properties-migrator")`
 		2. 마이그레이션이 완료되면 모듈 제거
-	5. Intellij 컴파일러 version Java17로 변경
-	6. build.gradle에 Java 버전 17로 변경
-	7. import javax.* => import jakarta.*
+	4. Intellij 컴파일러 version Java17로 변경
+	5. build.gradle에 Java 버전 17로 변경
+	6. import javax.* => import jakarta.*
