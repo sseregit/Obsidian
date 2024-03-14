@@ -87,6 +87,12 @@ annotationProcessor "org.mapstruct:mapstruct-processor:1.5.3.Final"
 		1. [FunctionContributor](https://discourse.hibernate.org/t/migration-of-dialect-to-hibernate-6/6956)를 사용해야한다.
 		2. 제대로 호출하는지 확인이 필요하다.
 	2. querydsl
-		1. `implementation "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"`
-		2. `annotationProcessor "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"`
-		3. 1번에서 2번으로 변경 
+```groovy
+implementation "com.querydsl:querydsl-jpa:${queryDslVersion}:jakarta"  
+annotationProcessor "com.querydsl:querydsl-apt:${queryDslVersion}:jakarta"  
+annotationProcessor "jakarta.annotation:jakarta.annotation-api"  
+annotationProcessor "jakarta.persistence:jakarta.persistence-api"
+```
+- 최종 querydsl 종속성 추가 방법
+	3. mapstruct
+		1. 
