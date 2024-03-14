@@ -2,6 +2,7 @@
 - 공식 문서
 [Spring-Boot-3.0-Migration-Guide](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide)
 [Spring-Security-6.0-Migration-Guide](https://docs.spring.io/spring-security/reference/6.0/migration/index.html)
+[Spring-Security-Gradle Version Update 적용하는법](https://docs.spring.io/spring-security/reference/getting-spring-security.html#getting-gradle)
 [Spring-Framework 6.x로 업그레이드](https://github.com/spring-projects/spring-framework/wiki/Upgrading-to-Spring-Framework-6.x)
 [Migration support in IntelliJ IDEA](https://blog.jetbrains.com/idea/2021/06/intellij-idea-eap-6/)
 [Intellij javax => jakarta Migration ](https://www.jetbrains.com/guide/java/tutorials/migrating-javax-jakarta/use-migration-tool/)
@@ -65,8 +66,19 @@ annotationProcessor "org.mapstruct:mapstruct-processor:1.5.3.Final"
 
 
 ## 작업하기
-1. spring-boot version 확인한 2.7.* 가장 최신 버전으로 빌드
-2. spring security version 변경
-`ext['spring-security.version']='5.8.10'`
-- build.gradle에 추가한다.
-- 
+1. spring-boot 2.7.{maxVersion} 으로 build
+2. spring-security 5.8.{maxVersion}으로 build
+	1. version 명시가 아닌 위 문서 참고
+3. spring-boot 3.0 준비
+	1. target version : 3.2.3
+		1. [grale plugin io.spring.dependency-management 의 최신 버전을 확인한다.](https://plugins.gradle.org/plugin/io.spring.dependency-management)
+		2. 해당 버전의 [Dependency Versions](https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html#appendix.dependency-versions)으로 버전이 명시되어 있는 종속성들이 나와 있는지 확인후 변경
+		3. 없다면 찾아서 최신화
+	3. Query DSL
+		1. jakarta version으로 설정
+	4. application.properties와 application.yml 업데이트를 위한 모듈 추가
+		1. `runtime("org.springframework.boot:spring-boot-properties-migrator")`
+		2. 마이그레이션이 완료되면 모듈 제거
+	5. Intellij 컴파일러 version Java17로 변경
+	6. build.gradle에 Java 버전 17로 변경
+	7. import javax.* => import jakarta.*
