@@ -126,3 +126,51 @@ http.csrf().ignoringAntMatchers("/auigrid/fileupload/*"
 http.csrf((csrf) -> csrf.ignoringRequestMatchers("/auigrid/fileupload/*",UrlFormat.PATH_REST_API_PREFIX+"/**","/**")        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()));  
   
 ```
+
+- formLogin
+```java
+http.formLogin()  
+        .loginPage(authenticationProperties.getLoginUrl()).permitAll()  
+        .loginProcessingUrl(authenticationProperties.getLoginProcessUrl())  
+        .usernameParameter(authenticationProperties.getUsername())  
+        .passwordParameter(authenticationProperties.getPassword())  
+        .successHandler(authenticationSuccessHandler(authenticationRepository, requestLogger))  
+        .failureHandler(authnFailHandler(authenticationRepository));
+
+// 아래로
+
+http.formLogin((form) -> form.loginPage(authenticationProperties.getLoginUrl()).permitAll()  
+                            .loginProcessingUrl(authenticationProperties.getLoginProcessUrl())  
+                            .usernameParameter(authenticationProperties.getUsername())  
+                            .passwordParameter(authenticationProperties.getPassword())  
+                            .successHandler(authenticationSuccessHandler(authenticationRepository, requestLogger))  
+                            .failureHandler(authnFailHandler(authenticationRepository)));  
+```
+
+- logout
+```java
+http.logout()  
+        .logoutUrl("/logout")  
+        .logoutSuccessUrl("/login")  
+        .logoutSuccessHandler(new LogoutSuccessLogger(requestLogger))  
+        .invalidateHttpSession(true)  
+        .deleteCookies("JSESSIONID");
+
+// 아래로
+
+http.logout((logout) -> {  
+    logout.logoutUrl("/logout")  
+            .logoutSuccessUrl("/login")  
+            .logoutSuccessHandler(new LogoutSuccessLogger(requestLogger))  
+            .invalidateHttpSession(true)  
+            .deleteCookies("JSESSIONID");  
+})  
+```
+
+- exceptionHandling
+```java
+http.exceptionHandling((e) -> {  
+    e.accessDeniedHandler(accessDeniedHandler(messageSource))  
+     .authenticationEntryPoint(new AjaxAwareAuthenticationEntryPoint("/login"));  
+});
+```
