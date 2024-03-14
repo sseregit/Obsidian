@@ -113,3 +113,16 @@ public WebSecurityCustomizer webSecurityCustomizer() {
   
 }  
 ```
+
+- csrf
+```java
+
+http.csrf().ignoringAntMatchers("/auigrid/fileupload/*"  
+        ,UrlFormat.PATH_REST_API_PREFIX+"/**","/**")  
+        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+
+// 아래로
+
+http.csrf((csrf) -> csrf.ignoringRequestMatchers("/auigrid/fileupload/*",UrlFormat.PATH_REST_API_PREFIX+"/**","/**")        .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()));  
+  
+```
