@@ -94,5 +94,5 @@ annotationProcessor "jakarta.annotation:jakarta.annotation-api"
 annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 ```
 - 최종 querydsl 종속성 추가 방법
-	3. mapstruct
-		1. 
+	3. SecurityConfig
+		1. 6.2.2 버전에 따라 메서드명 변경과 문법 변경 처리.
