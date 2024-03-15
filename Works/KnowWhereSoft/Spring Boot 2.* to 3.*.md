@@ -176,5 +176,6 @@ http.exceptionHandling((e) -> {
 ```
 
 - Mapstruct Builder를 못찾는 버그에 때문에 막혀있다.
-	- 
 - querydsl plugin제거 방법 찾기.
+- gradle version 올리기
+	- [7.X => 8.* 버전업](https://docs.gradle.org/current/userguide/upgrading_version_7.html)
