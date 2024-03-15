@@ -190,3 +190,8 @@ sourceSets {
 - gradle version 올리기
 	- [7.X => 8.* 버전업](https://docs.gradle.org/current/userguide/upgrading_version_7.html)
 	- 7.6.4로 변경
+- querydsl plugin 제거와 함께 Mapstruct 버그가 사라짐.
+
+- 빌드 완성
+
+- Login 화면 띄우기
