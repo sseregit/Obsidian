@@ -196,6 +196,7 @@ sourceSets {
 
 - Login 화면 띄우기
 1. spring 시작전 logger와 관련된 로그가 console에 찍히고 시작됨.  
+	1. [logback](https://logback.qos.ch/codes.html#nested_if_element)
 2. `database-platform: org.hibernate.dialect.OracleDialect`
 	1. 이슈
 3. create global temporary table 이슈 
