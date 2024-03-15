@@ -176,3 +176,5 @@ http.exceptionHandling((e) -> {
 ```
 
 - Mapstruct Builder를 못찾는 버그에 때문에 막혀있다.
+	- 
+- querydsl plugin제거 방법 찾기.
