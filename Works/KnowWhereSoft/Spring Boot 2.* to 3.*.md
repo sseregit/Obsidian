@@ -200,6 +200,8 @@ sourceSets {
 	2. `<springProfile></springProfile>` 로나누었다
 2. `database-platform: org.hibernate.dialect.OracleDialect`
 	1. 이슈
+	2. `implementation 'org.hibernate.orm:hibernate-community-dialects'`
+		1. hibernate 6.0 version은 기본적으로 Oracle minumum 이 19 버전임.
 3. create global temporary table 이슈 
 	1. 다중 테이블 대량 작업을 위해 사용한다고 함.
 4. security
