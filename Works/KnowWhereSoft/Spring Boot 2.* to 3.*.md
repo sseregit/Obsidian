@@ -206,3 +206,18 @@ sourceSets {
 	1. 다중 테이블 대량 작업을 위해 사용한다고 함.
 4. security
 	1. `You are asking Spring Security to ignore DispatcherServletDelegating`
+```java
+@Bean  
+@Order(0)  
+public SecurityFilterChain resourceChain(HttpSecurity httpSecurity) throws Exception {  
+    httpSecurity  
+            .authorizeHttpRequests(authorize ->  
+                    authorize.requestMatchers(staticResource()).permitAll()  
+                    .anyRequest().permitAll())  
+            .requestCache(RequestCacheConfigurer::disable)  
+            .securityContext(AbstractHttpConfigurer::disable)  
+            .sessionManagement(AbstractHttpConfigurer::disable);  
+    return httpSecurity.build();  
+}
+```
+5. 
