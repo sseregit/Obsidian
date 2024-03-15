@@ -177,5 +177,16 @@ http.exceptionHandling((e) -> {
 
 - Mapstruct Builder를 못찾는 버그에 때문에 막혀있다.
 - querydsl plugin제거 방법 찾기.
+```groovy
+def querydslDir = "$buildDir/generated/querydsl"  
+tasks.withType(JavaCompile) {  
+    options.getGeneratedSourceOutputDirectory().set(file(querydslDir))  
+}  
+// build 시 사용할 sourceSet 추가  
+sourceSets {  
+    main.java.srcDir querydslDir  
+}
+```
 - gradle version 올리기
 	- [7.X => 8.* 버전업](https://docs.gradle.org/current/userguide/upgrading_version_7.html)
+	- 7.6.4로 변경
