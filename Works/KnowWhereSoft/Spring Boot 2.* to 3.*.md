@@ -174,3 +174,5 @@ http.exceptionHandling((e) -> {
      .authenticationEntryPoint(new AjaxAwareAuthenticationEntryPoint("/login"));  
 });
 ```
+
+- Mapstruct Builder를 못찾는 버그에 때문에 막혀있다.
