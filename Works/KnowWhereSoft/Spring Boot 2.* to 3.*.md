@@ -195,3 +195,10 @@ sourceSets {
 - 빌드 완성
 
 - Login 화면 띄우기
+1. spring 시작전 logger와 관련된 로그가 console에 찍히고 시작됨.  
+2. `database-platform: org.hibernate.dialect.OracleDialect`
+	1. 이슈
+3. create global temporary table 이슈 
+	1. 다중 테이블 대량 작업을 위해 사용한다고 함.
+4. security
+	1. `You are asking Spring Security to ignore DispatcherServletDelegating`
