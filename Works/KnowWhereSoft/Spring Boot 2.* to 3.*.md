@@ -221,3 +221,26 @@ public SecurityFilterChain resourceChain(HttpSecurity httpSecurity) throws Excep
 }
 ```
 - security 설정 기존꺼 쓰지말고 그대로 다시 설정한다.
+- `.requestCache(RequestCacheConfigurer::disable)`: 이 메소드는 RequestCache를 비활성화합니다. RequestCache는 인증을 요구하는 리소스에 대한 요청을 임시로 저장하는 역할을 합니다. 사용자가 로그인한 후에 이전에 요청했던 페이지로 리다이렉트할 수 있게 해줍니다. 이를 비활성화하면, 사용자가 로그인한 후에 항상 기본 페이지로 리다이렉트됩니다.
+    
+- `.securityContext(AbstractHttpConfigurer::disable)`: 이 메소드는 SecurityContextPersistenceFilter를 비활성화합니다. 이 필터는 SecurityContext를 HTTP session에 저장하고 복원하는 역할을 합니다. 이를 비활성화하면, 각 요청마다 새로운 SecurityContext가 생성됩니다.
+    
+- `.sessionManagement(AbstractHttpConfigurer::disable)`: 이 메소드는 세션 관리 설정을 비활성화합니다. 이는 세션 고정 보호, 세션 생성 정책, 세션 만료 시 동작 등 세션과 관련된 여러 보안 설정을 포함합니다. 이를 비활성화하면, 이러한 설정들이 기본값으로 돌아갑니다.
+
+- 어째서 인지 5.* 에선 이 조건들이 비활성화 시켜도 session이 유지 되었는지..? 알수가 없다...
+
+- QueryDSL 오류
+- Spring boot 3.* 에서는 transform이 적용 되지 않는다 
+```java
+@Bean  
+public JPAQueryFactory queryFactory() {  
+    return new JPAQueryFactory(entityManager);  
+}
+
+// 변경
+
+@Bean  
+public JPAQueryFactory queryFactory() {  
+    return new JPAQueryFactory(JPQLTemplates.DEFAULT, entityManager);  
+}
+```
