@@ -220,4 +220,4 @@ public SecurityFilterChain resourceChain(HttpSecurity httpSecurity) throws Excep
     return httpSecurity.build();  
 }
 ```
-5. 
+- security 설정 기존꺼 쓰지말고 그대로 다시 설정한다.
