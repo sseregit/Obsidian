@@ -8,6 +8,11 @@
 [[Spring] Spring Security를 이용한 로그인 구현 (스프링부트 3.X 버전) [4] - JWT를 이용한 인증](https://velog.io/@dh1010a/Spring-Spring-Security%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84-%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-3.X-%EB%B2%84%EC%A0%84-4-JWT%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%9D%B8%EC%A6%9D)
 [Spring Security OAuth2로 JWT 검증하기](https://velog.io/@hong1008/spring-oauth-jwt)
 
+변경하면서 생각해야 할것들
+1. 로그인 로그아웃 로그
+2. 메뉴접근 로그
+
+작업
 1. 의존성 변경
 ```groovy
 implementation "org.springframework.boot:spring-boot-starter-oauth2-client"
@@ -16,3 +21,5 @@ implementation "org.springframework.boot:spring-boot-starter-oauth2-resource-ser
 ```
 - 둘의 차이점은 oauth2를 사용하는 클라이언트냐 리소스 서버이냐 의 차이
 - JWT를 구현해서 사용하려면 resource-server로 충분하다.
+
+2. 설정 변경
