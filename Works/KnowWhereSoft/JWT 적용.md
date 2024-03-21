@@ -26,3 +26,4 @@ implementation "org.springframework.boot:spring-boot-starter-oauth2-resource-ser
 - JWT를 구현해서 사용하려면 resource-server로 충분하다.
 
 2. 설정 변경
+	1. BearerTokenAuthenticationFilter의 78라인에서 Convert를 호출함
