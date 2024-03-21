@@ -10,6 +10,7 @@
 [JWT 인증 작동 방식](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/jwt.html#oauth2resourceserver-jwt-architecture)
 [JWT + Spring Security 구현](https://velog.io/@wooyong99/JWT-Spring-Security-%EA%B5%AC%ED%98%84)
 [nimbus-jose-jwt](https://connect2id.com/products/nimbus-jose-jwt/examples/jwt-with-hmac)
+[[우테코] JWT 방식에서 로그아웃, Refresh Token 만들기(1): JWT의 Stateless한 특징을 최대한 살리려면?](https://engineerinsight.tistory.com/232)
 
 변경하면서 생각해야 할것들
 1. 로그인 로그아웃 로그
