@@ -125,3 +125,7 @@ BearerTokenAuthenticationFilter
 	- `token.jwtAuthenticationConverter(new SimpleJwtAuthenticationConverter()))`
 		- 등록한 Converter가 발동한다.
 - **Provider와 Converter는 커스텀이 가능하다.** 
+
+이후 부터 작업할 목록
+1. Controller 제거
+2. 예외처리용 Class 작성
