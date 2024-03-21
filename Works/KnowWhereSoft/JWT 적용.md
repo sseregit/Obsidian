@@ -25,5 +25,103 @@ implementation "org.springframework.boot:spring-boot-starter-oauth2-resource-ser
 - 둘의 차이점은 oauth2를 사용하는 클라이언트냐 리소스 서버이냐 의 차이
 - JWT를 구현해서 사용하려면 resource-server로 충분하다.
 
-2. 설정 변경
-	1. BearerTokenAuthenticationFilter의 78라인에서 Convert를 호출함
+2. JWT Token 생성
+```java
+@Test  
+void nimbusJoseJwtCreate() throws JOSEException, ParseException, NoSuchAlgorithmException {  
+  
+    String secretKey = "01874e6c23522dda2b5bad947028a4b5ea55ffb273a2c650a4fef31469519942";  
+  
+    JWSSigner signer = new MACSigner(secretKey);  
+  
+    JWTClaimsSet claimsSet = new JWTClaimsSet.Builder()  
+            .subject("JWT")  
+            .claim("username", "hcinfotest")  
+            .expirationTime(new Date(new Date().getTime() + (1000 * 60 * 60 * 24 * 7)))  
+            .build();  
+  
+    SignedJWT signedJWT = new SignedJWT(new JWSHeader(JWSAlgorithm.HS256), claimsSet);  
+  
+    signedJWT.sign(signer);  
+  
+    String token = signedJWT.serialize();  
+  
+    System.out.println("token = " + token);  
+  
+    signedJWT = SignedJWT.parse(token);  
+  
+    JWSVerifier verifier = new MACVerifier(secretKey);  
+  
+    assertThat(signedJWT.verify(verifier)).isTrue();  
+    assertThat(signedJWT.getJWTClaimsSet().getSubject()).isEqualTo("JWT");  
+    assertThat(signedJWT.getJWTClaimsSet().getClaim("username")).isEqualTo("hcinfotest");  
+    assertThat(new Date().before(signedJWT.getJWTClaimsSet().getExpirationTime())).isTrue();  
+}
+```
+- oauth2에 이미 등록이 되어있는 `[Nimbus JOSE + JWT]`를 사용하였다.
+- 발행은 내가하지만 검증은 oauth2-resource-server내에서 처리함.
+
+`http.addFilterAt(new JwtAuthenticationFilter(authenticationManager()), UsernamePasswordAuthenticationFilter.class)`
+- UsernamePasswordAuthenticationFilter을 상속받아 사용하기 위한 설정
+
+```java
+@Bean  
+public AuthenticationManager authenticationManager(){  
+    return new ProviderManager(customAuthenticationProvider());  
+}  
+  
+@Bean  
+public CustomAuthenticationProvider customAuthenticationProvider(){  
+    return new CustomAuthenticationProvider(loginService(), passwordEncoder());  
+}
+```
+- authenticationManager()를 등록해서 사용해야한다.
+- `http.getSharedObject(AuthenticationManager.class);`를 사용할수 있다고 알고있었지만 무슨짓을 해도 null만 들어옴
+
+`public class LoginService implements UserDetailsService`
+- 입력받은 값의 유저아이디의 DB안에 데이터를 찾는 역할을 하고 `public class LoginUser implements UserDetails` 를 return 한다.
+
+`public class CustomAuthenticationProvider implements AuthenticationProvider`
+- 패스워드를 검증하고 검증이 완료되면 UsernamePasswordAuthenticationToken을 만들어 return 한다.
+
+```java
+public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {
+	@Override  
+	protected void successfulAuthentication(HttpServletRequest request, HttpServletResponse response, FilterChain chain, Authentication authResult) throws IOException, ServletException {  
+	    LoginUser loginUser = (LoginUser) authResult.getPrincipal();  
+	  
+	    String jwtToken = JwtProcess.create(loginUser);  
+	  
+	    response.addHeader(JwtVO.HEADER, jwtToken);  
+	    response.setContentType(MediaType.APPLICATION_JSON_VALUE);  
+	    response.setStatus(HttpStatus.OK.value());  
+	    response.getWriter().println(mapper.writeValueAsString(new LoginResponse(loginUser)));  
+	}
+}
+```
+- JWT토큰을 헤더에 넣어 Login정보와 함께 리턴한다.
+
+- Token검증
+	- Token검증은 `implementation "org.springframework.boot:spring-boot-starter-oauth2-resource-server"`를 이용해서 한다.
+
+```java
+@Bean  
+public JwtDecoder jwtDecoder() {  
+    MacAlgorithm algorithm = MacAlgorithm.HS256;  
+  
+    return NimbusJwtDecoder.withSecretKey(new SecretKeySpec(JwtVO.SECRET.getBytes(), algorithm.getName()))  
+            .macAlgorithm(algorithm)  
+            .build();  
+}
+```
+- Bean으로 등록해주고
+
+BearerTokenAuthenticationFilter
+- DefaultBearerTokenResolver
+	- Header의 Authorization과 Bearer를 확인하고 Bearer를 제거한 token을 넘겨준다.
+- 넘겨받은 토큰으로 BearerTokenAuthenticationToken을 만든다.
+- JwtAuthenticationProvider
+	- getJwt에서 등록한 JwtDecoder가 작동해 복호화를 한다.
+	- `token.jwtAuthenticationConverter(new SimpleJwtAuthenticationConverter()))`
+		- 등록한 Converter가 발동한다.
+- **Provider와 Converter는 커스텀이 가능하다.** 
