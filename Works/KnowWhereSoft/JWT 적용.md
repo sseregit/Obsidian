@@ -129,3 +129,7 @@ BearerTokenAuthenticationFilter
 이후 부터 작업할 목록
 1. Controller 제거
 2. 예외처리용 Class 작성
+3. Expiration_time의 대한 제한이 걸려있지 않음
+	1. JwtDecoder를 내가 구현해야 적용 가능
+4. 토큰 없이 시도했을 경우..?
+5. Refresh token등등 고려해야함.
