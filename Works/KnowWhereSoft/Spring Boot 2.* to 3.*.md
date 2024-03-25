@@ -96,27 +96,8 @@ annotationProcessor "jakarta.persistence:jakarta.persistence-api"
 - 최종 querydsl 종속성 추가 방법
 	3. SecurityConfig
 		1. 6.2.2 버전에 따라 메서드명 변경과 문법 변경 처리.
-```java
-@Bean  
-@Order(0)  
-public SecurityFilterChain resourceChain(HttpSecurity httpSecurity) throws Exception {  
-    httpSecurity.requestMatchers((matchers)->matchers.antMatchers(staticResource()))  
-		...
-    return httpSecurity.build();  
-}
-
-// 아래 방법으로 변경
-
-@Bean  
-public WebSecurityCustomizer webSecurityCustomizer() {  
-    return (web) -> web.ignoring().requestMatchers(staticResource());  
-  
-}  
-```
-
 - csrf
 ```java
-
 http.csrf().ignoringAntMatchers("/auigrid/fileupload/*"  
         ,UrlFormat.PATH_REST_API_PREFIX+"/**","/**")  
         .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
@@ -201,7 +182,7 @@ sourceSets {
 2. `database-platform: org.hibernate.dialect.OracleDialect`
 	1. 이슈
 	2. `implementation 'org.hibernate.orm:hibernate-community-dialects'`
-		1. hibernate 6.0 version은 기본적으로 Oracle minumum 이 19 버전임.
+		1. hibernate 6.0 version은 기본적으로 Oracle minumum version 이 19 버전임.
 3. create global temporary table 이슈 
 	1. 다중 테이블 대량 작업을 위해 사용한다고 함.
 4. security
