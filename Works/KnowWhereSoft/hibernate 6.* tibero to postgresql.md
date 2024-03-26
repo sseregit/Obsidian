@@ -15,3 +15,4 @@
 
 - 전략전환은 Dialect에 따라 적용된다
 - 내가 만약에 전략을 바꿀려면 먼저 
+- `org.hibernate.envers.default_schema` 테스트
