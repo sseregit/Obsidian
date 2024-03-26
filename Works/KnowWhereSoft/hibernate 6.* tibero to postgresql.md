@@ -14,5 +14,5 @@
 		- database와 schema의 관련 ddl-auto : create로 적용시 내가 원하는 schema로 테이블을 등록할수 있는지..?
 
 - 전략전환은 Dialect에 따라 적용된다
-- 내가 만약에 전략을 바꿀려면 먼저 
-- `org.hibernate.envers.default_schema` 테스트
+	- 전략을 바꿀수 있는방법은 상속받아서 등록하는방법인거 같은데.. 그렇게 까지 할 이슈는 아니다.
+- `org.hibernate.envers.default_schema` 테스트 적용됨
