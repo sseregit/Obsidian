@@ -4,5 +4,10 @@
 
 - application.properties, application.yml의 spring.jpa.properties.* 의 **모든 속성은 EntityManagerFactory로 전달된다.**
 
-1. 임시 테이블 사용
-	1. 임시 테이블이 추가 되는 조건
+- 변경에 있어서 가장 큰 변화
+	- 전략 전환
+		- 임시 테이블 사용(기본값
+		- 🔽
+		- CTE에서 DML 사용(DB2 및 PostgreSQL에서 사용됨)
+	- postgresql
+		- database와 schema의 관련 ddl-auto : create로 적용시 내가 원하는 schema로 테이블을 등록할수 있는지..?
