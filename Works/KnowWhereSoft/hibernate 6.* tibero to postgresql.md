@@ -12,3 +12,6 @@
 		- CTE에서 DML 사용(DB2 및 PostgreSQL에서 사용됨)
 	- postgresql
 		- database와 schema의 관련 ddl-auto : create로 적용시 내가 원하는 schema로 테이블을 등록할수 있는지..?
+
+- 전략전환은 Dialect에 따라 적용된다
+- 내가 만약에 전략을 바꿀려면 먼저 
