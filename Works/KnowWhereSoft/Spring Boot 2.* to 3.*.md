@@ -13,6 +13,8 @@
 - 마이그레이션 관련 블로그
 [스프링 부트 3.0 으로 전환](https://post.dooray.io/we-dooray/tech-insight-ko/back-end/4173/)
 [스프링 부트 2에서 스프링 부트 3로 업그레이드 가이드](https://covenant.tistory.com/279)
+- logback-spring.xml 설정
+[Logback Extensions](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.logging.logback-extensions)
 
 ## 작업
 1. [Spring-Boot 2.7.* 의 최근 버전을 파악한다.](https://spring.io/projects/spring-boot#learn)
