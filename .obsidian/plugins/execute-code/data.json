@@ -1,8 +1,10 @@
 {
-  "lastOpenLanguageTab": "js",
+  "lastOpenLanguageTab": "java",
   "timeout": 10000,
   "allowInput": true,
   "wslMode": false,
+  "shellWSLMode": false,
+  "onlyCurrentBlock": false,
   "nodePath": "/Users/yeonsigjang/.nvm/versions/node/v16.16.0/bin/node",
   "nodeArgs": "",
   "jsFileExtension": "js",
@@ -46,7 +48,7 @@
   "golangArgs": "run",
   "golangFileExtension": "go",
   "goInject": "",
-  "javaPath": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home/bin/java",
+  "javaPath": "/opt/homebrew/opt/openjdk@17/bin/java",
   "javaArgs": "-ea",
   "javaFileExtension": "java",
   "javaInject": "",
@@ -121,6 +123,9 @@
   "applescriptArgs": "",
   "applescriptFileExtension": "scpt",
   "applescriptInject": "",
+  "zigPath": "zig",
+  "zigArgs": "run",
+  "zigInject": "",
   "jsInteractive": true,
   "tsInteractive": false,
   "csInteractive": false,
@@ -150,5 +155,6 @@
   "sqlInteractive": false,
   "octaveInteractive": false,
   "maximaInteractive": false,
-  "applescriptInteractive": false
+  "applescriptInteractive": false,
+  "zigInteractive": false
 }
