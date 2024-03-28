@@ -19,10 +19,21 @@
 - `org.hibernate.envers.default_schema` 테스트 적용됨
 - Postgresql도 sequence전략으로 pk를 사용해야 한다.
 ```java
+import java.util.ArrayList;  
+import java.util.List;
+
 public class HelloWorld {
 	public static void main(String[] args) {
-		for(int i = 0; i < 10; i++) {
-			System.out.print(i+" ");
+		List<String> lists = new ArrayList<>();
+
+		lists.add("1");
+		lists.add("2");
+		lists.add("3");
+		lists.add("4");
+		lists.add("5");
+
+		for(int i = 0; i < 5; i++) {
+			System.out.print(lists.get(i));
 		}
 		System.out.println();
 	}
