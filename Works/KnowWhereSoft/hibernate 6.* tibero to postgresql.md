@@ -18,4 +18,3 @@
 	- 전략을 바꿀수 있는방법은 상속받아서 등록하는방법인거 같은데.. 그렇게 까지 할 이슈는 아니다.
 - `org.hibernate.envers.default_schema` 테스트 적용됨
 - Postgresql도 sequence전략으로 pk를 사용해야 한다.
-
