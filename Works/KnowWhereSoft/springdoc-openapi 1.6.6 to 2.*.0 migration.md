@@ -3,7 +3,7 @@
 [Springdoc-openapi Properties](https://springdoc.org/properties.html)
 [Spring Boot 3에 Swagger 적용하기(springdoc-openapi)](https://velog.io/@najiexx/Spring-Boot-3%EC%97%90-Swagger-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0springdoc-openapi)
 [# SpringDoc UI 인증을 위한 토큰 기본값 표시](https://kdev.ing/springdoc-ui-bearer-authentication/)
-
+[# Swagger - Springdoc access token, refresh token 설정](https://velog.io/@seulpace/Swagger-Springdoc-access-token-refresh-token-%EC%84%A4%EC%A0%95)
 ```groovy
 // swagger  
 implementation ('org.springdoc:springdoc-openapi-ui:1.6.6'){  
