@@ -5,6 +5,7 @@
 [# SpringDoc UI 인증을 위한 토큰 기본값 표시](https://kdev.ing/springdoc-ui-bearer-authentication/)
 [# Swagger - Springdoc access token, refresh token 설정](https://velog.io/@seulpace/Swagger-Springdoc-access-token-refresh-token-%EC%84%A4%EC%A0%95)
 [# OpenAPI에 대한 JWT 인증 구성](https://www.baeldung.com/openapi-jwt-authentication)
+[## Swagger OAuth 2.0](https://swagger.io/docs/specification/authentication/oauth2/)
 ```groovy
 // swagger  
 implementation ('org.springdoc:springdoc-openapi-ui:1.6.6'){  
@@ -40,3 +41,30 @@ public OpenAPI openAPI() {
 ```
 - SecurityRequirement로 모든 API에 토큰 인증을 한다는 조건을 걸고
 - SecurityScheme로 로 인증을 만든다.
+
+### flow 적용
+```java
+@Bean  
+public OpenAPI openAPI() {  
+    Info info = new Info()  
+            .title("PIONEER RMS Rest API Document").version("v2.0");  
+  
+    final String securitySchemeName = "bearerAuth";  
+  
+    return new OpenAPI()  
+            .components(  
+                    new Components()  
+                            .addSecuritySchemes(securitySchemeName, new SecurityScheme()  
+                                    .type(SecurityScheme.Type.OAUTH2)  
+                                    .name(securitySchemeName)  
+                                    .scheme("bearer")  
+                                    .bearerFormat("JWT")  
+                                    .in(SecurityScheme.In.HEADER)  
+                                    .flows(new OAuthFlows()  
+                                            .password(new OAuthFlow()  
+                                                    .tokenUrl("http://localhost:28080/login"))))  
+            )  
+            .security(List.of(new SecurityRequirement().addList(securitySchemeName)))  
+            .info(info);  
+}
+```
