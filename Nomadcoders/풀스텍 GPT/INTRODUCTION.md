@@ -36,3 +36,5 @@
 	- `pip install -r requirements.txt`
 		- 사용할 패키지들을 모두 다운받는다.
 	- intellij를 사용할경우 intellij로 설치해야한다.
+***
+### [2.6 Jupyter Notebooks](https://nomadcoders.co/fullstack-gpt/lectures/4548)
