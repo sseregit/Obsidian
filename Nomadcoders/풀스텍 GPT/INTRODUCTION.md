@@ -26,5 +26,5 @@
 		- 신용카드를 등록해야 한다.
 ***
 ### [2.4 Disclaimer](https://nomadcoders.co/fullstack-gpt/lectures/4546)
-
 ***
+### [2.5 Virtual Environment](https://nomadcoders.co/fullstack-gpt/lectures/4547)
