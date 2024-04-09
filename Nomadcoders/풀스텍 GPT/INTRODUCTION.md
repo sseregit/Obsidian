@@ -28,3 +28,11 @@
 ### [2.4 Disclaimer](https://nomadcoders.co/fullstack-gpt/lectures/4546)
 ***
 ### [2.5 Virtual Environment](https://nomadcoders.co/fullstack-gpt/lectures/4547)
+`python -m venv ./폴더명`
+- venv를 실행한다.
+- python 3.3 이후의 모든 python 설치에 포함되어 있음
+
+- requirements.txt에 내가 사용할 패키지들을 작성한다.
+	- `pip install -r requirements.txt`
+		- 사용할 패키지들을 모두 다운받는다.
+	- intellij를 사용할경우 intellij로 설치해야한다.
