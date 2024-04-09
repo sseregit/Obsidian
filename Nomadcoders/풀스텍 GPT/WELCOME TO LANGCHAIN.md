@@ -26,6 +26,12 @@ chat.predict_messages(messages)
 ```
 ***
 ### [3.2 Prompt Templates](https://nomadcoders.co/fullstack-gpt/lectures/4551)
+- prompt
+	- LLM과 의사소통할 수있는 유일한 방법
+- ChatPromptTemplate
+	- template을 message로 부터 만든다.
+- PromptTemplate
+	- string을 이용해서 template를 만든다.
 ***
 ### [3.3 OutputParser and LCEL](https://nomadcoders.co/fullstack-gpt/lectures/4552)
 ***
