@@ -5,7 +5,7 @@
 [# SpringDoc UI 인증을 위한 토큰 기본값 표시](https://kdev.ing/springdoc-ui-bearer-authentication/)
 [# Swagger - Springdoc access token, refresh token 설정](https://velog.io/@seulpace/Swagger-Springdoc-access-token-refresh-token-%EC%84%A4%EC%A0%95)
 [# OpenAPI에 대한 JWT 인증 구성](https://www.baeldung.com/openapi-jwt-authentication)
-[## Swagger OAuth 2.0](https://swagger.io/docs/specification/authentication/oauth2/)
+[## Swagger OAuth 2.0 Flows](https://swagger.io/docs/specification/authentication/oauth2/)
 ```groovy
 // swagger  
 implementation ('org.springdoc:springdoc-openapi-ui:1.6.6'){  
@@ -55,16 +55,14 @@ public OpenAPI openAPI() {
             .components(  
                     new Components()  
                             .addSecuritySchemes(securitySchemeName, new SecurityScheme()  
-                                    .type(SecurityScheme.Type.OAUTH2)  
+                                    .type(SecurityScheme.Type.HTTP)  
                                     .name(securitySchemeName)  
                                     .scheme("bearer")  
                                     .bearerFormat("JWT")  
                                     .in(SecurityScheme.In.HEADER)  
-                                    .flows(new OAuthFlows()  
-                                            .password(new OAuthFlow()  
-                                                    .tokenUrl("http://localhost:28080/login"))))  
-            )  
+                                    .description("test Bearer token : " + JwtProcess.create(getTestLoginUser(), JwtVO.EXPIRATION_TIME * 358))))  
             .security(List.of(new SecurityRequirement().addList(securitySchemeName)))  
             .info(info);  
 }
 ```
+- flow에 대한 종류는 여러가지 이므로 적용전 체크할것
