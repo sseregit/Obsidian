@@ -32,6 +32,38 @@ chat.predict_messages(messages)
 	- template을 message로 부터 만든다.
 - PromptTemplate
 	- string을 이용해서 template를 만든다.
+- template를 사용해서 변수(variable)들을 검증(validate)할 수있다.
+```python
+from langchain.chat_models import ChatOpenAI  
+from langchain.prompts import PromptTemplate, ChatPromptTemplate  
+  
+chat = ChatOpenAI(temperature=0.1)  
+  
+template = PromptTemplate.from_template(  
+    "What is the distance between {country_a} and {country_b}."  
+)  
+  
+prompt = template.format(country_a="Mexico", country_b="Thailand")  
+  
+chat.predict(prompt)  
+#%%  
+from langchain.schema import HumanMessage, AIMessage, SystemMessage  
+  
+template = ChatPromptTemplate.from_messages([  
+    ("system", "You are a geography expert. And you only reply in {language}."),  
+    ("ai", "Ciao, mi chiamo {name}!"),  
+    ("human", "What is the distance between {country_a} and {country_b}. Also, what is your name?")  
+])  
+  
+prompt = template.format_messages(  
+    language="Greek",  
+    name="Socrates",  
+    country_a="Mexico",  
+    country_b="Thailand",  
+)  
+  
+chat.predict_messages(prompt)
+```
 ***
 ### [3.3 OutputParser and LCEL](https://nomadcoders.co/fullstack-gpt/lectures/4552)
 ***
