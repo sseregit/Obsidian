@@ -4,6 +4,26 @@
 	- Chat model
 ***
 ### [3.1 Predict Messages](https://nomadcoders.co/fullstack-gpt/lectures/4550)
+- HumanMessage
+- AIMessage
+	- AI에 의해 보내지는 것
+- SystemMessage
+	- 우리가 LLM에 설정들을 제공하기 위한 Message
+```python
+from langchain.chat_models import ChatOpenAI  
+  
+chat = ChatOpenAI(temperature=0.1)  
+#%%  
+from langchain.schema import HumanMessage, AIMessage, SystemMessage  
+  
+messages = [  
+    SystemMessage(content="You are a geography expert. And you only reply in Italian."),  
+    AIMessage(content="Ciao, mi chiamo Paolo!"),  
+    HumanMessage(content="What is the distance between Mexico and Thailand. Also, what is your name?")  
+]  
+  
+chat.predict_messages(messages)
+```
 ***
 ### [3.2 Prompt Templates](https://nomadcoders.co/fullstack-gpt/lectures/4551)
 ***
