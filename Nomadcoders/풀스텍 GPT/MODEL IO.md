@@ -24,6 +24,8 @@
 - 예제를 무제한으로 넘겨줄수도 없고 비용도 늘어나는데 그걸 통제하는 역할을 할수 있다.
 ***
 ### [4.4 Serialization](https://nomadcoders.co/fullstack-gpt/lectures/4559)
+- PipelinePromptTemplate
+	- 많은 prompt들을 하나로 합칠 수 있도록 해준다.
 ***
 ### [4.5 Caching](https://nomadcoders.co/fullstack-gpt/lectures/4560)
 ***
