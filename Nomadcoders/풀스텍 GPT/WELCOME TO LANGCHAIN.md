@@ -68,6 +68,10 @@ chat.predict_messages(prompt)
 ### [3.3 OutputParser and LCEL](https://nomadcoders.co/fullstack-gpt/lectures/4552)
 - Output Parser가 필요한 이유
 	- LLM의 응답(Response)을 변형해야 할 때가 있기 때문이다.
+- chain
+	- 기본적으로, 모든 요소를 합쳐주는 역할을 한다.
+	- `chain = template | chat | CommaOutputParser()`
+		- | 를 구분자로 표현한다.
 ***
 ### [3.4 Chaining Chains](https://nomadcoders.co/fullstack-gpt/lectures/4553)
 ***
