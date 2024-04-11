@@ -29,7 +29,10 @@
 	- history가 아닌 엔티티를 가져온다.
 ***
 ### [5.5 Memory on LLMChain](https://nomadcoders.co/fullstack-gpt/lectures/4567) 
-
+- LLM chain
+	- off-the-shelf chain
+		- 일반적인 목적을 가진 chain을 의미한다.
+- Memory on LLMChain
 ***
 ### [5.6 Chat Based Memory](https://nomadcoders.co/fullstack-gpt/lectures/4568) 
 
