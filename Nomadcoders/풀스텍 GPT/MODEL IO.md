@@ -28,6 +28,8 @@
 	- 많은 prompt들을 하나로 합칠 수 있도록 해준다.
 ***
 ### [4.5 Caching](https://nomadcoders.co/fullstack-gpt/lectures/4560)
+- Caching
+	- LM(언어 모델)의 응답을 저장할 수가 있다.
 ***
 ### [4.6 Serialization](https://nomadcoders.co/fullstack-gpt/lectures/4561)
 ***
