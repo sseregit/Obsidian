@@ -34,7 +34,6 @@
 		- 일반적인 목적을 가진 chain을 의미한다.
 ***
 ### [5.6 Chat Based Memory](https://nomadcoders.co/fullstack-gpt/lectures/4568) 
-
 ***
 ### [5.7 LCEL Based Memory](https://nomadcoders.co/fullstack-gpt/lectures/4569) 
 
