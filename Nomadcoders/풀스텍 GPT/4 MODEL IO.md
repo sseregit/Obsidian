@@ -32,4 +32,43 @@
 	- LM(언어 모델)의 응답을 저장할 수가 있다.
 ***
 ### [4.6 Serialization](https://nomadcoders.co/fullstack-gpt/lectures/4561)
+- openAI의 모델을 사용할 때 지출하는 비용을 아는 방법\
+```python
+from langchain.chat_models import ChatOpenAI  
+from langchain.callbacks import get_openai_callback  
+  
+chat = ChatOpenAI(  
+    temperature=0.1,  
+)  
+  
+with get_openai_callback() as usage:  
+    a = chat.predict("What is the recipe for soju")  
+    b = chat.predict("What is the recipe for bread")  
+    print(a,b,"\n")  
+    print(usage)
+```
+- 모델을 어떻게 저장하고 불러오는지에 대해서
+```python
+from langchain.chat_models import ChatOpenAI  
+from langchain.llms.openai import OpenAI  
+  
+chat = ChatOpenAI(  
+    temperature=0.1,  
+    max_tokens=450,  
+    model="gpt-3.5-turbo-16k"  
+)  
+  
+chat.save("model.json")
+```
+- json으로 모델의 정보를 저장한다.
+```python
+from langchain.chat_models import ChatOpenAI  
+from langchain.llms.openai import OpenAI  
+from langchain.llms.loading import load_llm  
+  
+chat = load_llm("model.json")  
+  
+chat
+```
+- 저장한 모델의 정보를 불러온다.
 ***
