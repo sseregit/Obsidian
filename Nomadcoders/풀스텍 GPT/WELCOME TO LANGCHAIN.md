@@ -74,6 +74,15 @@ chat.predict_messages(prompt)
 		- | 를 구분자로 표현한다.
 ***
 ### [3.4 Chaining Chains](https://nomadcoders.co/fullstack-gpt/lectures/4553)
+- streaming
+	- model의 응답(response)이 생성되는걸 볼수있게 해준다.
+```python
+chat = ChatOpenAI(temperature=0.1, streaming=True, callbacks=[  
+    StreamingStdOutCallbackHandler(),  
+])
+```
+
+	- 
 ***
 ### [3.5 Recap (05:21)](https://nomadcoders.co/fullstack-gpt/lectures/4554)
 ***
