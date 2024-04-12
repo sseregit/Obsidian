@@ -1,8 +1,10 @@
 ### [6.0 Introduction](https://nomadcoders.co/fullstack-gpt/lectures/4571)
-
+- RAG
+	- Retrieval Augmented Generation(검색 증강 생성)
 ***
 ### [6.1 Data Loaders and Splitters](https://nomadcoders.co/fullstack-gpt/lectures/4572)
-
+- Retrieval
+	- 랭체인의 모듈
 ***
 ### [6.2 Tiktoken](https://nomadcoders.co/fullstack-gpt/lectures/4573)
 
