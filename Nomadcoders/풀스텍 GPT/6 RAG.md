@@ -7,10 +7,15 @@
 	- 랭체인의 모듈
 ***
 ### [6.2 Tiktoken](https://nomadcoders.co/fullstack-gpt/lectures/4573)
-
+- token은 문자(letter)와 같은 의미가 아니다.
+- model은 token간의 통계적인 관계를 이해하도록 학습한다.
+- tiktoken
+	- openAI에 의해 만들어졌다.
 ***
 ### [6.3 Vectors](https://nomadcoders.co/fullstack-gpt/lectures/4574)
-
+- Embedding
+	- 사람이 읽는 텍스트를 컴퓨터가 이해할 수 있는 숫자들로 변환하는 작업
+- Vector
 ***
 ### [6.4 Vector Store](https://nomadcoders.co/fullstack-gpt/lectures/4575)
 
