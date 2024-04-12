@@ -39,5 +39,8 @@
 
 ***
 ### [5.8 Recap](https://nomadcoders.co/fullstack-gpt/lectures/4570) 
-
+- LLM이 가져오는 프롬프트에 기록들을 넣는건 **직접 해줘야 한다**
+- langchain은 Off-the-shelf Chain이 있다
+	- 자동으로 LLM으로부터 응답값을 가져오고 memory를 업데이트 한다
+	- ex) LLMChain
 ***
