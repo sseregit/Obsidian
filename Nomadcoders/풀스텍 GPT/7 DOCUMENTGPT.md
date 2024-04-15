@@ -2,7 +2,8 @@
 
 ***
 ### [7.1 Magic](https://nomadcoders.co/fullstack-gpt/lectures/4583)
-
+- magic
+	- variable, class등등..을 그냥 코드 안에 넣어두기만 해도 브라우저에 표시가 된다.
 ***
 ### [7.2 Data Flow](https://nomadcoders.co/fullstack-gpt/lectures/4584)
 
