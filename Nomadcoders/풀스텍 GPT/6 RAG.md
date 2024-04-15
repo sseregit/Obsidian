@@ -33,7 +33,8 @@
 
 ***
 ### [6.9 Map Reduce LCEL Chain](https://nomadcoders.co/fullstack-gpt/lectures/4580)
-
+- RunableLambda
+	- chain과 그 내부 어디에서든 function을 호출할 수 있도록 해준다.
 ***
 ### [6.10 Recap](https://nomadcoders.co/fullstack-gpt/lectures/4581)
 
