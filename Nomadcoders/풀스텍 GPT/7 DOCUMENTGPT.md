@@ -12,6 +12,8 @@
 
 ***
 ### [7.4 Chat Messages](https://nomadcoders.co/fullstack-gpt/lectures/4586)
+- Session state
+	- 여러번의 재실행에도 data가 보존 될 수 있게 해준다.
 
 ***
 ### [7.5 Recap](https://nomadcoders.co/fullstack-gpt/lectures/4587)
