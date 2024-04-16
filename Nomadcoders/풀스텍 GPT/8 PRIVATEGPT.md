@@ -8,7 +8,7 @@
 
 ***
 ### [8.3 GPT4All](https://nomadcoders.co/fullstack-gpt/lectures/4596)
-
+- [GPT4All](https://gpt4all.io/index.html)
 ***
 ### [8.4 Ollama](https://nomadcoders.co/fullstack-gpt/lectures/4597)
 
