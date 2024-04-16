@@ -2,7 +2,7 @@
 
 ***
 ### [8.1 HuggingFaceHub](https://nomadcoders.co/fullstack-gpt/lectures/4594)
-
+- [Hugging Face](https://huggingface.co/)
 ***
 ### [8.2 HuggingFacePipeline](https://nomadcoders.co/fullstack-gpt/lectures/4595)
 
