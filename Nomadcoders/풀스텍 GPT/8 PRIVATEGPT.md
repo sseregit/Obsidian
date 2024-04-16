@@ -11,7 +11,7 @@
 - [GPT4All](https://gpt4all.io/index.html)
 ***
 ### [8.4 Ollama](https://nomadcoders.co/fullstack-gpt/lectures/4597)
-
+- [Ollama](https://ollama.com/)
 ***
 ### [8.5 Conclusions](https://nomadcoders.co/fullstack-gpt/lectures/4598)
 
