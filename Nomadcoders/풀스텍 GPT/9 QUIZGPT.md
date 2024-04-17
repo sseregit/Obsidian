@@ -27,7 +27,8 @@
 
 ***
 ### [9.8 Function Calling](https://nomadcoders.co/fullstack-gpt/lectures/4607)
-
+1. 모델이 우리의 코드를 호출하도록 해서 우리의 함수들을 모델이 호출할 수 있도록 할 수 있다.
+2. 모델이 우리 원하는 특정 모양과 형식의 output을 갖도록 강제할 수도 있다.
 ***
 ### [9.9 Conclusions](https://nomadcoders.co/fullstack-gpt/lectures/4608)
 
