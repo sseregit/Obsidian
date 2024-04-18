@@ -25,7 +25,7 @@
 
 ***
 ### [11.6 Refine Chain Plan](https://nomadcoders.co/fullstack-gpt/lectures/4624)
-
+- with block 내부에 있다고해서, block 밖에서 사용할 수 없는 것은 아니다.!?
 ***
 ### [11.7 Refine Chain](https://nomadcoders.co/fullstack-gpt/lectures/4625)
 
