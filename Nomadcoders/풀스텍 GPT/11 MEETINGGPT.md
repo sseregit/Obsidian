@@ -15,7 +15,8 @@
 	- 아주 긴 오디오 파일을 가져와 10분길이의 mp3파일들로 변환
 ***
 ### [11.3 Whisper Transcript](https://nomadcoders.co/fullstack-gpt/lectures/4621)
-
+- glob
+	- 패턴을 사용하여 디렉토리 내부의 파일을 검색할 수 있도록 해준다.
 ***
 ### [11.4 Recap](https://nomadcoders.co/fullstack-gpt/lectures/4622)
 
