@@ -19,7 +19,8 @@
 
 ***
 ### [12.6 Stock Information Tools](https://nomadcoders.co/fullstack-gpt/lectures/4633)
-
+- [ALPHA VANTAGE](https://www.alphavantage.co/)
+	- 주식, 주식에대한 뉴스, 역사적 성과, 회사의 사업명세서와 현금 흐름 등을 검색하는 툴을 위해 사용한다.
 ***
 ### [12.7 Agent Prompt](https://nomadcoders.co/fullstack-gpt/lectures/4634)
 
