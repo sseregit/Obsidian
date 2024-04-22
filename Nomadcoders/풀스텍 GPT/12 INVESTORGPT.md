@@ -11,7 +11,9 @@
 
 ***
 ### [12.4 OpenAI Functions Agent](https://nomadcoders.co/fullstack-gpt/lectures/4631)
-
+- Pydantic
+	- python의 데이터 유효성 library중 하나다
+	- 데이터가 어떤 형태여야 하는지 알려준다.
 ***
 ### [12.5 Search Tool](https://nomadcoders.co/fullstack-gpt/lectures/4632)
 
