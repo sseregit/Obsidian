@@ -1,5 +1,7 @@
 ### [13.0 Introduction](https://nomadcoders.co/fullstack-gpt/lectures/4637)
-
+- cloudflared
+	- Command line utility tool
+	- localhost 주소를 외부로 노출시킬 수 있게 해준다.
 ***
 ### [13.1 CustomGPT Creation](https://nomadcoders.co/fullstack-gpt/lectures/4638)
 
