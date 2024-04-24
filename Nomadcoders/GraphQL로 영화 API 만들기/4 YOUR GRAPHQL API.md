@@ -3,7 +3,11 @@
 	- node.js server같은건데 graphql을 이해하는 서버
 ***
 ### [4.1 Query Type](https://nomadcoders.co/graphql-for-beginners/lectures/3705)
-
+- graphql의 Schema definition language
+	- Query type
+		- 반드시 필수
+		- Field를 추가할 때 마다
+			- GET /url을 하나하나 추가하는것과 같다.
 ***
 ### [4.2 Scalar and Root Types](https://nomadcoders.co/graphql-for-beginners/lectures/3706)
 
