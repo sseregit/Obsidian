@@ -10,7 +10,8 @@
 			- GET /url을 하나하나 추가하는것과 같다.
 ***
 ### [4.2 Scalar and Root Types](https://nomadcoders.co/graphql-for-beginners/lectures/3706)
-
+- scalar type
+	- 
 ***
 ### [4.3 Mutation Type](https://nomadcoders.co/graphql-for-beginners/lectures/3707)
 
