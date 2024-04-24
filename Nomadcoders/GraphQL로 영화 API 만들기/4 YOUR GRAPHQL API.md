@@ -1,5 +1,6 @@
 ### [4.0 Setup](https://nomadcoders.co/graphql-for-beginners/lectures/3704)
-
+- [Apollo server](https://www.apollographql.com/docs/apollo-server/)
+	- node.js server같은건데 graphql을 이해하는 서버
 ***
 ### [4.1 Query Type](https://nomadcoders.co/graphql-for-beginners/lectures/3705)
 
