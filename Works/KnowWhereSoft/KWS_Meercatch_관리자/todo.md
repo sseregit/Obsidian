@@ -1,0 +1,10 @@
+- [ ] #task Java Record @RequestBody에 사용하기 적합한가 ➕ 2024-05-17 🛫 2024-05-17 📅 2024-05-17 ✅ 2024-05-17
+	- [ ] 값 전달을 잘 받는지.
+		- [ ] @RequestParam
+			- [x] Record, class가 모두 섞여있는 Record에 값이 정상적으로 들어가는지
+				- [x] 값은 정상적으로 들어오나 객체.field 이런식으로 요청해야함 매우 불편
+			- [ ] @Valid 적용 여부
+		- [ ] @RequestBody
+			- [ ] Record, class가 모두 섞여있는 Record에 값이 정상적으로 들어가는지
+			- [ ] @Valid 적용 여부
+	- [ ] Bean Validation이 작동을 잘하는지
