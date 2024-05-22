@@ -3,5 +3,6 @@
 		1. 섹션 3 ~ 섹션 5
 	2. [Validation](https://docs.spring.io/spring-boot/docs/current/reference/html/io.html#io.validation)
 	3. [Internationalization](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.internationalization)
+	4. [Validation, Data Binding, and Type Conversion](https://docs.spring.io/spring-framework/reference/core/validation.html)
 2. MessageSource 코딩 및 테스트
 3. MessageSource 전달
