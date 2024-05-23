@@ -71,4 +71,13 @@ ResourceBundleMessageSource();
 - 스프링은 타입 오류시 typeMismatch 오류 코드를 사용한다.
 
 - Validator 구현하기
-	- 
+	- 직접 의존성 받아서 사용하기
+	- WebDataBinder 사용하기
+```java
+@InitBinder
+public void init(WebDataBinder dataBinder) {
+	dataBinder.addValidators(itemValidator);
+}
+```
+	- 호출하는데 RequestMapping에 @Validated 적용
+		- 검증기를 실행하라는 애노테이션
