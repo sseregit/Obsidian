@@ -100,4 +100,49 @@ public class Application implements WebMvcConfigurer {
 	- 글로벌 적용을 하면 BeanValidator가 자동 등록되지 않는다.
 
 - Bean Validation
-- 
+	- 메시지 코드 규칙
+		- @애노테이션 + "." + Object + "." + Field
+		- @애노테이션 + "." + Field
+		- @애노테이션 + Field Type(Java.lang.String)
+		- @애노테이션
+	- Messages를 사용하는 properties에 적용하면 된다.
+	- 글로벌 오류 처리방법 (Rule)
+```java
+@Data @ScriptAssert(lang = "javascript", script = "_this.price * _this.quantity >= 10000") public class Item { //... }
+```
+
+	- 해당 적용되는 메시지 코드
+		- ScriptAssert + "." + Object
+		- ScriptAssert
+
+- Bean Validation 으로 Field Error를 잡고 
+- Object Error는 `bindingResult.reject(...)`를 활용하고 
+- typeMismatch는 스프링이 잡아준다.
+
+- 같은 객체로 각각 다르게 검증하는 방법
+	- BeanValidation의 groups 기능 사용
+	- 같은 객체로 사용하지 않고 각각의 객체를 만든다.
+
+- BeanValidation의 group
+```java
+public class ... {
+
+	@NotNull(groups = GroupClass.class)
+	....
+
+}
+```
+
+	- GroupClass라는 interface선언이 필요하다.
+	- 그룹 기능을 사용할 모든 애노테이션에 추가해야함
+	- {}를 활용해 여러개도 가능
+- 사용법
+```java
+@...Mapping("/...")
+... ... ...(@Validated(GroupClass.class)) ... {
+	...
+}
+```
+- @Valid는 사용 불가능
+
+- 배보다 배꼽이 더 크다. 각각의 객체를 만드는게 좋다.
