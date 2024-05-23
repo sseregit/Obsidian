@@ -100,3 +100,4 @@ public class Application implements WebMvcConfigurer {
 	- 글로벌 적용을 하면 BeanValidator가 자동 등록되지 않는다.
 
 - Bean Validation
+- 
