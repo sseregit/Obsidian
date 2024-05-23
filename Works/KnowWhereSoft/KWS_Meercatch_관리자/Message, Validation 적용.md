@@ -40,6 +40,9 @@ ResourceBundleMessageSource();
 `public interface MessageSource {...}`
 - 값을 호출하여 사용 가능.
 
+- properties파일에 대한 인코딩을 변경해야한다.
+	- intellij 설정 -> 에디터 -> 파일 인코딩 -> 프로퍼티 파일에 대한 디폴트 인코딩 -> UTF-8
+
 - [Internationalization](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.internationalization)
 - 
 - 
