@@ -24,6 +24,16 @@ ResourceBundleMessageSource();
 - 스프링 부트는 자동으로 스프링 빈을 등록해준다.
 	- [messages 속성](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#application-properties.core.spring.messages.always-use-message-format)
 	- 해당 속성을 정의하면 된다.
+[Spring MessageSource 자동설정으로 MessageSource 쉽게 세팅하기](https://velog.io/@youjung/Spring-MessageSource-%EC%9E%90%EB%8F%99%EC%84%A4%EC%A0%95%EC%9C%BC%EB%A1%9C-MessageSource-%EC%89%BD%EA%B2%8C-%EC%84%B8%ED%8C%85%ED%95%98%EA%B8%B0)
+
+|속성|타입|설명|기본값|
+|---|---|---|---|
+|basename|String|- 쉼표로 구분된 basename 리스트|"messages"|
+|encoding|Charset|- 메세지 인코딩 방식|StandardCharsets.UTF_8|
+|cacheDuration|Duration|- 로드된 리소스 번들 파일 캐시 기간.  <br>- 단위를 지정하지 않으면 초가 사용됨.|영구적으로 캐시됨|
+|fallbackToSystemLocale|boolean|- 요청받은 Locale에 대한 파일을 찾지 못할 경우 시스템 설정 Locale을 사용할 것인지에 대한 유무|true|
+|alwaysUseMessageFormat|boolean|- 전달받은 인자를 제외하고 메세지를 읽어들이는 MessageFormat 규칙을 항상 적용할 것인지에 대한 유무|false|
+|useCodeAsDefaultMessage|boolean|- 메세지 파일에 코드에 대해당하는 값이 없을 때 NoSuchMessageException 대신 코드를 메세지로 사용할 것인지에 대한 유무|false|
 
 - messages_{언어 정보}.properties
 
