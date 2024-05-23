@@ -45,3 +45,11 @@ ResourceBundleMessageSource();
 [Validation](https://docs.spring.io/spring-boot/docs/current/reference/html/io.html#io.validation)
 [Validation, Data Binding, and Type Conversion](https://docs.spring.io/spring-framework/reference/core/validation.html)
 
+- BindingResult에 검증 오류를 적용하는 3가지 방법 
+	1. @ModelAttribute 의 객체에 타입 오류 등으로 바인딩이 실패하는 경우 스프링이 FieldError 생성해서 BindingResult 에 넣어준다. 
+	2. 개발자가 직접 넣어준다. 
+		1. 필드 오류
+			1. `bindingResult.addError(new FieldError(...))`
+		2. 글로벌 오류 (Rule)
+			1. `bindingResult.addError(new ObjectError(...))`
+	3. Validator 사용
