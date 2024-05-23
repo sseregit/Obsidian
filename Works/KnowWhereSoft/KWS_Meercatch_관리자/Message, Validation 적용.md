@@ -1,8 +1,3 @@
-스프링 MVC 2편
-		1. 섹션 3 ~ 섹션 5
-[Validation](https://docs.spring.io/spring-boot/docs/current/reference/html/io.html#io.validation)
-
-[Validation, Data Binding, and Type Conversion](https://docs.spring.io/spring-framework/reference/core/validation.html)
 
 # 다국어
 - 스프링 MVC 2편
@@ -42,7 +37,11 @@ ResourceBundleMessageSource();
 
 - properties파일에 대한 인코딩을 변경해야한다.
 	- intellij 설정 -> 에디터 -> 파일 인코딩 -> 프로퍼티 파일에 대한 디폴트 인코딩 -> UTF-8
-
 - [Internationalization](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.internationalization)
-- 
-- 
+
+## Validation에 MessageSource활용
+- 스프링 MVC 2편
+	- 섹션 4 ~ 섹션 5
+[Validation](https://docs.spring.io/spring-boot/docs/current/reference/html/io.html#io.validation)
+[Validation, Data Binding, and Type Conversion](https://docs.spring.io/spring-framework/reference/core/validation.html)
+
