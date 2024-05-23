@@ -8,3 +8,5 @@
 - 스프링 MVC 2편
 	- 섹션 3
 - [Internationalization](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.internationalization)
+- [messages 속성](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#application-properties.core.spring.messages.always-use-message-format)
+- 
