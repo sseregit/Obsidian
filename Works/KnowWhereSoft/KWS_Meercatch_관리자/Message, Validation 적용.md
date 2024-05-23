@@ -81,3 +81,22 @@ public void init(WebDataBinder dataBinder) {
 ```
 	- 호출하는데 RequestMapping에 @Validated 적용
 		- 검증기를 실행하라는 애노테이션
+
+	- 글로벌 설정
+```java
+@SpringBootApplication
+public class Application implements WebMvcConfigurer {
+	public static void main(String[] args) {
+		SpringApplication.run(ItemServiceApplication.class, args);
+	}
+
+	@Override
+	public Validator getValidator() {
+		return new ItemValidator();
+	}
+}
+```
+
+	- 글로벌 적용을 하면 BeanValidator가 자동 등록되지 않는다.
+
+- Bean Validation
