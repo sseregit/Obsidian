@@ -50,6 +50,11 @@ ResourceBundleMessageSource();
 	2. 개발자가 직접 넣어준다. 
 		1. 필드 오류
 			1. `bindingResult.addError(new FieldError(...))`
+			2. `bindingResult.rejectValue(...)`
 		2. 글로벌 오류 (Rule)
 			1. `bindingResult.addError(new ObjectError(...))`
+			2. `bindingResult.rejectValue(...)`
 	3. Validator 사용
+
+- MessageCodesResolver
+	- 오류 코드를 이해하기
