@@ -54,7 +54,21 @@ ResourceBundleMessageSource();
 		2. 글로벌 오류 (Rule)
 			1. `bindingResult.addError(new ObjectError(...))`
 			2. `bindingResult.rejectValue(...)`
+		3. ValidationUtils
 	3. Validator 사용
 
 - MessageCodesResolver
 	- 오류 코드를 이해하기
+	- 객체 오류
+		- 코드 + "." + Object
+		- 코드
+	- 필드 오류
+		- 코드 + "." + Object + "." + Field
+		- 코드 + Field
+		- 코드 + Field Type (Java.lang.String)
+		- 코드
+
+- 스프링은 타입 오류시 typeMismatch 오류 코드를 사용한다.
+
+- Validator 구현하기
+	- 
