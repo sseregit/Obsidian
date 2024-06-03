@@ -8,3 +8,8 @@
 
 ## CLI vs GUI
 
+## Git 설정 & 프로젝트 관리 시작
+`git config --global user.name "이름"`
+`git config --global user.email "email"`
+`git config --global init.defaultBranch main`
+- master -> main
