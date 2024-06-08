@@ -13,3 +13,6 @@
 `git config --global user.email "email"`
 `git config --global init.defaultBranch main`
 - master -> main
+
+## Git에게 맡기지 않을 것들
+- .gitignore
