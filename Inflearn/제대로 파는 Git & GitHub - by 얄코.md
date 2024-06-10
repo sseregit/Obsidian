@@ -34,3 +34,5 @@
 ## 과거로 돌아가기 실습
 `git revert --no-commit (되돌릴 커밋 해시)`
 - 바로 커밋이 되지 않는다.
+
+## SourceTree로 진행해보기
