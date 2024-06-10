@@ -38,3 +38,23 @@
 ## SourceTree로 진행해보기
 
 ## 여러 branch 만들어보기
+`git branch branch명`
+- 생성
+`git branch`
+- branch 목록 보기
+`git switch branch명`
+- branch 이동하기
+
+- checkout 명령어가 Git 2.23버전부터 switch, restore로 분리되었다!
+
+`git switch -c branch명`
+- 브랜치 생성과 동시에 이동하기
+
+`git branch -d branch명`
+- 삭제
+- -D
+	- 지워질 브랜치에만 내용의 커밋이 있을 경우 강제 삭제 옵션
+
+`git branch -m 기존branch명 새branch명`
+- branch 이름변경
+
