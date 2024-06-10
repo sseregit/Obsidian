@@ -58,3 +58,6 @@
 `git branch -m 기존branch명 새branch명`
 - branch 이름변경
 
+`git log --all --decorate --oneline --graph`
+-  여러 브랜치의 내역 편리하게 보기
+
