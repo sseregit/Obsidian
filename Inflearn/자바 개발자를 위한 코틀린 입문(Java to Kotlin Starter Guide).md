@@ -45,3 +45,7 @@
 - switch -> when으로 대체
 
 ## 코틀린에서 반복문을 다루는 방법
+- for each문에서 in을 사용한다
+- 전통적인 for문에서 등차수열과 in을 사용한다
+	- downTo, step 중위함수 활용
+- 
