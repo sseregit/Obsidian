@@ -6,3 +6,5 @@
 
 ## PostgreSQL과 Pandas 연계하기
 - PostgreSQL = > SQLAlchemy = > Pandas = > Plotly
+
+## Plotly 시각화 실습
