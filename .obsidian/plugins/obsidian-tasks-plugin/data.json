@@ -3,7 +3,7 @@
   "globalFilter": "#task",
   "removeGlobalFilter": false,
   "taskFormat": "tasksPluginEmoji",
-  "setCreatedDate": false,
+  "setCreatedDate": true,
   "setDoneDate": true,
   "setCancelledDate": true,
   "autoSuggestInEditor": true,
