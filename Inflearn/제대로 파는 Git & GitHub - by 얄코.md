@@ -77,3 +77,5 @@
 	- merge를 해주어야 한다.
 
 ## 충돌 해결하기
+`git merge --abort`
+- merge를 중단한다.
