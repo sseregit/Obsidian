@@ -79,3 +79,11 @@
 ## 충돌 해결하기
 `git merge --abort`
 - merge를 중단한다.
+`git rebase --abort`
+- rebase 중단
+
+- 해결 가능시
+	- 충돌 부분을 수정한 뒤 `git add .`
+	- `git rebase --continue`
+	- 충돌이 해결될때 까지 반복
+	
