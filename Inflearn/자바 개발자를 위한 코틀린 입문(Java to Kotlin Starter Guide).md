@@ -50,3 +50,5 @@
 	- downTo, step 중위함수 활용
 
 ## 코틀린에서 예외를 다루는 방법
+- Kotlin에서는 Checked Exception과 Unchecked Exception을 구분하지 않는다.
+	- 모두 Unchecked Exception 이다.
