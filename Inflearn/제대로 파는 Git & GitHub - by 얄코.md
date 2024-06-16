@@ -102,3 +102,7 @@
 ## push와 pull
 - `git push`
 - `git pull`
+- `git pull --no-rebase`
+	- merge
+- `git pull --rebase`
+	- pull 상의 rebase는 다름(협업시 사용 OK)
