@@ -50,5 +50,10 @@
 	- downTo, step 중위함수 활용
 
 ## 코틀린에서 예외를 다루는 방법
+- try catch가 expression 이다.
 - Kotlin에서는 Checked Exception과 Unchecked Exception을 구분하지 않는다.
 	- 모두 Unchecked Exception 이다.
+- try - with -resources 구문이 존재 하지 않는다.
+	- use inline 확장함수를 사용한다. (설명은 이후 강의에서)
+
+## 코틀린에서 함수를 다루는 방법
