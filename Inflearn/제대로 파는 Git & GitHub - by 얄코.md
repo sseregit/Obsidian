@@ -106,3 +106,8 @@
 	- merge
 - `git pull --rebase`
 	- pull 상의 rebase는 다름(협업시 사용 OK)
+- 협업때 rebase를 사용하지 말라는 이유는
+	- 이미 공유된 사항들을 rebase해서 위에 올리지 말라는 것
+- pull 상황에 rebase는 상관없음
+- `git push --force`
+	- 협업시 위험하다
