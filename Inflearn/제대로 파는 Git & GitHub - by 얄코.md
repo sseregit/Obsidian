@@ -97,3 +97,4 @@
 - `git remote add origin (원격 저장소 주소)`
 - `git branch -M main`
 - `git push -u origin main`
+- `git clone (원격 저장소 주소)`
