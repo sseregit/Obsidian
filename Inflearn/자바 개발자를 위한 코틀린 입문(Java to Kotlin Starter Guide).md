@@ -57,3 +57,7 @@
 	- use inline 확장함수를 사용한다. (설명은 이후 강의에서)
 
 ## 코틀린에서 함수를 다루는 방법  
+- default parameter
+- named parameter
+- 가변인자 앞에 vararg
+- spread 연산자 *
