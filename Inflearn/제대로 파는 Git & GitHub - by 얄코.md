@@ -94,3 +94,6 @@
 ## Github은 뭐고 왜 쓰나요?
 
 ## 원격 저장소 사용하기
+- `git remote add origin (원격 저장소 주소)`
+- `git branch -M main`
+- `git push -u origin main`
