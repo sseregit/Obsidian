@@ -101,3 +101,4 @@
 
 ## push와 pull
 - `git push`
+- `git pull`
