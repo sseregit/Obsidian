@@ -63,3 +63,20 @@
 - spread 연산자 *
 
 ## 코틀린에서 클래스를 다루는 방법
+```kotlin
+class Person(
+	val name: String,
+	var age: Int
+) {
+	init {
+		...
+	}
+
+	constructor(name: String): this(name, 1)
+}
+```
+
+- init block
+	- 클래스가 생성되는 시점에 호출된다
+- constructor
+	- 새로운 생성자 생성
