@@ -116,3 +116,5 @@
 - `git push --set-upstream origin from-local`
 	- `git push -u origin from-local`
 		- -u 로 축약가능
+- `git branch --all` or `git branch -a`
+	- 원격저장소 branch까지 확인한다.
