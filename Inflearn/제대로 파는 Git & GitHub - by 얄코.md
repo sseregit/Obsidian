@@ -118,3 +118,7 @@
 		- -u 로 축약가능
 - `git branch --all` or `git branch -a`
 	- 원격저장소 branch까지 확인한다.
+- `git fetch`
+	- 원격의 변경사항 확인
+- `git switch -t origin/from-remote`
+	- local의 from-remote와 연결하겠다는 의미
