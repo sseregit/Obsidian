@@ -111,3 +111,8 @@
 - pull 상황에 rebase는 상관없음
 - `git push --force`
 	- 협업시 위험하다
+
+## 원격의 브랜치 다루기
+- `git push --set-upstream origin from-local`
+	- `git push -u origin from-local`
+		- -u 로 축약가능
