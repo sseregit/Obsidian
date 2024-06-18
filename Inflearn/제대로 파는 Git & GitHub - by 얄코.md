@@ -122,3 +122,5 @@
 	- 원격의 변경사항 확인
 - `git switch -t origin/from-remote`
 	- local의 from-remote와 연결하겠다는 의미
+- `git push (원격이름) --delete (원격의 브랜치명)`
+	- 원격 브랜치 삭제
