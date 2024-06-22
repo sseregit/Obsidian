@@ -117,3 +117,15 @@ interface Swimable {
 }
 ```
 - 클래스 상속받을 때 주의할 점
+	- 상위 클래스에 constructor와 init 블락에서는 하위 클래스의 final이 아닌 field에 접근하면 안 된다
+	- 상위 클래스를 설계할 때 생성자 또는 초기화 블록에 사용되는 프로퍼티에는 open을 피해야 한다.
+- 상속 관련 키워드
+	- final
+		- overried를 할 수 없게 한다.
+	- open
+		- override를 열어 준다
+	- abstract
+		- 반드시 override 해야 한다.
+	- override
+		- 상위 타입을 오버라이드 하고 있다.
+		- 어노테이션이 아니라 키워드임
