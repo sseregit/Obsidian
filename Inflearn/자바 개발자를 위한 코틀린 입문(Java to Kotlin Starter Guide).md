@@ -103,3 +103,17 @@ override fun act() {
 }
 ```
 - kotlin에서는 backing field가 없는 프로퍼티를 interface에 만들 수 있다.
+	- getter에 대한 default 메소드나 getter에 대한 추상 메소드를 인터페이스에 만들수 있다.
+```kotlin
+interface Swimable {  
+  
+    val swimAbility: Int  
+        get() = 3  
+  
+    fun act() {  
+        println(swimAbility)  
+        println("어푸 어푸")  
+    }  
+}
+```
+- 클래스 상속받을 때 주의할 점
