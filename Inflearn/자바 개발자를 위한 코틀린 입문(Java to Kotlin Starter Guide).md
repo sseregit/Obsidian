@@ -87,3 +87,19 @@ class Person(
 - 프로퍼티를 override 할 때 무조건 Open을 붙여 줘야만 한다.
 - 인터페이스
 	- 코틀린에서는 default를 굳이 사용하지 않아도된다.
+
+```java
+@Override  
+public void act() {  
+    JavaFlyable.super.act();  
+    JavaSwimable.super.act();  
+}
+```
+->
+```kotlin
+override fun act() {  
+    super<Swimable>.act()  
+    super<Flyable>.act()  
+}
+```
+- kotlin에서는 backing field가 없는 프로퍼티를 interface에 만들 수 있다.
