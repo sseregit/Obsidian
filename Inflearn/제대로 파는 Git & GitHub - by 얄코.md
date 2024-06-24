@@ -146,4 +146,14 @@
 	- 이름 변경뒤 바로 add가 된다.
 - `git restore --staged <파일명>`
 	- --staged를 빼면 working directory에서도 제거
-	- staging area에서 제거한다.
+	- staging area에서 제거한다. 변경 사항은 유지
+- rest의 세가지 옵션
+	- --soft
+		- repository에서만 제거하고 staging area에 남겨둔다.
+		- add가 된 상태를 유지한다.
+	- --mixed
+		- 변화를 working directory에는 남겨둔다.
+		- staging area에서 제거된다.
+	- --hard
+		- 수정사항 완전히 삭제
+		- working directory에서 까지 날려버린다.
