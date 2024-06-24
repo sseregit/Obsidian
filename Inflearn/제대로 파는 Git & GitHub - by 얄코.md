@@ -124,3 +124,5 @@
 	- local의 from-remote와 연결하겠다는 의미
 - `git push (원격이름) --delete (원격의 브랜치명)`
 	- 원격 브랜치 삭제
+
+## Git을 특별하게 만드는것 
