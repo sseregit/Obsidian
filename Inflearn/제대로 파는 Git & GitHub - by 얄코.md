@@ -140,5 +140,6 @@
 - Repository
 	- 커밋된 상태
 
-- `git rm`
+- `git rm <파일명>`
+	- 삭제와 동시에 staging area 로 add된다.
 - `git mv`
