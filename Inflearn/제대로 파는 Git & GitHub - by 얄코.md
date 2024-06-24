@@ -130,3 +130,15 @@
 - 분산 버전 관리
 
 ## Git의 3가지 공간
+- Working directory
+	- untracked
+		- gitignore된 파일
+		- Add된 적 없는 파일
+	- tracked
+- Staging area
+	- 커밋을 위한 준비 단계
+- Repository
+	- 커밋된 상태
+
+- `git rm`
+- `git mv`
