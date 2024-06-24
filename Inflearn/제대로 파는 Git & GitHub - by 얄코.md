@@ -157,3 +157,5 @@
 	- --hard
 		- 수정사항 완전히 삭제
 		- working directory에서 까지 날려버린다.
+
+## HEAD
