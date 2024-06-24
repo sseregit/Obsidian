@@ -159,3 +159,9 @@
 		- working directory에서 까지 날려버린다.
 
 ## HEAD
+- `git checkout HEAD^`
+	- ^ or ~
+		- 갯수만큼 이전이전 으로 이동
+- `git checkout -`
+	- 한 단계 되돌리기
+- 
