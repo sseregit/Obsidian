@@ -142,4 +142,5 @@
 
 - `git rm <파일명>`
 	- 삭제와 동시에 staging area 로 add된다.
-- `git mv`
+- `git mv <변경전 파일> <변경할 파일>`
+	- 이름 변경뒤 바로 add가 된다.
