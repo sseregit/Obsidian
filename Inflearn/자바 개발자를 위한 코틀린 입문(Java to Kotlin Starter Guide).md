@@ -139,3 +139,9 @@ interface Swimable {
 			- 같은 모듈에서만 접근 가능
 	- kotlin의 기본 접근 지시어는 public
 	- 생성자에 접근지시어를 붙이려면, constructor를 써줘야 한다.
+- Java와 Kotlin을 함께 사용할 때 주의할 점
+	- internal
+		- 바이트 코드 상 public이 된다.
+		- Java 코드에서는 Kotlin 모듈의 internal 코드를 가져올수 있다.
+	- protected
+		- Java는 같은 패키지의 Kotlin protected 멤버에 접근할 수 있다.
