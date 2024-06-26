@@ -147,4 +147,14 @@ interface Swimable {
 		- Java는 같은 패키지의 Kotlin protected 멤버에 접근할 수 있다.
 
 ## 코틀린에서 object 키워드를 다루는 방법
-- 
+```kotlin
+    companion object {
+        val MIN_AGE = 1
+        fun newBaby(name: String): Person {
+            return Person(name, MIN_AGE)
+        }
+    }
+```
+- Java의 static 변수 함수인것처럼 사용된다.
+- companion object
+	- 클래스와 동행하는 유일한 오브젝트
