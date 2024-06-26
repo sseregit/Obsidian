@@ -131,3 +131,10 @@ interface Swimable {
 		- 어노테이션이 아니라 키워드임
 
 ## 코틀린에서 접근 제어를 다루는 방법
+- 가시성 제어
+	- protected
+		- 같은 패키지 -> 선언된 클래스
+	- default -> internal
+		- internal
+			- 같은 모듈에서만 접근 가능
+	- kotlin의 기본 접근 지시어는 public
