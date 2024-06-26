@@ -171,3 +171,4 @@ interface Swimable {
 
 - 싱글톤
 	- `object Singleton`
+- 익명 클래스
