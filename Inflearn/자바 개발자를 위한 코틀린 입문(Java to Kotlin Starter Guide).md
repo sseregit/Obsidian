@@ -149,7 +149,8 @@ interface Swimable {
 ## 코틀린에서 object 키워드를 다루는 방법
 ```kotlin
     companion object {
-        val MIN_AGE = 1
+        val MIN_AGE = 1 // 런타임시에 0값이 할당
+        const val MIN_AGE = 1 // 컴파일시에 0값이 할당
         fun newBaby(name: String): Person {
             return Person(name, MIN_AGE)
         }
@@ -158,3 +159,8 @@ interface Swimable {
 - Java의 static 변수 함수인것처럼 사용된다.
 - companion object
 	- 클래스와 동행하는 유일한 오브젝트
+	- 동반객체도 하나의 객체로 간주된다.
+		- 이름을 붙일 수도 있고, interface를 구현할 수도 있다.
+- const
+	- 진짜 상수에 붙이기 위한 용도
+	- 기본타입과 String에 붙일 수 있다.
