@@ -168,3 +168,6 @@ interface Swimable {
 	- 기본타입과 String에 붙일 수 있다.
 - @JvmStatic
 	- Companion or 이름으로 부르지 않고 Person.newBaby()를 호출할수 있게한다.
+
+- 싱글톤
+	- `object Singleton`
