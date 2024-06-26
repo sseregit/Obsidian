@@ -138,3 +138,4 @@ interface Swimable {
 		- internal
 			- 같은 모듈에서만 접근 가능
 	- kotlin의 기본 접근 지시어는 public
+	- 생성자에 접근지시어를 붙이려면, constructor를 써줘야 한다.
