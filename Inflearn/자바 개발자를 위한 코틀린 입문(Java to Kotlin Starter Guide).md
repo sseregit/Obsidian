@@ -145,3 +145,6 @@ interface Swimable {
 		- Java 코드에서는 Kotlin 모듈의 internal 코드를 가져올수 있다.
 	- protected
 		- Java는 같은 패키지의 Kotlin protected 멤버에 접근할 수 있다.
+
+## 코틀린에서 object 키워드를 다루는 방법
+- 
