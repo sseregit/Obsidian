@@ -19,6 +19,13 @@ JobInstance
 - 논리적 작업의 실행 개념을 나타낸다.
 - 로드할 데이터와 전혀 관련이 없다.
 	- 데이터 로드되는 방식은 전적으로 ItemReader 구현에 달려있다.
+- JobInstance = Job + JobParameter 식별 가능하다.
+
 JobParameters
 - JobInstance를 구별할수 있게 해준다.
 - 배치 작업을 시작하는 데 사용되는 매개변수 집합을 보유 한다.
+
+JobExecution
+- 잡을 실행하려는 단일 시도에 대한 기술적 개념
+- 실행이 성공적으로 완료되지 않는 한 주어진 실행에 해당하는 JobInstance는 완료된 것으로 간주되지 않는다.
+- 
