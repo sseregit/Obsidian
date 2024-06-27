@@ -20,4 +20,5 @@ JobInstance
 - 로드할 데이터와 전혀 관련이 없다.
 	- 데이터 로드되는 방식은 전적으로 ItemReader 구현에 달려있다.
 JobParameters
-- 
+- JobInstance를 구별할수 있게 해준다.
+- 배치 작업을 시작하는 데 사용되는 매개변수 집합을 보유 한다.
