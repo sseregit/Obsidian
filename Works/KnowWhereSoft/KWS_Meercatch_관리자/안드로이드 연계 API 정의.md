@@ -197,8 +197,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "arrow",
-			"version": 79,
-			"versionNonce": 1117438910,
+			"version": 83,
+			"versionNonce": 402464865,
 			"isDeleted": false,
 			"id": "HgGr-RC7QbxRDvC_-iU8q",
 			"fillStyle": "solid",
@@ -220,7 +220,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719363051898,
+			"updated": 1719448811742,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -324,8 +324,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "text",
-			"version": 792,
-			"versionNonce": 2085066191,
+			"version": 793,
+			"versionNonce": 520112929,
 			"isDeleted": false,
 			"id": "FaC4oINj",
 			"fillStyle": "solid",
@@ -350,7 +350,7 @@ tags: [excalidraw]
 					"type": "arrow"
 				}
 			],
-			"updated": 1719275739275,
+			"updated": 1719448822334,
 			"link": null,
 			"locked": false,
 			"fontSize": 10.768452466763502,
@@ -362,12 +362,12 @@ tags: [excalidraw]
 			"containerId": null,
 			"originalText": "{ \"user_license\": \"test_licence123\", \n  \"event_type\": \"12\", \n  \"detect_type\": \"1\", \n  \"img_orig\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA.....based64encoded\", \n  \"img_analysis\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA.....based64encoded\", \n  \"reg_date\": \"2024-05-23 11:43:54\", \n  \"object\": [ \n    { \"class_id\": \"3\", \n      \"x\": \"50\", \n      \"y\": \"40\", \n      \"width\": \"127\", \n      \"height\": \"200\", \n      \"score\": \"0.86\" }, \n    { \"class_id\": \"3\", \n      \"x\": \"50\", \n      \"y\": \"40\", \n      \"width\": \"127\", \n      \"height\": \"200\", \n      \"score\": \"0.54\" } ], \n  \"file_name\":\"파일명[파일원복시 필요]\", \n  \"package_name\": \"탐지된 앱 패키지명\", \n  \"file_path\": \"파일경로[파일원복시 필요]\"\n }\n",
 			"lineHeight": 1.25,
-			"baseline": 318
+			"baseline": 319
 		},
 		{
 			"type": "arrow",
-			"version": 71,
-			"versionNonce": 1471067106,
+			"version": 73,
+			"versionNonce": 437458081,
 			"isDeleted": false,
 			"id": "FLLhcDsot_R8IAmLnQgA9",
 			"fillStyle": "solid",
@@ -376,12 +376,12 @@ tags: [excalidraw]
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -303.6563549249071,
+			"x": -303.6420451285138,
 			"y": -197.55808630730837,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 2.100991470017675,
-			"height": 34.06150817871094,
+			"width": 2.103397040241873,
+			"height": 34.06150817871091,
 			"seed": 687492676,
 			"groupIds": [],
 			"frameId": null,
@@ -389,7 +389,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719361984222,
+			"updated": 1719448811741,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -411,8 +411,8 @@ tags: [excalidraw]
 					0
 				],
 				[
-					-2.100991470017675,
-					34.06150817871094
+					-2.103397040241873,
+					34.06150817871091
 				]
 			]
 		},
@@ -493,8 +493,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "arrow",
-			"version": 18,
-			"versionNonce": 2033313570,
+			"version": 19,
+			"versionNonce": 2065460289,
 			"isDeleted": false,
 			"id": "T80tdqXlVL1oJPeX4-CFd",
 			"fillStyle": "solid",
@@ -516,7 +516,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719361984223,
+			"updated": 1719448811742,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -612,8 +612,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "text",
-			"version": 296,
-			"versionNonce": 2113974945,
+			"version": 297,
+			"versionNonce": 139866991,
 			"isDeleted": false,
 			"id": "RSUDcODE",
 			"fillStyle": "solid",
@@ -633,7 +633,7 @@ tags: [excalidraw]
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1719275739275,
+			"updated": 1719448822335,
 			"link": null,
 			"locked": false,
 			"fontSize": 7.0513950892857125,
@@ -645,7 +645,7 @@ tags: [excalidraw]
 			"containerId": null,
 			"originalText": "{ \n  \"user_license\": \"test_licence123\", \n  \"event_type\": \"12\", \n  \"detect_type\": \"1\", \n  \"img_orig\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA.....based64encoded\", \n  \"img_analysis\": \"/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA.....based64encoded\", \n  \"reg_date\": \"2024-05-23 11:43:54\", \n  \"object\": [ \n         { \n         \"class_id\": \"3\", \n         \"x\": \"50\", \n         \"y\": \"40\", \n         \"width\": \"127\", \n         \"height\": \"200\", \n         \"score\": \"0.86\" }, \n         { \n         \"class_id\": \"3\", \n         \"x\": \"50\", \n         \"y\": \"40\", \n         \"width\": \"127\", \n         \"height\": \"200\", \n         \"score\": \"0.54\" \n         } \n         ], \n  \"file_name\":\"파일명[파일원복시 필요]\", \n  \"package_name\": \"탐지된 앱 패키지명\", \n  \"file_path\": \"파일경로[파일원복시 필요]\"\n }",
 			"lineHeight": 1.25,
-			"baseline": 243
+			"baseline": 244
 		},
 		{
 			"type": "rectangle",
@@ -724,8 +724,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "arrow",
-			"version": 44,
-			"versionNonce": 1517073122,
+			"version": 45,
+			"versionNonce": 2015837217,
 			"isDeleted": false,
 			"id": "nwb17d2Gdh09tmJ16fL6V",
 			"fillStyle": "solid",
@@ -747,7 +747,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719361984223,
+			"updated": 1719448811742,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -955,8 +955,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "arrow",
-			"version": 58,
-			"versionNonce": 702023330,
+			"version": 59,
+			"versionNonce": 1326256129,
 			"isDeleted": false,
 			"id": "2br73JYNwRfCIurqWBKpB",
 			"fillStyle": "solid",
@@ -978,7 +978,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719361984223,
+			"updated": 1719448811742,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1149,8 +1149,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "arrow",
-			"version": 64,
-			"versionNonce": 1612898914,
+			"version": 65,
+			"versionNonce": 365783009,
 			"isDeleted": false,
 			"id": "oRFzTmoiw7bcmmZvZw-Ti",
 			"fillStyle": "solid",
@@ -1172,7 +1172,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719361984223,
+			"updated": 1719448811742,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1272,8 +1272,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "arrow",
-			"version": 77,
-			"versionNonce": 303407458,
+			"version": 81,
+			"versionNonce": 461238113,
 			"isDeleted": false,
 			"id": "D1C5SVbmUIUV3j2RYY3_b",
 			"fillStyle": "solid",
@@ -1295,7 +1295,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719361984223,
+			"updated": 1719448811742,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1474,8 +1474,8 @@ tags: [excalidraw]
 		},
 		{
 			"type": "arrow",
-			"version": 37,
-			"versionNonce": 190784802,
+			"version": 38,
+			"versionNonce": 329997121,
 			"isDeleted": false,
 			"id": "RdscqrzS3Z4k11y_D9Xlv",
 			"fillStyle": "solid",
@@ -1497,7 +1497,7 @@ tags: [excalidraw]
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1719361984223,
+			"updated": 1719448811742,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1607,8 +1607,8 @@ tags: [excalidraw]
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1342.2111351983774,
-		"scrollY": 432.7256903127877,
+		"scrollX": 1347.3366440667046,
+		"scrollY": 387.9253001254697,
 		"zoom": {
 			"value": 0.4
 		},
