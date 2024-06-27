@@ -169,5 +169,11 @@
 ## fetch와 pull
 - fetch
 	- 원격 저장소의 최신 커밋을 로컬로 가져오기만 한다.
+	- `git switch origin/(브랜치명)`으로 이동해서 변경된 코드 확인
+	- 그후에 `git pull`을 진행한다.
 - pull
 	- 원격 저장소의 최신 커밋을 로컬로 가져와 merge 또는 rebase
+- `git checkout origin/(브랜치명)`
+- `git switch -t origin/(브랜치명)`
+
+## Help와 문서 활용하기
