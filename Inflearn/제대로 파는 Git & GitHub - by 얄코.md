@@ -165,3 +165,5 @@
 - `git checkout -`
 	- 한 단계 되돌리기
 - `git reset HEAD(원하는단계) (옵션)`
+
+## fetch와 pull
