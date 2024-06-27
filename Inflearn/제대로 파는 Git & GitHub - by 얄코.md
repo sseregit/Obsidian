@@ -188,3 +188,9 @@
 - global 설정과 local 설정
 - `git config (global) --list`
 	- 현재 모든 설정값 보기
+- `git config (global) -e`
+	- 에디터로 열지만 설정없이는 vim으로 제공
+- `git config --global core.editor "code --wait"`
+	- - 또는 `code` 자리에 원하는 편집 프로그램의 .exe파일 경로 연결
+	- `--wait` : 에디터에서 수정하는 동안 CLI를 정지
+	- 💡 `git commit` 등의 편집도 지정된 에디터에서 열게 됨
