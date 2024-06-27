@@ -28,4 +28,5 @@ JobParameters
 JobExecution
 - 잡을 실행하려는 단일 시도에 대한 기술적 개념
 - 실행이 성공적으로 완료되지 않는 한 주어진 실행에 해당하는 JobInstance는 완료된 것으로 간주되지 않는다.
-- 
+
+[Step](https://docs.spring.io/spring-batch/reference/domain.html#step)
