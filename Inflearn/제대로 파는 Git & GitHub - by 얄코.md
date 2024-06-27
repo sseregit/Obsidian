@@ -194,3 +194,13 @@
 	- - 또는 `code` 자리에 원하는 편집 프로그램의 .exe파일 경로 연결
 	- `--wait` : 에디터에서 수정하는 동안 CLI를 정지
 	- 💡 `git commit` 등의 편집도 지정된 에디터에서 열게 됨
+- `git config --global core.autocrlf (윈도우: true / 맥: input)`
+	- 줄바꿈 호환 문제 해결
+- `git config pull.rebase (false or true)`
+	- pull 기본전략
+- `git config --global init.defaultBranch main`
+	- 기본 브랜치명
+- `git config --global push.default current`
+	- push시 로컬과 동일한 브랜치명으로
+- `git config --global alias.(단축키) "명령어"`
+	- 
