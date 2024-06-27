@@ -167,3 +167,7 @@
 - `git reset HEAD(원하는단계) (옵션)`
 
 ## fetch와 pull
+- fetch
+	- 원격 저장소의 최신 커밋을 로컬로 가져오기만 한다.
+- pull
+	- 원격 저장소의 최신 커밋을 로컬로 가져와 merge 또는 rebase
