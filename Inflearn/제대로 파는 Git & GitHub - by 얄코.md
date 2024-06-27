@@ -186,3 +186,5 @@
 
 ## Git의 각종 설정
 - global 설정과 local 설정
+- `git config (global) --list`
+	- 현재 모든 설정값 보기
