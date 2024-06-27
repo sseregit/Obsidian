@@ -10,7 +10,9 @@
 - 비관적 잠금은 배치 애플리케이션에 더 적합하다.
 ![[Batch Stereotypes.png]]
 
-Job	
+[Job](https://docs.spring.io/spring-batch/reference/domain.html#job)	
 - 전체 배치 프로세스를 캡슐화하는 엔티티
 ![[Job Hierarchy.png]]
 - 스텝 인스턴스를 위한 컨테이너
+
+JobInstance
