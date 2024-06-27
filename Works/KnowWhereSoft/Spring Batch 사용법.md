@@ -6,4 +6,5 @@
 		- ``schema-all.sql``
 			- 모든 플랫폼에서 실행한다는 의미가 된다.
 [Spring Batch Document](https://docs.spring.io/spring-batch/reference/index.html)
-- 
+- 낙관적 잠금은 온라인 애플리케이션에 어울리고
+- 비관적 잠금은 배치 애플리케이션에 더 적합하다.
