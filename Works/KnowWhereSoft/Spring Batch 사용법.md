@@ -10,7 +10,7 @@
 - 비관적 잠금은 배치 애플리케이션에 더 적합하다.
 ![[Batch Stereotypes.png]]
 
-[Job](https://docs.spring.io/spring-batch/reference/domain.html#job)	
+## [Job](https://docs.spring.io/spring-batch/reference/domain.html#job)	
 - 전체 배치 프로세스를 캡슐화하는 엔티티
 ![[Job Hierarchy.png]]
 - 스텝 인스턴스를 위한 컨테이너
@@ -29,7 +29,7 @@ JobExecution
 - 잡을 실행하려는 단일 시도에 대한 기술적 개념
 - 실행이 성공적으로 완료되지 않는 한 주어진 실행에 해당하는 JobInstance는 완료된 것으로 간주되지 않는다.
 
-[Step](https://docs.spring.io/spring-batch/reference/domain.html#step)
+## [Step](https://docs.spring.io/spring-batch/reference/domain.html#step)
 - 배치 작업의 독립적이고 순차적인 단계를 캡슐화하는 도메인 객체
 - 모든 작업은 전적으로 하나 이상의 단계로 구성
 - 일괄처리를 정의하고 제어하는 필요한 모든 정보를 포함한다.
@@ -39,3 +39,6 @@ StepExecution
 - 스텝을 실행하려는 한 번의 시도를 나타낸다.
 - 스텝이 실행될 때마다 새 StepExecution이 생성되며, JobExecution과 유사하다.
 - 앞 단계가 실패하여 실행에 실패하면 해당 단계에 대한 실행은 유지되지 않는다.
+
+## [ExecutionContext](https://docs.spring.io/spring-batch/reference/domain.html#executioncontext)
+- 개발자에게 StepExecution 또는 JobExecution 범위가 지정된 영구상태를 저장할 수 잇는 장소를 제공한다.
