@@ -36,4 +36,6 @@ JobExecution
 ![[Job Hierarchy With Steps.png]]
 
 StepExecution
-- 
+- 스텝을 실행하려는 한 번의 시도를 나타낸다.
+- 스텝이 실행될 때마다 새 StepExecution이 생성되며, JobExecution과 유사하다.
+- 앞 단계가 실패하여 실행에 실패하면 해당 단계에 대한 실행은 유지되지 않는다.
