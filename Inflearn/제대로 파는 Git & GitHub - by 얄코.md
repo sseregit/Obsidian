@@ -165,3 +165,41 @@
 - `git checkout -`
 	- 한 단계 되돌리기
 - `git reset HEAD(원하는단계) (옵션)`
+
+## fetch와 pull
+- fetch
+	- 원격 저장소의 최신 커밋을 로컬로 가져오기만 한다.
+	- `git switch origin/(브랜치명)`으로 이동해서 변경된 코드 확인
+	- 그후에 `git pull`을 진행한다.
+- pull
+	- 원격 저장소의 최신 커밋을 로컬로 가져와 merge 또는 rebase
+- `git checkout origin/(브랜치명)`
+- `git switch -t origin/(브랜치명)`
+
+## Help와 문서 활용하기
+- `git (명령어) -h`
+	- 해당 명령어의 설명과 옵션보기
+- `git help (명령어)`
+	- 웹사이트를 열어주지만 안열어주는 버전도 존재
+- `git (명령어) --help`
+	- 위와 같은 역할을 한다.
+
+## Git의 각종 설정
+- global 설정과 local 설정
+- `git config (global) --list`
+	- 현재 모든 설정값 보기
+- `git config (global) -e`
+	- 에디터로 열지만 설정없이는 vim으로 제공
+- `git config --global core.editor "code --wait"`
+	- - 또는 `code` 자리에 원하는 편집 프로그램의 .exe파일 경로 연결
+	- `--wait` : 에디터에서 수정하는 동안 CLI를 정지
+	- 💡 `git commit` 등의 편집도 지정된 에디터에서 열게 됨
+- `git config --global core.autocrlf (윈도우: true / 맥: input)`
+	- 줄바꿈 호환 문제 해결
+- `git config pull.rebase (false or true)`
+	- pull 기본전략
+- `git config --global init.defaultBranch main`
+	- 기본 브랜치명
+- `git config --global push.default current`
+	- push시 로컬과 동일한 브랜치명으로
+- `git config --global alias.(단축키) "명령어"`
