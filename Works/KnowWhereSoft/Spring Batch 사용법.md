@@ -32,3 +32,8 @@ JobExecution
 [Step](https://docs.spring.io/spring-batch/reference/domain.html#step)
 - 배치 작업의 독립적이고 순차적인 단계를 캡슐화하는 도메인 객체
 - 모든 작업은 전적으로 하나 이상의 단계로 구성
+- 일괄처리를 정의하고 제어하는 필요한 모든 정보를 포함한다.
+![[Job Hierarchy With Steps.png]]
+
+StepExecution
+- 
