@@ -30,3 +30,5 @@ JobExecution
 - 실행이 성공적으로 완료되지 않는 한 주어진 실행에 해당하는 JobInstance는 완료된 것으로 간주되지 않는다.
 
 [Step](https://docs.spring.io/spring-batch/reference/domain.html#step)
+- 배치 작업의 독립적이고 순차적인 단계를 캡슐화하는 도메인 객체
+- 모든 작업은 전적으로 하나 이상의 단계로 구성
