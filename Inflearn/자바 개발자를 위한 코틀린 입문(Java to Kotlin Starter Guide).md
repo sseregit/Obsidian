@@ -174,3 +174,4 @@ interface Swimable {
 - 익명 클래스
 	- `object: Movable {...}`
 
+## 코틀린에서 중첩 클래스를 다루는 방법
