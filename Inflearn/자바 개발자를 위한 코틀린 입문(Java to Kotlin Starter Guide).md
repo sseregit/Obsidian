@@ -181,3 +181,5 @@ interface Swimable {
 		- 내부 클래스(Inner Class)
 		- 지역 클래스(Local Class)
 		- 익명 클래스(Anonymous Class)
+- 코틀린의 중첩 클래스와 내부클래스
+	-  Java의 static 중첩 클래스 (권장되는 클래스 안의 클래스)
