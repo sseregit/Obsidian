@@ -183,3 +183,30 @@ interface Swimable {
 		- 익명 클래스(Anonymous Class)
 - 코틀린의 중첩 클래스와 내부클래스
 	-  Java의 static 중첩 클래스 (권장되는 클래스 안의 클래스)
+```kotlin
+class JavaHouse(
+    private val address: String,
+    private val livingRoom: LivingRoom
+) {
+    class LivingRoom(
+        private val area: Double
+    )
+}
+
+```
+- 권장되지 않는 클래스
+```kotlin
+class JavaHouse(
+    private val address: String,
+    private val livingRoom: LivingRoom
+) {
+    inner class LivingRoom(
+        private val area: Double
+    ) {
+        val address: String
+            get() = this@House.address;
+    }
+}
+```
+- 바깥 클래스 사용법
+	- this@(바깥클래스명)
