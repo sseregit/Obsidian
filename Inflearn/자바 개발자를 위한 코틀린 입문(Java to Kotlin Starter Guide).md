@@ -175,3 +175,9 @@ interface Swimable {
 	- `object: Movable {...}`
 
 ## 코틀린에서 중첩 클래스를 다루는 방법
+- 중첩 클래스의 종류
+	- static을 사용하는 중첩 클래스
+	- static을 사용하지 않는 중첩클래스
+		- 내부 클래스(Inner Class)
+		- 지역 클래스(Local Class)
+		- 익명 클래스(Anonymous Class)
