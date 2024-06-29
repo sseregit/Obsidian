@@ -224,3 +224,5 @@ data class PersonDto(
 )
 ```
 - 자동으로 equals, hashcode, toString을 만들어준다
+
+Enum Class
