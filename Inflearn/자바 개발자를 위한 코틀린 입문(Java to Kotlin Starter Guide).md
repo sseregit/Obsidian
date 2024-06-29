@@ -215,6 +215,12 @@ class JavaHouse(
 	- 내부 클래스의 직렬화 형태가 명확하게 정의되지 않아 직렬화에 있어 제한이 있다.
 
 ## 코틀린에서 다양한 클래스를 다루는 방법
-- Data Class
-- Enum Class
-- Sealed Class, Sealed Interface
+
+Data Class
+```kotlin
+data class PersonDto(
+    private val name: String,
+    private val age: Int
+)
+```
+- 자동으로 equals, hashcode, toString을 만들어준다
