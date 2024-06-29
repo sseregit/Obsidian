@@ -173,3 +173,4 @@ interface Swimable {
 	- `object Singleton`
 - 익명 클래스
 	- `object: Movable {...}`
+
