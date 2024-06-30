@@ -239,3 +239,5 @@ footer (optional)
 ```
 
 ## 보다 세심하게 스테이징하고 커밋하기
+- `git add -p`
+	- hunk별 스테이징 진행
