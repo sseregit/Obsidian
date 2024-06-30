@@ -253,3 +253,23 @@ footer (optional)
 - `git stash`
 - `git stash pop`
 	- 원하는 시점, 브랜치에서 다시 적용
+- `git stash -p`
+	- 원하는 작업만 stash가 가능하다.
+- `git stash -m '(메시지)'`
+- `git stash list`
+	- stash 리스트를 볼수 있다.
+- `git stash apply (stash list에 있는 넘버)`
+	- 적용한다. 커밋이 아니다
+- `git stash drop (stash list에 있는 넘버)`
+	- 삭제
+- `git stash pop (stash list에 있는 넘버)`
+	- apply와 drop을 동시에
+
+|명령어|설명|비고|
+|:--|:--|:--|
+|git stash|현 작업들 치워두기|끝에 save 생략|
+|git stash apply|치워둔 마지막 항목(번호 없을 시) 적용|끝에 번호로 항목 지정 가능|
+|git stash drop|치워둔 마지막 항목(번호 없을 시) 삭제|끝에 번호로 항목 지정 가능|
+|git stash pop|치워둔 마지막 항목(번호 없을 시) 적용 및 삭제|apply + drop|
+|💡 git stash branch (브랜치명)|새 브랜치를 생성하여 pop|충돌사항이 있는 상황 등에 유용|
+|git stash clear|치워둔 모든 항목들 비우기|
