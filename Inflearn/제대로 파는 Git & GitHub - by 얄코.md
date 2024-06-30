@@ -203,3 +203,5 @@
 - `git config --global push.default current`
 	- push시 로컬과 동일한 브랜치명으로
 - `git config --global alias.(단축키) "명령어"`
+
+## 어떻게 커밋하는게 좋을까요?
