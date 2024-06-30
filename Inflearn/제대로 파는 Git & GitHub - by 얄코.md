@@ -244,3 +244,9 @@ footer (optional)
 - editor를 사용하면 `git commit`이 editor 편집기에 나타나서 진행할수 있게 된다.
 - `git commit -v`
 	- 커밋에 반영될것들이 editor에 나오게 된다.
+- `git diff --staged`
+	- 이번 커밋에 담길 변경사항들을 볼수 있다.
+
+## 커밋하기 애매한 변화 치워두기
+- stash
+	- 잠시 다른 공간에 치워둘수 있다.
