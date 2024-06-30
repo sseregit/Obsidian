@@ -250,3 +250,4 @@ footer (optional)
 ## 커밋하기 애매한 변화 치워두기
 - stash
 	- 잠시 다른 공간에 치워둘수 있다.
+- `git stash`
