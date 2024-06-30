@@ -251,3 +251,5 @@ footer (optional)
 - stash
 	- 잠시 다른 공간에 치워둘수 있다.
 - `git stash`
+- `git stash pop`
+	- 원하는 시점, 브랜치에서 다시 적용
