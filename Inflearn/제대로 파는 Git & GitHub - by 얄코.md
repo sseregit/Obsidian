@@ -241,3 +241,6 @@ footer (optional)
 ## 보다 세심하게 스테이징하고 커밋하기
 - `git add -p`
 	- hunk별 스테이징 진행
+- editor를 사용하면 `git commit`이 editor 편집기에 나타나서 진행할수 있게 된다.
+- `git commit -v`
+	- 커밋에 반영될것들이 editor에 나오게 된다.
