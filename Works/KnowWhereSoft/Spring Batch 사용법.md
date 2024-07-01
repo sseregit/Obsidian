@@ -1,4 +1,4 @@
-[Spring Batch](https://spring.io/projects/spring-batch)
+[Spring Batch 5.1.x](https://spring.io/projects/spring-batch)
 [Spring Batch 4.2.x 한글번역](https://godekdls.github.io/Spring%20Batch/contents/)
 [Spring Batch Guide](https://spring.io/guides/gs/batch-processing#scratch)
 - `schema-@@platform@@.sql`
