@@ -43,3 +43,4 @@ StepExecution
 ## [ExecutionContext](https://docs.spring.io/spring-batch/reference/domain.html#executioncontext)
 - 개발자에게 StepExecution 또는 JobExecution 범위가 지정된 영구상태를 저장할 수 잇는 장소를 제공한다.
 - JobExecution당 하나 이상의 ExecutionContext가 있고 모든 StepExecution당 하나씩 있다는것에 유의해야 한다.
+- Step으로 범위가 지정된 것은 단계의 모든 커밋 지점에 저장 되는 반면, 작업으로 범위가 지정된 것은 모든 단계 실행 사이에 저장된다.
