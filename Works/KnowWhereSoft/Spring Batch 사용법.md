@@ -47,3 +47,13 @@ StepExecution
 
 ## [JobRepository](https://docs.spring.io/spring-batch/reference/domain.html#jobrepository)
 - 위에서 언급된 모든 저장(persistence) 매커니즘을 담당한다.
+
+## [JobLauncher](https://docs.spring.io/spring-batch/reference/domain.html#joblauncher)
+- JobParameters로 Job을 실행한느 간단한 인터페이스
+
+## [ItemReader](https://docs.spring.io/spring-batch/reference/domain.html#itemreader)
+- Step에서 아이템을 한 번에 하나씩 읽어오는 작업을 추상화한 개념이다.
+
+## [ItemWriter](https://docs.spring.io/spring-batch/reference/domain.html#itemwriter)
+
+## [ItemProcessor](https://docs.spring.io/spring-batch/reference/domain.html#itemprocessor)
