@@ -89,4 +89,4 @@ StepExecution
 		- api서비스를 mocking 한다.
 		- `org.wiremock:wiremock-standalone`
 			- 별도의 서버를 구동하는 방식이다.
-		- 
+		- [WireMock test](https://techblog.woowahan.com/17674/)
