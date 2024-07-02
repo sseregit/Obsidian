@@ -86,7 +86,10 @@ StepExecution
 			- [WireMock test](https://techblog.woowahan.com/17674/)
 				- json이면 stub할 필요없이 json파일로 던질수 있는데 xml이라 따로 stub처리를 해줘야 한다.
 - Batch 만들기
-	- Reader로 OPENAPI (학교관리 호출)
-		- 호출은 RestClient를 활용하고
-		- retrun 받은 값은 BufferedWriter를 활용해서 저장한다.
-	- Writer로 DB에 Insert
+	- Step1
+		- Reader로 OPENAPI (학교관리 호출)
+			- 호출은 RestClient를 활용하고
+			- retrun 받은 값은 BufferedWriter를 활용해서 저장한다.
+		- Writer로 File 저장
+	- Step2
+		- 
