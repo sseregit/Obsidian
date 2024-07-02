@@ -87,4 +87,5 @@ StepExecution
 				- json이면 stub할 필요없이 json파일로 던질수 있는데 xml이라 따로 stub처리를 해줘야 한다.
 - Batch 만들기
 	- Reader로 OPENAPI (학교관리 호출)
+		- Step
 	- Writer로 DB에 Insert
