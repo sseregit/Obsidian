@@ -82,4 +82,5 @@ StepExecution
 	- 가이드
 	- awaitility를 이용한 테스트
 		- [awaitility](https://github.com/awaitility/awaitility/wiki/Usage)
-			- 
+			- 비동기 시스템을 테스트할때 사용할수 있다.
+			- spring-boot-starter-test에 이미 의존성이 추가 되어 있다.
