@@ -93,3 +93,4 @@ StepExecution
 			- JUnit 테스트할 때만 구동하는 방식
 			- [spring-cloud-contract-wiremock](https://cloud.spring.io/spring-cloud-contract/2.0.x/multi/multi__spring_cloud_contract_wiremock.html#_spring_cloud_contract_wiremock)
 			- [WireMock test](https://techblog.woowahan.com/17674/)
+				- json이면 stub할 필요없이 json파일로 던질수 있는데 xml이라 따로 stub처리를 해줘야 한다.
