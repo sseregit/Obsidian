@@ -66,7 +66,7 @@ StepExecution
 
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
 
-### 만들어 보자
+## 만들어 보자
 - 반복 주기 1분
 - 하나의 Job
 	- 가져오기전에 log
@@ -76,3 +76,7 @@ StepExecution
 	- DB의 DML을 이용해 넣는다
 	- 성공 후에 log
 - 끝
+
+### 반복 주기 1분
+- 스케줄링을 사용해야 한다.
+- 
