@@ -81,4 +81,5 @@ StepExecution
 - [스케줄링을 사용해야 한다.](https://spring.io/guides/gs/scheduling-tasks)
 	- 가이드
 	- awaitility를 이용한 테스트
-		- awaitility?
+		- [awaitility](https://github.com/awaitility/awaitility/wiki/Usage)
+			- 
