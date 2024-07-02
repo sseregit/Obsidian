@@ -67,15 +67,6 @@ StepExecution
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
 
 ## 만들어 보자
-- 반복 주기 1분
-- 하나의 Job
-	- 가져오기전에 log
-	- OPENAPI의 1000건을 가져온다.
-	- 가져온 후에 log
-	- 디비 넣기전에 log
-	- DB의 DML을 이용해 넣는다
-	- 성공 후에 log
-- 끝
 
 ### 반복 주기 1분
 - [스케줄링을 사용해야 한다.](https://spring.io/guides/gs/scheduling-tasks)
@@ -95,4 +86,5 @@ StepExecution
 			- [WireMock test](https://techblog.woowahan.com/17674/)
 				- json이면 stub할 필요없이 json파일로 던질수 있는데 xml이라 따로 stub처리를 해줘야 한다.
 - Batch 만들기
-	- 
+	- Reader로 OPENAPI (학교관리 호출)
+	- Writer로 DB에 Insert
