@@ -65,3 +65,10 @@ StepExecution
 - 데이터 변환이나 다른 비즈니스 처리를 담당한다.
 
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
+
+### 만들어 보자
+- 반복 주기 1분
+- 하나의 Job
+	- OPENAPI의 1000건을 가져온다.
+	- DB의 DML을 이용해 넣는다
+- 끝
