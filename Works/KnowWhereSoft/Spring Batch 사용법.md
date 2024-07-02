@@ -69,6 +69,10 @@ StepExecution
 ### 만들어 보자
 - 반복 주기 1분
 - 하나의 Job
+	- 가져오기전에 log
 	- OPENAPI의 1000건을 가져온다.
+	- 가져온 후에 log
+	- 디비 넣기전에 log
 	- DB의 DML을 이용해 넣는다
+	- 성공 후에 log
 - 끝
