@@ -90,6 +90,7 @@ StepExecution
 		- Reader로 OPENAPI (학교관리 호출)
 			- 호출은 RestClient를 활용하고
 			- retrun 받은 값은 BufferedWriter를 활용해서 저장한다.
-		- Writer로 File 저장
+		- Writer로 File 저장.
 	- Step2
-		- 
+		- Step1에서 읽은 파일을 읽는다.
+		- DB에 저장한다.
