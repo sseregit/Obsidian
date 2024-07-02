@@ -247,3 +247,4 @@ Sealed Class, Sealed Interface
 
 ## 코틀린에서 배열과 컬렉션을 다루는 방법
 - Kotlin은 불변/가변을  지정해 주어야 한다는 사실을 꼭 기억해야 한다.
+- Kotlin의 컬렉션이 Java에서 호출되면 컬렉션 내용이 변할 수 있음을 감안해야 한다.
