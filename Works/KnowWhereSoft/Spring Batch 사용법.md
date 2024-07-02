@@ -85,3 +85,5 @@ StepExecution
 			- 비동기 시스템을 테스트할때 사용할수 있다.
 			- spring-boot-starter-test에 이미 의존성이 추가 되어 있다.
 - @FeignClient를 테스트하는 방법을 먼저 알아야한다.
+	- [wiremock](https://wiremock.org/)
+		- api서비스를 mocking 한다.
