@@ -87,3 +87,6 @@ StepExecution
 - @FeignClient를 테스트하는 방법을 먼저 알아야한다.
 	- [wiremock](https://wiremock.org/)
 		- api서비스를 mocking 한다.
+		- `org.wiremock:wiremock-standalone`
+			- 별도의 서버를 구동하는 방식이다.
+		- 
