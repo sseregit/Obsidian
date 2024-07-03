@@ -66,6 +66,9 @@ StepExecution
 - 아이템을 처리하는 비즈니스 로직을 나타내는 추상화 개념이다.
 - 데이터 변환이나 다른 비즈니스 처리를 담당한다.
 
+## ItemStream
+- 
+
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
 
 ## 만들어 보자
