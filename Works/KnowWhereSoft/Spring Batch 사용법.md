@@ -91,7 +91,7 @@ StepExecution
 			- 호출은 RestClient를 활용하고
 			- retrun 받은 값은 BufferedWriter를 활용해서 저장한다.
 		- Writer로 File 저장.
+		- AbstractItemCountingItemStreamItemReader를 활용한 방법
 	- Step2
 		- Step1에서 읽은 파일을 읽는다.
 		- DB에 저장한다.
-	- AbstractItemCountingItemStreamItemReader 가뭐지..?
