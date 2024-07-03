@@ -97,6 +97,8 @@ StepExecution
 			- retrun 받은 값은 BufferedWriter를 활용해서 저장한다.
 		- Writer로 File 저장.
 		- AbstractItemCountingItemStreamItemReader를 활용한 방법
+		- tasklet
+			- 단하나의 excute를 할수 있다는데 이걸로 xml파일을 만들면?
 
 	- Step2
 		- Step1에서 읽은 파일을 읽는다.
