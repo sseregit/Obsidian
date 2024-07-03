@@ -66,11 +66,6 @@ StepExecution
 - 아이템을 처리하는 비즈니스 로직을 나타내는 추상화 개념이다.
 - 데이터 변환이나 다른 비즈니스 처리를 담당한다.
 
-## ItemStream
-- 
-
-## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
-
 ## 만들어 보자
 
 ### 반복 주기 1분
@@ -92,16 +87,22 @@ StepExecution
 				- json이면 stub할 필요없이 json파일로 던질수 있는데 xml이라 따로 stub처리를 해줘야 한다.
 - Batch 만들기
 	- Step1
-		- Reader로 OPENAPI (학교관리 호출)
-			- 호출은 RestClient를 활용하고
-			- retrun 받은 값은 BufferedWriter를 활용해서 저장한다.
-		- Writer로 File 저장.
-		- AbstractItemCountingItemStreamItemReader를 활용한 방법
 		- tasklet
-			- 단하나의 excute를 할수 있다는데 이걸로 xml파일을 만들면?
-
+			- restClient로 openAPI를 호출해서 String으로 받은 리턴값을 xml 파일로 저장한다
 	- Step2
-		- Step1에서 읽은 파일을 읽는다.
-		- DB에 저장한다.
-	- 동일한 job과 동일한 jobParameter는 다시 실행할수 없다.
-	- JPA Readers와 Writers 샘플
+		- StaxEventItemReader로 해당 xml을 읽는다.
+		- 의존성 추가 필요
+			- `implementation 'org.springframework:spring-oxm'`
+				- spring boot가 의존성을 관리해준다
+			- `implementation 'com.thoughtworks.xstream:xstream:1.4.20'`
+		- JdbcBatchItemWriter DB에 저장한다.
+	- 부족한점
+		- Job이 시작할때 해당 폴더를 비우는 작업이 필요하다.
+		- OpenAPI는 한계가 1000건 더 많다면 모든 값을 가져올수 있게 계속 요청해서 파일을 작성해야 한다.
+		- DB의 저장만 하지만 사실상 Merge가 되는 경우도 있을수 있다.
+			- DB에 이미 데이터가 있는경우
+	- 이 시나리오는 사용하지 않을거라 여기까지만 작업하도록 한다.
+
+## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
+- 해당 잡을 테스트코드 작성하는법
+
