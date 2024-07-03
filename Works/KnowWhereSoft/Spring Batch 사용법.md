@@ -60,6 +60,8 @@ StepExecution
 - Step에서 배치나 청크 단위로 아이템을 출력하는 작업을 추상화한다.
 - 다음에 받을 입력이 무엇인지는 알지 못하며 현재 받은 아이템만 알고 있다.
 
+## [ItemReader 와 ItemWriter 의 구현체](https://docs.spring.io/spring-batch/docs/4.2.x/reference/html/index-single.html#listOfReadersAndWriters)
+
 ## [ItemProcessor](https://docs.spring.io/spring-batch/reference/domain.html#itemprocessor)
 - 아이템을 처리하는 비즈니스 로직을 나타내는 추상화 개념이다.
 - 데이터 변환이나 다른 비즈니스 처리를 담당한다.
