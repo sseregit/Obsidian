@@ -284,3 +284,4 @@ footer (optional)
 	- git add 까지 하고 처리 한다.
 
 ## 과거의 커밋들을 수정, 삭제, 병합, 분할하기
+- `git rebase -i (커밋 ID)`
