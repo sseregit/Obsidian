@@ -273,3 +273,5 @@ footer (optional)
 |git stash pop|치워둔 마지막 항목(번호 없을 시) 적용 및 삭제|apply + drop|
 |💡 git stash branch (브랜치명)|새 브랜치를 생성하여 pop|충돌사항이 있는 상황 등에 유용|
 |git stash clear|치워둔 모든 항목들 비우기|
+
+## 커밋 수정하기
