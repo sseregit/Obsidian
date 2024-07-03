@@ -287,6 +287,7 @@ footer (optional)
 - `git rebase -i (커밋 ID)`
 - `git rebase --abort`
 	- rebase 중지
+- `git rebase --continue`
 
 |명령어|설명|
 |:--|:--|
