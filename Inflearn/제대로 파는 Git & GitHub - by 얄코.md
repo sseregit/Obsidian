@@ -278,3 +278,9 @@ footer (optional)
 - `git commit --amend`
 	- 커밋 메시지 변경
 	- `git add (파일)` 을 한 파일도 함께 커밋된다.
+- `git commit --amend -m (메시지)`
+	- 한번에 처리할수 있다.
+- `git commit -a --amend -m (메시지)`
+	- git add 까지 하고 처리 한다.
+
+## 과거의 커밋들을 수정, 삭제, 병합, 분할하기
