@@ -276,3 +276,4 @@ footer (optional)
 
 ## 커밋 수정하기
 - `git commit --amend`
+	- 커밋 메시지 변경
