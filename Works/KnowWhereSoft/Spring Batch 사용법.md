@@ -103,4 +103,5 @@ StepExecution
 	- Step2
 		- Step1에서 읽은 파일을 읽는다.
 		- DB에 저장한다.
-	- [JPA Readers와 Writers 샘플](https://github.com/spring-projects/spring-batch/tree/main/spring-batch-samples#jpa-readers-and-writers-sample)
+	- 동일한 job과 동일한 jobParameter는 다시 실행할수 없다.
+	- JPA Readers와 Writers 샘플
