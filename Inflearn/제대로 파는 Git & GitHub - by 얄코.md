@@ -275,3 +275,4 @@ footer (optional)
 |git stash clear|치워둔 모든 항목들 비우기|
 
 ## 커밋 수정하기
+- `git commit --amend`
