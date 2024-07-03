@@ -285,6 +285,8 @@ footer (optional)
 
 ## 과거의 커밋들을 수정, 삭제, 병합, 분할하기
 - `git rebase -i (커밋 ID)`
+- `git rebase --abort`
+	- rebase 중지
 
 |명령어|설명|
 |:--|:--|
