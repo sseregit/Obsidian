@@ -158,4 +158,6 @@ public class SkipSampleFunctionalTests {
 
 ### 단위 범위 구성 요소 테스트
 - @JobScope나 @StepScope가 적용되어 있는 Job테스트
+	- @JobScope나 @StepScope는 JobParameter를 사용하기 위해서 선언하는 것이다.
+	- `@Value("#{jobParameters[파라미터명]}")`
 - 기존에 있는 방법으로는 실패한다.
