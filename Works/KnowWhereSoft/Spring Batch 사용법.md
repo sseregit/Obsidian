@@ -105,10 +105,26 @@ StepExecution
 
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
 - 해당 잡을 테스트코드 작성하는법
-	- ApplicationContext를 로딩해야 한다.
-		- `@SpringBatchTest`
-		- `@SpringJUnitConfig(???.class)`
-	- End To End
-		- `@Autowired 
-		- `private JobLauncherTestUtils jobLauncherTestUtils;`
+End To End
+```java
+@SpringBatchTest
+@SpringJUnitConfig(테스트하고자하는BatchConfiguration.class)
+public class SkipSampleFunctionalTests {
+
+    @Autowired
+    private JobLauncherTestUtils jobLauncherTestUtils;
+
+    @Test
+    public void testJob(@Autowired Job job) throws Exception {
+        this.jobLauncherTestUtils.setJob(job);
+
+		{...사전 작업이 필요하다면...}
+
+        JobExecution jobExecution = jobLauncherTestUtils.launchJob();
+
+
+        Assert.assertEquals("COMPLETED", jobExecution.getExitStatus().getExitCode());
+    }
+}
+```
 
