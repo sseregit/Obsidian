@@ -109,4 +109,6 @@ StepExecution
 		- `@SpringBatchTest`
 		- `@SpringJUnitConfig(???.class)`
 	- End To End
+		- `@Autowired 
+		- `private JobLauncherTestUtils jobLauncherTestUtils;`
 
