@@ -148,7 +148,7 @@ public class SkipSampleFunctionalTests {
 ```
 - 기본적으로 Test는 롤백이지만 Job은 TransactionManager가 적용되어 그냥 커밋되어버린다.
 - JobRepository가 관리하는것이라.. 따로 옵션이 있긴하지만 매우 번거로움
-- 실제 스프링 문서에서도 지우는 작업을 추가해 놓았다. 
+- 실제 스프링 문서에서도 지우는 작업을 추가해 놓았다.
 ### Job이 복잡해지면 step별로 테스트 하는것이 더 효율적일 수 있다.
 	- `JobExecution jobExecution = jobLauncherTestUtils.launchStep("loadFileStep");`
 ### @StepScope를 사용할경우
