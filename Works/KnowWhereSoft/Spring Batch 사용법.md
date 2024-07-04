@@ -151,32 +151,9 @@ public class SkipSampleFunctionalTests {
 - 실제 스프링 문서에서도 지우는 작업을 추가해 놓았다.
 ### Job이 복잡해지면 step별로 테스트 하는것이 더 효율적일 수 있다.
 	- `JobExecution jobExecution = jobLauncherTestUtils.launchStep("loadFileStep");`
-### @StepScope를 사용할경우
-- 런타임에 step에 설정하는 컴포넌트일 경우 step이나 job 컨텍스트에 나중에 바인딩 될 경우 테스트 하는법
-- @SpringBatchTest를 선언하면 `StepScopeTestExecutionListener`와 `JobScopeTestExecutionListener`를 테스트 execution 리스너로 임포트한다.
-```java
-@SpringJUnitConfig
-@TestExecutionListeners( { DependencyInjectionTestExecutionListener.class,
-    StepScopeTestExecutionListener.class })
-public class StepScopeTestExecutionListenerIntegrationTests {
+### Step별 단위테스트
+`jobLauncherTestUtils.setJob(job2);`
+`JobExecution jobExecution = jobLauncherTestUtils.launchStep("API 호출 및 파일 저장");`
+- job을 넣고 job안에 있는 step의 이름을 찾아서 실행해준다.
 
-    // This component is defined step-scoped, so it cannot be injected unless
-    // a step is active...
-    @Autowired
-    private ItemReader<String> reader;
-
-    public StepExecution getStepExecution() {
-        StepExecution execution = MetaDataInstanceFactory.createStepExecution();
-        execution.getExecutionContext().putString("input.data", "foo,bar,spam");
-        return execution;
-    }
-
-    @Test
-    public void testReader() {
-        // The reader is initialized and bound to the input data
-        assertNotNull(reader.read());
-    }
-
-}
-```
-	
+### 단위 범위 구성 요소 테스트
