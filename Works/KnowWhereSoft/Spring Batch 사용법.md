@@ -157,3 +157,5 @@ public class SkipSampleFunctionalTests {
 - job을 넣고 job안에 있는 step의 이름을 찾아서 실행해준다.
 
 ### 단위 범위 구성 요소 테스트
+- @JobScope나 @StepScope가 적용되어 있는 Job테스트
+- 기존에 있는 방법으로는 실패한다.
