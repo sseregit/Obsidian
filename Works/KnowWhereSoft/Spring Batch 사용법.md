@@ -104,7 +104,9 @@ StepExecution
 	- 이 시나리오는 사용하지 않을거라 여기까지만 작업하도록 한다.
 
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
-- 테스트하기위해 
+- 테스트하기위해 기본적으로 올려야 하는 Bean들을 정리할 필요가 있다.
+	- why
+		- 다올리니깐 scheduler가 걸린애들이 돌아가 버린다.
 
 ### End To End
 ```java
