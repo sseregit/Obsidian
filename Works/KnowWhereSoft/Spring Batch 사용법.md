@@ -162,6 +162,7 @@ public class SkipSampleFunctionalTests {
 	- `@Value("#{jobParameters[파라미터명]}")`
 	- @JobScope
 		- Step선언문에서 사용가능하다
+		- Job 실행시점에 Bean이 생성된다.
 	- @StepScope
 		- Tasklet, ItemReader, ItemWriter, ItemProcessor에서 사용가능
 - 기존에 있는 방법으로는 실패한다.
