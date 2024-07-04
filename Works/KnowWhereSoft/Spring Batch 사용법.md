@@ -132,6 +132,7 @@ public class SkipSampleFunctionalTests {
 	- `JobExecution jobExecution = jobLauncherTestUtils.launchStep("loadFileStep");`
 ### @StepScope를 사용할경우
 - 런타임에 step에 설정하는 컴포넌트일 경우 step이나 job 컨텍스트에 나중에 바인딩 될 경우 테스트 하는법
+- @SpringBatchTest를 선언하면 `StepScopeTestExecutionListener`와 `JobScopeTestExecutionListener`를 테스트 execution 리스너로 임포트한다.
 ```java
 @SpringJUnitConfig
 @TestExecutionListeners( { DependencyInjectionTestExecutionListener.class,
