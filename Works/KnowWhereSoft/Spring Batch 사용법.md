@@ -128,3 +128,4 @@ public class SkipSampleFunctionalTests {
 }
 ```
 
+- Job이 복잡해지면 step별로 테스트 하는것이 더 효율적일 수 있다.
