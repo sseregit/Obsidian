@@ -105,4 +105,7 @@ StepExecution
 
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
 - 해당 잡을 테스트코드 작성하는법
+	- ApplicationContext를 로딩해야 한다.
+		- `@SpringBatchTest`
+		- `@SpringJUnitConfig(???.class)`
 
