@@ -108,4 +108,5 @@ StepExecution
 	- ApplicationContext를 로딩해야 한다.
 		- `@SpringBatchTest`
 		- `@SpringJUnitConfig(???.class)`
+	- End To End
 
