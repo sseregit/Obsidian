@@ -160,4 +160,8 @@ public class SkipSampleFunctionalTests {
 - @JobScope나 @StepScope가 적용되어 있는 Job테스트
 	- @JobScope나 @StepScope는 JobParameter를 사용하기 위해서 선언하는 것이다.
 	- `@Value("#{jobParameters[파라미터명]}")`
+	- @JobScope
+		- Step선언문에서 사용가능하다
+	- @StepScope
+		- Tasklet, ItemReader, ItemWriter, ItemProcessor에서 사용가능
 - 기존에 있는 방법으로는 실패한다.
