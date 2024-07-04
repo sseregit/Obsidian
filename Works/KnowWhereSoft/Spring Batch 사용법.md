@@ -104,8 +104,8 @@ StepExecution
 	- 이 시나리오는 사용하지 않을거라 여기까지만 작업하도록 한다.
 
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
-- 해당 잡을 테스트코드 작성하는법
-End To End
+
+### End To End
 ```java
 @SpringBatchTest
 @SpringJUnitConfig(테스트하고자하는BatchConfiguration.class)
@@ -128,7 +128,33 @@ public class SkipSampleFunctionalTests {
 }
 ```
 
-- Job이 복잡해지면 step별로 테스트 하는것이 더 효율적일 수 있다.
+### Job이 복잡해지면 step별로 테스트 하는것이 더 효율적일 수 있다.
 	- `JobExecution jobExecution = jobLauncherTestUtils.launchStep("loadFileStep");`
-- 
+### @StepScope를 사용할경우
+- 런타임에 step에 설정하는 컴포넌트일 경우 step이나 job 컨텍스트에 나중에 바인딩 될 경우 테스트 하는법
+```java
+@SpringJUnitConfig
+@TestExecutionListeners( { DependencyInjectionTestExecutionListener.class,
+    StepScopeTestExecutionListener.class })
+public class StepScopeTestExecutionListenerIntegrationTests {
+
+    // This component is defined step-scoped, so it cannot be injected unless
+    // a step is active...
+    @Autowired
+    private ItemReader<String> reader;
+
+    public StepExecution getStepExecution() {
+        StepExecution execution = MetaDataInstanceFactory.createStepExecution();
+        execution.getExecutionContext().putString("input.data", "foo,bar,spam");
+        return execution;
+    }
+
+    @Test
+    public void testReader() {
+        // The reader is initialized and bound to the input data
+        assertNotNull(reader.read());
+    }
+
+}
+```
 	
