@@ -106,8 +106,24 @@ StepExecution
 ## [단위 테스트](https://docs.spring.io/spring-batch/reference/testing.html)
 - 테스트하기위해 기본적으로 올려야 하는 Bean들을 정리할 필요가 있다.
 	- why
-		- 다올리니깐 scheduler가 짧은 애들이 돌아가 버린다.
-
+		- 다올리니깐 scheduler가 짧은 애들이 돌아가 버린다.\
+```java
+@TestConfiguration  
+@EnableBatchProcessing  
+static class TestBatchConfiguration {  
+    @Bean  
+    public DataSource dataSource() {  
+        return new DriverManagerDataSource("jdbc:h2:tcp://localhost/~/test", "sa", "");  
+    }  
+  
+    @Bean  
+    public PlatformTransactionManager transactionManager() {  
+        return new DataSourceTransactionManager(dataSource());  
+    }  
+}
+```
+- 이걸 테스트에 추가하면 된다.
+- @SpringJunitConfig에 추가해도 되고 @Import로 해도 된다.
 ### End To End
 ```java
 @SpringBatchTest
@@ -130,7 +146,7 @@ public class SkipSampleFunctionalTests {
     }
 }
 ```
-
+- 기본적으로 Test는 롤백이지만 Job은 TransactionManager가 적용되어 그냥 커밋되어버린다.
 ### Job이 복잡해지면 step별로 테스트 하는것이 더 효율적일 수 있다.
 	- `JobExecution jobExecution = jobLauncherTestUtils.launchStep("loadFileStep");`
 ### @StepScope를 사용할경우
