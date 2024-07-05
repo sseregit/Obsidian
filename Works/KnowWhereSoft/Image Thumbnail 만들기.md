@@ -10,6 +10,7 @@
 			1. postgresql에서 내부 객체들을 구분하기 위해 만든 특별한 타입
 		2. SELECT id, lo_get(cast(data as bigint)) 저장된 값의 변환이 일어나야 한다.
 
+## Base64 암호화 복호화
 ## Thumbnail 라이브러리 찾기
 - [생성 라이브러리 비교](https://rudaks.tistory.com/entry/%EC%8D%B8%EB%84%A4%EC%9D%BCThumbnail-%EC%83%9D%EC%84%B1-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)
 	- Thumbnailator
