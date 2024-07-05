@@ -1,0 +1,5 @@
+## [PostgreSql Text](https://www.postgresql.org/docs/current/datatype-character.html)
+- Base64로 암호화된 이미지파일을 저장할때 TEXT Type의 한계는 없는가?
+	- 공식 문서 기준 성능상의 차이가 없다
+	- 어떤 경우든 저장할 수 있는 가장 긴 문자열은 **1GB**
+- JPA에서 TEXT type을 사용하는 방법
