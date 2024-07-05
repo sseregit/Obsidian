@@ -5,4 +5,6 @@
 - JPA에서 TEXT type을 사용하는 방법
 	1. `@Column(columnDefinition="TEXT")`??
 	2. @Lob을 붙이면 OID(Object Identifier Types)가 들어가게 된다.
-		1. SELECT id, lo_get(cast(data as bigint)) 저장된 값의 변환이 일어나야 한다.
+		1. Oid
+			1. postgresql에서 내부 객체들을 구분하기 위해 만든 특별한 타입
+		2. SELECT id, lo_get(cast(data as bigint)) 저장된 값의 변환이 일어나야 한다.
