@@ -3,3 +3,5 @@
 	- 공식 문서 기준 성능상의 차이가 없다
 	- 어떤 경우든 저장할 수 있는 가장 긴 문자열은 **1GB**
 - JPA에서 TEXT type을 사용하는 방법
+	1. `@Column(columnDefinition="TEXT")`??
+	2. 
