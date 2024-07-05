@@ -15,6 +15,7 @@
 ## Thumbnail 라이브러리 찾기
 - [생성 라이브러리 비교](https://rudaks.tistory.com/entry/%EC%8D%B8%EB%84%A4%EC%9D%BCThumbnail-%EC%83%9D%EC%84%B1-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)
 - [Thumbnailator](https://github.com/coobird/thumbnailator)
+	- 1170ms
 - [Graphics2D](https://docs.oracle.com/javase/8/docs/api/java/awt/Graphics2D.html)
 	- drawImage의 메서드를 사용해서 이미지를 표시하는 방법까지 제공한다.
 
