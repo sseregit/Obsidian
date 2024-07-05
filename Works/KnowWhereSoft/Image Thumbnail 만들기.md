@@ -12,7 +12,6 @@
 
 ## Base64 암호화 복호화
 - `java.util.Base64`
-- 
 ## Thumbnail 라이브러리 찾기
 - [생성 라이브러리 비교](https://rudaks.tistory.com/entry/%EC%8D%B8%EB%84%A4%EC%9D%BCThumbnail-%EC%83%9D%EC%84%B1-%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC)
 - Thumbnailator
