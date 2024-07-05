@@ -4,4 +4,4 @@
 	- 어떤 경우든 저장할 수 있는 가장 긴 문자열은 **1GB**
 - JPA에서 TEXT type을 사용하는 방법
 	1. `@Column(columnDefinition="TEXT")`??
-	2. 
+	2. @Lob을 붙이면 OID(Object Identifier Types)가 들어가게 된다.
