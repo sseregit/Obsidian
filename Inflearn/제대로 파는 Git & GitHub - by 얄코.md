@@ -319,3 +319,9 @@ footer (optional)
 
 `git resotre --staged (파일명)`
 - 변경상태를 스테이지에서 워킹 디렉토리로 돌려놓기
+
+`git restore --source=(헤드 또는 커밋 해시) 파일명`
+- 파일을 특정 커밋의 상태로 되돌리기
+
+## reset했어도 희망은 있다!
+`git reflog`
