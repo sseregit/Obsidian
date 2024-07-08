@@ -316,3 +316,6 @@ footer (optional)
 `git restore (파일명)`
 - 워킹 디렉토리의 특정 파일 복구
 - 파일명 자리에 . : 모든 파일 복구
+
+`git resotre --staged (파일명)`
+- 변경상태를 스테이지에서 워킹 디렉토리로 돌려놓기
