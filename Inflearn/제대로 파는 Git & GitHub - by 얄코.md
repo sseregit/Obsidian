@@ -296,3 +296,5 @@ footer (optional)
 |e, edit|수정을 위해 정지|
 |d, drop|커밋 삭제|
 |s, squash|이전 커밋에 합치기|
+
+## 취소와 되돌리기 보다 깊이 알기
