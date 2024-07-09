@@ -325,3 +325,5 @@ footer (optional)
 
 ## reset했어도 희망은 있다!
 `git reflog`
+
+## 커밋에 태그 달기
