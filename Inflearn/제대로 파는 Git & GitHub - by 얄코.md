@@ -327,3 +327,23 @@ footer (optional)
 `git reflog`
 
 ## 커밋에 태그 달기
+
+### Git의 Tag
+- 특정 시점을 키워드로 저장하고 싶을 때
+- 커밋에 버전 정보를 붙이고자 할 때
+[Sementic Versioning](https://semver.org/lang/ko/)
+
+|태그 종류|설명|
+|:--|:--|
+|lightweight|특정 커밋을 가리키는 용도|
+|annotated|작성자 정보와 날짜, 메시지, GPG 서명 포함 가능|
+`git tag v2.0.0`
+	마지막 커밋에 태그 달기(lightweight)
+
+`git show (태그명)`
+	태그명을 확인하거나 없으면 모든 태그가 나온다.
+
+`git tag -a (태그명)`
+	annotated로 작성
+`git tag (태그명) -m 메시지`
+	-m은 -a를 사용한다는 의미도 포함된다.
