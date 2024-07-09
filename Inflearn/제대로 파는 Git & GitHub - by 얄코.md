@@ -359,3 +359,14 @@ footer (optional)
 	특정 태그 원격에서 삭제
 `git push --tags`
 	로컬의 모든 태그 원격에 올리기
+
+## Fastforward vs 3-way merge
+
+### Fastforward
+- 병합할때 해당 브랜치를 그대로 병합한 커밋으로 이동시킨다.
+- 기록이 남지 않는 단점이 있다.
+- `git merge --no-ff (병합할 브랜치명)`
+### 3-way merge
+- 각각의 브랜치가 커밋을 가지고 있는 상황에서 사용된다.
+
+## 다른 브랜치에서 원하는 커밋만 따오기
