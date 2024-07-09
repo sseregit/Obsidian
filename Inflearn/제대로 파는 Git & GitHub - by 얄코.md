@@ -341,9 +341,15 @@ footer (optional)
 	마지막 커밋에 태그 달기(lightweight)
 
 `git show (태그명)`
-	태그명을 확인하거나 없으면 모든 태그가 나온다.
+	태그명을 확인
 
 `git tag -a (태그명)`
 	annotated로 작성
 `git tag (태그명) -m 메시지`
 	-m은 -a를 사용한다는 의미도 포함된다.
+`git tag -l 'v1.*'`
+	원하는 패턴으로 필터링 하기
+`git checkout v1.2.1`
+	원하는 버전으로 체크아웃
+
+## 원격의 태그 관리
