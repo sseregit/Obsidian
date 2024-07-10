@@ -278,7 +278,17 @@ Sealed Class, Sealed Interface
 ### 코틀린에서의 람다
 	코틀린에서는 함수가 그 자체로 값이 될 수 있다.
 	변수 할당과 파라미터로 넘기는것이 가능하다.
-
+```kotlin
+    // 만드는법
+    // 만드는법
+    val isApple: (Fruit) -> Boolean = fun(fruit: Fruit): Boolean {
+        return fruit.name == "사과"
+    }
+    val isApple2: (Fruit) -> Boolean = { fruit: Fruit -> fruit.name == "사과" }
+    // 호출하는법
+    isApple(fruits[0])
+    isApple.invoke(fruits[0])
+```
 ### Closure
 
 ### try-with-resources
