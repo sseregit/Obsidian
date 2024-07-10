@@ -270,3 +270,12 @@ Sealed Class, Sealed Interface
 
 ### 지역함수
 	함수 안에 함수를 선언할수 있다.
+
+## 코틀린에서 람다를 다루는 방법
+### Java에서 람다를 다루기 위한 노력
+
+### 코틀린에서의 람다
+
+### Closure
+
+### try-with-resources
