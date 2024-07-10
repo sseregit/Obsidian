@@ -290,5 +290,7 @@ Sealed Class, Sealed Interface
     isApple.invoke(fruits[0])
 ```
 ### Closure
+	코틀린에서는 람다가 시작하는 지점에 참조하고 있는 변수들을 모두 포획하여 그 정보를 가지고 있다.
+	실행시점에 쓰고 있는 변수들을 모두 포획한 데이터 구조를 Closure라고 부른다.
 
 ### try-with-resources
