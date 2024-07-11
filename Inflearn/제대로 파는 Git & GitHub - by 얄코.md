@@ -402,3 +402,7 @@ footer (optional)
 	최근 n개 커밋만 보기
 
 ## [차이 살펴보기](https://www.yalco.kr/@git-github-dive/11-2/)
+`git diff`
+
+## [누가 코딩했는지 알아내기](https://www.yalco.kr/@git-github-dive/11-3/)
+`git blame`
