@@ -396,3 +396,7 @@ footer (optional)
 |feature|기능 개발|
 |hotfix|긴급한 버그 수정|
 ## log 더 자세히 알아보기
+`git log -p`
+	각 커밋마다의 변경사항 함께보기
+`git log -(갯수)`
+	최근 n개 커밋만 보기
