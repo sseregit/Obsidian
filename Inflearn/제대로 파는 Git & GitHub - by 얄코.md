@@ -400,3 +400,5 @@ footer (optional)
 	각 커밋마다의 변경사항 함께보기
 `git log -(갯수)`
 	최근 n개 커밋만 보기
+
+## [차이 살펴보기](https://www.yalco.kr/@git-github-dive/11-2/)
