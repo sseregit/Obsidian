@@ -395,7 +395,7 @@ footer (optional)
 |release|출시/배포 전 테스트 진행(QA)|
 |feature|기능 개발|
 |hotfix|긴급한 버그 수정|
-## log 더 자세히 알아보기
+## [log 더 자세히 알아보기](https://yalco.kr/@git-github-dive/11-1/)
 `git log -p`
 	각 커밋마다의 변경사항 함께보기
 `git log -(갯수)`
