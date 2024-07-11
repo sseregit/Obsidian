@@ -379,3 +379,19 @@ footer (optional)
 
 ## 다른 가지의 마디들 묶어서 가져오기
 `git merge --squash (대상 브랜치)`
+	변경사항들 스테이지 되어 있다
+
+## 협업을 위한 브랜치 활용법
+### Gitflow
+	협업을 위한 브랜칭 전략
+[참고](https://nvie.com/posts/a-successful-git-branching-model/)
+
+### 사용되는 브랜치들
+
+|브랜치|용도|
+|:--|:--|
+|main|제품 출시/배포|
+|develop|다음 출시/배포를 위한 개발 진행|
+|release|출시/배포 전 테스트 진행(QA)|
+|feature|기능 개발|
+|hotfix|긴급한 버그 수정|
