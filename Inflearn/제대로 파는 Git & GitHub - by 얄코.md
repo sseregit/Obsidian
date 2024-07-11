@@ -378,3 +378,4 @@ footer (optional)
 `git rebase --onto (도착 브랜치) (출발 브랜치) (이동할 브랜치)`
 
 ## 다른 가지의 마디들 묶어서 가져오기
+`git merge --squash (대상 브랜치)`
