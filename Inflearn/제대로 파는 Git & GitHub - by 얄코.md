@@ -406,3 +406,5 @@ footer (optional)
 
 ## [누가 코딩했는지 알아내기](https://www.yalco.kr/@git-github-dive/11-3/)
 `git blame`
+
+## [오류가 발생한 시점 찾아내기](https://www.yalco.kr/@git-github-dive/11-4/)
