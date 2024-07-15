@@ -304,3 +304,13 @@ Sealed Class, Sealed Interface
 ### List를 Map으로
 
 ### 중첩된 컬렉션 처리
+
+## 코틀린의 이모저모
+
+### Type Alias와 as import
+
+### 구조분해와 componentN 함수
+
+### Jump와 Label
+
+### TakeIf와 TakeUnless
