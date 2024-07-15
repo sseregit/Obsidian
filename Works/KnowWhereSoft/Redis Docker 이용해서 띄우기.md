@@ -10,3 +10,5 @@ homebrew를 이용한 docker 설치
 
 [docker hub의 redis](https://hub.docker.com/_/redis)
 
+redis 기본포트 6379 
+docker의 포트는 (호스트 포트번호):(컨테이너 포트번호) 호스트 포트번호에 컨테이너 포트번호를 바인딩
