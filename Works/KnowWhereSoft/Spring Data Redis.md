@@ -47,3 +47,6 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 
 ## Redis Repositories
 
+[Usage](https://docs.spring.io/spring-data/redis/reference/redis/redis-repositories/usage.html)
+
+도메인 엔티티를 구현하는 방법
