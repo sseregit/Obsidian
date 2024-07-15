@@ -1,6 +1,7 @@
 
 [[Redis Docker 이용해서 띄우기]]
 
+[Develop with Redis](https://redis.io/docs/latest/develop/)
 [Spring Data Redis 공식](https://docs.spring.io/spring-data/redis/reference/redis/getting-started.html)
 [Spring boot에서 Redis로 캐싱하기 (w. JPA)](https://velog.io/@juhyeon1114/Spring-boot%EC%97%90%EC%84%9C-Redis%EB%A1%9C-%EC%BA%90%EC%8B%B1%ED%95%98%EA%B8%B0-w.-JPA)
 
@@ -40,3 +41,5 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 - 트랜잭션 또는 트랜잭션 템플릿을 사용할 때 RedisTemplate이 Redis 트랜잭션을 사용하도록 하려면 명시적으로 setEnableTransactionSupport(True)를 설정해야 한다.
 - Redis 트랜잭션은 배치 지향적이다.
 - 트랜잭션중 실행된 명령은 큐에 대기하고 트랜잭션을 커밋할 때만 적용된다.
+
+[Pipelining](https://docs.spring.io/spring-data/redis/reference/redis/pipelining.html)
