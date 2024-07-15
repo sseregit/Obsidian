@@ -45,3 +45,7 @@ Application and OS Images
 		EC2에서 빌리는 서버의 하나
 	유형
 		컴퓨터 사양
+
+키페어(로그인)
+	키페어
+		EC2에 접근할 때 사용하는 Key
