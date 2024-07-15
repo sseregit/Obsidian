@@ -62,6 +62,13 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 
 ```
 대부분의 예제코드들이 이렇게 생성자만 호출할 수 있는 이유는 localhost에 6379포트 설정이 default이기 때문이다.
+```yaml
+spring:
+    redis:
+        host: 127.0.0.1
+        port: 6379
+```
+자동으로 등록하는 방법도 있다.
 
 저장한 값은 Hash로 저장한다!!
 redis-cli - Hash의 기본명령어
