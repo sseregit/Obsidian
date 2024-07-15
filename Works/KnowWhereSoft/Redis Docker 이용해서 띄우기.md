@@ -12,3 +12,16 @@ homebrew를 이용한 docker 설치
 
 redis 기본포트 6379 
 docker의 포트는 (호스트 포트번호):(컨테이너 포트번호) 호스트 포트번호에 컨테이너 포트번호를 바인딩
+
+`docker run --rm -p 6379:6379 redis`
+
+run
+- 사용할 이미지가 저장되어 있는지 확인하고 없다면 다운로드(pull) 한 후 컨테이너를 생성(create)하고 시작(start)한다.
+--rm: 프로세스 종료시 컨테이너 자동 제거
+-p: 호스트와 컨테이너의 포트를 연결
+
+실행하고나서
+[docker로 설치한 redis 접근](https://velog.io/@titu/Redis-docker%EB%A1%9C-%EC%84%A4%EC%B9%98%ED%95%9C-redis-%EC%A0%91%EA%B7%BC)
+
+exec
+- run 명령어와 달리 실행중인 도커 컨테이너에 접속할 때 사용하며 컨테이너 안에 ssh server등을 설치하지 않고 exec 명령어로 접속한다.
