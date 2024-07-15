@@ -30,3 +30,5 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 [Redis Cache](https://docs.spring.io/spring-data/redis/reference/redis/redis-cache.html)
 
 [Hash Mapping](https://docs.spring.io/spring-data/redis/reference/redis/hash-mappers.html)
+
+[Pub/Sub Messaging](https://docs.spring.io/spring-data/redis/reference/redis/pubsub.html)
