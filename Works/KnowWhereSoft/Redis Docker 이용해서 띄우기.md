@@ -29,8 +29,11 @@ run
 [docker로 설치한 redis 접근](https://velog.io/@titu/Redis-docker%EB%A1%9C-%EC%84%A4%EC%B9%98%ED%95%9C-redis-%EC%A0%91%EA%B7%BC)
 
 `docker exec -it (CONTAINER ID) redis-cli`
+`docker exec -it (CONTAINER ID) redis-cli --raw`
 exec
 - run 명령어와 달리 실행중인 도커 컨테이너에 접속할 때 사용하며 컨테이너 안에 ssh server등을 설치하지 않고 exec 명령어로 접속한다.
+--raw
+- redis의 값들이 깨지지 않는다.
 
 [Redis 설치(docker)와 redis-cli 사용법](https://hirlawldo.tistory.com/186)
 
