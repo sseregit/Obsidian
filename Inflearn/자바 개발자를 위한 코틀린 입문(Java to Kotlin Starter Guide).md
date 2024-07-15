@@ -326,3 +326,12 @@ run {
 continue
 	return@forEach를 사용하면 된다.
 ### TakeIf와 TakeUnless
+```kotlin
+	fun getNumberOrNullV2(): Int? {
+		return number.takeIf { it > 0}
+	}
+```
+taskIf
+	 주어진 조건을 만족하면 그 값이, 그렇지 않으면 null이 반환된다.
+taskUnless
+	주어진 조건을 만족하지 않으면 그 값이 그렇지 않으면 null이 반환된다.
