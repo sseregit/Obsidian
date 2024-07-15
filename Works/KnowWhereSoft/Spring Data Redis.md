@@ -34,3 +34,5 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 [Pub/Sub Messaging](https://docs.spring.io/spring-data/redis/reference/redis/pubsub.html)
 
 [Redis Stream](https://docs.spring.io/spring-data/redis/reference/redis/redis-streams.html)
+
+[Redis Transactions](https://docs.spring.io/spring-data/redis/reference/redis/transactions.html)
