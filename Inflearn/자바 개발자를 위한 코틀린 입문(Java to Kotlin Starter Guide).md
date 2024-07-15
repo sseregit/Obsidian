@@ -312,5 +312,17 @@ Sealed Class, Sealed Interface
 ### 구조분해와 componentN 함수
 
 ### Jump와 Label
-
+forEach에서 break를 하는 방법
+```kotlin
+run {
+	List.forEach {
+		number -> 
+		if (number == 2) {
+			return@run
+		}
+	}
+}
+```
+continue
+	return@forEach를 사용하면 된다.
 ### TakeIf와 TakeUnless
