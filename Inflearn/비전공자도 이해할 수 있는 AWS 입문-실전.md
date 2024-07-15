@@ -56,3 +56,9 @@ Application and OS Images
 
 보안그룹(Security Group)
 	AWS 클라우드에서의 네트워크 보안을 의미한다.
+	보안 규칙
+		인바운드 트래픽
+			외부에서 EC2 인스턴스로 보내는 트래픽
+		아웃바운드 트래픽
+			EC2 인스턴스에서 외부로 나가는 트래픽
+	
