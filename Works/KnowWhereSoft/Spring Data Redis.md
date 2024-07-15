@@ -54,6 +54,7 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 
 ## 코딩해보기
 [spring-data-redis-tutorial](https://www.baeldung.com/spring-data-redis-tutorial)
+[Spring Data Redis Repository 미숙하게 사용해 발생한 장애 극복기](https://hyperconnect.github.io/2022/12/12/fix-increasing-memory-usage.html)
 ```java
     @Bean
     public RedisConnectionFactory connectionFactory() {
@@ -74,3 +75,5 @@ spring:
 redis-cli - Hash의 기본명령어
 
 이미 존재하는 키로 save를 호출할 경우에는 해당 키가 의 value들이 update 된다.
+
+@Transactional이 필요한가????? 필요하다면 왜...?...사용법
