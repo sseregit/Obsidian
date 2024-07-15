@@ -61,4 +61,5 @@ Application and OS Images
 			외부에서 EC2 인스턴스로 보내는 트래픽
 		아웃바운드 트래픽
 			EC2 인스턴스에서 외부로 나가는 트래픽
-	
+	ssh
+		EC2 원격 접속을 위한
