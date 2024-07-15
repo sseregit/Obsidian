@@ -49,3 +49,10 @@ Application and OS Images
 키페어(로그인)
 	키페어
 		EC2에 접근할 때 사용하는 Key
+
+## EC2 셋팅하기 - 보안그룹 설정
+
+네트워크 설정
+
+보안그룹(Security Group)
+	AWS 클라우드에서의 네트워크 보안을 의미한다.
