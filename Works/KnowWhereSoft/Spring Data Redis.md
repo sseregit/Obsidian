@@ -72,3 +72,5 @@ spring:
 
 저장한 값은 Hash로 저장한다!!
 redis-cli - Hash의 기본명령어
+
+이미 존재하는 키로 save를 호출할 경우에는 해당 키가 의 value들이 update 된다.
