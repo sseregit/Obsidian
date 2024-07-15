@@ -37,4 +37,7 @@ exec
 `docker stop (container id)`
 - -d 옵션을 사용할시 커맨드를 이용해 중지 해야한다.
 
+`docker inspect (image name)`
+- image name은 정확하지 않을 수 있다.
+
 **보안 관련 문제는 Spring Data Redis를 익히고 찾는다**
