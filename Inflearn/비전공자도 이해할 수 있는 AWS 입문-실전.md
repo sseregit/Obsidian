@@ -63,3 +63,11 @@ Application and OS Images
 			EC2 인스턴스에서 외부로 나가는 트래픽
 	ssh
 		EC2 원격 접속을 위한
+
+## IP와 Port 개념
+
+IP
+	네트워크 상에서 특정 컴퓨터를 가리키는 주소
+
+Port
+	한 컴퓨터 내에서 실행되고 있는 특정 프로그램의 주소
