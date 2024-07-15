@@ -12,6 +12,7 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 - 하지만 Spring Data Redis의 LettuceConnection 클래스 자체는 그렇지 않다.
 여러 스레드에서 RedisConnection의 인스턴스를 공유해서는 안된다.
 
+## Redis
 
 [Connection Modes](https://docs.spring.io/spring-data/redis/reference/redis/connection-modes.html)
 ## Redis의 HA(고가용성)을 구성하는 방법
@@ -43,3 +44,6 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 - 트랜잭션중 실행된 명령은 큐에 대기하고 트랜잭션을 커밋할 때만 적용된다.
 
 [Pipelining](https://docs.spring.io/spring-data/redis/reference/redis/pipelining.html)
+
+## Redis Repositories
+
