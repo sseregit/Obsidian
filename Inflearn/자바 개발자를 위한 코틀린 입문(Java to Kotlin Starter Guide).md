@@ -294,3 +294,5 @@ Sealed Class, Sealed Interface
 	실행시점에 쓰고 있는 변수들을 모두 포획한 데이터 구조를 Closure라고 부른다.
 
 ### try-with-resources
+
+## 코틀린에서 컬렉션을 함수형으로 다루는 방법
