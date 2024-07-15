@@ -24,3 +24,5 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 - 저장 잧리를 여러개 동시에 사용하고 마치 하나의 저장소처럼 사용하는 방법
 
 [RestTemplate](https://docs.spring.io/spring-data/redis/reference/redis/template.html)
+
+템플릿에서 쓰거나 읽는 모든 객체는 Java를 통해 직렬화되고 역직렬화된다.
