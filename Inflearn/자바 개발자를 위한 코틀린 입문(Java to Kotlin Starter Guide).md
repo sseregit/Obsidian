@@ -296,3 +296,11 @@ Sealed Class, Sealed Interface
 ### try-with-resources
 
 ## 코틀린에서 컬렉션을 함수형으로 다루는 방법
+
+### 필터와 맵
+
+### 다양한 컬렉션 처리 기능
+
+### List를 Map으로
+
+### 중첩된 컬렉션 처리
