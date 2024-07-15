@@ -34,4 +34,7 @@ exec
 
 [Redis 설치(docker)와 redis-cli 사용법](https://hirlawldo.tistory.com/186)
 
+`docker stop (container id)`
+- -d 옵션을 사용할시 커맨드를 이용해 중지 해야한다.
+
 **보안 관련 문제는 Spring Data Redis를 익히고 찾는다**
