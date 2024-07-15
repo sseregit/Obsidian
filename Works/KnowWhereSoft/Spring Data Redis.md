@@ -36,3 +36,7 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 [Redis Stream](https://docs.spring.io/spring-data/redis/reference/redis/redis-streams.html)
 
 [Redis Transactions](https://docs.spring.io/spring-data/redis/reference/redis/transactions.html)
+- 기본적으로 RestTemplated은 관리되는 Spring 트랜잭션에 참여하지 않는다.
+- 트랜잭션 또는 트랜잭션 템플릿을 사용할 때 RedisTemplate이 Redis 트랜잭션을 사용하도록 하려면 명시적으로 setEnableTransactionSupport(True)를 설정해야 한다.
+- Redis 트랜잭션은 배치 지향적이다.
+- 트랜잭션중 실행된 명령은 큐에 대기하고 트랜잭션을 커밋할 때만 적용된다.
