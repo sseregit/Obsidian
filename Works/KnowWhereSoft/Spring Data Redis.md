@@ -103,3 +103,4 @@ redis-cli - Hash의 기본명령어
 [5분 안에 구축하는 Redis-Sentinel](https://co-de.tistory.com/15)
 
 master-slave와 sentinel이 1:1로 각각 띄워져 있어야한다.
+`redis-sentinel`은 구성파일이 필수이다.
