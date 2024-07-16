@@ -49,5 +49,11 @@ redis-cli monitor 접근 방법
 - image name은 정확하지 않을 수 있다.
 
 docker container에서 conf 관련 파일 찾는법
+```
+docker run --rm -p 26379:26379 -v /Users/yeonsigjang/Documents/26379.conf:/usr/local/etc/redis -d redis
+docker run --rm -p 26380:26380 -v /Users/yeonsigjang/Documents/26380.conf:/usr/local/etc/redis -d redis
+docker run --rm -p 26381:26381 -v /Users/yeonsigjang/Documents/26381.conf:/usr/local/etc/redis -d redis
+```
+찾는 방법이라기 보단 바꿔치기 하는 느낌
 
 **보안 관련 문제는 Spring Data Redis를 익히고 찾는다**
