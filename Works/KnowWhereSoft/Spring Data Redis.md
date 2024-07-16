@@ -95,3 +95,5 @@ redis-cli - Hash의 기본명령어
 - @Indexed 를 조회하는 findByName()같은 메서드를 만들면
 	- 키:필드:입력값 으로 @Id를찾고
 	- 찾은 Id로 다시 조회를해서 값을 가져온다.
+
+개발환경에 Redis를 설치하기 위해 Sentinel방법을 찾는다.
