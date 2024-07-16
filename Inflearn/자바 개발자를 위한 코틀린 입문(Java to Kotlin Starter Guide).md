@@ -349,6 +349,16 @@ let,    run   람다의 결과
 also,   apply 객체 그 자체
 it 사용 th사용 
 
+with(파라미터, 람다)
+	this를 사용해 접근하고, this는 생략 가능하다.
+
 ### 언제 어떤 scope function을 사용해야 할까?!
+let
+	하나 이상의 함수를 call chain 결과로 호출 할 때
+	non-null 값에 대해서만 code block을 실행시킬 때
+	일회성으로 제한된 영역에 지역 변수를 만들 때
+
+run
+	객체를 만들어 DB에 바로 저장하고, 그 인스턴스를 활용할 때
 
 ### scope function과 가독성
