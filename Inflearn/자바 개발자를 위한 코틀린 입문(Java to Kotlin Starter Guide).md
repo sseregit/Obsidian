@@ -328,7 +328,7 @@ continue
 ### TakeIf와 TakeUnless
 ```kotlin
 	fun getNumberOrNullV2(): Int? {
-		return number.takeIf { it > 0}
+		return number.takeIf { it > 0 }
 	}
 ```
 taskIf
@@ -337,3 +337,14 @@ taskUnless
 	주어진 조건을 만족하지 않으면 그 값이 그렇지 않으면 null이 반환된다.
 
 ## 코틀린의 scope function
+
+### scope function이란 무엇인가?!
+
+scope function
+	일시적인 영역을 형성하는 함수
+
+### scope function의 분류
+
+### 언제 어떤 scope function을 사용해야 할까?!
+
+### scope function과 가독성
