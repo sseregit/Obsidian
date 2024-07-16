@@ -37,10 +37,23 @@ exec
 
 [Redis 설치(docker)와 redis-cli 사용법](https://hirlawldo.tistory.com/186)
 
+redis-cli monitor 접근 방법
+`docker exec -it (container id) redis-cli monitor`
+-it
+- -i와 -t를 동시에 사용한 것으로 터미널 입력을 위한 옵션
+
 `docker stop (container id)`
 - -d 옵션을 사용할시 커맨드를 이용해 중지 해야한다.
 
 `docker inspect (image name)`
 - image name은 정확하지 않을 수 있다.
+
+docker container에서 conf 관련 파일 찾는법
+```
+docker run --rm -p 26379:26379 -v /Users/yeonsigjang/Documents/26379.conf:/usr/local/etc/redis -d redis
+docker run --rm -p 26380:26380 -v /Users/yeonsigjang/Documents/26380.conf:/usr/local/etc/redis -d redis
+docker run --rm -p 26381:26381 -v /Users/yeonsigjang/Documents/26381.conf:/usr/local/etc/redis -d redis
+```
+찾는 방법이라기 보단 바꿔치기 하는 느낌
 
 **보안 관련 문제는 Spring Data Redis를 익히고 찾는다**
