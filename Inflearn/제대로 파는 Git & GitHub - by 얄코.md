@@ -410,3 +410,5 @@ footer (optional)
 ## [오류가 발생한 시점 찾아내기](https://www.yalco.kr/@git-github-dive/11-4/)
 `git bisect`
 	이진 탐색 알고리즘으로 문제의 발생 시점을 찾아냅니다.
+
+## Git Hooks
