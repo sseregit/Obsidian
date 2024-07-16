@@ -100,3 +100,4 @@ redis-cli - Hash의 기본명령어
 [Failover Using Sentinel for Redis](https://junhyunny.github.io/spring-boot/redis/failover-using-sentinel-for-redis/)
 [Spring Data Redis Sentinel](https://docs.spring.io/spring-data/redis/reference/redis/connection-modes.html#redis:write-to-master-read-from-replica)
 [Redis Document Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/)
+[5분 안에 구축하는 Redis-Sentinel](https://co-de.tistory.com/15)
