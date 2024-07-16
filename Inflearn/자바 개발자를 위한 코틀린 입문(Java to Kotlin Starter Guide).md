@@ -342,8 +342,12 @@ taskUnless
 
 scope function
 	일시적인 영역을 형성하는 함수
-
+	람다를 사용해 일시적인 영역을 만들고 코드를 더 간결하게 만들거나, methoe chaining에 활용하는 함수를 scope function이라 한다.
 ### scope function의 분류
+
+let,    run   람다의 결과
+also,   apply 객체 그 자체
+it 사용 th사용 
 
 ### 언제 어떤 scope function을 사용해야 할까?!
 
