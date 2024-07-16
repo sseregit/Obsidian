@@ -48,4 +48,6 @@ redis-cli monitor 접근 방법
 `docker inspect (image name)`
 - image name은 정확하지 않을 수 있다.
 
+docker container에서 conf 관련 파일 찾는법
+
 **보안 관련 문제는 Spring Data Redis를 익히고 찾는다**
