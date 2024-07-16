@@ -98,3 +98,4 @@ redis-cli - Hash의 기본명령어
 
 개발환경에 Redis를 설치하기 위해 Sentinel방법을 찾는다.
 [Failover Using Sentinel for Redis](https://junhyunny.github.io/spring-boot/redis/failover-using-sentinel-for-redis/)
+[Spring Data Redis Sentinel](https://docs.spring.io/spring-data/redis/reference/redis/connection-modes.html#redis:write-to-master-read-from-replica)
