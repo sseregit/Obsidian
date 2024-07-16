@@ -97,3 +97,4 @@ redis-cli - Hash의 기본명령어
 	- 찾은 Id로 다시 조회를해서 값을 가져온다.
 
 개발환경에 Redis를 설치하기 위해 Sentinel방법을 찾는다.
+[Failover Using Sentinel for Redis](https://junhyunny.github.io/spring-boot/redis/failover-using-sentinel-for-redis/)
