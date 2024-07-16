@@ -56,6 +56,8 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 ## 코딩해보기
 [spring-data-redis-tutorial](https://www.baeldung.com/spring-data-redis-tutorial)
 [Spring Data Redis Repository 미숙하게 사용해 발생한 장애 극복기](https://hyperconnect.github.io/2022/12/12/fix-increasing-memory-usage.html)
+[Redis 소개](https://inpa.tistory.com/entry/REDIS-%F0%9F%93%9A-%EA%B0%9C%EB%85%90-%EC%86%8C%EA%B0%9C-%EC%82%AC%EC%9A%A9%EC%B2%98-%EC%BA%90%EC%8B%9C-%EC%84%B8%EC%85%98-%ED%95%9C%EB%88%88%EC%97%90-%EC%8F%99-%EC%A0%95%EB%A6%AC?category=918728#redis-%ED%99%9C%EC%9A%A9%ED%95%98%EA%B8%B0---%EC%BA%90%EC%8B%9Ccache)
+[Redis Cache 전략](https://inpa.tistory.com/entry/REDIS-%F0%9F%93%9A-%EC%BA%90%EC%8B%9CCache-%EC%84%A4%EA%B3%84-%EC%A0%84%EB%9E%B5-%EC%A7%80%EC%B9%A8-%EC%B4%9D%EC%A0%95%EB%A6%AC)
 
 ## 목표
 1. Spring-data-Redis 사용법 익히기
