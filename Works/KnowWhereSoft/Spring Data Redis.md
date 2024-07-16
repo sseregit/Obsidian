@@ -77,3 +77,5 @@ redis-cli - Hash의 기본명령어
 이미 존재하는 키로 save를 호출할 경우에는 해당 키가 의 value들이 update 된다.
 
 @Transactional이 필요한가????? 필요하다면 왜...?...사용법
+
+기본적으로 Redis 문자열은 최대 512MB가 될 수 있다.
