@@ -365,4 +365,7 @@ run
 apply
 	객체 그자체가 반환된다.
 
+also
+	객체 그자체가 반환된다.
+
 ### scope function과 가독성
