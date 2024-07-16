@@ -37,6 +37,11 @@ exec
 
 [Redis 설치(docker)와 redis-cli 사용법](https://hirlawldo.tistory.com/186)
 
+redis-cli monitor 접근 방법
+`docker exec -it (container id) redis-cli monitor`
+-it
+- -i와 -t를 동시에 사용한 것으로 터미널 입력을 위한 옵션
+
 `docker stop (container id)`
 - -d 옵션을 사용할시 커맨드를 이용해 중지 해야한다.
 

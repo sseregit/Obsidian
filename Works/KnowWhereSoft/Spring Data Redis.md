@@ -56,6 +56,13 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 ## 코딩해보기
 [spring-data-redis-tutorial](https://www.baeldung.com/spring-data-redis-tutorial)
 [Spring Data Redis Repository 미숙하게 사용해 발생한 장애 극복기](https://hyperconnect.github.io/2022/12/12/fix-increasing-memory-usage.html)
+
+## 목표
+1. Spring-data-Redis 사용법 익히기
+2. Redis-Sentinel 설정
+	1. docker 사용방법
+	2. local 사용방법
+
 ```java
     @Bean
     public RedisConnectionFactory connectionFactory() {
