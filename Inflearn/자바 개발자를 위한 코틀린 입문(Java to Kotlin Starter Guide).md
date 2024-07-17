@@ -326,3 +326,49 @@ run {
 continue
 	return@forEach를 사용하면 된다.
 ### TakeIf와 TakeUnless
+```kotlin
+	fun getNumberOrNullV2(): Int? {
+		return number.takeIf { it > 0 }
+	}
+```
+taskIf
+	 주어진 조건을 만족하면 그 값이, 그렇지 않으면 null이 반환된다.
+taskUnless
+	주어진 조건을 만족하지 않으면 그 값이 그렇지 않으면 null이 반환된다.
+
+## 코틀린의 scope function
+
+### scope function이란 무엇인가?!
+
+scope function
+	일시적인 영역을 형성하는 함수
+	람다를 사용해 일시적인 영역을 만들고 코드를 더 간결하게 만들거나, methoe chaining에 활용하는 함수를 scope function이라 한다.
+### scope function의 분류
+
+let,    run   람다의 결과
+also,   apply 객체 그 자체
+it 사용 th사용 
+
+with(파라미터, 람다)
+	this를 사용해 접근하고, this는 생략 가능하다.
+
+### 언제 어떤 scope function을 사용해야 할까?!
+let
+	하나 이상의 함수를 call chain 결과로 호출 할 때
+	non-null 값에 대해서만 code block을 실행시킬 때
+	일회성으로 제한된 영역에 지역 변수를 만들 때
+
+run
+	객체 초기화와 반환 값의 계산을 동시에 해야 할 때
+	객체를 만들어 DB에 바로 저장하고, 그 인스턴스를 활용할 때
+
+apply
+	객체 그자체가 반환된다.
+
+also
+	객체 그자체가 반환된다.
+
+with
+	특정 객체를 다른 객체로 변환해야 하는데, 모듈 간의 의존성에 의해 정적 팩토리 혹은 toClass함수를 만들기 어려울 때
+
+### scope function과 가독성
