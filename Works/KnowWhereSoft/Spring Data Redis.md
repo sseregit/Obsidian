@@ -102,22 +102,23 @@ redis-cli - Hash의 기본명령어
 [Redis Document Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/)
 [5분 안에 구축하는 Redis-Sentinel](https://co-de.tistory.com/15)
 [Redis configuration](https://redis.io/docs/latest/operate/oss_and_stack/management/config/)
+
 master-slave와 sentinel이 1:1로 각각 띄워져 있어야한다.
 `redis-sentinel`은 구성파일이 필수이다.
 
 redis-server를 먼저 띄운다
-```
+```conf
 redis-server /path/to/redis.conf
 ```
 
 redis-sentinel을 띄운다
-```
+```conf
 redis-sentinel /path/to/redis-sentinel.conf
 ```
 순서가 중요함
 
 연결을 확인하는 방법
-```
+```conf
 redis-cli -p (포트)
 
 접속후
