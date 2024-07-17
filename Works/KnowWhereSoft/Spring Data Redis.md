@@ -156,4 +156,9 @@ redis-cli monitor는 master slave가 변화할때 다 끊기는데
 
 redis-cli는 살아있고 
 
-다시 살아 났을때도 문제없이 데이터의 정합성이 맞는다.
+DEBUG 경우
+다시 살아 났을때도 문제없이 redis server의 데이터의 정합성이 맞는다.
+
+Shutdown 경우
+다시 살아나고 나서 바로 redis server의 정합성이 맞춰진다
+
