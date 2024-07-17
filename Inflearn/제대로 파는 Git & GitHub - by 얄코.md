@@ -431,4 +431,8 @@ Git상의 이벤트마다 자동으로 실행될 스크립트를 지정합니다
 `git submodule add (submodule의 github 레포지토리 주소) (하위폴더명, 없을 시 생략)`
 
 submodule이 생기지만 가지고 있는 곳에서 수정을 하던 실제로 프로젝트 내에서 수정을 하던 해당 submodule에서 commit push를 해야 main project에도 commit하고 push해 적용할 수 있다.
-	
+
+git clone 으로 프로젝트를 받아오면 submodule은 존재하지만 안에 내용이 없다
+
+`git submodule init`을 하고
+`git submodule update`를 하면 submodule도 클론이 된다
