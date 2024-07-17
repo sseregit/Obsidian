@@ -415,3 +415,9 @@ footer (optional)
 
 ### Git Hooks
 Git상의 이벤트마다 자동으로 실행될 스크립트를 지정합니다.
+
+#### .git/hooks
+- pre-commit
+	- 커밋이 이뤄지기 전
+- pre-push
+	- 푸시가 이뤄지기 전
