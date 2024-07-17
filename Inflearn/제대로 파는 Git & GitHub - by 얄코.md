@@ -412,3 +412,6 @@ footer (optional)
 	이진 탐색 알고리즘으로 문제의 발생 시점을 찾아냅니다.
 
 ## Git Hooks
+
+### Git Hooks
+Git상의 이벤트마다 자동으로 실행될 스크립트를 지정합니다.
