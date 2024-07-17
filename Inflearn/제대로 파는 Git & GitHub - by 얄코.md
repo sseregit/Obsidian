@@ -429,4 +429,6 @@ Git상의 이벤트마다 자동으로 실행될 스크립트를 지정합니다
 여러 프로젝트에 사용되는 공통모듈일 때 유용하다
 
 `git submodule add (submodule의 github 레포지토리 주소) (하위폴더명, 없을 시 생략)`
+
+submodule이 생기지만 가지고 있는 곳에서 수정을 하던 실제로 프로젝트 내에서 수정을 하던 해당 submodule에서 commit push를 해야 main project에도 commit하고 push해 적용할 수 있다.
 	
