@@ -127,12 +127,12 @@ sentinel master (마스터명)
 
 으로 확인한다.
 
-SENTINEL replicas mymaster
-SENTINEL sentinels mymaster
+SENTINEL replicas (마스터명)
+SENTINEL sentinels (마스터명)
 
 replica와 sentinel들을 확인할수 있는 명령어
 
-SENTINEL get-master-addr-by-name mymaster
+SENTINEL get-master-addr-by-name (마스터명)
 현재 마스터를 확인하는 API
 ```
 
