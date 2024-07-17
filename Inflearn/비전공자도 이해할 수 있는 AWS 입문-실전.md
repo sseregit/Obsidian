@@ -88,3 +88,5 @@ well-known port
 	EBS(Elastic Block Storage)
 		EC2 안에 부착되어 있는 일종의 하드디스크
 		스토리지, 볼륨이라고 좀더 포괄적인 용어로도 부른다.
+
+## EC2 접속하기
