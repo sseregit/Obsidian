@@ -164,3 +164,7 @@ Shutdown 경우
 
 다 죽을 경우 Redis command time out으로 서버가 죽을거 같은데?
 
+여기 까지는 운영중에 redis-server가 죽은 경우고
+
+이제는 redis-sentinel이 죽을 경우
+
