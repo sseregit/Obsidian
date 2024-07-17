@@ -136,3 +136,8 @@ SENTINEL get-master-addr-by-name mymaster
 현재 마스터를 확인하는 API
 ```
 
+죽이거나 딜레이를 주면 conf 파일 설정들이 바뀐다.
+master가 된 포트는 
+replicaof 127.0.0.1 (포트) 사라지고
+master에서 replicas가 된 포트는
+replicaof 127.0.0.1 (포트) 추가된다.
