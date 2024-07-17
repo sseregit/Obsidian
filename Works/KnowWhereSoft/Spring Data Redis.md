@@ -173,4 +173,5 @@ redis sentinel이 다 죽어도 돌아가긴 돌아간다
 redis-server가 돌아가긴 돌아가는데 redis-sentinel역할이 없어지면서 master가 죽으면 사실상 변경이 없어 애플리케이션이 죽어버린다.
 
 sentinel이 다 죽은 상태에서 master가 종료되서 리커넥션 예외가 발생하는 와중에 sentinel 하나가 되살아 난다면?
+다시 sentinel이 켜진다고 해서 관리가 되는것은 아닌다
 
