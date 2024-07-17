@@ -141,3 +141,7 @@ master가 된 포트는
 replicaof 127.0.0.1 (포트) 사라지고
 master에서 replicas가 된 포트는
 replicaof 127.0.0.1 (포트) 추가된다.
+
+sentinel도 마찬가지고
+
+런타임중에 Sentinel을 재구성 할 수 있다.
