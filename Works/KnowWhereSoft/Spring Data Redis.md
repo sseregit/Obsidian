@@ -115,6 +115,8 @@ redis-sentinel을 띄운다
 redis-sentinel /path/to/redis-sentinel.conf
 ```
 순서가 중요함
+
+연결을 확인하는 방법
 ```
 redis-cli -p (포트)
 
@@ -124,4 +126,13 @@ info sentinel
 sentinel master (마스터명)
 
 으로 확인한다.
+
+SENTINEL replicas mymaster
+SENTINEL sentinels mymaster
+
+replica와 sentinel들을 확인할수 있는 명령어
+
+SENTINEL get-master-addr-by-name mymaster
+현재 마스터를 확인하는 API
 ```
+
