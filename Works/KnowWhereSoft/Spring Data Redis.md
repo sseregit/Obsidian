@@ -168,3 +168,5 @@ Shutdown 경우
 
 이제는 redis-sentinel이 죽을 경우
 
+redis sentinel이 다 죽어도 돌아가긴 돌아간다
+
