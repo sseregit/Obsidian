@@ -162,3 +162,5 @@ DEBUG 경우
 Shutdown 경우
 다시 살아나고 나서 바로 redis server의 정합성이 맞춰진다
 
+다 죽을 경우 Redis command time out으로 서버가 죽을거 같은데?
+
