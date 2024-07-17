@@ -104,3 +104,24 @@ redis-cli - Hash의 기본명령어
 [Redis configuration](https://redis.io/docs/latest/operate/oss_and_stack/management/config/)
 master-slave와 sentinel이 1:1로 각각 띄워져 있어야한다.
 `redis-sentinel`은 구성파일이 필수이다.
+
+redis-server를 먼저 띄운다
+```
+redis-server /path/to/redis.conf
+```
+
+redis-sentinel을 띄운다
+```
+redis-sentinel /path/to/redis-sentinel.conf
+```
+순서가 중요함
+```
+redis-cli -p (포트)
+
+접속후
+info sentinel
+
+sentinel master (마스터명)
+
+으로 확인한다.
+```
