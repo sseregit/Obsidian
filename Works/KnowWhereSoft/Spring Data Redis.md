@@ -101,6 +101,6 @@ redis-cli - Hash의 기본명령어
 [Spring Data Redis Sentinel](https://docs.spring.io/spring-data/redis/reference/redis/connection-modes.html#redis:write-to-master-read-from-replica)
 [Redis Document Sentinel](https://redis.io/docs/latest/operate/oss_and_stack/management/sentinel/)
 [5분 안에 구축하는 Redis-Sentinel](https://co-de.tistory.com/15)
-
+[Redis configuration](https://redis.io/docs/latest/operate/oss_and_stack/management/config/)
 master-slave와 sentinel이 1:1로 각각 띄워져 있어야한다.
 `redis-sentinel`은 구성파일이 필수이다.
