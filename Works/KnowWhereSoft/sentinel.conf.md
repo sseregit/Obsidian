@@ -7,6 +7,7 @@ sentinel auth-pass <master-name> your-redis-password
 sentinel down-after-milliseconds <master-name> 5000
 # 장애 조치후 새 마스터를 사용하도록 동시에 재구성할 수 있는 복제본의 수를 설정
 sentinel parallel-syncs <master-name> 1
+# 장애 조치가 일정 시간이 지나도 완료되지 않았으면 취소 하는 시간
 sentinel failover-timeout <master-name> 60000
 # Sentinel 이벤트가 발생할 때 알림을 받을 수 있도록 스크립트를 설정합니다.
 sentinel notification-script <master-name> /path/to/notify.sh
