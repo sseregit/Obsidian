@@ -80,3 +80,11 @@
 ## 컨테이너(Container) 로그 조회
 
 `docker logs <Container id>`
+
+`docker logs --tail 0 -f <Container id>`
+- --tail 0
+	- 과거의 log가 나오지않고
+- -f
+	- 실시간 로그부터 보기 시작한다
+
+## 실행중인 컨테이너 내부에 접속하기 (exec -it)
