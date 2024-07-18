@@ -37,4 +37,4 @@
 
 ## 이미지(Image) 다운로드
 
-`docker pull <이미지>`
+`docker pull <이미지:버전<필수아님>>`
