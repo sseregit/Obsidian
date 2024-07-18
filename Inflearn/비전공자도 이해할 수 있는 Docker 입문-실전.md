@@ -90,3 +90,8 @@
 ## 실행중인 컨테이너 내부에 접속하기 (exec -it)
 
 `docker exec -it <Container id> bash`
+
+`exit`
+명령어로 bash에선 나온다
+
+## Docker 전체 흐름 다시 느껴보기 (Nginx 설치 및 실행)
