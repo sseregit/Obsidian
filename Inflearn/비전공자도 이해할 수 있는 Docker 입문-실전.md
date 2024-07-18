@@ -36,3 +36,5 @@
 ## Docker 전체 흐름 느껴보기 (Nginx 설치 및 실행)
 
 ## 이미지(Image) 다운로드
+
+`docker pull <이미지>`
