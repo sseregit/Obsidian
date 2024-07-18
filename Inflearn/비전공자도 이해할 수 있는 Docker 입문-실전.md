@@ -40,3 +40,16 @@
 `docker pull <이미지:버전<필수아님>>`
 
 ## 이미지(Image) 조회/삭제
+
+`docker image rm -f $(docker images -q)`
+- -f
+	- 실행중인 컨테이너를 제외하고 중지된 컨테이너의 이미지를 삭제할 수있다.
+- $(docker images -q)
+	- 시스템에 있는 모든 이미지의 ID를 반환한다
+	- -q
+		- quite를 의미하며 상세 정보 대신에 각 이미지의 고유한 ID만 표시하도록 지시한다.
+
+## 컨테이너(Container) 생성 / 실행 - 1
+
+`docker ps -a`
+- 모든 컨테이너 조회
