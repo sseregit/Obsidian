@@ -181,6 +181,5 @@ sentinel 쿼럼수 이상 살아 있어야함. 위에도 하나만 올려서 쿼
 
 ## 서버가 죽을 경우 이벤트를 잡아야함
 
-RedisConnectionFailureException
-
-QueryTimeoutException
+Lettuce 옵션
+[ClientResource]()
