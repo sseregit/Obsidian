@@ -8,6 +8,9 @@ bind
 # ex) 6379
 port
 
+# 패스워드 설정
+requirepass
+
 # Redis는 기본적으로 데몬으로 실행되지 않는다
 # 데몬을 실행할 경우 지정하지 않더라도 pid 파일을 사용한다
 # 지정을 원하면 pidfile (file명)을 conf에 추가한다
