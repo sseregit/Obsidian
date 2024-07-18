@@ -178,8 +178,3 @@ redis-server가 돌아가긴 돌아가는데 redis-sentinel역할이 없어지�
 sentinel이 다 죽은 상태에서 master가 종료되서 리커넥션 예외가 발생하는 와중에 sentinel 하나가 되살아 난다면?
 다시 sentinel이 켜진다고 해서 관리가 되는것은 아닌다
 sentinel 쿼럼수 이상 살아 있어야함. 위에도 하나만 올려서 쿼럼수가 안맞아서 그런것으로 추정
-
-## 서버가 죽을 경우 이벤트를 잡아야함
-
-Lettuce 옵션
-[ClientResource]()
