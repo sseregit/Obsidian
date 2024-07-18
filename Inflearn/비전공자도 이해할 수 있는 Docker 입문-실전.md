@@ -78,3 +78,5 @@
 중단된 컨테이너 모두 삭제
 
 ## 컨테이너(Container) 로그 조회
+
+`docker logs <Container id>`
