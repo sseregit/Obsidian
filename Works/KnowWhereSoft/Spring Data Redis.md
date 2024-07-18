@@ -180,3 +180,5 @@ sentinel이 다 죽은 상태에서 master가 종료되서 리커넥션 예외�
 sentinel 쿼럼수 이상 살아 있어야함. 위에도 하나만 올려서 쿼럼수가 안맞아서 그런것으로 추정
 
 ## 서버가 죽을 경우 이벤트를 잡아야함
+
+RedisConnectionFailureException
