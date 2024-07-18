@@ -73,3 +73,6 @@
 `docker kill <Container ID>`
 컨테이너 강제 종료
 강제로 종료하는 느낌이라 stop을 우선으로 사용한다.
+
+`docker rm -f $(docker ps -qa)`
+중단된 컨테이너 모두 삭제
