@@ -95,3 +95,5 @@
 명령어로 bash에선 나온다
 
 ## Docker 전체 흐름 다시 느껴보기 (Nginx 설치 및 실행)
+
+## Docker로 Redis 실행시켜보기
