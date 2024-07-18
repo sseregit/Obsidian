@@ -88,3 +88,5 @@
 	- 실시간 로그부터 보기 시작한다
 
 ## 실행중인 컨테이너 내부에 접속하기 (exec -it)
+
+`docker exec -it <Container id> bash`
