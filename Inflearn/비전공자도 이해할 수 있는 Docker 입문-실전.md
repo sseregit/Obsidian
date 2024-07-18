@@ -55,3 +55,12 @@
 - 모든 컨테이너 조회
 
 ## 컨테이너(Container) 생성 / 실행 - 2
+
+`docker run <image>`
+- docker create , docker start 모두 하고 image가 없을시 pull 까지 한다.
+
+#### 포그라운드(foreground)
+내가 실행시킨 프로그램의 내용이 화면에서 실행되고 출력되는 상태
+
+#### 백그라운드(background)
+내가 실행시킨 프로그램이 컴퓨터 내부적으로 실행되는 상태를 의미한다
