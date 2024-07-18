@@ -66,3 +66,10 @@
 내가 실행시킨 프로그램이 컴퓨터 내부적으로 실행되는 상태를 의미한다
 
 ## 컨테이너(Container) 조회/중지/삭제
+
+`docker stop <Container ID>`
+컨테이너 중지
+
+`docker kill <Container ID>`
+컨테이너 강제 종료
+강제로 종료하는 느낌이라 stop을 우선으로 사용한다.
