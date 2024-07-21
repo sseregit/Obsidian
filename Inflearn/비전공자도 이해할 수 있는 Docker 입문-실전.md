@@ -165,3 +165,6 @@ ENTRYPOINT ["/bin/bash", "-c", "sleep 500"]
 호스트 컴퓨터에 있는 파일을 복사해서 컨테이너로 전달한다.
 
 `COPY [호스트 컴퓨터에 있는 복사할 파일의 경로] [컨테이너에서 파일이 위치할 경로]`
+
+.dockerignore
+.gitignore와 같이 image를 만들때 해당 파일은 제외 된다.
