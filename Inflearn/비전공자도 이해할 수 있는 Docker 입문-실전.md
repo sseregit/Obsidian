@@ -170,3 +170,12 @@ ENTRYPOINT ["/bin/bash", "-c", "sleep 500"]
 .gitignore와 같이 image를 만들때 해당 파일은 제외 된다.
 
 ## ENTRYPOINT : 컨테이너가 시작할 때 실행되는 명령어
+
+### ENTRYPOINT
+컨테이너가 생성되고 최초로 실행할 때 수행되는 명령어를 뜻한다.
+
+```dockerfile
+ENTRYPOINT [명령문...]
+
+ENTRYPOINT ["node", "dist/main.js"]
+```
