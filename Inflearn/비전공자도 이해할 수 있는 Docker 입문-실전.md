@@ -138,3 +138,10 @@ Dockerfile을 활용해서 Docker 이미지를 만들 수 있다.
 
 ### FROM
 베이스 이미지를 생성하는 역할을 한다
+
+```dockerfile
+FROM [이미지명]
+FROM [이미지명]:[태그명]
+```
+
+## FROM: 베이스 이미지 생성
