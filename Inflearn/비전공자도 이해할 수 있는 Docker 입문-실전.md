@@ -146,4 +146,4 @@ FROM [이미지명]:[태그명]
 
 ## FROM: 베이스 이미지 생성
 
-`docker build -t [이미지명]`
+`docker build -t [이미지명] [Dockerfile 위치 경로]`
