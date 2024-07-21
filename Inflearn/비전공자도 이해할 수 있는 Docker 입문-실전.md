@@ -203,6 +203,7 @@ RUN npm install
 
 ### WORKDIR
 작업 디렉터리를 전환하면 그 이후에 등장하는 모든 명령문은 해당 디렉터리를 기준으로 실행된다.
+최초 경로가 되는것으로 볼수 있다 bash 접근시 바로 WORKDIR로 접근한다.
 
 ```dockerfile
 
@@ -210,3 +211,17 @@ WORKDIR [작업 디렉토리로 사용할 절대 경로]
 
 WORKDIR /usr/src/app
 ```
+
+## EXPOSE 컨테이너 내부에서 사용 중인 포트를 문서화하기
+
+### EXPOSE
+컨테이너 내부에서 어떤 포트에 프로그램이 실행되는 지를 문서화하는 역할만 한다.
+
+```dockerfile
+
+EXPOSE [포트 번호]
+
+EXPOSE 3000
+```
+
+## 백엔드 프로젝트(Node.js)를 Docker로 실행시키기
