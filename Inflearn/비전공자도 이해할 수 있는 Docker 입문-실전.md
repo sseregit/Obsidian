@@ -128,3 +128,8 @@
 ## Docker로 MongoDB 실행시켜보기
 
 ## Dockerfile이란?
+
+### Dockerfile이란?
+Dockerfile을 활용해서 Docker 이미지를 만들 수 있다.
+
+## FROM: 베이스 이미지 생성
