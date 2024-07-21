@@ -166,5 +166,7 @@ ENTRYPOINT ["/bin/bash", "-c", "sleep 500"]
 
 `COPY [호스트 컴퓨터에 있는 복사할 파일의 경로] [컨테이너에서 파일이 위치할 경로]`
 
-.dockerignore
+### .dockerignore
 .gitignore와 같이 image를 만들때 해당 파일은 제외 된다.
+
+## ENTRYPOINT : 컨테이너가 시작할 때 실행되는 명령어
