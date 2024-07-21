@@ -179,3 +179,10 @@ ENTRYPOINT [명령문...]
 
 ENTRYPOINT ["node", "dist/main.js"]
 ```
+
+## 백엔드 프로젝트 (Spring Boot) 프로젝트를 Docker로 실행시키기
+
+## RUN : 이미지를 생성하는 과정에서 사용할 명령문 실행
+
+### RUN
+이미지 생성 과정에서 명령어를 실행시켜야 할 때 사용한다.
