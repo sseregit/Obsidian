@@ -186,3 +186,15 @@ ENTRYPOINT ["node", "dist/main.js"]
 
 ### RUN
 이미지 생성 과정에서 명령어를 실행시켜야 할 때 사용한다.
+
+```dockerfile
+RUN [명령문]
+
+RUN npm install
+```
+
+### RUN과 ENTRYPOINT의 차이점
+#### RUN
+이미지 생성 과정에서 필요한 명령어
+#### ENTRYPOINT
+생성된 이미지를 기반으로 컨테이너를 생성한 직후에 명령어를 실행시킬 때 사용한다.
