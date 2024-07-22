@@ -243,3 +243,17 @@ EXPOSE 3000
 2. 복잡한 명령어로 실행시키던 걸 간소화 시킬 수 있다
 
 ## Docker Compose 전체 흐름 느껴보기 (Nginx 설치 및 실행)
+
+```yaml
+services: # docker-compose에선 하나의 container를 서비스라 부른다
+	my-web-server: # service 이름
+		container_name: web-server # 컨테이너의 이름
+		image: nginx # 이미지
+		ports: # 포트 매핑
+			- 80:80
+```
+=== 위아래는 같다
+`docker run --name web-server -d -p 80:80 nignx`
+
+`docker compose up -d`
+실행시킨다
