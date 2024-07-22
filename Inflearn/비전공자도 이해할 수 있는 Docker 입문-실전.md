@@ -233,4 +233,13 @@ EXPOSE 3000
 
 ## 웹 프론트엔드 프로젝트(HTML, CSS, Nginx)를 Docker로 배포하기
 
-## 
+## Docker Compose를 사용하는 이유
+
+### Docker Compose란?
+여러 개의 Docker 컨테이너들을 하나의 서비스로 정의하고 구성해 하나의 묶음으로 관리할 수 있게 도와주는 툴이다.
+
+### Docker Compose를 사용하는 이유
+1. 여러 개의 컨테이너를 관리하는 데 용이
+2. 복잡한 명령어로 실행시키던 걸 간소화 시킬 수 있다
+
+## Docker Compose 전체 흐름 느껴보기 (Nginx 설치 및 실행)
