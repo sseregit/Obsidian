@@ -277,3 +277,10 @@ dockerhub의 이미지를 다운받거나 업데이트할 때 사용
 ## Docker Compose로 Redis 실행시키기
 
 ## Docker Compose로 MySQL 실행시키기
+
+```yaml
+services:
+	....
+		environment:
+		volumes:
+```
