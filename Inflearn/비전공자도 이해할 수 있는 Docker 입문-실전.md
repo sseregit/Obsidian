@@ -257,3 +257,21 @@ services: # docker-compose에선 하나의 container를 서비스라 부른다
 
 `docker compose up -d`
 실행시킨다
+
+`docker compose down`
+중지
+
+## 자주 사용하는 Docker Compose CLI 명령어
+
+`docker compose ps`
+
+`docker compose logs`
+compose에 정의한 컨테이너의 로그들을 볼수 있다
+
+`docker compose up --build`
+이미지를 다시 빌드해서 컨테이너를 실행시켜야 할 때 사용한다.(Dockerfile)
+
+`docker compose pull`
+dockerhub의 이미지를 다운받거나 업데이트할 때 사용
+
+## Docker Compose로 Redis 실행시키기
