@@ -334,3 +334,5 @@ services:
 **compose.yml에서 정의한 Service 이름으로 서로 통신할 수 있다.**
 
 ex) localhost:3306 => <서비스명>:3306
+
+## Spring Boot, MySQL, Redis 컨테이너 동시에 띄워보기
