@@ -324,3 +324,7 @@ services:
 			interval: 5s
 			retries: 10
 ```
+
+## 컨테이너로 실행시킨 Spring Boot가 MySQL에 연결이 안되는 이유
+
+컨테이너는 자신만의 네트워크망과 IP 주소를 가지고 있다.
