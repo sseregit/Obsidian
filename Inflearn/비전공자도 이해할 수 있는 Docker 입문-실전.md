@@ -286,3 +286,9 @@ services:
 ```
 
 ## Docker Compose로 백엔드(Spring Boot) 실행시키기
+
+```yaml
+services:
+	....
+		build: .  # compose.yml이 기준이 되는 상대경로
+```
