@@ -299,3 +299,5 @@ services:
 ## Docker Compose로 백엔드(Nest.js) 실행시키기
 
 ## Docker Compose로 프론트엔드(Next.js) 실행시키기
+
+## Docker Compose로 프론트엔드(HTML, CSS, Nginx) 실행시키기
