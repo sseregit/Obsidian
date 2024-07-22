@@ -292,3 +292,8 @@ services:
 	....
 		build: .  # compose.yml이 기준이 되는 상대경로
 ```
+
+`docker compose up -d --build`
+--build DockerFile을 새롭게 빌드
+
+## Docker Compose로 백엔드(Nest.js) 실행시키기
