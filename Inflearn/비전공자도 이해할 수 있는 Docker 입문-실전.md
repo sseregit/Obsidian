@@ -309,3 +309,18 @@ services:
 ## MySQL, Redis 컨테이너 동시에 띄워보기
 
 ## Spring Boot, MySQL 컨테이너 동시에 띄워보기
+
+```yaml
+...
+	...
+		...
+		depends_on:
+			<서비스이름>:
+				condition: services_healthys # 해당 서비스가 헬스체크가 되면 실행
+	...
+		...
+		healthcheck: # 헬스 체크 하는 방법을 설정한다.
+			test: ["CMD", "mysqladmin", "ping"]
+			interval: 5s
+			retries: 10
+```
