@@ -338,3 +338,14 @@ ex) localhost:3306 => <서비스명>:3306
 ## Spring Boot, MySQL, Redis 컨테이너 동시에 띄워보기
 
 ## Ubuntu에서 Docker, Docker Compose 설치하기
+
+## AWS ECR(Elastic Container Registry)이 뭘까? 왜배울까?
+
+### AWS ECR이란?
+Dockerhub과 동일한 역할을 하는 서비스
+AWS ECR도 이미지를 저장 및 다운받을 수 있는 저장소 역할을 한다.
+
+### 왜 Dockerhub 대신 AWS ECR을 사용하는가?
+AWS ECR을 사용하면 다른 AWS Resource와의 연동이 편하고, AWS 내에서 한 번에 관리할 수 있기에 편하다는 장점이 있다.
+
+### AWS ECR을 배우는 이유
