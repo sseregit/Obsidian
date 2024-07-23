@@ -440,3 +440,7 @@ git clone 으로 프로젝트를 받아오면 submodule은 존재하지만 안�
 `git submodule update --remote` 로 원격저장소의 변경사항을 적용한다
 
 ## 프로젝트와 폴더에 대한 문서
+### READ.md
+
+[Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
+
