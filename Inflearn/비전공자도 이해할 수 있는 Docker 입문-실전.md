@@ -354,3 +354,6 @@ Docker만 설치되어 있으면 어디에서든 내가 원하는 프로젝트�
 **AWS ECR을 배우는 이유는 훨씬 간단하게 프로젝트를 배포하고 실행시키기 위해서이다.**
 
 ## AWS ECR(Elastic Container Registry) 사용해보기
+
+### IAM을 만드는 이유
+ECR에 접근 권한을 받기 위해 만든다
