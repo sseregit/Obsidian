@@ -460,18 +460,4 @@ git clone 으로 프로젝트를 받아오면 submodule은 존재하지만 안�
 
 ## GPG로 커밋에 사인하기
 
-3738CC9AEAE5B2A7
-
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-mDMEZqD8RhYJKwYBBAHaRw8BAQdAsEOpnRpVuc5l/n+swaRpFgsC1PT7C0P8PWX5
-e8ATz/m0HXNzZXJlZ2l0IDxzc2VyZWdpdEBuYXZlci5jb20+iJMEExYKADsWIQQl
-QrHteVsIDgtU27M3OMya6uWypwUCZqD8RgIbAwULCQgHAgIiAgYVCgkICwIEFgID
-AQIeBwIXgAAKCRA3OMya6uWyp+o+AQDh0qBrznQ0izlBN/7V5tLiwdpMoYz4iB8P
-gitzBSOe4wD9GSEVh2CgjmvJusr3oeiWVIxiqztXWQYB2ePOU4WWtwu4OARmoPxG
-EgorBgEEAZdVAQUBAQdAtw2/pXqT+cHauT2tM1ubGq59fABAvG6pgnmZUq/yPWgD
-AQgHiHgEGBYKACAWIQQlQrHteVsIDgtU27M3OMya6uWypwUCZqD8RgIbDAAKCRA3
-OMya6uWyp0nBAQCliWEyELzbmbAlV7dPoIaP8HsXZm42unIaeJ+fMiPqzwEAwzKx
-bvi9yz0cLVPgyL4f4j4+jkS6iAJLE3WPuw7mvAk=
-=QbWE
------END PGP PUBLIC KEY BLOCK-----
+## GitHub Actions
