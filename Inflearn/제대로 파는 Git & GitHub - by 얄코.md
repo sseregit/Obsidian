@@ -444,3 +444,4 @@ git clone 으로 프로젝트를 받아오면 submodule은 존재하지만 안�
 
 [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
+## 풀 리퀘스트와 이슈
