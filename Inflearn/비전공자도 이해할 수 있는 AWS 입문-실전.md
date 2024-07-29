@@ -149,3 +149,14 @@ IP사용의 문제점
 도메인서버 자체가 불안하다
 
 ## ELB란? TLS, SSL와 HTTPS
+
+### ELB (Elastic Load Balancer)
+트래픽(부하)을 적절하게 분배해주는 장치
+
+### SSL/TLS란?
+HTTP를 HTTPS로 바꿔주는 인증서
+
+### HTTPS
+1. 보안적인 이유
+	1. 데이터를 암호화 시켜 통신을 한다.
+2. 사용자 이탈
