@@ -29,3 +29,13 @@
 ### 단언문
 
 ## Junit5으로 Spring Boot 테스트하기
+
+### 각 계층을 테스트
+Domain
+- 클래스를 테스트하는 것과 동일
+Service & Repository
+- 스프링 빈을 사용하는 테스트 방법 사용 (@SpringBootTest)
+- 데이터 위주 검증
+Controller
+- 스프링 빈을 사용하는 테스트 방법 사용 (@SpringBootTest)
+- 응답 받은 JSON을 비롯한 HTTP 위주의 검증
