@@ -16,3 +16,12 @@
 ## 사칙연산 계산기에 대해 테스트 코드 작성하기
 
 ## 사칙연산 계산기의 나눗셈 테스트 작성
+
+## Junit5 사용법과 테스트 코드 리팩토링
+
+### Junit5에서 사용되는 5가지 어노테이션
+1. @Test
+2. @BeforeEach
+3. @AfterEach
+4. @BeforeAll
+5. @AfterAll
