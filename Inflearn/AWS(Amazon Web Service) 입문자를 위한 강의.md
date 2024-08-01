@@ -32,3 +32,7 @@ IAM은 유니버설(Universal) 하다
 2. IAM과 관련된 문제들을 디버깅하기에 최적화된 **툴**(이미 실제로 유저에 부여된 다양한 정책들도 테스트 가능)
 
 ## IAM 실습하기
+
+## EC2란?
+
+### EC2 (Elastic Compute Cloud)
