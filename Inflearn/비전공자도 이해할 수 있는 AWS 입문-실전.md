@@ -182,3 +182,7 @@ IPv6는 IPv4의 고갈될 것을 예측하고 추가해 만들었다
 ### 상태 검사 (Health Check)
 
 ## ELB에 도메인 연결하기
+
+## HTTPS 적용을 위해 인증서 발급받기
+
+### Certificate Manager
