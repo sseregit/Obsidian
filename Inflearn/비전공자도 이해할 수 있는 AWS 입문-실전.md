@@ -190,3 +190,5 @@ IPv6는 IPv4의 고갈될 것을 예측하고 추가해 만들었다
 ## ELB에 HTTPS 설정하기
 
 ## 비용 나가지 않게 ELB 깔끔하게 종료하기
+
+## HTTPS 연결 시 ELB vs Nginx, Certbot
