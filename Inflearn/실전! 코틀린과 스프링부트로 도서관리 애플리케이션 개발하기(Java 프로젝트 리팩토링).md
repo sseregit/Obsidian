@@ -39,3 +39,7 @@ Service & Repository
 Controller
 - 스프링 빈을 사용하는 테스트 방법 사용 (@SpringBootTest)
 - 응답 받은 JSON을 비롯한 HTTP 위주의 검증
+
+## 유저 관련 기능 테스트 작성하기
+
+## 책 관련 기능 테스트 작성하기
