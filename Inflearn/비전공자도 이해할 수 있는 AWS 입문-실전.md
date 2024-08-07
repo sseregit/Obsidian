@@ -198,3 +198,6 @@ IPv6는 IPv4의 고갈될 것을 예측하고 추가해 만들었다
 Nginx와 Certbot을 활용해서 HTTPS를 적용시키는 가장 큰 이유는 **비용**
 
 ## Nginx, Certbot을 활용해 HTTPS 연결하기
+
+### Certbot
+HTTPS 인증서를 발급받아 주는 역할
