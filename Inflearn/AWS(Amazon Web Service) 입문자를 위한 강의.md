@@ -81,3 +81,14 @@ EC2안에 부착된 하드디스크라 생각하면 쉽다.
 - Provisioned IOPS SSD (IO1)
 	- 극도의 I/O률을 요구하는 (매우 큰 DB관리 등등..) 환경에서 주로 사용된다.
 	- 10K 이상의 IOPS를 지원한다
+#### Magnetic/HDD군
+- Throughput Optimized HDD (ST1)
+	- 빅데이터 Datawarehouse, Log 프로세싱시 주로 사용 (boot volumne으로 사용 불가능)
+- CDD HDD (SC1)
+	- 파일 서버와 같이 드문 volume 접근시 주로 사용, 역시 boot volume으로 사용 불가능하나 비용은 매우 저렴하다
+- Magnetic (Sandard)
+	- 디스크 1GB당 가장 싼 비용을 자랑하고 Boot volume으로 유일하게 가능하다
+**boot volume 사용불가능은 window같은걸 가지고 있을수 없다 같은 의미**
+
+## ELB
+
