@@ -114,3 +114,13 @@ EC2안에 부착된 하드디스크라 생각하면 쉽다.
 - Layer4의 TCP traffic 라우팅 기능도 지원
 
 #### X-Forwarded-For 헤더
+- EC2는 ELB의 private IP만 볼 수 있다
+- public IP를 볼 수 있는 방법이 X-Forwarded-For 헤더 이다.
+
+## Route53 + 실습
+
+### Route53
+- AWS에서 제공하는 DNS 서비스
+- EC2 instance
+- S3 Bucket
+- Load Balancer
