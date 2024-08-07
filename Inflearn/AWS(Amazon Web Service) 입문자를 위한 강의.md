@@ -64,3 +64,20 @@ IAM은 유니버설(Universal) 하다
 EC2안에 부착된 하드디스크라 생각하면 쉽다.
 
 ## EBS
+
+### EBS
+- 저장 공간이 생성되어 지며 EC2 인스턴스에 부착된다
+- 디스크 볼륨 위에 File System이 생성된다
+- EBS는 특정 Availability Zone에 생성된다.
+
+### Availability Zone (AZ)
+- 하나의 Region안에 여러개의 AZ가 있을 수 있다.
+- 일종의 Disaster Recovery
+
+### EBS 볼륨 타입
+#### SSD군
+- General Purpose SSD (GP2)
+	- 최대 10K IOPS를 지원하며 1GB당 3IOPS 속도가 나온다
+- Provisioned IOPS SSD (IO1)
+	- 극도의 I/O률을 요구하는 (매우 큰 DB관리 등등..) 환경에서 주로 사용된다.
+	- 10K 이상의 IOPS를 지원한다
