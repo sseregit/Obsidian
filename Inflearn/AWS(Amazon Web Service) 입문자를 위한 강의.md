@@ -101,6 +101,7 @@ EC2안에 부착된 하드디스크라 생각하면 쉽다.
 - OSI Layer7에서 Application Layer에서 작동된다
 - HTTP, HTTPS와 같은 traffic의 load balancing에 가장 적합하다
 - 고급 request 라우팅 설정을 통하여 특정 서버로 request를 보낼 수 있다
+
 #### Network Load Balancer
 - OSI Layer4 에서 작동 된다
 - 매우 빠른 속도를 자랑하며 Production환경에서 종종 쓰인다
@@ -111,3 +112,5 @@ EC2안에 부착된 하드디스크라 생각하면 쉽다.
 - 현재 Legacy로 간주되고 거의 사용되지 않는다
 - Layer7의 HTTP/HTTPS 라우팅 기능 지원
 - Layer4의 TCP traffic 라우팅 기능도 지원
+
+#### X-Forwarded-For 헤더
