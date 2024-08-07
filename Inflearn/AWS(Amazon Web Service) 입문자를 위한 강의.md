@@ -92,3 +92,7 @@ EC2안에 부착된 하드디스크라 생각하면 쉽다.
 
 ## ELB
 
+### ELB (Elastic Load Balancers)
+- 수 많은 서버의 흐름을 균형있게 흘려보내는데 중추적인 역할을 한다
+- 하나의 서버로 traffic이 몰리는 병목현상(bottleneck) 방지
+- Traffic의 흐름을 Unhealthy instance -> healthy instance로
