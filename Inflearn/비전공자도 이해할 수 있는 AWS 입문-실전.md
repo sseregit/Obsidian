@@ -192,3 +192,9 @@ IPv6는 IPv4의 고갈될 것을 예측하고 추가해 만들었다
 ## 비용 나가지 않게 ELB 깔끔하게 종료하기
 
 ## HTTPS 연결 시 ELB vs Nginx, Certbot
+
+현업에서는 ELB를 활용해서 HTTPS 적용을 더 많이 시킨다. 인증서의 만료기간 갱신도 자동으로 해준다.
+
+Nginx와 Certbot을 활용해서 HTTPS를 적용시키는 가장 큰 이유는 **비용**
+
+## Nginx, Certbot을 활용해 HTTPS 연결하기
