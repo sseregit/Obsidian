@@ -53,3 +53,10 @@ Controller
 2. Kotlin + JPA
 3. Kotlin + Spring
 4. Java to Kotlin으로 리팩토링 해야하는 상황에 대한 경험을 쌓는다.
+
+Domain 부터 시작 POJO, JPA Entity
+Repository - Spring Bean에 의존 X
+Service - Spring Bean에 의존성 O, 비즈니스 로직
+Controller - Spring Bean, 의존성 O, DTO의 경우 그 숫자가 많음
+
+## 도메인 계층을 Kotlin으로 변경하기 - Book.java
