@@ -47,3 +47,9 @@ Controller
 ## 테스트 작성 끝! 다음으로!
 
 ## Kotlin 리팩토링 계획 세우기
+
+### 목표
+1. Java to Kotlin
+2. Kotlin + JPA
+3. Kotlin + Spring
+4. Java to Kotlin으로 리팩토링 해야하는 상황에 대한 경험을 쌓는다.
