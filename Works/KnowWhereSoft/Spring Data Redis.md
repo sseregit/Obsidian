@@ -182,3 +182,10 @@ sentinel 쿼럼수 이상 살아 있어야함. 위에도 하나만 올려서 쿼
 ## Caching Strategy
 
 ### Look Aside (= Lazy Loading)
+- cache에서 먼저 찾고 Cache Hit되면 전달하고 아니면 데이터베이스에 요청하고 cache에 저장후 응답 한다.
+- 단점
+	- 최신 데이터를 가지고 있다는 것을 보장하지 못한다.
+	- key값이 존재하지 않을 때만 캐시에 업데이트가 일어나기 때문
+
+### Write-Through
+- 데이터베이스에 데이터를 작성할 때 마다 캐시에 데이터를
