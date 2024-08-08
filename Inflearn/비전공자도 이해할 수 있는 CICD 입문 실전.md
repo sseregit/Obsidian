@@ -13,3 +13,15 @@
 - Circle CI
 - Travis CI
 - 등등..
+
+## Github Actions를 활용한 전체적인 CI/CD 흐름
+
+### Github Actions
+로직을 실행시킬 수 있는 일종의 컴퓨터
+
+일반적인 흐름
+commit -> push -> push를 감지해서 Github Actions에 작성한 로직이 실행
+1. 빌드(Build)
+2. 테스트(Test)
+3. 서버로 배포(Deploy)
+ 서버에서 배포된 최신 코드로 서버를 재실행
