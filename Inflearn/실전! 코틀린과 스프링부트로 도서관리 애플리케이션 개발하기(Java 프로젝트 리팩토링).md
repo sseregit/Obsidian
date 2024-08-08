@@ -72,3 +72,5 @@ kotlin Class를 리플렉션을 못한다는 Exception
 의존성 추가가 필요하다.
 
 ## 도메인 계층을 Kotlin으로 변경하기 - UserLoanHistory.java, User.java
+
+## Kotlin과 JPA를 함께 사용할 때 이야기거리 3가지
