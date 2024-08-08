@@ -60,3 +60,5 @@ Service - Spring Bean에 의존성 O, 비즈니스 로직
 Controller - Spring Bean, 의존성 O, DTO의 경우 그 숫자가 많음
 
 ## 도메인 계층을 Kotlin으로 변경하기 - Book.java
+
+기본 생성자가 있어야함 JPA Entity로 생성할 수 있다.
