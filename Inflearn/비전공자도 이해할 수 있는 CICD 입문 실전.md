@@ -25,3 +25,7 @@ commit -> push -> push를 감지해서 Github Actions에 작성한 로직이 실
 2. 테스트(Test)
 3. 서버로 배포(Deploy)
  서버에서 배포된 최신 코드로 서버를 재실행
+## [실습] Github Actions 기본 문법 정리
+
+프로젝트 최상단에 .github 폴더와 그안에 workflows가 존재해야 한다
+그 이후 yml파일의 이름은 자유롭게
