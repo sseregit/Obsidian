@@ -4,3 +4,12 @@
 
 ### CI/CD란?
 테스트(Test), 통합(Merge), 배포(Deploy)의 과정을 자동화하는 걸 의미한다.
+
+## CI/CD 구축할 때 사용할 Github Actions
+
+### CI/CD 구축할 수 있는 툴
+- Github Actions
+- Jenkins
+- Circle CI
+- Travis CI
+- 등등..
