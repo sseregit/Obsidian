@@ -33,3 +33,6 @@ commit -> push -> push를 감지해서 Github Actions에 작성한 로직이 실
 
 WorkFlow는 여러 Job으로 구성 되어 있고
 Job은 기본적으로 병렬적으로 수행된다.
+
+Job은 여러 Step들로 구성되어 있다.
+Step은 특정 작접을 수행하는 가장 작은 단위
