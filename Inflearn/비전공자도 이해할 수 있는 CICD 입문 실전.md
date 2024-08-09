@@ -44,3 +44,5 @@ Step은 특정 작접을 수행하는 가장 작은 단위
     echo "Morning"
 ```
 여러 라인을 사용할 수 있다
+
+## 방법 1 - 개인 프로젝트에서 많이 쓰는 CI/CD 구축 방법 (Github Actions)
