@@ -184,3 +184,4 @@ sentinel 쿼럼수 이상 살아 있어야함. 위에도 하나만 올려서 쿼
 Code Cache 적용하기
 
 [캐시 추상화](https://docs.spring.io/spring-framework/reference/integration/cache.html)
+[Spring Cache에 대해 알아보자](https://velog.io/@songs4805/Spring-Cache%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90)
