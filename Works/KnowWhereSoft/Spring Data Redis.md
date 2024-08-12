@@ -183,4 +183,4 @@ sentinel 쿼럼수 이상 살아 있어야함. 위에도 하나만 올려서 쿼
 
 Code Cache 적용하기
 
-[캐시 추상화(https://docs.spring.io/spring-framework/reference/integration/cache.html)
+[캐시 추상화](https://docs.spring.io/spring-framework/reference/integration/cache.html)
