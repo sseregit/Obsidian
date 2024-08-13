@@ -185,3 +185,4 @@ Code Cache 적용하기
 
 [캐시 추상화](https://docs.spring.io/spring-framework/reference/integration/cache.html)
 [Spring Cache에 대해 알아보자](https://velog.io/@songs4805/Spring-Cache%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90)
+[우아한테크세미나 191121 우아한레디스 by 강대명님](https://youtu.be/mPB2CZiAkKM?si=vRhmGJxhxdhrtJK1&t=3439)
