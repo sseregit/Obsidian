@@ -240,7 +240,7 @@
 - Permanent Generation
 	- Permanet Generation은 Class 혹은 Method Code가 저장되는 영역
 	- PermGen은 Heap 영역에 속함
-	- **Default로 제한도니 크기를 가지고 있다.**
+	- **Default로 제한된 크기를 가지고 있다.**
 - Metaspace
 	- Metaspace는 Java 클래스 로더가 현재까지 로드한 Class들의 메타데이터가 저장되는 공간
 	- JVM에 의해 관리되는 Heap 영역이 아니라 OS 레벨에서 관리되는 Native 메모리 영역에 위치
