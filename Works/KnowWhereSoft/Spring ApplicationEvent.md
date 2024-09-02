@@ -7,6 +7,9 @@ class TargetLogEvent(
 ) : ApplicationEvent(source) {  
 }
 ```
+- 공식 홈페이지 6.1.12 기준의 있을때는 상속하는 구조를 사용하는거 처럼 적혀 있는데 4.2버전 이후로는 상속하지 않아도 사용이 가능하다고 한다.
+	- 그 이유는 `default void pulishEvent(Application event)` 였는데 `void publishEvent(Object event)`가 추가 되었고 이 메서드를 호출하기 때문에 상속을 할 필요가 없다.
+
 
 ```kotlin
 @Component
