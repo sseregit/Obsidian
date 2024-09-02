@@ -1,5 +1,6 @@
 [Spring 공식](https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-functionality-events)
 [spring 이벤트 사용하기(event publisher, event listener)](https://wildeveloperetrain.tistory.com/217)
+[spring Event, @TransactionalEventListener 사용하기](https://wildeveloperetrain.tistory.com/246)
 
 ```kotlin
 class TargetLogEvent(  
