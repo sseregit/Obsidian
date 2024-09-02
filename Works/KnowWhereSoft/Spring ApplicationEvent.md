@@ -1,4 +1,5 @@
 [Spring 공식](https://docs.spring.io/spring-framework/reference/core/beans/context-introduction.html#context-functionality-events)
+[Spring 스프링에서 이벤트의 발행과 구독 방법과 주의사항, 이벤트 사용의 장/단점과 사용 예시](https://mangkyu.tistory.com/292)
 [spring 이벤트 사용하기(event publisher, event listener)](https://wildeveloperetrain.tistory.com/217)
 [spring Event, @TransactionalEventListener 사용하기](https://wildeveloperetrain.tistory.com/246)
 
