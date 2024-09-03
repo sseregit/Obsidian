@@ -53,3 +53,7 @@ class TargetLogService : ApplicationEventPublisherAware {
 `publisher.publishEvent(ApplicationEvent를 구현한 클래스)`를 넣어주던가
 
 `ApplicationEventPublisherAware`를 구현한 클래스를 주입받아 해당 메서드를 호출하는 식으로 사용한다.
+
+### 비동기 방식
+1. `@Async` 메소드로 비동기 구현
+2. `ApplicationEventMulticaster`로 비동기 구현
