@@ -25,4 +25,4 @@ void ....() {
 - module ~= package
 
 ### Java는 기본적으로 모든 것을 public으로 만들지 않는다!
-- 모든것이 public일 필요가 없고 캡슐화가 필요하다
+- 모든것이 public일 필요가 없고 캡슐화가 필요하다 
