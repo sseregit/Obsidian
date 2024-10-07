@@ -32,3 +32,10 @@ void ....() {
 
 [https://httpbin.org/]https://httpbin.org/
 - HTTP 테스트에 유용하다
+
+### GraalVM
+- 네이티브 이미지 컴파일러
+	- Mac, Linux, Windows의 네이티브 바이너리를 구축할 수 있다.
+	- JDK, JRE, 런타임도 필요 없다
+- 단점
+	- 런타임에 모든 동적 동작에 대해 알려줘야 한다.
