@@ -14,3 +14,5 @@
 - 관계형 데이터베이스
 	- 데이터들을 테이블 안에 저장하는 데이터베이스
 - Is declarative
+
+## #1.5 Course Roadmap
