@@ -44,3 +44,5 @@ CREATE TABLE movies
 ) STRICT;
 ```
 - **STRICT**가 없으면 타입의 검사를 하지 않는다.
+
+## #3.6 Constraints
