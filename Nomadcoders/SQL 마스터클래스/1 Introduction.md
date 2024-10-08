@@ -18,3 +18,5 @@
 ## #1.5 Course Roadmap
 
 ## #1.7 Required Software
+[https://www.beekeeperstudio.io/](https://www.beekeeperstudio.io/)
+[https://tableplus.com/](https://tableplus.com/)
