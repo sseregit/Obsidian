@@ -77,3 +77,16 @@ CREATE TABLE movies
 		- 자연키를 불변하고 고유하게 유지하는 것은 어렵다.
 	- 대체 기본키
 		- 다른 열과 논리적 관계가 전혀 없다
+```sql
+CREATE TABLE movies  
+(  
+    movie_id INTEGER PRIMARY KEY AUTOINCREMENT,  
+    title    TEXT    NOT NULL UNIQUE,  
+    released INTEGER NOT NULL CHECK (released > 0),  
+    overview TEXT    NOT NULL CHECK (LENGTH(overview) <= 100),  
+    rating   REAL    NOT NULL CHECK (rating BETWEEN 0 AND 10),  
+    director TEXT,  
+    for_kids INTEGER NOT NULL DEFAULT 0 CHECK (for_kids BETWEEN 0 AND 1)  
+    -- poster BLOB  
+) STRICT;
+```
