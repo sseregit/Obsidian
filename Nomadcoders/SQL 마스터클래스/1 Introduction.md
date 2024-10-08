@@ -16,3 +16,5 @@
 - Is declarative
 
 ## #1.5 Course Roadmap
+
+## #1.7 Required Software
