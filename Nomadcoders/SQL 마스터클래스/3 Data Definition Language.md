@@ -50,3 +50,5 @@ CREATE TABLE movies
 ## #3.7 CHECK Constraint
 ### CHECK Constraint
 - 데이터 유효성 검사를 할 때 나만의 로직을 추가할 수 있다.
+
+## #3.8 Recap
