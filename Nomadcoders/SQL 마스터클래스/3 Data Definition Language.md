@@ -52,3 +52,16 @@ CREATE TABLE movies
 - 데이터 유효성 검사를 할 때 나만의 로직을 추가할 수 있다.
 
 ## #3.8 Recap
+```sql
+CREATE TABLE movies
+(
+    title    TEXT    NOT NULL UNIQUE,
+    released INTEGER NOT NULL CHECK (released > 0),
+    overview TEXT    NOT NULL CHECK (LENGTH(overview) <= 100),
+    rating   REAL    NOT NULL CHECK (rating BETWEEN 0 AND 10),
+    director TEXT,
+    for_kids INTEGER NOT NULL DEFAULT 0  CHECK (for_kids BETWEEN 0 AND 1)
+    -- poster BLOB
+) STRICT;
+```
+
