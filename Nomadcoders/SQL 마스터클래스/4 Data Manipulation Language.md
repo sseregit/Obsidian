@@ -20,3 +20,5 @@ SELECT는 가장 마지막에 호출된다.
 ## #4.5 Movies Database
 
 ## #4.6 WHERE Clause
+
+## #4.7 WHERE Predicates
