@@ -46,3 +46,7 @@ CREATE TABLE movies
 - **STRICT**가 없으면 타입의 검사를 하지 않는다.
 
 ## #3.6 Constraints
+
+## #3.7 CHECK Constraint
+### CHECK Constraint
+- 데이터 유효성 검사를 할 때 나만의 로직을 추가할 수 있다.
