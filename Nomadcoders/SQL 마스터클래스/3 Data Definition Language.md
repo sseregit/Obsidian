@@ -17,3 +17,15 @@ CREATE TABLE movies (
 - sqlite를 사용하기 때문에 가능한 문법
 
 ## #3.3 INSERT INTO VALUES
+```sql
+INSERT INTO movies
+VALUES (
+        'The Godfather',
+        1980,
+        'The best movie in the world',
+        10,
+        'F.F.C'
+       );
+```
+
+## #3.4 INSERT INTO VALUES part Two
