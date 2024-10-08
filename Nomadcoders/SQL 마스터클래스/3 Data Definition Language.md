@@ -5,3 +5,15 @@
 ## #3.1 Tables
 
 ## #3.2 CREATE TABLE
+```sql
+CREATE TABLE movies (  
+    title,  
+    released,  
+    overview,  
+    rating,  
+    director  
+);
+```
+- sqlite를 사용하기 때문에 가능한 문법
+
+## #3.3 INSERT INTO VALUES
