@@ -65,3 +65,4 @@ CREATE TABLE movies
 ) STRICT;
 ```
 
+## #3.9 Primary Keys
