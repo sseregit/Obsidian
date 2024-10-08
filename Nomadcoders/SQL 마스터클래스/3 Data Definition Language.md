@@ -29,3 +29,5 @@ VALUES (
 ```
 
 ## #3.4 INSERT INTO VALUES part Two
+
+## #3.5 Data Types
