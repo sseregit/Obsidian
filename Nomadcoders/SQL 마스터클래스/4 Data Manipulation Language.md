@@ -5,3 +5,5 @@
 	- INSERT
 	- UPDATE
 	- DELETE
+
+## #4.2 SELECT Command
