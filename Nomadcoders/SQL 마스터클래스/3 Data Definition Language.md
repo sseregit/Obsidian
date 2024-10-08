@@ -31,3 +31,16 @@ VALUES (
 ## #3.4 INSERT INTO VALUES part Two
 
 ## #3.5 Data Types
+```sql
+CREATE TABLE movies
+(
+    title TEXT,
+    released INTEGER,
+    overview TEXT,
+    rating REAL,
+    director TEXT,
+    for_kids INTEGER -- 0 or 1
+    -- poster BLOB
+) STRICT;
+```
+- **STRICT**가 없으면 타입의 검사를 하지 않는다.
