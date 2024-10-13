@@ -32,3 +32,4 @@ SELECT는 가장 마지막에 호출된다.
 FROM -> WHERE -> SELECT -> ORDER BY
 ## #4.10 LIMIT and OFFSET Clauses
 FROM -> WHERE -> SELECT -> ORDER BY -> OFFSET -> LIMIT
+## #4.11 GROUP BY Clause
