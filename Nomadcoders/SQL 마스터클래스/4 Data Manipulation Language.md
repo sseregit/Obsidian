@@ -22,3 +22,8 @@ SELECT는 가장 마지막에 호출된다.
 ## #4.6 WHERE Clause
 
 ## #4.7 WHERE Predicates
+`BETWEEN A AND B`
+`IN NOT IN`
+`LIKE %, _`
+
+## #4.8 SELECT CASE
