@@ -38,3 +38,6 @@ FROM -> WHERE -> GROUP BY -> SELECT -> ORDER BY
 ## #4.12 GROUP BY Gotchas
 
 ## #4.13 HAVING Clause
+FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
+
+## #4.14 Super Practice Part One
