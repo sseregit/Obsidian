@@ -31,3 +31,4 @@ SELECT는 가장 마지막에 호출된다.
 ## #4.9 ORDER BY Clause
 FROM -> WHERE -> SELECT -> ORDER BY
 ## #4.10 LIMIT and OFFSET Clauses
+FROM -> WHERE -> SELECT -> ORDER BY -> OFFSET -> LIMIT
