@@ -27,3 +27,6 @@ SELECT는 가장 마지막에 호출된다.
 `LIKE %, _`
 
 ## #4.8 SELECT CASE
+
+## #4.9 ORDER BY Clause
+FROM -> WHERE -> SELECT -> ORDER BY
