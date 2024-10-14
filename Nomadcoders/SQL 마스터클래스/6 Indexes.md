@@ -32,7 +32,7 @@
 - Leaf node 안에는 (지정한 컬럼) 열의 값만이 들어 있지 않다
 	- primary key값 등등이 포함
 - B+ Tree에서 movies 테이블로 점프해서 movies 테이블의 정보들을 불러와야 하기 때문이다.
-	- 아래 처럼 director를 index로 찾지만 title이란 값은 Leaf node에 존재 하지 않기 때문에 해당 행을 정확히 알아야 한다.
+	- 아래 처럼 director를 index로 찾지만 title이란 값은 Leaf node에 존재 하지 않기 때문에 인덱스데이터 => 실제 데이터로 이동해야 한다.
 ```sql
 select title from movies where director = 'blalblalblalal'
 ```
