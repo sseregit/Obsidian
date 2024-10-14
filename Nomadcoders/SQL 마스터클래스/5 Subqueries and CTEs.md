@@ -19,3 +19,7 @@
 
 ### correlated subquery
 - 메인 쿼리가 어떤 열에서 실행중인지에 따라 결과값이 달라진다.
+
+where 조건의 순서는 query optimizer가 더 실행 비용이 저렴한 subquery를 먼저 실행시켜준다.
+
+## #5.4 Correlated CTEs
