@@ -23,3 +23,5 @@
 where 조건의 순서는 query optimizer가 더 실행 비용이 저렴한 subquery를 먼저 실행시켜준다.
 
 ## #5.4 Correlated CTEs
+
+## #5.5 Subquery Practice
