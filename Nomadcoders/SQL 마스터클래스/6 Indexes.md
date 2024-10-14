@@ -76,4 +76,15 @@ CREATE INDEX idx ON movies (rating, title);
 - 사용하는 경우
 	- where, order by 그리고 join 연산 시, 자주 사용하는 column을 index로 사용해야 한다.
 	- 고유한 값을 가진 column이 있다면 index로 사용하기 좋다.
+	- 사이즈가 큰 테이블
+		- 작을 경우 그렇게 큰 이득이 없다
+	- 외래키
+		- 자동으로 생성되는 경우도 있다
+	- index가 유용할 것이라고 추측하지 말고 최적화가 필요할 때 고민하면 된다.
+	- 다중열을 함께 필터, 정렬하는 query에는 multi column이나 composite index를 사용한다
+		- query를 살펴 봐야한다 = 연산자를 사용하는지 > 범위 연산자를 사용하는지 해당 정보를 활용해서 만들면된다.
+	- covering index는 사용한다면 작게
 - 아닌 경우
+	- index는 공짜가 아니다! 과도하게 사용하지 말아야함
+	- column이 자주 변경된다면 index의 대상이 되면 안된다.
+	- 엄청큰 text 컬럼이 있다면 default값인 b-tree대신 full text index를 사용해야 한다.
