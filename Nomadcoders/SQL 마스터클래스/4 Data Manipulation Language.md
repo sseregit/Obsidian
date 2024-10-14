@@ -45,3 +45,7 @@ FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
 ## #4.15 Super Practice Part Two
 
 ## #4.15 Super Practice Part Three
+
+## 4.17 Views
+### view
+- 해당 쿼리를 기억하기 쉬ㄴ 이름으로 패키징해서 계속 사용할 수 있도록 해준다
