@@ -43,5 +43,6 @@ select title from movies where director = 'blalblalblalal'
 
 ## #6.8 Multi Column Indexes
 
-다중 컬럼 인덱스를 만들 때는 **순서**가 중요하다
+### 다중 컬럼 인덱스를 만들 때는 **순서**가 중요하다
+- where절에도 인덱스의 순서를 지키는것이 성능에 유리하다
 범위로 지정되어 있다면 `column > 1` index의 다음 부분을 사용하지 않는다.
