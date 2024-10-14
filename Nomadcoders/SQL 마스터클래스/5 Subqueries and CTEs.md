@@ -25,3 +25,5 @@ where 조건의 순서는 query optimizer가 더 실행 비용이 저렴한 subq
 ## #5.4 Correlated CTEs
 
 ## #5.5 Subquery Practice
+
+## #5.6 Final Practice
