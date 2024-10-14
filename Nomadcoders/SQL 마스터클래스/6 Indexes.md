@@ -49,3 +49,9 @@ select title from movies where director = 'blalblalblalal'
 - DB는 범위 조건을 찾기 전까지 index 전체를 사용하려고 한다.
 - = 을 우선으로 범위지정 조건 컬럼을 후순위로
 범위로 지정되어 있다면 `column > 1` index의 다음 부분을 사용하지 않는다.
+
+## #6.9 Covering Indexes
+
+### Covering Index
+- 멀티 컬럼 인덱스 만큼 드라마틱하지 않지만 훌륭한 성능 최적화를 제공한다.
+- query의 요구사항을 완벽하게 만족시키는 index
