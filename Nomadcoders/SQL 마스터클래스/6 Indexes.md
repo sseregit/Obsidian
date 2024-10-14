@@ -55,3 +55,14 @@ select title from movies where director = 'blalblalblalal'
 ### Covering Index
 - 멀티 컬럼 인덱스 만큼 드라마틱하지 않지만 훌륭한 성능 최적화를 제공한다.
 - query의 요구사항을 완벽하게 만족시키는 index
+	- 인덱스에 이미 사용할 데이터가 존재하기 때문에 해당 메인 테이블의 데이터로 이동할 필요없이 마무리 된다.
+```sql
+explain query plan SELECT
+	title
+FROM
+	movies
+WHERE
+	rating > 7;
+
+CREATE INDEX idx ON movies (rating, title);
+```
