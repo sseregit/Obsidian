@@ -36,3 +36,5 @@
 ```sql
 select title from movies where director = 'blalblalblalal'
 ```
+
+## #6.6 Recap
