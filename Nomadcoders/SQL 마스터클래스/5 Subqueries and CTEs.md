@@ -16,3 +16,6 @@
 - independent subquery를 재사용할 수 있게 해준다.
 
 ## #5.3 Correlated Subqueries
+
+### correlated subquery
+- 메인 쿼리가 어떤 열에서 실행중인지에 따라 결과값이 달라진다.
