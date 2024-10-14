@@ -15,3 +15,9 @@
 ## #6.3 Disclaimer
 
 ## #6.4 B+ Trees
+
+### internal node
+- node가 달려 있는 node
+
+### leaf node
+- node가 달려 있지 않은 node
