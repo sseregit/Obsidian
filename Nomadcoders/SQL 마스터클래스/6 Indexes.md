@@ -40,3 +40,5 @@ select title from movies where director = 'blalblalblalal'
 ## #6.6 Recap
 
 ## #6.7 Indexes and Keys
+
+## #6.8 Multi Column Indexes
