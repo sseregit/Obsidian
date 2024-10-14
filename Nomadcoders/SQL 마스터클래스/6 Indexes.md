@@ -56,6 +56,10 @@ select title from movies where director = 'blalblalblalal'
 - 멀티 컬럼 인덱스 만큼 드라마틱하지 않지만 훌륭한 성능 최적화를 제공한다.
 - query의 요구사항을 완벽하게 만족시키는 index
 	- 인덱스에 이미 사용할 데이터가 존재하기 때문에 해당 메인 테이블의 데이터로 이동할 필요없이 마무리 된다.
+- 항상 사용하는 것은 지양하자
+	- 어쩌면 매우 길고 방대한 index가 될 수 있다.
+	- 성능 문제를 일으킬 수 있다.
+		- 검색이 아니라 추가 삭제 편집등의 이벤트에서
 ```sql
 explain query plan SELECT
 	title
@@ -66,3 +70,10 @@ WHERE
 
 CREATE INDEX idx ON movies (rating, title);
 ```
+
+## #6.10 When To Use Indexes
+### index를 사용해야하는 경우와 아닌 경우(Nico의 개인 의견 참고!)
+- 사용하는 경우
+	- where, order by 그리고 join 연산 시, 자주 사용하는 column을 index로 사용해야 한다.
+	- 고유한 값을 가진 column이 있다면 index로 사용하기 좋다.
+- 아닌 경우
