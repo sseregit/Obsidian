@@ -10,3 +10,5 @@
 	- 데이터를 일관성 유지
 
 ## #8.2 Entities
+
+## #8.3 Foreign Keys
