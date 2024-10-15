@@ -71,3 +71,34 @@ create table users (
 ## #7.6 INSERT INTO VALUES
 
 ## #7.7 ALTER TABLE
+```sql
+-- drop column
+alter table users drop column profile_picture;
+
+-- rename column
+alter table users change column about_me about_me text;
+
+-- change the column type
+alter table users modify column about_me tinytext;
+
+-- rename database
+alter table users rename to customers;
+
+alter table customers rename to users;
+
+-- drop constraints
+alter table users drop constraint uq_email;
+alter table users drop constraint username, drop constraint chk_age;
+
+-- adding constraints
+alter table users add constraint uq_email unique (email), add constraint uq_username unique (username);
+
+alter table users add constraint chk_age CHECK (age < 100);
+
+alter table users modify column bed_time time null;
+alter table users modify column bed_time time not null;
+
+show create table users;
+```
+
+## #7.8 ALTER TABLE part Two
