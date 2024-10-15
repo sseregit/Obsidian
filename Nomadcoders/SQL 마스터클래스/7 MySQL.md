@@ -120,7 +120,11 @@ sqlite는 `alter table`을 지원하지만 테이블 이름 변경, 컬럼 추�
 	- `full_name varchar(101) generated always as (concat(first_name, ' ', last_name)) stored`
 	- 디스크에 저장된다.
 	- 업데이트 될때만 다시 계산된다.
+	- 조회가 자주 될 때 유용 하지만 데이터 삽입 수정시 이슈가 있을 수 있다.
 - virtual
 	- `alter table users_v2 add column email_domain varchar(50) generated always as (substring_index(email, '@', -1)) virtual;`
 	- 디스크나 데이터베이스에 저장되지 않는다.
 	- 조회할 때마다 매번 연산을 수행한다
+	- 조회가 자주 되지않고 조회속도가 상관없다면 유용
+
+## #7.10 Data Import
