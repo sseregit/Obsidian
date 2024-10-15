@@ -11,3 +11,13 @@ FROM -> JOIN -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
 
 ### inner join
 - 어떤 row와 row를 연결시킬지 선택할 수 있다.
+```sql
+select ...
+  from dogs  
+join owners using (owner_id)  
+join breeds using (breed_id)  
+;
+```
+- using 키워드로 on 절을 줄일 수 있다.
+
+## #9.3 OUTER JOIN
