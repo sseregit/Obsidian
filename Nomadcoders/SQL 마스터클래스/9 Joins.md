@@ -25,3 +25,5 @@ join breeds using (breed_id)
 ### left or right outer join
 
 ## #9.4 Joins Practice
+
+## #9.5 Joins Practice part Two
