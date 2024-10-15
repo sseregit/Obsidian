@@ -7,3 +7,5 @@
 ## #7.3 Connecting
 
 ## #7.4 MySQL Data Types Part One
+
+## #7.5 MySQL Data Types Part Two
