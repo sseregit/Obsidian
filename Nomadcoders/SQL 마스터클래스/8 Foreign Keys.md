@@ -12,3 +12,11 @@
 ## #8.2 Entities
 
 ## #8.3 Foreign Keys
+
+```sql
+create table ...(
+	...
+	owner_id bigint unsigned,
+	foreign key (onwer_id) references owners (owner_id)
+)
+```
