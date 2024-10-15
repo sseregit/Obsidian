@@ -128,3 +128,24 @@ sqlite는 `alter table`을 지원하지만 테이블 이름 변경, 컬럼 추�
 	- 조회가 자주 되지않고 조회속도가 상관없다면 유용
 
 ## #7.10 Data Import
+
+```sql
+CREATE TABLE movies (
+                          movie_id bigint unsigned PRIMARY KEY auto_increment,
+                          title varchar(300) not null,
+                          original_title varchar(300) not null,
+                          original_language char(2) not null,
+                          overview TEXT,
+                          release_date smallint,
+                          revenue bigint,
+                          budget bigint,
+                          homepage TEXT,
+                          runtime smallint,
+                          rating tinyint CHECK ( rating between 1 and 10),
+                          status enum('Canceled', 'In Production', 'Planned', 'Post Production', 'Released', 'Rumored') not null,
+                          country tinyTEXT,
+                          genres tinyTEXT,
+                          director tinyTEXT,
+                          spoken_languages tinyTEXT
+);
+```
