@@ -21,3 +21,5 @@ join breeds using (breed_id)
 - using 키워드로 on 절을 줄일 수 있다.
 
 ## #9.3 OUTER JOIN
+
+### left or right outer join
