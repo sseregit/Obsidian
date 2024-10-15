@@ -42,3 +42,66 @@ create table ...(
 
 ### composite key(복합키)
 - primary key가 두 개이상의 컬럼으로 구성된 것을 의미한다.
+
+```sql
+CREATE TABLE dogs
+(
+    dog_id        BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name          VARCHAR(50) NOT NULL,
+    weight        DECIMAL(5, 2),
+    date_of_birth DATE,
+    onwer_id      BIGINT UNSIGNED,
+    breed_id      BIGINT UNSIGNED default 2,
+    -- foreign key (onwer_id) references owners (owner_id) on delete set null,
+    CONSTRAINT breed_fk foreign key (breed_id) references breeds (breed_id) on delete set default
+);
+
+alter table dogs
+    drop foreign key owner_fk add constraint owner_fk foreign key (onwer_id) references owners (owner_id) on delete set null;
+
+create table owners
+(
+    owner_id BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name     VARCHAR(50) NOT NULL,
+    email    VARCHAR(100) UNIQUE,
+    phone    VARCHAR(20),
+    address  TINYTEXT
+
+);
+
+create table breeds
+(
+    breed_id         BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name             VARCHAR(50) NOT NULL,
+    size_category    ENUM ('small', 'medium', 'big') DEFAULT 'small',
+    typical_lifespan TINYINT
+);
+
+create table pet_passports
+(
+    pet_passport_id   BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    blood_type        varchar(10),
+    allergies         TEXT,
+    last_checkup_date Date,
+    dog_id            BIGINT UNSIGNED unique,
+    foreign key (dog_id) references dogs (dog_id) on delete cascade
+);
+
+create table tricks
+(
+    trick_id BIGINT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    name     VARCHAR(50) NOT NULL UNIQUE,
+    difficulty ENUM('easy', 'medium', 'hard') not null default 'easy'
+);
+
+create table dog_tricks
+(
+    dog_id BIGINT UNSIGNED,
+    trick_id BIGINT UNSIGNED,
+    proficiency enum('beginner', 'intermediate', 'expert') not null default 'beginner',
+    date_learned timestamp default current_timestamp,
+    primary key (dog_id, trick_id),
+    foreign key (dog_id) references dogs (dog_id) on delete cascade,
+    foreign key (trick_id) references tricks (trick_id) on delete cascade
+);
+```
