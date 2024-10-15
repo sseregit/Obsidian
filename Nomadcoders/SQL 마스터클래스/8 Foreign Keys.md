@@ -37,5 +37,4 @@ create table ...(
 
 ## #8.6 Many-To-Many
 
-
-
+bridge table이 없이 N:M은 표현자체가 불가능하다.
