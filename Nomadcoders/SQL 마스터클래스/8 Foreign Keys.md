@@ -31,3 +31,7 @@ create table ...(
 - SET NULL
 	- table이 삭제되면 해당 왜래키를 null로 설정한다.
 	- NOT NULL 제약 확인
+
+## #8.5 One-To-Many and One-To-One
+[https://dbdiagram.io/](https://dbdiagram.io/)
+
