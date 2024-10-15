@@ -104,3 +104,6 @@ show create table users;
 ## #7.8 ALTER TABLE part Two
 
 sqlite는 `alter table`을 지원하지만 테이블 이름 변경, 컬럼 추가, 컬럼 이름 변경 밖에 할 수 없다.
+
+### 데이터를 가지고 있는 컬럼의 타입을 변경할 때 방법
+1. 완전히 새로운 컬럼을 만든다.
