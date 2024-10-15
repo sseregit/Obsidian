@@ -37,4 +37,8 @@ create table ...(
 
 ## #8.6 Many-To-Many
 
-bridge table이 없이 N:M은 표현자체가 불가능하다.
+### bridge table or link table
+- 없이 N:M은 표현자체가 불가능하다.
+
+### composite key(복합키)
+- primary key가 두 개이상의 컬럼으로 구성된 것을 의미한다.
