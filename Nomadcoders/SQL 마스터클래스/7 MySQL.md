@@ -69,3 +69,5 @@ create table users (
 ```
 
 ## #7.6 INSERT INTO VALUES
+
+## #7.7 ALTER TABLE
