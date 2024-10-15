@@ -22,3 +22,12 @@ create table ...(
 ```
 
 ## #8.4 ON DELETE
+
+`foreign key (onwer_id) references owners (owner_id) on delete`
+- CASCADE
+	- 관련된 레코드가 삭제되면 그것과 연결된 다른 레코드도 삭제 된다.
+- NO ACTION
+- RESTRICT
+- SET NULL
+	- table이 삭제되면 해당 왜래키를 null로 설정한다.
+	- NOT NULL 제약 확인
