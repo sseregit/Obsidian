@@ -4,3 +4,6 @@
 
 ### cross join
 - table row * join table row 수가 select 된다.
+
+join은
+from -> join -> where
