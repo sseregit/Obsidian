@@ -110,3 +110,6 @@ sqlite는 `alter table`을 지원하지만 테이블 이름 변경, 컬럼 추�
 	1. 새로운 컬럼을 만들시 not null을 지정하면 반드시 default 값이 있어야 한다
 	2. 새로운 컬럼에 타겟 컬럼을 migrationd을 진행한다.
 	3. 그후 타겟 컬럼 삭제
+2. 완전히 새로운 컬럼을 만들면서 Default 로 해당 값을 채운뒤 삭제할 수 있다.
+
+## #7.9 Generated Columns
