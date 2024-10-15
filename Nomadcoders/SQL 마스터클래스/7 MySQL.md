@@ -102,3 +102,5 @@ show create table users;
 ```
 
 ## #7.8 ALTER TABLE part Two
+
+sqlite는 `alter table`을 지원하지만 테이블 이름 변경, 컬럼 추가, 컬럼 이름 변경 밖에 할 수 없다.
