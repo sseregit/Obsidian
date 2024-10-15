@@ -17,6 +17,8 @@
 create table ...(
 	...
 	owner_id bigint unsigned,
-	foreign key (onwer_id) references owners (owner_id)
+	constraint fk명 foreign key (onwer_id) references owners (owner_id)
 )
 ```
+
+## #8.4 ON DELETE
