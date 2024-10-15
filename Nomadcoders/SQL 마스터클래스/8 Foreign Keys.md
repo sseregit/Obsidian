@@ -35,3 +35,7 @@ create table ...(
 ## #8.5 One-To-Many and One-To-One
 [https://dbdiagram.io/](https://dbdiagram.io/)
 
+## #8.6 Many-To-Many
+
+
+
