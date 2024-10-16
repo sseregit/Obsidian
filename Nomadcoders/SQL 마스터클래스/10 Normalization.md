@@ -18,3 +18,5 @@
 `insert ignore into countries (country_code)`
 - ignore
 	- 모든 값을 넣으려고 시도한 뒤 중복 에러가 나는 값이 난오면 에러를 무시한다.
+	
+## #10.6 Conclusions
