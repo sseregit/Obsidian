@@ -22,3 +22,22 @@ where match(overview) against ('the food and the drinks');
 
 ### [Boolean Mode](https://dev.mysql.com/doc/refman/8.4/en/fulltext-boolean.html)
 - Boolean 로직을 사용해서 검색할 수 있다.
+
+```sql
+-- + 반드시 포함
+-- - 반드시 없어야함
+-- > 있는게 더 좋고
+-- < 없는게 더 좋다
+-- 아무 연산자도 없으면 있어도 없어도 상관없다
+-- 공백이 포함되어 있다면 ""로 감싸야 한다
+-- () 공백을 기준으로 여러 단어 추가 가능
+-- 단어* 단어로 시작하는 단어가 있는것을 찾는다
+select title, overview, match(overview) against ('psycho*' IN BOOLEAN MODE) as score
+from movies
+where match(overview) against ('psycho*' IN BOOLEAN MODE);
+;
+```
+
+## #12.3 Query Expansion
+
+### Query Expansion Search
