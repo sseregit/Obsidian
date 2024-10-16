@@ -33,3 +33,5 @@ delimiter ; -- event 생성 SQL의 바깥 부분에서만 적용된다.
 ## #11.2 Recap
 
 ## #11.3 Triggers
+
+## #11.4 Overpowered Trigger
