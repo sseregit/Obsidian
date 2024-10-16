@@ -46,3 +46,10 @@ where match(overview) against ('psycho*' IN BOOLEAN MODE);
 	- 입력한 단어와의 연관성
 		- ex) database 입력
 			- MYSQL, ORACLE, DB2, RDBMS등의 연관된 단어까지 찾는다.
+
+```sql
+select title, overview, match(overview) against ('kimchi' WITH QUERY EXPANSION) as score
+from movies
+where match(overview) against ('kimchi' WITH QUERY EXPANSION);
+;
+```
