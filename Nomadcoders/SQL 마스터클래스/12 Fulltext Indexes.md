@@ -41,3 +41,4 @@ where match(overview) against ('psycho*' IN BOOLEAN MODE);
 ## #12.3 Query Expansion
 
 ### Query Expansion Search
+- 해당 단어를 입력하면 
