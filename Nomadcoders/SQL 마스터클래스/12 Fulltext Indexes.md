@@ -43,3 +43,6 @@ where match(overview) against ('psycho*' IN BOOLEAN MODE);
 ### Query Expansion Search
 - 해당 단어를 입력하면 쿼리와 관련 있는 결과를 찾고
 - 그 결과에서 연관성 높은 단어를 찾아서 다시 검색한다.
+	- 입력한 단어와의 연관성
+		- ex) database 입력
+			- MYSQL, ORACLE, DB2, RDBMS등의 연관된 단어까지 찾는다.
