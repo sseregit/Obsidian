@@ -5,3 +5,12 @@
 ## #10.2 Normalizing Directors
 
 ## #10.3 Normalizing Original Language
+
+## #10.4 Normalizing Countries
+
+## #10.5 Unions
+
+### join
+- 수평적으로 테이블을 확장 시킨다.
+### union
+- 수직적으로 확장한다 (stack up)
