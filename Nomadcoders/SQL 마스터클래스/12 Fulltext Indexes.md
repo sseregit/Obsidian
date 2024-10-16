@@ -20,5 +20,5 @@ where match(overview) against ('the food and the drinks');
 
 ## #12.2 Boolean Mode Search
 
-### Boolean Mode
+### [Boolean Mode](https://dev.mysql.com/doc/refman/8.4/en/fulltext-boolean.html)
 - Boolean 로직을 사용해서 검색할 수 있다.
