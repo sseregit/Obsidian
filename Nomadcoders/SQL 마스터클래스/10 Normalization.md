@@ -14,3 +14,7 @@
 - 수평적으로 테이블을 확장 시킨다.
 ### union
 - 수직적으로 확장한다 (stack up)
+
+`insert ignore into countries (country_code)`
+- ignore
+	- 모든 값을 넣으려고 시도한 뒤 중복 에러가 나는 값이 난오면 에러를 무시한다.
