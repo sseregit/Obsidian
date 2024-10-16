@@ -41,4 +41,5 @@ where match(overview) against ('psycho*' IN BOOLEAN MODE);
 ## #12.3 Query Expansion
 
 ### Query Expansion Search
-- 해당 단어를 입력하면 
+- 해당 단어를 입력하면 쿼리와 관련 있는 결과를 찾고
+- 그 결과에서 연관성 높은 단어를 찾아서 다시 검색한다.
