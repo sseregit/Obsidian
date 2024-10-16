@@ -11,4 +11,4 @@
 ## #11.1 Events
 
 ### delimiter
-- database에게 SQL statement가 끝났다고 알려주는 문자
+- database에게 SQL statement가 끝났다고 알려주는 문자 `;`
