@@ -18,3 +18,8 @@ $$
 ```
 
 ## #14.2 Return Types
+
+## #14.3 Trigger Functions
+
+### Function Volatility(함수 변동성)
+- 기본적으로 생성할 때 코드에 작성하는건 아닌데 하지만 원하면 query 플래너가 function을 최적화 할 수 있도록 수정할 수 있다.
