@@ -43,10 +43,14 @@ begin; -- start transaction
 	2. Read Uncommited 가능
 
 ## ### #15.5 Repeatable Read
+
+### Repeatable Read
+- repeatable read transaction이 진행중 상태에서는 commit이 된 데이터도 계속해서 이전 데이터가 보이게 된다
+- 스냅샷을 찍는데 transaction이 처음 열릴때 찍는것이 아니라 non-transaction 명령문이 실행될 때 찍힌다.
+
 ### transaction phenomena
  2. nonrepeatable read
 	 1. transaction이 데이터를 다시 읽으려고 할 때 발생한다.
 	 2. 이미 한번 읽은 데이터가 다른 transaction에서 수정되고 commit 됐을 때
-		 1. repeatable read transaction이 진행중 상태에서는 commit이 된 데이터도 계속해서 이전 데이터가 보이게 된다.
  3. phantom read
  4. serialization anomaly
