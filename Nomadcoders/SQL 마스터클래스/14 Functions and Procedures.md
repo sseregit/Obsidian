@@ -47,5 +47,21 @@ create or replace function set_updated_at()
 - 동일한 argument가 주어질 경우 영원히 같은 결과를 return 한다
 - query가 상수 argument와 함께 호출했다면 optimizer가 function을 미리 평가할 수 있게 해준다.
 
+```sql
+create or replace function set_updated_at()
+    returns trigger as -- 이 function은 반드시 trigger에 의해 호출되어야 한다.
+$$
+begin
+    new.updated_at = current_timestamp;
+    return new;
+end;
+$$ language plpgsql; -- PostgreSQL이 지원하는 언어로
+
+create trigger updated_at
+    before update -- of title/ column을 target할 trigger생성가능
+    on movies
+    for each row
+execute procedure set_updated_at();
+```
 ### plpgsql (procedural language postgreSQL)
 - trigger나 function을 작성할 때 사용할 언어
