@@ -31,3 +31,5 @@ $$
 
 ### Immutable
 - 동일한 argument가 주어질 경우 영원히 같은 결과를 리턴
+
+### pl (Language postgreSQL)
