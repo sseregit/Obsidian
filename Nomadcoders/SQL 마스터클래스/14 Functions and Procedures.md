@@ -33,3 +33,22 @@ $$
 - 동일한 argument가 주어질 경우 영원히 같은 결과를 리턴
 
 ### pl (Language postgreSQL)
+```sql
+create or replace function set_updated_at()  
+    returns trigger as  
+    $$  
+        begin            
+	        new.updated_at = current_timestamp;  
+            return new;  
+        end;  
+    $$  
+    language plpgsql;  
+  
+create trigger updaetd_at  
+    before update -- of title  
+    on movies  
+    for each row execute procedure set_updated_at();
+```
+
+- function을 만들고
+- trigger를 등록해서 function을 실행하는 방법
