@@ -21,3 +21,26 @@
 ## #15.3 Savepoints
 
 ### savepoint
+```sql
+begin; -- start transaction
+
+	...
+	
+    savepoint transfer_one;
+
+	...
+	
+    rollback to savepoint transfer_one;
+```
+
+## #15.4 Read Uncommited
+
+[transaction level](https://www.postgresql.org/docs/current/transaction-iso.html)
+
+### transaction phenomena
+1. dirty read
+	1. transaction이 commit되지 않은 transaction이 작성한 데이터를 동시에 읽을 때 발생
+	2. Read Uncommited 가능
+2. nonrepeatable read
+3. phantom read
+4. serialization anomaly
