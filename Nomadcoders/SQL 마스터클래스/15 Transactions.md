@@ -17,3 +17,5 @@
 ### select문이 사실상 transaction으로 취급되는 이유
 - select문 뿐만 아니라 모든 구문은 그 자체로 transaction으로 여겨진다.
 	- auto commit mode
+
+## #15.3 Savepoints
