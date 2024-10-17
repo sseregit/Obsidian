@@ -64,3 +64,4 @@ begin; -- start transaction
 	 2. 주로 insert와 delete로 발생
  4. serialization anomaly
 
+## #15.7 Locks
