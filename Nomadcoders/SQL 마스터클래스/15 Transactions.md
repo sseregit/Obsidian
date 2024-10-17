@@ -52,6 +52,7 @@ begin; -- start transaction
  2. nonrepeatable read
 	 1. transaction이 데이터를 다시 읽으려고 할 때 발생한다.
 	 2. 이미 한번 읽은 데이터가 다른 transaction에서 수정되고 commit 됐을 때
+	 3. 주로 update로 발생
  3. phantom read
  4. serialization anomaly
 
@@ -60,5 +61,6 @@ begin; -- start transaction
 ### transaction phenomena
  3. phantom read
 	 1. row(행)집합을 반환하는 쿼리를 transaction 안에서 재실행할 때, 최근에 다른 commit된 다른 transaction에 의해서 그 결과가 이전과 다르게 변경되는 것
+	 2. 주로 insert와 delete로 발생
  4. serialization anomaly
 
