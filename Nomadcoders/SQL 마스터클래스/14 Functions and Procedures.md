@@ -72,3 +72,5 @@ execute procedure set_updated_at();
 - 어떤 것도 return할 필요가 없다 할수는 있지만, 꼭 할 필요는 없음
 - DML command에서 호출하지 않는다
 	- `CALL (procedure name);`
+
+## #14.5 Python Extension 
