@@ -86,7 +86,9 @@ for update or share
 
 ### update와 share의 차이점
 - update
-	- **exclusive lock**을 생성한다.
+	- **exclusive lock**을 생성한다. 
+	- 사용하는 곳 외에 lock을 이용할 수 없음
 	- 아무도 그 데이터를 수정,삭제,생성 할 수 없다.
 - share
-	- 
+	- 사용하는 transaction row에서 모두 lock을 하고 있는 것
+	- lock을 각자 거는거지만 아무도 그 데이터를 수정,삭제,생성 할 수 없다.
