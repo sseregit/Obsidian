@@ -10,3 +10,9 @@
 - postgres는 text를 받아 압축하는데 해당 압축한 용량이 2KB를 넘으면 다른 테이블 어딘가에 저장되고 해당 text는 그 row를 가리키는 pointer를 갖게된다
 
 ## #13.4 PostgreSQL Data Types part Two
+
+## #13.5 Type Casting
+
+## #13.6 Data Import
+
+## #13.7 UNNEST
