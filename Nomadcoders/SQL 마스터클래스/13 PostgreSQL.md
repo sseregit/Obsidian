@@ -44,3 +44,5 @@ create table movies_genres
     foreign key (genre_id) references genres (genre_id)
 );
 ```
+
+## #13.8 FULL OUTER JOIN
