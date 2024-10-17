@@ -76,3 +76,17 @@ begin; -- start transaction
 ## #15.9 Shared Locks
 
 ### exclusive or shared Locks
+
+```sql
+select *
+from table
+for update
+```
+-  코드가 실행되고 나면, commit할 때까지 아무도 이 row를 건드릴 수 없다는걸 의미한다.
+
+```sql
+select *
+from table
+for share
+```
+- 
