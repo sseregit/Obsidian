@@ -41,6 +41,9 @@ begin; -- start transaction
 1. dirty read
 	1. transaction이 commit되지 않은 transaction이 작성한 데이터를 동시에 읽을 때 발생
 	2. Read Uncommited 가능
-2. nonrepeatable read
-3. phantom read
-4. serialization anomaly
+
+## ### #15.5 Repeatable Read
+### transaction phenomena
+ 2. nonrepeatable read
+ 3. phantom read
+ 4. serialization anomaly
