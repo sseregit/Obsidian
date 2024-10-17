@@ -46,3 +46,6 @@ create or replace function set_updated_at()
 - 수정이 불가능하다
 - 동일한 argument가 주어질 경우 영원히 같은 결과를 return 한다
 - query가 상수 argument와 함께 호출했다면 optimizer가 function을 미리 평가할 수 있게 해준다.
+
+### plpgsql (procedural language postgreSQL)
+- trigger나 function을 작성할 때 사용할 언어
