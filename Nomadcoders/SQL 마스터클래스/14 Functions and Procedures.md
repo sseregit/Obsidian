@@ -74,3 +74,10 @@ execute procedure set_updated_at();
 	- `CALL (procedure name);`
 
 ## #14.5 Python Extension 
+
+```
+select * FROM pg_available_extensions; -- extension list
+
+apt-get update
+apt-get install postgresql-plpython3-16 -- 설치
+```
