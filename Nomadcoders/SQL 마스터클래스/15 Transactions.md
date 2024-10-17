@@ -54,3 +54,10 @@ begin; -- start transaction
 	 2. 이미 한번 읽은 데이터가 다른 transaction에서 수정되고 commit 됐을 때
  3. phantom read
  4. serialization anomaly
+
+## #15.6 Phantom Read
+
+### transaction phenomena
+ 3. phantom read
+ 4. serialization anomaly
+
