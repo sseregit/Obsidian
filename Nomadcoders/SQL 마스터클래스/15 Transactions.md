@@ -5,9 +5,10 @@
 ## #15.2 ACID
 
 ### transaction 시스템은 ACID 특성을 가져야 한다
-- Atomicity
+- Atomicity (원자성)
 	- All or Nothing
-- Consistency
+- Consistency (일관성)
 	- 유효한 상태에서 또다른 valid 상태가 되어야 한다
-- Isolation
-- Durability
+- Isolation (독립성)
+- Durability (지속성)
+	- committed가 되면 무슨일이 일어나도 변경사항들이 영구적으로 유지된다는걸 확실할수 있어야 한다.
