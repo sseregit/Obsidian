@@ -59,5 +59,6 @@ begin; -- start transaction
 
 ### transaction phenomena
  3. phantom read
+	 1. row(행)집합을 반환하는 쿼리를 transaction 안에서 재실행할 때, 최근에 다른 commit된 다른 transaction에 의해서 그 결과가 이전과 다르게 변경되는 것
  4. serialization anomaly
 
