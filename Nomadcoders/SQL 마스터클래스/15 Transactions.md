@@ -80,13 +80,11 @@ begin; -- start transaction
 ```sql
 select *
 from table
-for update
+for update or share
 ```
 -  코드가 실행되고 나면, commit할 때까지 아무도 이 row를 건드릴 수 없다는걸 의미한다.
 
-```sql
-select *
-from table
-for share
-```
-- 
+### update와 share의 차이점
+- update
+	- **exclusive lock**을 생성한다.
+	- 아무도 그 데이터를 수정,삭제,생성 할 수 없다.
