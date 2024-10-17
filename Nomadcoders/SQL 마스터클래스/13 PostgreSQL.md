@@ -16,3 +16,31 @@
 ## #13.6 Data Import
 
 ## #13.7 UNNEST
+
+```sql
+create table genres
+(
+    genre_id   bigint primary key generated always as IDENTITY,
+    name       varchar(50) unique,
+    created_at timestamptz default current_timestamp not null,
+    updated_at timestamptz default current_timestamp not null
+);
+
+insert into genres (name)
+select distinct unnest(string_to_array(genres, ','))
+from movies
+group by genres
+;
+
+create table movies_genres
+(
+    movie_id   bigint                                not null,
+    genre_id   bigint                                not null,
+    created_at timestamptz default current_timestamp not null,
+    updated_at timestamptz default current_timestamp not null,
+
+    primary key (movie_id, genre_id),
+    foreign key (movie_id) references movies (movie_id),
+    foreign key (genre_id) references genres (genre_id)
+);
+```
