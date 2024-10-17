@@ -23,3 +23,11 @@ $$
 
 ### Function Volatility(함수 변동성)
 - 기본적으로 생성할 때 코드에 작성하는건 아닌데 하지만 원하면 query 플래너가 function을 최적화 할 수 있도록 수정할 수 있다.
+
+### Volatility
+- 같은 파라미터 다른 값을 리턴할 수 있다.
+### Stable
+- 같은 파라미터 같은 값을 리턴한다.
+
+### Immutable
+- 동일한 argument가 주어질 경우 영원히 같은 결과를 리턴
