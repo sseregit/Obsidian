@@ -88,3 +88,5 @@ for update or share
 - update
 	- **exclusive lock**을 생성한다.
 	- 아무도 그 데이터를 수정,삭제,생성 할 수 없다.
+- share
+	- 
