@@ -74,3 +74,5 @@ begin; -- start transaction
 	2. 모든 트랜잭션이 동시에 실행했을 때와 하나씩 실행할 때가 다른 결과가 나타난다면 트랜잭션이 격리되지 않은것
 
 ## #15.9 Shared Locks
+
+### exclusive or shared Locks
