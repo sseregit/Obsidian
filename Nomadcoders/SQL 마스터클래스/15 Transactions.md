@@ -65,3 +65,9 @@ begin; -- start transaction
  4. serialization anomaly
 
 ## #15.7 Locks
+
+## #15.8 Serialization Anomaly
+
+### transaction phenomena
+4. serialization anomaly
+	1.  여러 트랙잭션의 성공적인 커밋 결과가 가능한 모든 순서로 트랜잭션을 순차적으로 실행한 결과와 일치하지 않을 때 발생한다.
