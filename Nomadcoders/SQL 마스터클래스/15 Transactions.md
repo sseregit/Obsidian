@@ -13,3 +13,7 @@
 	- 하나의 transaction에서 실행된 변경사항이 commit이 되기 전까지는 다른 transaction에는 보이지 않아야 한다
 - Durability (지속성)
 	- committed가 되면 무슨일이 일어나도 변경사항들이 영구적으로 유지된다는걸 확실할수 있어야 한다.
+
+### select문이 사실상 transaction으로 취급되는 이유
+- select문 뿐만 아니라 모든 구문은 그 자체로 transaction으로 여겨진다.
+	- auto commit mode
