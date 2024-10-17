@@ -24,31 +24,25 @@ $$
 ### Function Volatility(함수 변동성)
 - 기본적으로 생성할 때 코드에 작성하는건 아닌데 하지만 원하면 query 플래너가 function을 최적화 할 수 있도록 수정할 수 있다.
 
-### Volatility
-- 같은 파라미터 다른 값을 리턴할 수 있다.
-### Stable
-- 같은 파라미터 같은 값을 리턴한다.
-
-### Immutable
-- 동일한 argument가 주어질 경우 영원히 같은 결과를 리턴
-
-### pl (Language postgreSQL)
 ```sql
-create or replace function set_updated_at()  
-    returns trigger as  
-    $$  
-        begin            
-	        new.updated_at = current_timestamp;  
-            return new;  
-        end;  
-    $$  
-    language plpgsql;  
-  
-create trigger updaetd_at  
-    before update -- of title  
-    on movies  
-    for each row execute procedure set_updated_at();
+create or replace function set_updated_at()
+    returns trigger as
+    $$
+		...
+    $$
+    language plpgsql volatile -- 이부분의 옵션 종류;
 ```
 
-- function을 만들고
-- trigger를 등록해서 function을 실행하는 방법
+### volatile
+- database 수정하는 것을 포함해 모든 것을 할 수 있다.
+- 같은 파라미터에 다른 값이 리턴 될 수 있다.
+- optimizer는 function의 작업 결과를 전혀 가정하지 않고 query가 volatile function을 사용하면 모든 각각의 row에서 재실행된다.
+### stable
+- 수정할 수 없는 function
+- 단일 구문 내의 모든 row에서 동일한 argument에 대해서는 같은 결과를 return 한다.
+- optimizer가 복수의 실행을 하나의 실행으로 최적화 해준다.
+
+### immutable
+- 수정이 불가능하다
+- 동일한 argument가 주어질 경우 영원히 같은 결과를 return 한다
+- query가 상수 argument와 함께 호출했다면 optimizer가 function을 미리 평가할 수 있게 해준다.
