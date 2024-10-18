@@ -70,3 +70,5 @@ db.movies.find().sort({rating: -1, title: 1}).limit(10).skip(10) // 1 오름차�
 ```
 
 ## #19.4 Updating Documents
+
+## #19.5 Aggregating Documents
