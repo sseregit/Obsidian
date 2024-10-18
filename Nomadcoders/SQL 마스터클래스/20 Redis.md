@@ -7,3 +7,5 @@
 ## #20.4 Sets
 
 ## #20.5 Hashes
+
+## #20.6 Sorted Sets
