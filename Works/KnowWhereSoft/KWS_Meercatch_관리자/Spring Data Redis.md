@@ -1,7 +1,5 @@
 
 [[Redis Docker 이용해서 띄우기]]
-[[redis.conf]]
-[[sentinel.conf]]
 
 [Develop with Redis](https://redis.io/docs/latest/develop/)
 [Spring Data Redis 시작하기](https://redis.io/learn/develop/java/redis-and-spring-course)

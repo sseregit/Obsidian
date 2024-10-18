@@ -28,7 +28,6 @@ CheckList
 - Gradle Version 확인
 	- 적용 할 Java Version이 잘 맞는지 확인
 	- 7.3 버전 이후부터 Java 17 적용가능.
-![[Pasted image 20240313143838.png]]
 - QueryDSL classfiler jakarta로 변경해줘야함.
 	- `implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'`
 - Java EE to Jakarta

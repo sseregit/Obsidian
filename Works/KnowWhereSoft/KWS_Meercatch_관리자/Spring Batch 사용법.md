@@ -9,11 +9,9 @@
 [Spring Batch Document](https://docs.spring.io/spring-batch/reference/index.html)
 - 낙관적 잠금은 온라인 애플리케이션에 어울리고
 - 비관적 잠금은 배치 애플리케이션에 더 적합하다.
-![[Batch Stereotypes.png]]
 
 ## [Job](https://docs.spring.io/spring-batch/reference/domain.html#job)	
 - 전체 배치 프로세스를 캡슐화하는 엔티티
-![[Job Hierarchy.png]]
 - 스텝 인스턴스를 위한 컨테이너
 
 JobInstance
@@ -34,7 +32,6 @@ JobExecution
 - 배치 작업의 독립적이고 순차적인 단계를 캡슐화하는 도메인 객체
 - 모든 작업은 전적으로 하나 이상의 단계로 구성
 - 일괄처리를 정의하고 제어하는 필요한 모든 정보를 포함한다.
-![[Job Hierarchy With Steps.png]]
 
 StepExecution
 - 스텝을 실행하려는 한 번의 시도를 나타낸다.
