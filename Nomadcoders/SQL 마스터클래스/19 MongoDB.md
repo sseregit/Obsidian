@@ -41,4 +41,32 @@ db.dropDatabase(); // db 삭제
 
 ## #19.3 Reading Documents
 
-### query operator
+### [query operator](https://www.mongodb.com/ko-kr/docs/manual/reference/operator/query/)
+
+```mongo
+db.movies.find();  
+  
+db.movies.find({director: "Christopher Nolan"});  
+  
+db.movies.find({rating: {$gte: 8}});  
+  
+db.movies.find({year: {$gt: 2000, $lt: 2005}});  
+  
+db.movies.find({$or: [{rating: {$gt: 9}}, {year: {$gte: 2005}}]})  
+  
+db.movies.find({genres: {$in: ["Drama", "Crime"]}});  
+  
+db.movies.find({genres: {$all: ["Drama", "Crime"]}});  
+  
+db.movies.find({title: {$regex: /the/i}});  
+  
+db.movies.find({genres: {$size: 3}});  
+  
+db.movies.find({director: {$exists: false}});  
+  
+db.movies.find({"cast.0": "Keanu Reeves"});  
+  
+db.movies.find().sort({rating: -1, title: 1}).limit(10).skip(10) // 1 오름차순, -1 내림차순
+```
+
+## #19.4 Updating Documents
