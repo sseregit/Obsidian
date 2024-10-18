@@ -24,7 +24,7 @@ RedisConnection 클래스는 스레드 안전하지 않다.
 - Master-Slave 방법
 	- Master가 다운되면 이를 감지해 Slave 를 마스터로 올리고 클라이언트들이 새로운 Master에 접속할 수 있도록 해준다.
 ### Redis-Cluster
-- 저장 잧리를 여러개 동시에 사용하고 마치 하나의 저장소처럼 사용하는 방법
+- 저장소를 여러개 동시에 사용하고 마치 하나의 저장소처럼 사용하는 방법
 
 [RestTemplate](https://docs.spring.io/spring-data/redis/reference/redis/template.html)
 
