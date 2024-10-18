@@ -9,3 +9,5 @@
 ## #20.5 Hashes
 
 ## #20.6 Sorted Sets
+
+## #20.7 Conclusions
