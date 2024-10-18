@@ -71,4 +71,86 @@ db.movies.find().sort({rating: -1, title: 1}).limit(10).skip(10) // 1 오름차�
 
 ## #19.4 Updating Documents
 
+```mongodb
+db.movies.updateOne(  
+    {_id: ObjectId('6711c501aaca8d2c1319f4ae')},  
+    {  
+        $set: {'director': 'Francing Ford Coppola'},  
+        $currentDate: {updated_at: true}  
+    }  
+);  
+  
+db.movies.findOneAndUpdate(  
+    {_id: ObjectId('6711c501aaca8d2c1319f4ae')},  
+    {  
+        $set: {'director': 'Francing Ford Coppola'},  
+        $currentDate: {updated_at: true}  
+    },  
+    {  
+        returnNewDocument: true,  
+        upsert: true  
+    }  
+);  
+  
+db.movies.updateMany({  
+    director: 'Christopher Nolan'  
+}, {  
+    $inc: {rating: 0.2}  
+});  
+  
+db.movies.updateMany({  
+    title: 'Inception'  
+}, {  
+    $push: {genres: "Mind-Control"}  
+});  
+  
+db.movies.updateMany({  
+    title: 'Inception'  
+}, {  
+    $pull: {genres: "Mind-Control"}  
+});  
+  
+db.movies.updateMany({  
+    title: 'The Dark Knight'  
+}, {  
+    $addToSet: {cast: "Michael Cane!"}  
+});  
+  
+db.movies.updateMany({}, {  
+    $rename: {runtime: 'duration'}  
+});  
+  
+db.movies.updateOne(  
+    {title: "Inception"},  
+    {  
+        $set: {  
+            boxOffice: {  
+                domestic: 292352352,  
+                international: 235235235,  
+                worldwideTotal: 315235235  
+            }  
+        }  
+    }  
+)  
+  
+db.movies.updateOne(  
+    {title: "Inception"},  
+    {$set: {"domestic": ""}}  
+)  
+  
+db.movies.updateMany(  
+    {},  
+    {$unset: {"international": "", "worldwideTotal" : ""}}  
+)  
+  
+db.movies.updateMany(  
+    {$expr: {$lt: [{$size: "$genres"}, 3]}},  
+    { $addToSet: { genres: { $each: ["Other", "Happy"]}}}  
+)  
+  
+db.movies.deleteMany({})  
+  
+db.movies.find();
+```
+
 ## #19.5 Aggregating Documents
