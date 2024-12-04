@@ -151,6 +151,15 @@
 #### 4.999998은 5.0과 같다고 할 수 있나?
 - 단정도 일 경우 둘은 같다고 할 수 있고
 - 배정도 형식일 경우 아니라고 말할 수 있다.
+## Java의 자료형
+### 기본형(Primitive type)
+- 메모리 영역은 Stack
+#### 정수
+- `byte`(1 byte), `short`(2 byte), `char`(2 byte), `int`(4 byte), `long`(8 byte)
+#### 실수
+- `float`(4 byte), `double`(8 byte)
+#### 논리
+- `boolean`(true, false)
 ****
 # 변수와 주석문
 
