@@ -118,6 +118,9 @@
 	- 하이브리드
 ### JVM
 #### Big endian system
+##### endian system?
+- Little
+- Big
 
 ****
 # 변수와 주석문
