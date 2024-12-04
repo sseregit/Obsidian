@@ -121,7 +121,15 @@
 ##### endian system?
 - Little
 - Big
-
+#### JIT(Just In Time) compiler
+- Java bytecode를 실제 기계어로 번역
+- JVM이 반복되는 코드를 발견할 경우 효율을 높일 목적으로 사용
+	- Intermediate code generator
+	- Code optimizer
+	- Target code generator
+	- Profiler (Hotspot)
+- 실행 기록을 모아 자주 사용되는 코드에 주로 적용 (반복문)
+- 프로그램을 오래 실행 할 수록 성능개선에 유리
 ****
 # 변수와 주석문
 
