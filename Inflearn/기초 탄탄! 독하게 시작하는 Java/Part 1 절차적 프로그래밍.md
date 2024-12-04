@@ -102,9 +102,9 @@
 - 외부 라이브러리 사용 시 Symbolic references만 존재하며 정적 빌드 개념은 없음
 - 외부 라이브러르(클래스 파일)링크는 JVM에서 처리
 #### 런타임 (링크 타임 포함)
-- JVM의 Class Loader가 절차에 따라 Bytecode로 로딩 후 메모리에 적재
+- JVM의 Class Loader가 절차에 따라 Bytecode로 로딩 후 메모리에 적재 (링크 타임 역할)
 - 추가 클래스 파일도 로드하고 링크
-##### 링크 타임..?
+##### 링크 타임
 - import한 class들을 `.class` 결합하는 타임
 ****
 # 독하게 시작하기
