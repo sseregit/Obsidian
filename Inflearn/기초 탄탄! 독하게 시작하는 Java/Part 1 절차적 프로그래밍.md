@@ -155,18 +155,27 @@
 ### 기본형(Primitive type)
 - 메모리 영역은 Stack
 #### 정수
-- `byte`(1 byte), `short`(2 byte), `char`(2 byte), `int`(4 byte), `long`(8 byte)
+- `byte`(1 byte), `short`(2 byte), `int`(4 byte), `long`(8 byte)
+- `char`(2 byte)
+	- **0~65535 범위 유니코드(인코딩)**
 #### 실수
 - `float`(4 byte), `double`(8 byte)
 #### 논리
 - `boolean`(true, false)
-### 유도형(Non-primitive or Derived type)
+### 유도형(Non-primitive or Derived type
+- 메모리 영역 Heap
 - Java에서 객체로 언급하는 대상
-- String
-	- 문자열을 다루기 위한 클래스
-- Class
-	- Array, List, Queue, Stack
-	- Interface
+#### String
+- 문자열을 다루기 위한 클래스
+#### Class
+- Array, List, Queue, Stack
+- Interface
+### 그 외 형식
+- C언어 기준 Java는 정확히 언급하지는 않는다.
+#### 무치형
+- void
+#### 함수형
+- testFunc(int a)
 ****
 # 변수와 주석문
 
