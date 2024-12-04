@@ -160,6 +160,13 @@
 - `float`(4 byte), `double`(8 byte)
 #### 논리
 - `boolean`(true, false)
+### 유도형(Non-primitive or Derived type)
+- Java에서 객체로 언급하는 대상
+- String
+	- 문자열을 다루기 위한 클래스
+- Class
+	- Array, List, Queue, Stack
+	- Interface
 ****
 # 변수와 주석문
 
