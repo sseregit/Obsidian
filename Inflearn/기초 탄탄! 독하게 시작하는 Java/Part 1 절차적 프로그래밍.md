@@ -74,7 +74,18 @@
 ****
 # 개발환경 구축
 ## JDK와 JRE
-
+### JDK
+- Java Development Kit
+	- JRE를 포함
+	- 컴파일러 등 프로그램 개발도구가 포함
+	- 버전 중요(언어버전과 일치)
+- Java SE 스펙 준수
+### JRE
+- Java Runtime Environment
+	- Java 프로그램을 실행하는데 필요한 패키지
+- 포함사항
+	- JVM, 각종 명령
+	- 클래스 라이브러리
 ****
 # 독하게 시작하기
 
