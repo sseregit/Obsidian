@@ -80,12 +80,15 @@
 	- 컴파일러 등 프로그램 개발도구가 포함
 	- 버전 중요(언어버전과 일치)
 - Java SE 스펙 준수
+	- Open JDK, Oracle JDK
 ### JRE
 - Java Runtime Environment
 	- Java 프로그램을 실행하는데 필요한 패키지
 - 포함사항
 	- JVM, 각종 명령
 	- 클래스 라이브러리
+## IntelliJ 다운로드 및 설치
+
 ****
 # 독하게 시작하기
 
