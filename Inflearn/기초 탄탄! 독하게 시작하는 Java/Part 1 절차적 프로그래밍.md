@@ -240,6 +240,8 @@
 - Java 환경에서 문자열은 UTF-16 BE(Big Endian)로 인코딩
 - 문자열 처리 과정에서 UTF-16 BE를 Modified UTF-8로 변경해 처리
 - 문자열의 끝인 NULL은 본래 UTF-8 규칙으로 인코딩 시 0이지만 Modified UTF-8로 인코딩할 경우 0xC080
+## Scanner를 이용한 정수, 실수 입/출력
+
 ****
 # 연산자 - 첫 번째
 
