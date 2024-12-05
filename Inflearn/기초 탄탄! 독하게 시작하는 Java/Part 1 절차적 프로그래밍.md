@@ -223,7 +223,11 @@
 	- 코드와 주석은 반드시 **동기화** 할 것!
 ****
 # 콘솔 입/출력
-
+## 콘솔이란?
+### Console과 CLI
+- CLI(Command Line Interface) 기반 HCI(Human Computer Interface)는 키보드 입력으로 구현
+- 키보드 입력 시 그 값은 메모리(I/O Buffer)에 연속적으로 저장
+- I/O Buffer에서 글자(혹은 키코드) 단위로 처리
 ****
 # 연산자 - 첫 번째
 
