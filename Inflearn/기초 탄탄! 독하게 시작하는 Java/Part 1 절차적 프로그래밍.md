@@ -228,6 +228,11 @@
 - CLI(Command Line Interface) 기반 HCI(Human Computer Interface)는 키보드 입력으로 구현
 - 키보드 입력 시 그 값은 메모리(I/O Buffer)에 연속적으로 저장
 - I/O Buffer에서 글자(혹은 키코드) 단위로 처리
+## 키코드 값 읽기
+### 콘솔 입력 키코드 값 읽기
+- 키코드 값은 대부분 ASCII 코드 값과 일치
+- 1byte씩 읽어서 값을 반환
+- 한글 한 글자는 2바이트
 ****
 # 연산자 - 첫 번째
 
