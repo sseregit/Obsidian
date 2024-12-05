@@ -242,6 +242,20 @@
 - 문자열의 끝인 NULL은 본래 UTF-8 규칙으로 인코딩 시 0이지만 Modified UTF-8로 인코딩할 경우 0xC080
 ## Scanner를 이용한 정수, 실수 입/출력
 ## 문자열 입/출력
+## 형식문자와 이스케이프 시퀀스
+### 이스케이프 시퀀스(Escape squence)
+
+| 문자  | 의미              |
+| --- | --------------- |
+| \\\ | Backslash 문자 자체 |
+| \\" |                 |
+| \\b | Backspace       |
+| \\f | Form feed       |
+| \\n | New line        |
+| \\r | Carriage return |
+| \\t | Tab             |
+
+
 ****
 # 연산자 - 첫 번째
 
