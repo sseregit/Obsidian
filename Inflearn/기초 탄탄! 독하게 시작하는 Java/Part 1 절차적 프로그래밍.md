@@ -368,6 +368,12 @@
 - 보통 2진수로 변환해 판단
 - AND, OR, NOT, XOR, Shift left, Shift right
 - NOT은 단항, 나머지는 모두 2항 연산자
+### 비트 마스크 연산
+- `int data = 0x11223344; data & 0x0000FFFF`
+- 데이터에서 특정 영역의 값이 모두 0이 되도록 지우는 연산
+- AND의 특징을 이용
+- 0과 AND연산을 수행하면 결과는 무조건 0
+- JVM은 Big endian 시스템
 ****
 # 기본 제어문
 
