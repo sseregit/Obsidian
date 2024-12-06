@@ -417,6 +417,15 @@
 ****
 # 기본 제어문
 ## if문과 스코프 그리고 들여쓰기
+## 브레이크포인트 및 디버그 모드 실행
+### Intellij 디버깅 기능
+#### Position breakpoint
+- 디버그 모드 실행 시에만 작동
+- 식평가 지원
+#### Data breakpoint
+- 변수 값에 대해 조건식을 적용
+#### '객체@숫자' 형식에서 숫자는 ObjectID
+- Java Debug Wire Protocol
 ****
 # 반복문
 
