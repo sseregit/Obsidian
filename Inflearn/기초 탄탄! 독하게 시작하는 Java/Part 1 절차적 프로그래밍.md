@@ -516,8 +516,12 @@
 ### 배열의 복사
 - Java에서 배열은 객체(클래스)로 구현되어 있음
 - 배열 객체에 대한 식별자는 결국 참조자
-- 한 객쳉 대해 여러 참조자가 존재할 수 있음
+- 한 객체 대해 여러 참조자가 존재할 수 있음
 - Deep copy, Shallow copy 문제에 주의!
+### 배열을 Deep copy하는 다른 방법
+- `Array.clone()`과 비슷한 `Arrays.copyOf()`활용
+	- `Arrays.copyOfRange()`
+- `System.arraycopy()`활용
 ****
 # 메서드 (함수)
 
