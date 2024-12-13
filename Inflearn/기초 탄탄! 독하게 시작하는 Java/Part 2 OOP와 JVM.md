@@ -200,6 +200,9 @@
 	- onXxx() 메서드
 ## [실습] 상속과 문자열 필터 구현
 ## 객체간 관계와 UML
+### UML(Unified Modeling Language)
+- 모델링 언어 표준으로 클래스 및 연관 관계를 시작화 할 수 있는 방법론
+- **Class, Sequence diagram**등에 대해서는 반드시 알아야함
 ****
 # 다형성
 
