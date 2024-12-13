@@ -257,7 +257,7 @@
 - 오직 파생 클래스를 위해 존재하는 클래스
 - 설계적인 관점에서 존재
 - 추상 메서드를 가지는 것이 일반적
-	- `abstarct void getA()`
+	- `abstarct void getA();`
 	- 파생형식에서 반드시 재정의 해야 함
 ****
 # JVM(Java Virtual Machine) 기본 이론
