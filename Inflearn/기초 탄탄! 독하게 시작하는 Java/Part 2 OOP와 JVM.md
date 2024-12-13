@@ -218,7 +218,11 @@
 | 직접연관             | ㅡ>          |
 | 집합 (Aggregation) | 🔹(empty)ㅡ> |
 | 합성 (Composite)   | 🔹ㅡ>        |
-
+## 알아 두면 좋을 동적 바인딩
+### 알아 두면 좋을 동적 바인딩
+- 함수와 함수가 서로 호출 피호출 관계가 되는 것이 **바인딩**
+- 바인딩 시점이 Compile-time이면 Static binding
+- 바인딩 시점이 Run-time이면 Dynamic binding(Lately binding)
 ****
 # 다형성
 
