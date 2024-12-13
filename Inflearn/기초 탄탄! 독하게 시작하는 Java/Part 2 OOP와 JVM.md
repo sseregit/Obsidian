@@ -245,6 +245,10 @@
 - 부모 클래스 형식 참조자가 가리키는 대상 인스턴스를 특정 파생형식으로 캐스팅하는 것
 - 적절치 못한 캐스팅 시 오류 발생
 - 모든 파생클래스는 부모 클래스에 대해 존립 의존적이지만 부모 클래스에서 다운 캐스팅하는 코드가 존재할 경우 **의존성이 역전되는 좋지 못한 코드가 될 수 있음**
+### instanceof 연산자 활용
+	`boolean result = obj instanceof instance`;
+- 다운 캐스팅이 적절한 것인지 확인할 수 있는 연산자
+- RTTI(Run Time Type Information)
 ****
 # JVM(Java Virtual Machine) 기본 이론
 
