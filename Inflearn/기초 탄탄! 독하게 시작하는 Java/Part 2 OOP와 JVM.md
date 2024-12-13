@@ -268,6 +268,16 @@
 	- 각종 심볼릭 상수 정의
 	- C언어의 헤더 파일과 유사한 의미를 가짐
 	- 다중상속 가능
+## 열거형
+### 열거형
+	`public enum enum-name{value#0, value#n...}`
+- 심볼릭 상수를 정의할 수 있는 문법으로 형안전성을 제공하고 가독성이 좋은 코드를 만들 수 있음
+- `java.lang.Enum`의 파생 클래스
+- 주요 멤버
+	- `values(), valueOf(String name)`
+	- `name()`
+	- `ordinal()`
+	- `toString()`
 ****
 # JVM(Java Virtual Machine) 기본 이론
 
