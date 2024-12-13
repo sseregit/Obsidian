@@ -249,6 +249,16 @@
 	`boolean result = obj instanceof instance`;
 - 다운 캐스팅이 적절한 것인지 확인할 수 있는 연산자
 - RTTI(Run Time Type Information)
+## 추상 클래스
+### 추상 클래스
+	`public abstract class class-name`
+- **new 연산으로 인스턴스 생성 불가**
+	- C++의 순수 가상 클래스 개념
+- 오직 파생 클래스를 위해 존재하는 클래스
+- 설계적인 관점에서 존재
+- 추상 메서드를 가지는 것이 일반적
+	- `abstarct void getA()`
+	- 파생형식에서 반드시 재정의 해야 함
 ****
 # JVM(Java Virtual Machine) 기본 이론
 
