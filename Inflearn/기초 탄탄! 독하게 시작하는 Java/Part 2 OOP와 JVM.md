@@ -223,6 +223,10 @@
 - 함수와 함수가 서로 호출 피호출 관계가 되는 것이 **바인딩**
 - 바인딩 시점이 Compile-time이면 Static binding
 - 바인딩 시점이 Run-time이면 Dynamic binding(Lately binding)
+### C++ 가상 함수 테이블 (vtable)
+- vtable은 클래스 멤버 함수 중 가상화 된 함수들에 대한 포인터의 배열
+- 가상 함수는 함수 포인트 배열을 참조해 호출할 함수를 결정(Dynamic binding)
+- 상속관계일 때 vtable의 값은 파생 클래스 생성자가 호출되는 시점에 업데이트 되는 것이 특징
 ****
 # 다형성
 
