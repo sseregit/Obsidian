@@ -288,6 +288,7 @@
 ****
 # JVM(Java Virtual Machine) 기본 이론
 ## Java와 C++ 메모리 관리 차이
+## JVM 구성요소 정리
 ****
 # JVM과 GC 그리고 객체
 
