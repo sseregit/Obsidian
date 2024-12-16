@@ -421,6 +421,11 @@
 - Young generation 영역에서 소멸하지 않고 남은 개체들이 사용하는 영역
 - Full GC 발생 시 개체 회수
 - Mark & Compact 알고리즘
+### Permanent
+#### Metaspace (Java 8)
+- 로드되는 클래스, 메소드 등에 관한 메타 정보 저장 (자동확장 기능)
+- Java heap이 아닌 Native 메모리 영역 사용
+- **리플렉션 클래스 로드 시 사용 (Spring)**
 
 ****
 # 불변 객체와 String 클래스
