@@ -370,6 +370,15 @@
 ### Native method stack
 - C++로 개발된 Native 코드(함수 단위)가 실행 될 때 지역변수 및 자동변수가 사용하는 스택 메모리
 - 구현하기에 따라 JVM stack과 합쳐서 사용하기도 한다.
+## JVM 힙 영역과 GC
+### JVM Heap 영역
+- **GC(Garbage collector)** 가 관리하는 메모리 영역으로 Java에서 사용되는 객체의 인스턴스 및 배열이 저장되는 공간
+- 설정에 따라 크기를 변경하거나 고정할 수 있음
+	- 부족시 OutOfMemoryError 오류 발생
+- 세대별 컬렉션 이론(Generational collection theory)을 기반으로 설계 및 운영
+	- Eden, Survivor
+	- New/Old generation
+	- 영구 세대(Metaspace)
 
 ****
 # JVM과 GC 그리고 객체
