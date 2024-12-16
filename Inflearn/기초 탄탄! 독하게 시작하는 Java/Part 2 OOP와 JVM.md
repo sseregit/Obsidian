@@ -379,7 +379,14 @@
 	- Eden, Survivor
 	- New/Old generation
 	- 영구 세대(Metaspace)
-
+### JVM Garbage collector
+- Heap 영역에서 참조되지 않는 개체를 수집 및 제거해 메모리 회수
+- Minor/Major(Full) GC
+	- GC수행 시 프로그램 일시 정지
+	- stop-the-world
+- GC 속도
+	- Minor GC가 보통 1초 이내 완료
+	- Full GC는 수 초 이상 진행되기도 하며 이 지연 때문에 DB연결이 끊기는 등 운영 문제가 발생할 수 있음
 ****
 # JVM과 GC 그리고 객체
 
