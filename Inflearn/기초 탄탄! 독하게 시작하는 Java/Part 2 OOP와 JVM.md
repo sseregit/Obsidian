@@ -416,6 +416,11 @@
 - Minor GC 발생 시 Eden, S0에서 살아남은 객체는 S1로 이동
 - S1에서 살아남은 객체는 Old 영역으로 이동
 - age bit 사용 (참조계수)
+### Old generation
+#### Old (Old generation)
+- Young generation 영역에서 소멸하지 않고 남은 개체들이 사용하는 영역
+- Full GC 발생 시 개체 회수
+- Mark & Compact 알고리즘
 
 ****
 # 불변 객체와 String 클래스
