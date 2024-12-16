@@ -331,6 +331,13 @@
 - 생성자 호출
 ## 런타임 데이터 영역
 ### JVM runtime data area
+#### Method area
+- JVM이 읽어 들인 각종 타입 정보, 상수, 정적 변수 정보가 저장되는 영역
+- JIT(Just In Time) 컴파일러가 번역한 기계어 코드를 캐싱하기 위한 메모리 공간으로 활용
+- Java 8부터는 PermGen이 아니라 Metaspace에 속함
+##### Metaspace
+- JVM 힙이 아니라 네이티브 메모리에서 관리하며 크기가 동적으로 달라질 수 있음
+
 ****
 # JVM과 GC 그리고 객체
 
