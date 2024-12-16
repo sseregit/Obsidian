@@ -330,6 +330,7 @@
 	- GC 세대 나이
 - 생성자 호출
 ## 런타임 데이터 영역
+### JVM runtime data area
 ****
 # JVM과 GC 그리고 객체
 
