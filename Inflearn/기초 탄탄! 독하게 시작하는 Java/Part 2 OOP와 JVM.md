@@ -469,6 +469,11 @@
 - 시리얼 컬렉터를 병렬처리
 #### Parallel scavenge
 - 사용자 코드 처리 실행 효율 극대화를 목표로 설계
+#### CMS(Concurrent Mark Sweep) GC
+- Java9부터 사용하지 않다가 Java 14에서 G1GC를 지원하고자 완전히 제거
+#### G1(Garbage First) GC
+- 4GB 이상 대용량 Heap 메모리를 사용하는 멀티스레드 기반 응용 프로그램에 특화된 GC
+- Heap을 영역(1~32MB)단위로 분할한 후 멀티스레드로 스캔
 
 ****
 # 불변 객체와 String 클래스
