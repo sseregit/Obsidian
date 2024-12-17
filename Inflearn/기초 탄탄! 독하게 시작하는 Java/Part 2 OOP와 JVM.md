@@ -589,6 +589,11 @@
 	- 찾으면 이미 생성되어 있는 String 인스턴스 반환
 	- 없으면 새로 String 객체 생성 후 풀에 추가하고 반환
 	- 문자열 상수 풀은 힙 영역(Java 7이후)에 속하며 GC대상
+### 두개의 상수 풀
+#### A string literal is always of type String
+- .class 파일 Constant pool에 저장 (컴파일)
+- Runtime constant pool로 이동 (로딩)
+- String constant pool로 이동 (실행)
 
 ****
 # 내부 클래스, 익명 객체, 패키지
