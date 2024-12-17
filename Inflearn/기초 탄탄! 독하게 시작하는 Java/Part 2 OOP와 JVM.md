@@ -513,9 +513,16 @@
 | 01        | Biased locking      | 스레드 ID, 타임스탬프, 객체 나이 |
 | 10        | Heavyweight locking | - (뮤텍스로 동기화)         |
 | 11        | GC mark             | - (GC가 객체 이동 중)      |
-
-
-
+## Object 클래스와 동등성, 동일성
+### Object 클래스
+- Java의 모든 클래스는 Object의 파생형식
+#### equals()
+- 매개변수로 전달된 참조자와 this가 가리키는 대상이 같은 값인지 값만 비교(Shallow copy 문제)
+#### hashCode()
+- 객체 식별을 위한 고유 해시결과 값(Unique)
+#### toString()
+- 클래스명@해시코드
+#### getClass()
 ****
 # 불변 객체와 String 클래스
 
