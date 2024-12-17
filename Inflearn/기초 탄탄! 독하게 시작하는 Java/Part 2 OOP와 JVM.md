@@ -501,6 +501,19 @@
 #### Hash 결과
 - Unique
 - 중복 불가능
+### 핫스팟 VM 객체 Lock flag
+- 동기화 방법론
+	- Spin lock
+	- Mutex (OS level)
+
+| Lock flag | 상태                  | Mark word 저장 정보      |
+| --------- | ------------------- | -------------------- |
+| 00        | Lightweight locking | Lock 레코드 (스핀락 동기화)   |
+| 01        | Unlock              | 객체의 Hash code 및 나이   |
+| 01        | Biased locking      | 스레드 ID, 타임스탬프, 객체 나이 |
+| 10        | Heavyweight locking | - (뮤텍스로 동기화)         |
+| 11        | GC mark             | - (GC가 객체 이동 중)      |
+
 
 
 ****
