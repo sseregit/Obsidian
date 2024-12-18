@@ -617,6 +617,10 @@
 - Inner class
 - local class
 - anonymous class
+## 정적 중첩 클래스
+### 정적 중첩 클래스
+- 외부 클래스 private 정적 멤버(클래스 멤버)는 접근 가능
+- 외부 클래스 private 인스턴스 멤버는 접근 불가
 
 ****
 # 연결 리스트 기반 주소록과 OOP 실습
