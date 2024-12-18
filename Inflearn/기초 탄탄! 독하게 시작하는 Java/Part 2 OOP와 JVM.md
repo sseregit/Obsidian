@@ -592,7 +592,7 @@
 ### 두개의 상수 풀
 #### A string literal is always of type String
 - .class 파일 Constant pool에 저장 (컴파일)
-- Runtime constant pool로 이동 (로딩)
+- Runtime constant pool로 이동 (로딩)[]
 - String constant pool로 이동 (실행)
 ## StringBuilder 클래스 소개 및 성능비교
 ### 내용을 변경하는 StringBuilder
