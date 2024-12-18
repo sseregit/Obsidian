@@ -592,13 +592,16 @@
 ### 두개의 상수 풀
 #### A string literal is always of type String
 - .class 파일 Constant pool에 저장 (컴파일)
-- Runtime constant pool로 이동 (로딩)[]
+- Runtime constant pool로 이동 (로딩)
 - String constant pool로 이동 (실행)
 ## StringBuilder 클래스 소개 및 성능비교
 ### 내용을 변경하는 StringBuilder
 - 불변 객체인 String의 단점을 해결하기 위해 만들어진 클래스로 가변 String
 - 문자열 값 변경 시 임시 객체를 만들지 않고 인스턴스 데이터 직접 수정
-
+## 래퍼 클래스, 박싱과 언박싱
+### 래퍼 클래스
+- 기본 데이터 형식은 클래스가 아니므로 메소드를 가지지 못함
+- 이 문제를 해결하기 위해 기본 데이터 형식을 클래스로 만든 것이 Wrapper class
 ****
 # 내부 클래스, 익명 객체, 패키지
 
