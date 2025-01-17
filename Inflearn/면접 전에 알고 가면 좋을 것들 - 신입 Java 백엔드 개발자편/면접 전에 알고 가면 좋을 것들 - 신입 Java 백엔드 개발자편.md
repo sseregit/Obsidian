@@ -118,7 +118,7 @@ Web client -> Web servce -> WAS -> Database
 - HTTP3
 	- Flow-control -> QuIC
 	- TLS 필수!
-	-  TCP -> UDP
+	- TCP -> UDP
 
 ### 네트워크 보안 솔루션 종류별 대응 계층
 - Inline
