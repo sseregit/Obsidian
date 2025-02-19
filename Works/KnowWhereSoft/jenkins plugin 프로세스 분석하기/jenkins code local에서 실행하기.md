@@ -5,5 +5,6 @@
 zip파일로 실행할시에 git관련 정보를 불러오는 소스들이 많아 건드려야할 곳이 많다 **clone**으로 진행할 것
 
 `src/test/java/hudson/Plugin**.java`
+`src/test/java/hudson/cli/**Plugin**.java`
 - 해당 파일들이 Plugin관련 테스트 코드인지 확인해볼 필요가 있다.
 
