@@ -4,6 +4,12 @@
 
 zip파일로 실행할시에 git관련 정보를 불러오는 소스들이 많아 건드려야할 곳이 많다 **clone**으로 진행할 것
 
+Intellij 기준
+- Building Jenkins
+	- Run -> Edit Configurations -> Add -> Maven ->  Run 입력 `am -pl war,bom -DskipTests -Dspotbugs.skip clean install` -> 실행
+- Run Jenkins
+	- Run -> Edit Configurations -> Add -> Maven ->  Run 입력 `-pl war jetty:run` -> 실행
+
 `src/test/java/hudson/Plugin**.java`
 `src/test/java/hudson/cli/**Plugin**.java`
 - 해당 파일들이 Plugin관련 테스트 코드인지 확인해볼 필요가 있다.
