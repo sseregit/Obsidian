@@ -11,8 +11,4 @@ Intellij 기준
 - Run Jenkins
 	- Run -> Edit Configurations -> Add -> Maven ->  Run 입력 `-pl war jetty:run` -> 실행
 	- 그대로 Debug으로 실행하면 Debug 모드로 실행
-	
-`src/test/java/hudson/Plugin**.java`
-`src/test/java/hudson/cli/**Plugin**.java`
-- 해당 파일들이 Plugin관련 테스트 코드인지 확인해볼 필요가 있다.
 
