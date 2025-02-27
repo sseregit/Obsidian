@@ -13,3 +13,11 @@ cd node_exporter-*.*-amd64
 ./node_exporter
 ```
 
+```
+scrape_configs:
+- job_name: node
+  static_configs:
+  - targets: ['localhost:9100']
+```
+추가후 그대로 프로메테우스 실행 [[First steps 따라하기.]]
+
