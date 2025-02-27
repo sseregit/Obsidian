@@ -39,3 +39,6 @@ arm64로 설치시 보안허용이 필요없이 진행이 가능하다.
 ````
 - `--config.file=`
 	- 로드할 설정 파일을 지정한다.
+[http://localhost:9090/metrics](http://localhost:9090/metrics)
+- 프로메테우스가 자체 메트릭을 서빙한다.
+****
