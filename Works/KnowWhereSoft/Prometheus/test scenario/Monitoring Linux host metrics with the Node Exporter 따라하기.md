@@ -12,3 +12,4 @@ tar xvfz node_exporter-*.*-amd64.tar.gz
 cd node_exporter-*.*-amd64
 ./node_exporter
 ```
+
