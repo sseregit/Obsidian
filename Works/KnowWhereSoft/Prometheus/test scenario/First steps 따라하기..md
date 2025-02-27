@@ -42,3 +42,5 @@ arm64로 설치시 보안허용이 필요없이 진행이 가능하다.
 [http://localhost:9090/metrics](http://localhost:9090/metrics)
 - 프로메테우스가 자체 메트릭을 서빙한다.
 ****
+
+나머지는 맛보기 정도.
