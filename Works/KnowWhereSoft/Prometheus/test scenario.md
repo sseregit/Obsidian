@@ -1,1 +1,0 @@
-1. [First steps](https://prometheus.io/docs/introduction/first_steps/) 따라하기.
