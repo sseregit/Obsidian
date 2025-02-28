@@ -14,6 +14,8 @@
 - 메트릭의 영구 노출
 	- Pushgateway는 푸시된 시계열을 절대 잊지 않으며, Pushgateway의 API를 통해 수동으로 삭제하지 않는한 해당 시계열을 Prometheus에 영구적으로 노출한다.
 
+2025-02-28
+정보시스템의 부서 단위로 Pushgateway를 쓰는것이 좋아 보였는데 일단 **보류**!
 
 [### Pushing metrics (번역)](https://godekdls.github.io/Prometheus/practices.pushing/)
 [# When to use the Pushgateway](https://prometheus.io/docs/practices/pushing/)
