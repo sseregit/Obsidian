@@ -1,0 +1,1 @@
+# [vmware_exporter](https://github.com/pryorda/vmware_exporter)
