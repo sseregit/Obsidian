@@ -14,7 +14,6 @@ Prometheus를 사용하여 모니터링할 수 있는 항목과 어려운 항목
 
 ### ③ DISK  
 - **파일 시스템 사용량** → `node_filesystem_avail_bytes`, `node_filesystem_size_bytes` 활용 가능  
-- **Disk Swap 사용률** → `node_memory_SwapTotal_bytes`, `node_memory_SwapFree_bytes` 활용 가능  
 - **Disk I/O 점검** → `node_disk_reads_completed_total`, `node_disk_writes_completed_total`, `node_disk_io_time_seconds_total` 등을 활용 가능  
 - **I-Node 사용률** → `node_filesystem_files`, `node_filesystem_files_free`를 활용하여 사용률 계산 가능  
 
@@ -42,6 +41,7 @@ Prometheus를 사용하여 모니터링할 수 있는 항목과 어려운 항목
 - **메모리 상태 확인 (정상 인식 여부)** → `dmesg`나 `syslog` 등을 확인해야 하며, Prometheus 단독으로는 어렵고 `Loki`와 연계 필요  
 
 ### ③ DISK  
+- **Disk Swap 사용률** → 메모리의 Swap은 가능하나 Disk 는 불가능  
 - **Disk 이중화 정상 여부 (RAID 구성 및 상태 확인)** → `mdadm` 등의 툴을 사용해야 하며, Prometheus에서 기본적으로 제공하지 않음  
 - **Disk 인식 여부 점검** → `lsblk` 등의 명령어를 실행해야 하며, Prometheus에서 기본적으로 제공하지 않음  
 
