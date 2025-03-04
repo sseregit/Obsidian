@@ -7,9 +7,7 @@ Prometheus를 사용하여 모니터링할 수 있는 항목과 어려운 항목
 ## ✅ Prometheus로 점검할 수 있는 항목  
 
 ### ① CPU  
-- **CPU 사용률** → `node_exporter`의 `node_cpu_seconds_total` 메트릭 활용 가능  
-- **코어별 상태 점검** → `node_cpu_seconds_total`과 `mode` 값을 활용하여 특정 코어의 정상 동작 여부 확인 가능  
-
+- **CPU 사용률** → `node_exporter`의 `node_cpu_seconds_total` 메트릭 활용 가능    
 ### ② MEMORY  
 - **메모리 사용률** → `node_memory_MemTotal_bytes`, `node_memory_MemAvailable_bytes` 등을 사용해 메모리 사용률 계산 가능  
 - **Paging Space 사용률** → `node_memory_SwapTotal_bytes`, `node_memory_SwapFree_bytes`를 활용하여 스왑 메모리 사용률 확인 가능  
