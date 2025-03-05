@@ -54,6 +54,22 @@
 		- node_memory_SwapFree_bytes - 사용 가능한 스왑 메모리 크기
 		- node_memory_SwapCached_bytes - 스왑에서 다시 불러온 데이터 (캐시)
 		- node_vmstat_pgpgin / node_vmstat_pgpgout - 스왑 입출력 횟수
+- ③-3 Disk 이중화 정상 여부
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
+- ㅁ
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
+- ㅁ
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
+- ㅁ
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
 - ㅁ
 	- 사용가능 Exporter
 		- `node_exporter`
