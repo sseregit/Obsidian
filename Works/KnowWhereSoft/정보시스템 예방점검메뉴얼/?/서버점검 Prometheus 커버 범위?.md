@@ -82,6 +82,9 @@
 		- `node_filesystem_files_free` - 사용 가능한 I-Node 개수
 ## ④ 커널
 - ④-1 Kernel Parameter Check
+	- 불가능
+# ⑤ 로그
+- ⑤.1 시스템 로그
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
