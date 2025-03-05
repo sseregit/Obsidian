@@ -50,24 +50,31 @@
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
-		- node_memory_SwapTotal_bytes - 전체 스왑 메모리 크기
-		- node_memory_SwapFree_bytes - 사용 가능한 스왑 메모리 크기
-		- node_memory_SwapCached_bytes - 스왑에서 다시 불러온 데이터 (캐시)
-		- node_vmstat_pgpgin / node_vmstat_pgpgout - 스왑 입출력 횟수
+		- `node_memory_SwapTotal_bytes` - 전체 스왑 메모리 크기
+		- `node_memory_SwapFree_bytes` - 사용 가능한 스왑 메모리 크기
+		- `node_memory_SwapCached_bytes` - 스왑에서 다시 불러온 데이터 (캐시)
+		- `node_vmstat_pgpgin` / `node_vmstat_pgpgout` - 스왑 입출력 횟수
 - ③-3 Disk 이중화 정상 여부
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
-		- node_md_disks - RAID 어레이에 속한 디스크 수
-		- node_md_sync_action - RAID 동기화 상태
-		- node_md_degraded - RAID 어레이에서 장애가 발생한 디스크 수
+		- `node_md_disks` - RAID 어레이에 속한 디스크 수
+		- `node_md_sync_action` - RAID 동기화 상태
+		- `node_md_degraded` - RAID 어레이에서 장애가 발생한 디스크 수
 - ③-4 Disk 인식 여부 점검
 	- 불가능
 - ③-5 Disk I/O 점검
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
-- ㅁ
+		- iowait의 지연 확인 가능
+		- `node_cpu_seconds_total{mode="iowait"}`
+		- `node_disk_io_time_seconds_total`
+		- `node_disk_read_bytes_total`
+		- `node_disk_written_bytes_total`
+	- 불가능 
+		- (Soft Errors, Hard Errors, Transport Errors의 지연 확인)
+- ③-6 I-Node 사용률
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
