@@ -29,6 +29,24 @@
 		- `node_memory_MemAvailable_bytes` - 실제 사용 가능한 총 메모리 (캐시 포함)
 		- `node_memory_Slab_bytes` - 커널이 사용하는 메모리 (Slab allocator)
 		- `node_memory_HardwareCorrupted_bytes` - 하드웨어 오류로 사용 불가능한 메모리
+- ②-3 Paging Space
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
+		- `node_memory_SwapTotal_bytes` - 전체 스왑 메모리 크기
+		- `node_memory_SwapFree_bytes` - 사용 가능한 스왑 메모리 크기
+		- `node_memory_SwapCached_bytes` - 스왑에서 다시 불러온 데이터 (캐시)
+		- `node_vmstat_pgpgin` / `node_vmstat_pgpgout` - 스왑으로 데이터를 입출력한 횟수
+## ③ DISK
+- ③-1 파일시스템 사용량
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
+		- `node_filesystem_size_bytes` - 파일시스템의 총 크기
+		- `node_filesystem_avail_bytes` - 사용 가능한 공간
+		- `node_filesystem_used_bytes` - 사용 중인 공간
+		- `node_filesystem_free_bytes` - 여유 공간
 - ㅁ
 	- 사용가능 Exporter
+		- `node_exporter`
 	- 관련 Prometheus 메트릭
