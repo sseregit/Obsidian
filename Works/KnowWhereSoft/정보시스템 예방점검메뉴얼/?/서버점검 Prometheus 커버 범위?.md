@@ -46,6 +46,14 @@
 		- `node_filesystem_avail_bytes` - 사용 가능한 공간
 		- `node_filesystem_used_bytes` - 사용 중인 공간
 		- `node_filesystem_free_bytes` - 여유 공간
+- ③-2 Disk Swap 사용률
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
+		- node_memory_SwapTotal_bytes - 전체 스왑 메모리 크기
+		- node_memory_SwapFree_bytes - 사용 가능한 스왑 메모리 크기
+		- node_memory_SwapCached_bytes - 스왑에서 다시 불러온 데이터 (캐시)
+		- node_vmstat_pgpgin / node_vmstat_pgpgout - 스왑 입출력 횟수
 - ㅁ
 	- 사용가능 Exporter
 		- `node_exporter`
