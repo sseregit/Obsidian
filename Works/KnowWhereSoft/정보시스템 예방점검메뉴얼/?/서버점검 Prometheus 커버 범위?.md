@@ -62,10 +62,8 @@
 		- node_md_sync_action - RAID 동기화 상태
 		- node_md_degraded - RAID 어레이에서 장애가 발생한 디스크 수
 - ③-4 Disk 인식 여부 점검
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-- ㅁ
+	- 불가능
+- ③-5 Disk I/O 점검
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
