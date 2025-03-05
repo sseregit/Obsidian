@@ -1,64 +1,44 @@
-Prometheus에서 사용할 수 있는 Exporter들을 포함하여, 모니터링 가능 여부를 정리했습니다.  
+다음은 **1.1.2 WEB 점검 리스트**에 대해 **Linux 환경에서 Prometheus를 활용하여 점검할 수 있는 항목과 불가능한 항목을 포함한 표**입니다.
 
 ---
 
-## ✅ Prometheus로 점검할 수 있는 항목  
+### **📋 1.1.2 WEB 점검 리스트 (Linux 기준, Prometheus 활용 가능 여부 포함)**
 
-### ① 프로세스  
-- **프로세스 CPU 사용률** → `node_exporter` + `process_exporter`  
-  - `process_cpu_seconds_total` 또는 `node_cpu_seconds_total`을 활용하여 특정 프로세스의 CPU 사용률 확인 가능  
-- **프로세스 메모리 사용률** → `node_exporter` + `process_exporter`  
-  - `process_resident_memory_bytes` 또는 `node_memory_*` 메트릭 활용 가능  
-- **프로세스 사용 상태 점검** → `process_exporter`  
-  - 특정 프로세스의 존재 여부 및 리소스 사용률 점검 가능  
-- **프로세스 기동 점검** → `process_exporter` + `blackbox_exporter`  
-  - 프로세스가 실행 중인지 확인 가능 (`process_start_time_seconds`)  
-
-### ② 파일시스템 점검  
-- **WEB 엔진 파일시스템 점검** → `node_exporter`  
-  - `node_filesystem_avail_bytes`, `node_filesystem_size_bytes`를 사용해 파일 시스템 사용률 점검 가능  
-- **WEB 어플리케이션 설치 파일시스템 점검** → `node_exporter`  
-  - 동일한 파일 시스템 메트릭 활용 가능  
-- **WEB 로그 저장 파일시스템 점검** → `node_exporter`  
-  - 로그 저장 디렉토리의 사용률 점검 가능  
-
-### ③ 서비스  
-- **서비스 포트 오픈 상태 점검** → `blackbox_exporter`  
-  - 특정 포트가 열려 있는지 `TCP` 모드를 사용해 확인 가능  
-- **서비스 포트 접속 정상 확인** → `blackbox_exporter`  
-  - 출발지에서 목적지 포트로의 연결 상태를 `ICMP` 또는 `TCP` 테스트로 점검 가능  
-- **사용자 요청량 처리 수 점검** → `nginx_exporter`, `apache_exporter` 등  
-  - 웹서버 요청 처리량을 수집하여 적절한 설정값 검토 가능  
-
-### ④ 환경설정  
-- **WEB-WAS 연동 상태 점검** → `blackbox_exporter` + `jmx_exporter`  
-  - WAS(예: Tomcat)의 커넥션 상태를 `JMX`에서 확인하거나 `blackbox_exporter`를 이용해 HTTP 응답 상태 점검 가능  
-
-### ⑤ 로그  
-- **로그 점검** → `promtail` + `Loki`  
-  - 웹 서버 접속 로그, 서비스 수행 시간, 에러 로그 등을 수집하여 분석 가능  
+|**구분**|**세부 점검 항목**|**설명**|**Prometheus 사용 가능 여부**|**사용할 Exporter**|
+|---|---|---|---|---|
+|**① 프로세스**|①-1 프로세스 CPU 사용률|WEB 프로세스가 사용하고 있는 CPU 자원 사용률 확인|✅ 가능|`node_exporter`|
+||①-2 프로세스 메모리 사용률|WEB 프로세스가 사용하고 있는 메모리 자원 사용률 확인|✅ 가능|`node_exporter`|
+||①-3 프로세스 사용 상태 점검|점유 리소스 사용률 점검|✅ 가능|`node_exporter`|
+||①-4 프로세스 기동 점검|WEB 프로세스가 정상적으로 기동되었는지 점검|❌ 불가능|OS 명령어 필요 (`systemctl status httpd`)|
+|**② 파일시스템**|②-1 WEB 엔진 파일시스템 점검|WEB 엔진 설치 파일시스템 FULL 여부 점검|✅ 가능|`node_exporter`|
+||②-2 WEB 어플리케이션 설치 파일시스템 점검|WEB 소스가 설치된 파일시스템 FULL 여부 점검|✅ 가능|`node_exporter`|
+||②-3 WEB 로그 저장 파일시스템 점검|Access Log, Error Log 저장 파일시스템 FULL 여부 점검|✅ 가능|`node_exporter`|
+|**③ 서비스**|③-1 서비스 포트 오픈 상태 점검|WEB 프로세스 기동 시 생성된 포트가 정상적으로 오픈되었는지 점검|✅ 가능|`blackbox_exporter` (TCP 포트 체크)|
+||③-2 서비스 포트 접속 정상 확인|출발지 IP에서 목적지 IP 포트로 정상적으로 접속되는지 점검|✅ 가능|`blackbox_exporter` (ICMP/TCP 포트 테스트)|
+||③-3 사용자 요청량 처리 수 점검|WEB 서비스의 요청량 및 환경설정 값이 적절한지 확인|✅ 부분 가능|`apache_exporter` (Apache), `nginx_exporter` (Nginx)|
+|**④ 환경설정**|④-1 WEB-WAS 연동 상태 점검|WEB-WAS 커넥션 상태 지속 여부 확인|❌ 불가능|OS 명령어 필요 (`curl`, `netstat`)|
+|**⑤ 로그**|⑤-1 접근 로그 점검|사용자 요청 정상 처리 여부 확인 (HTTP 200 응답 확인)|❌ 불가능|OS 명령어 필요 (`grep "200" /var/log/httpd/access.log`)|
+||⑤-2 연동 결과 로그 점검|WAS 연동 결과 및 수행 시간 확인|❌ 불가능|OS 명령어 필요 (`grep "response time" /var/log/httpd/access.log`)|
+||⑤-3 에러 로그 점검|서버 오류(HTTP 500, 503 등) 발생 여부 확인|❌ 불가능|OS 명령어 필요 (`grep "500\|503" /var/log/httpd/error.log`)|
+|**⑥ 서비스 상태 점검**|⑥-1 요청 문서 처리 불가 점검|404 Not Found 등 웹페이지 제공 불가 여부 확인|❌ 불가능|OS 명령어 필요 (`grep "404" /var/log/httpd/access.log`)|
+||⑥-2 WEB 서비스 불가 점검|500 Internal Server Error 등 서비스 불가 여부 점검|❌ 불가능|OS 명령어 필요 (`grep "500" /var/log/httpd/error.log`)|
+||⑥-3 서비스 제공 불가 점검|503 Service Unavailable 등 웹 서버 응답 실패 점검|❌ 불가능|OS 명령어 필요 (`grep "503" /var/log/httpd/error.log`)|
 
 ---
 
-## ❌ Prometheus로 직접 점검하기 어려운 항목  
+### **📌 설명**
 
-### ① 프로세스  
-- **웹 프로세스 부하 원인 분석**  
-  - Prometheus는 리소스 사용률을 측정할 수 있지만, 부하가 발생하는 원인(예: 코드 최적화 필요 여부)은 확인할 수 없음  
-
-### ② 파일시스템  
-- **파일 시스템 오류 또는 손상 여부**  
-  - Prometheus는 사용률 모니터링은 가능하지만, 파일 시스템의 손상 여부(`fsck` 결과) 등은 확인 어려움  
-
-### ③ 서비스  
-- **방화벽 또는 보안장비 차단 여부 상세 분석**  
-  - `blackbox_exporter`를 이용해 연결 여부는 확인할 수 있지만, 방화벽 정책에 의해 차단되었는지까지 확인하려면 추가적인 로그 분석 필요  
-
-### ④ 환경설정  
-- **HTTPS 보안 설정 검토**  
-  - `blackbox_exporter`를 이용해 인증서 만료 여부는 확인할 수 있지만, 보안 설정(TLS 버전, 취약점 등)은 별도 스캐너 필요  
+- ✅ **가능:** Prometheus 및 해당 Exporter를 사용하여 점검 가능.
+- ✅ **부분 가능:** 일부 항목을 모니터링할 수 있으나, 추가적인 설정 또는 외부 도구 필요.
+- ❌ **불가능:** Prometheus에서 직접 점검할 수 없음. OS 명령어나 추가적인 모니터링 솔루션 필요.
 
 ---
 
-### 📌 결론  
-Prometheus는 `node_exporter`, `process_exporter`, `blackbox_exporter`, `nginx_exporter`, `apache_exporter`, `jmx_exporter`, `Loki` 등을 조합하면 대부분의 모니터링이 가능합니다. 하지만, 파일 시스템 손상 여부, 방화벽 설정, HTTPS 보안 설정 등은 Prometheus만으로 직접 확인하기 어렵습니다.
+### **🔹 결론**
+
+✅ **Linux 환경에서 `node_exporter`, `blackbox_exporter`, `apache_exporter`, `nginx_exporter` 등을 활용하여 WEB 서버 주요 성능 모니터링 가능**  
+✅ **WEB 프로세스, 파일시스템, 포트 오픈 상태, 사용자 요청량 모니터링 가능**  
+❌ **WEB 로그 분석, 서비스 오류 점검(404, 500, 503 등)은 Prometheus에서 직접 확인 불가 (OS 명령어나 추가 도구 필요)**
+
+이 정보를 기반으로 **Prometheus 기반의 Linux WEB 서버 모니터링을 구성할 수 있습니다**.  
+필요하면 **Grafana 대시보드 설정이나 PromQL 쿼리**도 추가로 제공해드릴 수 있어요! 🚀😊
