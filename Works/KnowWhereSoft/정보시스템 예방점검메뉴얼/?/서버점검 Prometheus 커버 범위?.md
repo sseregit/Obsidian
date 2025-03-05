@@ -1,99 +1,25 @@
-# LINUX
-## ① CPU
-- ①-1 CPU 사용률
-	-  사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_cpu_seconds_total`
-- ①-2 CPU 코어별 상태 점검
-	- 사용 가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_cpu_seconds_total`
-## ② MEMORY
-- ②-1 메모리 사용률
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_memory_MemTotal_bytes` (총 메모리)
-		- `node_memory_MemFree_bytes` (사용 가능한 물리적 메모리)
-		- `node_memory_MemAvailable_bytes` (시스템이 추가로 사용할 수 있는 메모리)
-		- `node_memory_Cached_bytes`, `node_memory_Buffers_bytes` (캐시 및 버퍼된 메모리)
-		- `node_memory_SwapTotal_bytes`, `node_memory_SwapFree_bytes` (스왑 메모리 사용량)
-- ②-2 메모리 상태 확인
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_memory_MemTotal_bytes` - 시스템이 인식하는 총 물리적 메모리 용량
-		- `node_memory_MemFree_bytes` - 현재 사용 가능한 물리적 메모리 용량
-		- `node_memory_MemAvailable_bytes` - 실제 사용 가능한 총 메모리 (캐시 포함)
-		- `node_memory_Slab_bytes` - 커널이 사용하는 메모리 (Slab allocator)
-		- `node_memory_HardwareCorrupted_bytes` - 하드웨어 오류로 사용 불가능한 메모리
-- ②-3 Paging Space
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_memory_SwapTotal_bytes` - 전체 스왑 메모리 크기
-		- `node_memory_SwapFree_bytes` - 사용 가능한 스왑 메모리 크기
-		- `node_memory_SwapCached_bytes` - 스왑에서 다시 불러온 데이터 (캐시)
-		- `node_vmstat_pgpgin` / `node_vmstat_pgpgout` - 스왑으로 데이터를 입출력한 횟수
-## ③ DISK
-- ③-1 파일시스템 사용량
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_filesystem_size_bytes` - 파일시스템의 총 크기
-		- `node_filesystem_avail_bytes` - 사용 가능한 공간
-		- `node_filesystem_used_bytes` - 사용 중인 공간
-		- `node_filesystem_free_bytes` - 여유 공간
-- ③-2 Disk Swap 사용률
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_memory_SwapTotal_bytes` - 전체 스왑 메모리 크기
-		- `node_memory_SwapFree_bytes` - 사용 가능한 스왑 메모리 크기
-		- `node_memory_SwapCached_bytes` - 스왑에서 다시 불러온 데이터 (캐시)
-		- `node_vmstat_pgpgin` / `node_vmstat_pgpgout` - 스왑 입출력 횟수
-- ③-3 Disk 이중화 정상 여부
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_md_disks` - RAID 어레이에 속한 디스크 수
-		- `node_md_sync_action` - RAID 동기화 상태
-		- `node_md_degraded` - RAID 어레이에서 장애가 발생한 디스크 수
-- ③-4 Disk 인식 여부 점검
-	- 불가능
-- ③-5 Disk I/O 점검
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- iowait의 지연 확인 가능
-		- `node_cpu_seconds_total{mode="iowait"}`
-		- `node_disk_io_time_seconds_total`
-		- `node_disk_read_bytes_total`
-		- `node_disk_written_bytes_total`
-	- 불가능 
-		- (Soft Errors, Hard Errors, Transport Errors의 지연 확인)
-- ③-6 I-Node 사용률
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-		- `node_filesystem_files` - 파일시스템에서 사용할 수 있는 전체 I-Node 개수
-		- `node_filesystem_files_free` - 사용 가능한 I-Node 개수
-## ④ 커널
-- ④-1 Kernel Parameter Check
-	- 불가능
-## ⑤ 로그
-- ⑤.1 시스템 로그
-	- 불가능
-## ⑥ 클러스터(2개)
-- ⑥-1 Cluster 데몬 상태
-	- 불가능
-- ⑥-2 공유 볼륨 상태 점검
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
-- ㅁ
-	- 사용가능 Exporter
-		- `node_exporter`
-	- 관련 Prometheus 메트릭
+### **📋 1.1.1 서버 점검 항목 및 Prometheus 사용 가능 여부**
+
+|**번호**|**점검 항목**|**Prometheus 사용 가능 여부**|**사용할 Exporter**|
+|---|---|---|---|
+|**① CPU**||||
+|①-1|CPU 사용률|✅ 가능|`node_exporter`|
+|①-2|CPU 코어별 상태 점검|✅ 가능|`node_exporter`|
+|**② MEMORY**||||
+|②-1|메모리 사용률|✅ 가능|`node_exporter`|
+|②-2|메모리 상태 확인 (할당된 메모리 정상 인식 여부 확인)|✅ 가능|`node_exporter`|
+|②-3|Paging Space 사용률 (가상 메모리 사용 가능 여부 확인)|✅ 가능|`node_exporter`|
+|**③ DISK**||||
+|③-1|파일시스템 사용량 점검|✅ 가능|`node_exporter`|
+|③-2|Disk Swap 사용률 (가상 메모리 사용 가능 여부 확인)|✅ 가능|`node_exporter`|
+|③-3|Disk 이중화 정상 여부 (RAID 구성 및 상태 확인)|✅ 가능 (RAID 환경)|`node_exporter` (RAID 관련 메트릭 제공)|
+|③-4|Disk 인식 여부 점검 (Disk Status: Unknown/Drive not available 감지)|❌ 불가능|OS 명령어 필요 (`lsblk`, `fdisk -l`)|
+|③-5|Disk I/O 점검 (Soft Errors, Hard Errors, Transport Errors, Iowait 지연 확인)|✅ 부분 가능|`node_exporter` (I/O 성능 측정 가능, Soft/Hard Errors는 불가능)|
+|③-6|I-Node 사용률 점검 (파일시스템의 I-Node 사용량 분석)|✅ 가능|`node_exporter`|
+|**④ KERNEL**||||
+|④-1|Kernel Parameter Check (커널 설정값 점검 및 OS 장애 예방)|✅ 부분 가능|`node_exporter` (파일 핸들, 메모리 설정 모니터링 가능, `sysctl` 값 직접 확인 불가)|
+|**⑤ 시스템 로그 및 성능 점검**||||
+|⑤-1|시스템 로그 (장치 및 인스턴스 성능 저하 또는 손실 우려 확인)|✅ 부분 가능|`node_exporter` (CPU, 메모리, 디스크 사용량 모니터링 가능, 로그 분석은 불가능)|
+|**⑥ 클러스터 및 공유 볼륨**||||
+|⑥-1|Cluster 데몬 상태 점검 (클러스터 정상 운영 여부 확인, Maintenance/Offline 감지)|✅ 부분 가능|`kube-state-metrics` (Kubernetes 환경) / `pacemaker_exporter` (Pacemaker 환경)|
+|⑥-2|공유 볼륨 상태 점검 (Read/Write 상태 및 마운트 정상 여부 확인)|✅ 부분 가능|`node_exporter` (마운트 상태 확인 가능), `gluster_exporter` (GlusterFS 환경)|
