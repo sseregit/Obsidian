@@ -83,8 +83,13 @@
 ## ④ 커널
 - ④-1 Kernel Parameter Check
 	- 불가능
-# ⑤ 로그
+## ⑤ 로그
 - ⑤.1 시스템 로그
+	- 불가능
+## ⑥ 클러스터(2개)
+- ⑥-1 Cluster 데몬 상태
+	- 불가능
+- ⑥-2 공유 볼륨 상태 점검
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
