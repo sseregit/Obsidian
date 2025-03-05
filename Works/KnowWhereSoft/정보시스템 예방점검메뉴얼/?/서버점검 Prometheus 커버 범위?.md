@@ -78,6 +78,13 @@
 	- 사용가능 Exporter
 		- `node_exporter`
 	- 관련 Prometheus 메트릭
+		- `node_filesystem_files` - 파일시스템에서 사용할 수 있는 전체 I-Node 개수
+		- `node_filesystem_files_free` - 사용 가능한 I-Node 개수
+## ④ 커널
+- ④-1 Kernel Parameter Check
+	- 사용가능 Exporter
+		- `node_exporter`
+	- 관련 Prometheus 메트릭
 - ㅁ
 	- 사용가능 Exporter
 		- `node_exporter`
