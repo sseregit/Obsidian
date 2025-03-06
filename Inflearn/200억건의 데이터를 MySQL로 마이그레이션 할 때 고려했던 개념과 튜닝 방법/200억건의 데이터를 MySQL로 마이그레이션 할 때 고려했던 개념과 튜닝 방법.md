@@ -71,6 +71,7 @@ CREATE TABLE ... (
 # 8. Prefix Index
 ## Why Don't Use Prefix Index In Default
 ### Prefix Index
+`Alter table <테이블 명> add key (index_prefix_test(2));`
 - MYSQL의 전체적인 성능을 개선할 수 있는 방법 중의 하나
 - 마구잡이 사용할 수는 없다.
 - 로그인 데이터를 관리하는 테이블에만 적용을 했다
