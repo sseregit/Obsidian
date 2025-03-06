@@ -24,7 +24,11 @@ CREATE TABLE ... (
 ****
 # 3. Covering Index & RDB vs ElasticSearch Index Diff
 ## Covering Index & RDB vs ElasticSearch Index Diff
-
+### MYSQL에서 다루는 인덱스의 종류
+- 기본 키(PK)
+	- 클러스터형 인덱스
+	- 순서에 따라서 데이터가 물리적으로 항상 정렬이 되어 있다.
+- 
 ****
 # 4. ORDER BY
 
