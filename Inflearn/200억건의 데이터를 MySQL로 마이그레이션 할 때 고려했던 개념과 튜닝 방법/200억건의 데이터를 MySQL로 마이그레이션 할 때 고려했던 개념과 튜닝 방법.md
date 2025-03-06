@@ -57,7 +57,11 @@ CREATE TABLE ... (
 ****
 # 6. AUTO_INCREMENT LOCK
 ## AUTO_INCREMENT LOCK
-
+[[인터리프?]]
+`innodb_autoinc_lock_mode=0 -- 동시성 보장이 안되 성능 저하`
+`innodb_autoinc_lock_mode=1 --default` 
+`innodb_autoinc_lock_mode=2`
+- 여러 스레드가 정말 많은 스레드가 접근 할 경우에 사용할 것
 ****
 # 7. Index Dive Using In Query
 
