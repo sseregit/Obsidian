@@ -47,7 +47,12 @@ CREATE TABLE ... (
 1. DB에 대한 Connection 줄이기
 	- Bulk Write, Bulk INSERT
 		- 하나의 커넥션에 여러 개의 INSERT가 담긴다.
-2. 
+		- values에 들어갈 수 있는 값에 대한 크기가 정해져 있다.
+			- `max-allowed-packet`
+2. Prepared Statement
+### MYSQL에서 UPDATE, INSERT의 진행 방법
+1. 타겟 데이터 copy
+2. 변경후 문제 없으면 commit
 ****
 # 6. AUTO_INCREMENT LOCK
 
