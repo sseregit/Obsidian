@@ -65,10 +65,11 @@ CREATE TABLE ... (
 ****
 # 7. Index Dive Using In Query
 ## Index Dive Using In Query
-### Index Dive
+### [[Index Dive?]]
 - 일종의 버그 쿼리가 늦어지는 
 ****
 # 8. Prefix Index
+## Why Don't Use Prefix Index In Default
 
 ****
 # 9. MySQL Lock Type
