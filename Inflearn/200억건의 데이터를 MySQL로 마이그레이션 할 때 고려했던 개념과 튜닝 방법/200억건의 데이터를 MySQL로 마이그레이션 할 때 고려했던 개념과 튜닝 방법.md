@@ -78,9 +78,9 @@ CREATE TABLE ... (
 	- 왜??
 		- 보통 긴 문자열의 데이터를 저장할 때 사용한다.
 			- UUID, Token, Hash...
-		- 
 ****
 # 9. MySQL Lock Type
+## MySQL Lock Type
 
 ****
 # 10. DeadLock Case
