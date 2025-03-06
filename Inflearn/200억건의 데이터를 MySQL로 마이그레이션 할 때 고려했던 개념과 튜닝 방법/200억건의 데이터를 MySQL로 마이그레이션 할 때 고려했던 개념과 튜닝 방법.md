@@ -7,6 +7,8 @@
 ```sql
 CREATE TABLE ... (
 	INDEX idx_col1_col2 (column1, column2) -- 복합 인덱스
+	-- INDEX idx_col1_col2 (column1, column2, column3) 
+	-- index dive 상황에 많은 오버헤드 발생
 )
 ```
 - **명시된 컬럼의 순서대로 정렬이 된다.**
