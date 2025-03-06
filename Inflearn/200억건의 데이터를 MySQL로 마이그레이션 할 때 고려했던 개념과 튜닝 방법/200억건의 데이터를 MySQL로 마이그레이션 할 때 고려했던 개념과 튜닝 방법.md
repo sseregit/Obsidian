@@ -31,7 +31,7 @@ CREATE TABLE ... (
 ****
 # 4. ORDER BY
 ## ORDER BY
-[[파일 솔트?]]
+[[파일 소트?]]
 ### ORDER BY 사용 전략
 1. index 설정을 잘하기
 2. `sort_buffer_size` 메모리 할당량 증가 시켜주기
