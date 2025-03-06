@@ -17,6 +17,10 @@ CREATE TABLE ... (
 - 확인해서 type이 `index`인것을 확인하자
 - type이 `ALL`이라면 풀스캔
 ## Multi Column Index Type 분석
+`SET optimizer_switch=“skip_scan=on” -- index skip sca`
+- 일부에서 이점을 찾을 수 있다.
+	- WHERE절에 조건이 없는 인덱스에 선환되는 컬럼이 유니크한 갭수가 굉장히 적어야 한다.
+	- 인덱스를 타지 않아야 되는 그 필드에 대해서 나올 수 있는 컬럼의 갯수가 적어야 한다.
 
 ****
 # 3. Covering Index & RDB vs ElasticSearch Index Diff
