@@ -31,6 +31,7 @@ CREATE TABLE ... (
 ****
 # 4. ORDER BY
 ## ORDER BY
+[[파일 솔트?]]
 
 
 ****
