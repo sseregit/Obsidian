@@ -64,6 +64,7 @@ CREATE TABLE ... (
 - 여러 스레드가 정말 많은 스레드가 접근 할 경우에 사용할 것
 ****
 # 7. Index Dive Using In Query
+## Index Dive Using In Query
 
 ****
 # 8. Prefix Index
