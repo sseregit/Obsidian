@@ -50,11 +50,13 @@ CREATE TABLE ... (
 		- values에 들어갈 수 있는 값에 대한 크기가 정해져 있다.
 			- `max-allowed-packet`
 2. Prepared Statement
+3. 파일을 이용한 Insert
 ### MYSQL에서 UPDATE, INSERT의 진행 방법
 1. 타겟 데이터 copy
 2. 변경후 문제 없으면 commit
 ****
 # 6. AUTO_INCREMENT LOCK
+## AUTO_INCREMENT LOCK
 
 ****
 # 7. Index Dive Using In Query
