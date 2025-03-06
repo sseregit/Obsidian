@@ -2,6 +2,7 @@
 
 ****
 # 2. Multi Column Index
+## Multi Column Index 개념
 
 ****
 # 3. Covering Index & RDB vs ElasticSearch Index Diff
