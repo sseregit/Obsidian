@@ -43,7 +43,11 @@ CREATE TABLE ... (
 ****
 # 5. INSERT
 ## Two types of INSERT optimization
-
+### DB에 대한 부하를 줄일 수 있는 인설트 쿼리 방법 3가지
+1. DB에 대한 Connection 줄이기
+	- Bulk Write, Bulk INSERT
+		- 하나의 커넥션에 여러 개의 INSERT가 담긴다.
+2. 
 ****
 # 6. AUTO_INCREMENT LOCK
 
