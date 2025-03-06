@@ -13,6 +13,10 @@ CREATE TABLE ... (
 ```
 - **명시된 컬럼의 순서대로 정렬이 된다.**
 	- 위에 예시로 column2를 먼저 처리를 하는 Query가 들어가게 된다면 인덱스를 타지 않는다.
+`EXPLAN select ... from ...`
+- 확인해서 type이 `index`인것을 확인하자
+- type이 `ALL`이라면 풀스캔
+## Multi Column Index Type 분석
 
 ****
 # 3. Covering Index & RDB vs ElasticSearch Index Diff
