@@ -65,7 +65,8 @@ CREATE TABLE ... (
 ****
 # 7. Index Dive Using In Query
 ## Index Dive Using In Query
-
+### Index Dive
+- 일종의 버그 쿼리가 늦어지는 
 ****
 # 8. Prefix Index
 
