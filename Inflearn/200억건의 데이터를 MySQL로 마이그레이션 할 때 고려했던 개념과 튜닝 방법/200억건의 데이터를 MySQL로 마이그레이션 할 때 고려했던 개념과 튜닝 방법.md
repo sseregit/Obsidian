@@ -30,6 +30,8 @@ CREATE TABLE ... (
 [[역색인?]]
 ****
 # 4. ORDER BY
+## ORDER BY
+
 
 ****
 # 5. INSERT
