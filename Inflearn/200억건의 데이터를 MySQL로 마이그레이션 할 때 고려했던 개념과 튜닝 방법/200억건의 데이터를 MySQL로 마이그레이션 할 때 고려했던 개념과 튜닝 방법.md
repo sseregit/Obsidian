@@ -57,7 +57,7 @@ CREATE TABLE ... (
 ****
 # 6. AUTO_INCREMENT LOCK
 ## AUTO_INCREMENT LOCK
-[[인터리프?]]
+[[인터리브?]]
 `innodb_autoinc_lock_mode=0 -- 동시성 보장이 안되 성능 저하`
 `innodb_autoinc_lock_mode=1 --default` 
 `innodb_autoinc_lock_mode=2`
