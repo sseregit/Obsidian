@@ -37,9 +37,12 @@ CREATE TABLE ... (
 2. `sort_buffer_size` 메모리 할당량 증가 시켜주기
 3. 데이터의 타입을 한정하기.
 
+### 꿀팁
+- 스트림 값에 대해서 바로 정렬을 시작하면 정렬이 원활하게 되지 않는다.
 
 ****
 # 5. INSERT
+## Two types of INSERT optimization
 
 ****
 # 6. AUTO_INCREMENT LOCK
