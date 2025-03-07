@@ -121,6 +121,13 @@ CREATE TABLE ... (
 - 오프셋을 사용하지 않고 페이지네이션을 구현
 ### Offset
 - 일반적으로 페이지네이션에 대한 쿼리를 처리할 때 사용되는 쿼리
+### MySQL의 쿼리 처리 순서
+1. `WHERE` 조건 및 `JOIN`을 실행
+2. `GROUP BY`
+3. `DISTINCT`
+4. `HAVING`
+5. `ORDER BY`
+6. `LIMIT`
 ****
 # 12. Skip Locked For Session
 
