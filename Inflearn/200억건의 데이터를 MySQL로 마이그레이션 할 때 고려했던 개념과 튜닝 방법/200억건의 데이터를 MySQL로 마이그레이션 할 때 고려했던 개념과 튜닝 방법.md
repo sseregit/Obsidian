@@ -130,5 +130,10 @@ CREATE TABLE ... (
 6. `LIMIT`
 ****
 # 12. Skip Locked For Session
-
+## Skip Locked For Session
+### MYSQL 7.0, 8.0
+- `NO WAIT`
+	- 쿼리 실행 후, Lock이 걸려있다면 대기하지 않고 바로 실패
+- `Skip Locked`
+	- Lock이 걸려있는 Row는 결과에 반환하지 않는다.
 ****
