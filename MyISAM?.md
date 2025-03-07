@@ -1,0 +1,1 @@
+[[MyISAM 과 InnoDB의 차이점?]]
