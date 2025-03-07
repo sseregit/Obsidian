@@ -116,7 +116,11 @@ CREATE TABLE ... (
 - `ON DUPLICATE KEY UPDATE`
 ****
 # 11. NoOffset For Query Tuning
-
+## NoOffset For Query Tuning
+### No Offset
+- 오프셋을 사용하지 않고 페이지네이션을 구현
+### Offset
+- 일반적으로 페이지네이션에 대한 쿼리를 처리할 때 사용되는 쿼리
 ****
 # 12. Skip Locked For Session
 
