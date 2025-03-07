@@ -113,6 +113,7 @@ CREATE TABLE ... (
 #### 줄이는 방법
 - 복잡한 쿼리를 최대한 줄이자.
 - 트랜잭션에서 여러 데이터를 수정할 때 발생하는 Lock의 순서를 지켜주자
+- 
 ****
 # 11. NoOffset For Query Tuning
 
