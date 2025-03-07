@@ -81,10 +81,32 @@ CREATE TABLE ... (
 ****
 # 9. MySQL Lock Type
 ## MySQL Lock Type
+### Lock & Dead Lock
+- 데이터의 정합성을 높이면서도 동시성을 높이는 장점들을 동시에 가져갈 수 있는 방법
+### Shared Lock
+- Row레벨에 적용 된다.
+	- Row레벨
+		- 말그대로 하나의 로우
+- 일반적으로 Read Lock으로 활용
+- Lock이 만약 걸려있다면, Row Write, Update하는 Lock은 사용이 불가능하다.
+- Row에 대해서 Shared Lock이 획득이 되어 있다면, Exclusive Lock은 대기하게 된다.
+- Shared Lock 여러개의 트랜잭션이 공유할 수 있다.
+### Exclusive Lock
+- Row레벨에 적용
+- Update, Write에 사용된다.
+- Shared Lock과 동시에 획득할 수 없다.
+### Intention Lock
+- 테이블 단위의 Lock
+- 쿼리에 대해서 영향을 주지 않는다.
+- 여러개의 트랜잭션에서 접근이 가능하다.
+- ALTER TABLE, DROP TABLE은 대기상태에 들어갈 수 있다.
 
+[[MYSQL이 제공하는 여러개의 Lock?]]
+[[Read Lock?]]
+[[Write Lock?]]
 ****
 # 10. DeadLock Case
-
+## DeadLock Case
 ****
 # 11. NoOffset For Query Tuning
 
