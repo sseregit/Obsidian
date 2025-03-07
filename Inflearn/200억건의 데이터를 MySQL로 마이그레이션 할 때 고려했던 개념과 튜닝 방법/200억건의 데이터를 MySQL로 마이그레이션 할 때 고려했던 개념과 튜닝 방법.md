@@ -107,6 +107,9 @@ CREATE TABLE ... (
 ****
 # 10. DeadLock Case
 ## DeadLock Case
+### DeadLock
+- 일반적으로 트랜잭션 경합이 재기적으로 계속 반복되면서 결국 트랜잭션이 실패가 되는 상황
+- Lock들이 서로 경합을 하다가 서로 대기가 되어버려서 아무것도 진행이 되지 않는 상황
 ****
 # 11. NoOffset For Query Tuning
 
