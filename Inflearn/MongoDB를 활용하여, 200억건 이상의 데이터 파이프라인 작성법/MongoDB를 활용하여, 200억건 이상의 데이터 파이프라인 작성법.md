@@ -38,8 +38,6 @@
 ## 실무자도 잘 모르는 WriteConflict 이론
 [[WriteConflict?]]
 [[mutex?]]
-### 몽고의 본질적인 문제?
-- [[mutex?]]를 지원하지 않는다.
 ## 실무자도 잘 모르는 WriteConflict 실습하기
 
 ****
