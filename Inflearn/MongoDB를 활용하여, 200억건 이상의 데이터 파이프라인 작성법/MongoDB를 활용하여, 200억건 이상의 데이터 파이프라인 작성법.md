@@ -45,6 +45,7 @@
 ## SQL과 다른 NoSQL의 특이한 모델링
 ## 가장 간단한 FineOne의 특징 및 활용법 알아보기
 ## 자주사용되는 Find의 특징 및 활용법 알아보기
+## 가장 많이 사용하는 Aggregate - $match
 ****
 # 실무에서 경험하고 공유하는 AtlasSearch
 
