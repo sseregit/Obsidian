@@ -27,12 +27,18 @@
 
 ****
 # Atlas 다루기
+## 실무에서 주로 사용하는 Compass의 다양한 기능
+## Compass 설치 및 연결하기
+****
+# 10초안에 PR Approve하는 Mongo 코드 작성하기 - 1
 ## Mongo에 연결하기
 ## type변환을 위한 registry의 활용법 및 알아보기
 ## 웬만하면 Insert 쓰지말고 Upsert 써주세요!!
 ## 자주 사용되는 bulk, update 잘 사용되지 않는 delete
-****
-# 10초안에 PR Approve하는 Mongo 코드 작성하기 - 1
+## 실무자도 잘 모르는 WriteConflict 이론
+[[mutex?]]
+### 몽고의 본질적인 문제?
+- [[mutex?]]를 지원하지 않는다.
 
 ****
 # 10초안에 PR Approve하는 Mongo 코드 작성하기 - 2
