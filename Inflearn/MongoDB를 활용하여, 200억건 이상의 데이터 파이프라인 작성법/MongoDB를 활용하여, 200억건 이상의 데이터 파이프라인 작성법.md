@@ -19,7 +19,11 @@
 - 상태를 저장하기에 적합하지 않다.
 ## Atlas 클러스터 생성하기
 ## 실무에서 주로 사용하는 Compass의 다양한 기능
-
+## Compass 설치 및 연결하기
+### 몽고에서 사용하는 Tool
+1. Studio 3T
+2. Compass (추천)
+	1. MongoDB 자체에서 지원
 
 ****
 # Atlas 다루기
