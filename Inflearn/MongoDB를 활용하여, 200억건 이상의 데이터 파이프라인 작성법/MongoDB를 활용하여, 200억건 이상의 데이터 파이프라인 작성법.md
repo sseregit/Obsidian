@@ -28,7 +28,7 @@
 ****
 # Atlas 다루기
 ## Mongo에 연결하기
-
+## type변환을 위한 registry의 활용법 및 알아보기
 ****
 # 10초안에 PR Approve하는 Mongo 코드 작성하기 - 1
 
