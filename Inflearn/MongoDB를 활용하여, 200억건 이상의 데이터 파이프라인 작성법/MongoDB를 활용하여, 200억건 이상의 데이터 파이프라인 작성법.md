@@ -36,6 +36,7 @@
 ## 웬만하면 Insert 쓰지말고 Upsert 써주세요!!
 ## 자주 사용되는 bulk, update 잘 사용되지 않는 delete
 ## 실무자도 잘 모르는 WriteConflict 이론
+[[WriteConflict?]]
 [[mutex?]]
 ### 몽고의 본질적인 문제?
 - [[mutex?]]를 지원하지 않는다.
