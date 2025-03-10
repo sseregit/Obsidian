@@ -27,6 +27,7 @@
 
 ****
 # Atlas 다루기
+## Mongo에 연결하기
 
 ****
 # 10초안에 PR Approve하는 Mongo 코드 작성하기 - 1
