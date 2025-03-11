@@ -73,8 +73,7 @@
 ## Mongo의 검색엔진 아키텍처
 ## AtlasSearch를 활용하기 위한 인덱스 설정하기
 ## 내가 설정한 AtlasIndex를 통해서 $search 사용하기
-
-
+## 실무에서도 아무도 몰랐던 returnStoredSource
 ****
 # 강의 끝맺음
 
