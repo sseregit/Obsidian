@@ -48,6 +48,7 @@
 ## 가장 많이 사용하는 Aggregate - $match
 ## 가장 많이 사용하는 Aggregate - $elemMatch
 ## 잘쓰면 너무나도 좋은 $addFields
+## 너무 좋지만 자제해야 하는 $addFields
 ****
 # 실무에서 경험하고 공유하는 AtlasSearch
 
