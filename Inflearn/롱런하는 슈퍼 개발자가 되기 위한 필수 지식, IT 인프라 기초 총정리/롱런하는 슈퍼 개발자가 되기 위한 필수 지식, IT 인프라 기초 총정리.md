@@ -39,9 +39,14 @@
 - **HPE**, **Dell Technologies**, Inspur, **Lenovo**, IBM, Asus...
 ### 서버 소프트웨어
 - 오픈 소스 소프트웨어 vs 상용 소프트웨어
-- 서버 OS(Operating Systme) / z/OS
-	-  OS의 역할
-		- 하드웨어에 있는 다양한 부품들을 조작할 수 있는 역할
+- 서버 OS(Operating System) / z/OS
+- 서버 OS(Operating System) / UNIX
+- 서버 OS(Operating System) / 오픈소스 Linux
+	- Linux
+		- x86 서버에서 구동이 되는 서버OS
+#### OS의 역할
+- 하드웨어에 있는 다양한 부품들을 조작할 수 있는 역할
+
 
 
 ****
