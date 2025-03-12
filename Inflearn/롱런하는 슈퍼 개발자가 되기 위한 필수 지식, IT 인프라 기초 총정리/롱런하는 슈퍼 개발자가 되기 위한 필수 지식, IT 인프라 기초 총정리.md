@@ -38,6 +38,7 @@
 ### 서버 하드웨어 제조사
 - **HPE**, **Dell Technologies**, Inspur, **Lenovo**, IBM, Asus...
 ### 서버 소프트웨어
+- 오픈 소스 소프트웨어 vs 상용 소프트웨어
 
 
 ****
