@@ -39,6 +39,8 @@
 - **HPE**, **Dell Technologies**, Inspur, **Lenovo**, IBM, Asus...
 ### 서버 소프트웨어
 - 오픈 소스 소프트웨어 vs 상용 소프트웨어
+#### OS
+- 하드웨어에 있는 다양한 부품들을 조작할 수 있는 역할
 - 서버 OS(Operating System) / z/OS
 - 서버 OS(Operating System) / UNIX
 - 서버 OS(Operating System) / 오픈소스 Linux
@@ -48,8 +50,18 @@
 - 서버 OS(Operating System) / 상용 Linux
 	- 기업에서 가장 많이 사용하는것은 Red Hat
 - 서버 OS(Operating System) / Microsoft Windows Server
-#### OS의 역할
-- 하드웨어에 있는 다양한 부품들을 조작할 수 있는 역할
+#### 웹서버
+- Apache, Nginx, Microsoft IIS
+#### 기타(파일서버, 메일서버)
+- 파일서버
+	- FileZila
+		- FTP(File Transfer Protocol)
+- 메일서버
+	- Exchange
+	- [[SMTP?]]
+	- [[POP3?]]
+	- [[IMAP?]]
+
 
 
 
