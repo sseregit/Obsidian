@@ -44,6 +44,9 @@
 - 서버 OS(Operating System) / 오픈소스 Linux
 	- Linux
 		- x86 서버에서 구동이 되는 서버OS
+	- 기업에서 가장 많이 사용하는것은 CentOS
+- 서버 OS(Operating System) / 상용 Linux
+	- 기업에서 가장 많이 사용하는것은 Red Hat
 #### OS의 역할
 - 하드웨어에 있는 다양한 부품들을 조작할 수 있는 역할
 
