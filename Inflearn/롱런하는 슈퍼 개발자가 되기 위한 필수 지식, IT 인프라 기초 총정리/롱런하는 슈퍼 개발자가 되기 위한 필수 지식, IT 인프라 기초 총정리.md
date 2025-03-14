@@ -387,6 +387,8 @@
 - 용도별로 구분하여 저장한 데이터 저장소
 ##### OLAP(Online Analytical Processing)
 - 온라인 분석 처리
+## 오픈소스 DB vs 상용 DB
+
 
 ****
 # 5강 : 온프레미스란 무엇일까요?
