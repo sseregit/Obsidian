@@ -401,10 +401,9 @@
 ## DB IDE
 ### IDE(Integrated Development Environment)
 - DB 엔지니어, DBA, 개발자가 사용하는 DB 개발 도구
-
 ****
 # 5강 : 온프레미스란 무엇일까요?
-
+## 온프레미스 개념과 3 Tier 아키텍처
 ****
 # 6강 : 클라우드 개념과 형태, 정리해 봅시다!
 
