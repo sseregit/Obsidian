@@ -388,7 +388,16 @@
 ##### OLAP(Online Analytical Processing)
 - 온라인 분석 처리
 ## 오픈소스 DB vs 상용 DB
-
+### NoSQL(Not Only SQL)
+- 대용량 데이터를 분산 처리하기 위해 SQL이 아닌 또 다른 기술을 채택한 오픈소스 데이터 베이스
+#### 1. Key-Value Type
+- redis, amazon DynamoDB
+#### 2. Column-Family Type
+- cassandra, apache Hbase
+#### 3. Document Type
+- mongoDB, CouchDB
+#### 4. Graph Type
+- neo4j, ArangoDB
 
 ****
 # 5강 : 온프레미스란 무엇일까요?
