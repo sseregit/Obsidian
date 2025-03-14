@@ -368,6 +368,16 @@
 - 사용자들이 DB안에 있는 데이터를 접근할 수 있도록 해주는 소프트웨어
 #### 관계형 DBMS(Relational DBMS, RDBMS)
 - 테이블이라는 최소 단위로 구성하며 이 테이블은 열과 행으로 이루어진다.
+#### SQL(Structured Query Languahe)
+- 구조적 데이터의 질의 언어, 데이터베이스에서 데이터를 조회하기 위한 언어
+##### DQL(Data Query Language)
+- 데이터 질의어
+##### DML(Data Manipulation Language)
+- 데이터 조작어
+##### DDL(Data Definition Language)
+- 데이터 정의어
+##### TCL(Transaction Control Language)
+##### DCL(Data Control Language)
 
 ****
 # 5강 : 온프레미스란 무엇일까요?
