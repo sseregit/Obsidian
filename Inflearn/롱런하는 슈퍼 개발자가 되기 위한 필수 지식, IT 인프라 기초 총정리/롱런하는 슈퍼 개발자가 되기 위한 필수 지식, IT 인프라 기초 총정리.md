@@ -453,6 +453,12 @@
 #### 특징
 - 자원 변경(확장 혹은 축소) 시 유연하게 원하는 만큼 빠르게 변경 가능 -> Elastic하다는 것이 특징
 ### 클라우드 형태
+#### IaaS(Infra as a Service)
+- IT인프라 자원 전체를 빌려씀, OS 및 각종 소프트웨어 설치 필요
+#### PaaS(Platform as a Service)
+- 이미 설치된 OS(플랫폼)을 빌려씀, 애플리케이션 설치 필요
+#### SaaS(Software as a Service)
+- 소프트웨어를 빌려씀
 
 
 ****
