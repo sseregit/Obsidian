@@ -378,6 +378,15 @@
 - 데이터 정의어
 ##### TCL(Transaction Control Language)
 ##### DCL(Data Control Language)
+#### 업계에서 주로 사용하는 용어
+##### OLTP(Online Transaction Processing)
+- 온라인 트랜잭션(거래) 처리
+##### DW(Data Warehouse)
+- 거대한 데이터 저장소
+##### Data Mart
+- 용도별로 구분하여 저장한 데이터 저장소
+##### OLAP(Online Analytical Processing)
+- 온라인 분석 처리
 
 ****
 # 5강 : 온프레미스란 무엇일까요?
