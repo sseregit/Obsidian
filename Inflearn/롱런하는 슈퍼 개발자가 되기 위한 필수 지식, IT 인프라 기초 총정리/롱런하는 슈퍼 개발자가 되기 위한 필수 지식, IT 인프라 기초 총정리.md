@@ -455,10 +455,16 @@
 ### 클라우드 형태
 #### IaaS(Infra as a Service)
 - IT인프라 자원 전체를 빌려씀, OS 및 각종 소프트웨어 설치 필요
+##### 대표적인 종류
+- AWS, Azure, GCP(Google Cloud Platform), NCP, KT Cloud, NHN Cloud...
 #### PaaS(Platform as a Service)
 - 이미 설치된 OS(플랫폼)을 빌려씀, 애플리케이션 설치 필요
+##### 대표적인 종류
+- AWS Elastic Beanstalk, Azure SQL DB, Google BigQuery...
 #### SaaS(Software as a Service)
 - 소프트웨어를 빌려씀
+##### 대표적인 종류
+- Microsoft 365, Google Workspace, Adobe CC, Zoom, Groupware...
 
 
 ****
