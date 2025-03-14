@@ -425,7 +425,9 @@
 ### HCI(Hyper Converged Infrastructure)
 - 컴퓨팅, 스토리지, 네트워크를 가상화시켜 단일 시스템으로 운영
 - 기존 3-Tier 대비 병목 구간을 제거하여 자원 확장 시 성능이 선형적으로 늘어난다.
-
+### SDDC(Software Defined Data Center)
+- 데이터 센터 구성 요소의 모든 것을 소프트웨어로 통합관리
+- SDC + SDS + SDN + Management Platform 4가지가 모두 포함되어야 진정한 SDDC라고 할 수 있다.
 ****
 # 6강 : 클라우드 개념과 형태, 정리해 봅시다!
 
