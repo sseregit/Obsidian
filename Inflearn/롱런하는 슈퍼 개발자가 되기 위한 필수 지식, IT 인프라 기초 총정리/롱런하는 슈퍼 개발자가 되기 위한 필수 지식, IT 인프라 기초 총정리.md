@@ -688,11 +688,11 @@
 ### IAM(Identity and Access Management)
 - 기업에서 인증한 사람과 디바이스만 기업의 애플리케이션과 시스템에 접근할 수 있도록 허용하는 솔루션
 #### [[Single Sign-on?]]
-#### Access Security
-#### Directory
-#### Dynamic Authorization
-#### API Security
-#### Central Admin
+#### [[Access Security?]]
+#### [[Directㅈory?]]
+#### [[Dynamic Authorization?]]
+#### [[API Security?]]
+#### [[Central Admin?]]
 
 ****
 # 10강 : IT 인프라 장애, 이렇게 대처해 보세요!
