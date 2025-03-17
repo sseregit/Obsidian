@@ -690,13 +690,14 @@
 #### 구성요소 6가지
 ##### [[Single Sign-on?]]
 ##### [[Access Security?]]
-##### [[Directㅈory?]]
+##### [[Directory?]]
 ##### [[Dynamic Authorization?]]
 ##### [[API Security?]]
 ##### [[Central Admin?]]
 #### 필요한 이유
 1. 기업의 데이터를 안전하게 보호하기 위해
 2. IT관리자의 업무 부담을 줄이고 실수를 방지하기 위해
+3. 다수의 SaaS 및 서비스를 사용하는 사용자의 생산성 향상을 위해
 
 ****
 # 10강 : IT 인프라 장애, 이렇게 대처해 보세요!
