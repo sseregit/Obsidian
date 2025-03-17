@@ -687,12 +687,16 @@
 ## IAM & Zero Trust
 ### IAM(Identity and Access Management)
 - 기업에서 인증한 사람과 디바이스만 기업의 애플리케이션과 시스템에 접근할 수 있도록 허용하는 솔루션
-#### [[Single Sign-on?]]
-#### [[Access Security?]]
-#### [[Directㅈory?]]
-#### [[Dynamic Authorization?]]
-#### [[API Security?]]
-#### [[Central Admin?]]
+#### 구성요소 6가지
+##### [[Single Sign-on?]]
+##### [[Access Security?]]
+##### [[Directㅈory?]]
+##### [[Dynamic Authorization?]]
+##### [[API Security?]]
+##### [[Central Admin?]]
+#### 필요한 이유
+1. 기업의 데이터를 안전하게 보호하기 위해
+2. IT관리자의 업무 부담을 줄이고 실수를 방지하기 위해
 
 ****
 # 10강 : IT 인프라 장애, 이렇게 대처해 보세요!
