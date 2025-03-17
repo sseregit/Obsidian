@@ -702,7 +702,18 @@
 - 사용자가 직접 관리 -> 서비스 별로 개별 관리 -> IAM 플랫폼으로 통합관리
 ### 고객 Identity 관리 발전 방향
 - 사용자가 직접 관리 -> 디바이스 별로 개별관리 -> IAM 플랫폼으로 통합 관리
-###
+### Zero Trust
+- 신뢰가 없다, 아무도 믿지 않는다 라는 컨셉의 보안 모델
+- 사용자 및 기기가 네트워크나 데이터에 접근할 때 기업에서 요구하는 보안 검증을 통과하기 전까지는 접속을 허용하지 않는 보안 아키텍처
+#### Adaptive Security and Visibility
+##### 1. Never Trust Always Verify
+- 절대 신뢰하지 않고 항상 검증
+##### 2. Least Privilege and Default Deny
+- 특권(예외사항)은 최소화 기본적으로 접근 거부
+##### 3. Full Visibility and Inspection
+- 모든 데이터 소스를 기반으로 정밀 검사
+##### 4. Centralized Management
+- 인증 정책을 중앙에서 통합 관리
 ****
 # 10강 : IT 인프라 장애, 이렇게 대처해 보세요!
 
