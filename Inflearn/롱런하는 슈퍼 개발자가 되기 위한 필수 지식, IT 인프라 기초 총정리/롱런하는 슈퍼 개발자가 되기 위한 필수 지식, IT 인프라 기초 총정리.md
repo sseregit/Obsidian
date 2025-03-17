@@ -647,8 +647,11 @@
 - Crypt, Cerber, Magniber, Locker, Wannacry등 아직도 해결되지 못한 다수의 랜섬웨어가 존재
 ### Endpoint
 - 기업 네트워크에 연결된 최종 단계의 기기 / PC, 노트북, 스마트폰, 태블릿등
-### AV(Anti Virus)
+#### AV(Anti Virus)
 - 컴퓨터의 악성코드를 찾아내고 치료, 방어하기 위한 소프트웨어
+#### EDR(Endpoint Detection and Response)
+- AV에서 진화된 보안 솔루션
+- 악성코드를 실시간으로 감지하고 분석 및 대응해서 피해확산을 막는 솔루션
 ****
 # 10강 : IT 인프라 장애, 이렇게 대처해 보세요!
 
