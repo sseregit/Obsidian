@@ -55,6 +55,7 @@
 ## Google Geocoding API를 활용한 로직 작성하기
 ## Google Geocoding API Response 분석하기
 ## DB Insert 최적화
+## MySQL Insert Optimization
 
 ****
 # 6. Test 및 강의에 대한 추가적인 정보
