@@ -38,6 +38,7 @@
 # 3. MySQL Security
 ## MySQL 설치 및 GPG 에러 디버깅 하는법
 [[GPG?]]
+## MySQL 최초 설치에 따른 접근 제어하기
 ****
 # 4. Module Skelton
 
