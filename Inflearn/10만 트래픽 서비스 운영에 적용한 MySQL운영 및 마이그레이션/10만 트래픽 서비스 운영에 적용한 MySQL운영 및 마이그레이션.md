@@ -36,7 +36,7 @@
 - ssh 접속에 대해서 제어를 하는 파일
 ****
 # 3. MySQL Security
-
+## MySQL 설치 및 GPG 에러 디버깅 하는법
 ****
 # 4. Module Skelton
 
