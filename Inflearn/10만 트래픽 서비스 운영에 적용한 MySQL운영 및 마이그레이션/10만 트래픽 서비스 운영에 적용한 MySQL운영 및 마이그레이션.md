@@ -39,6 +39,7 @@
 ## MySQL 설치 및 GPG 에러 디버깅 하는법
 [[GPG?]]
 ## MySQL 최초 설치에 따른 접근 제어하기
+## MySQL 초기 비밀번호 추출 및 변경하기
 ****
 # 4. Module Skelton
 
