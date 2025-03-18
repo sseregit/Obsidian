@@ -47,6 +47,7 @@
 ## Migration 작업 목표
 ## 유연한 환경변수 관리하기
 [[*.toml?]]
+## DB 접속 정보 전달하기
 ****
 # 5. DB Optimize & Service Logic
 
