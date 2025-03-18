@@ -51,6 +51,7 @@
 ## 일반적인 Migration Module 구성
 ****
 # 5. DB Optimize & Service Logic
+## 공공데이터 추출을 위한 로직 작성하기
 
 ****
 # 6. Test 및 강의에 대한 추가적인 정보
