@@ -32,7 +32,8 @@
 `chmod 400 ****.pem`
 - 소유자는 read, 그룹, 전체는 아무 권한도 주지 않는다.
 ## Password 기반의 접속 설정을 위한 ssh 환경 변수 다루기
-
+### `sshd_config`파일
+- ssh 접속에 대해서 제어를 하는 파일
 ****
 # 3. MySQL Security
 
