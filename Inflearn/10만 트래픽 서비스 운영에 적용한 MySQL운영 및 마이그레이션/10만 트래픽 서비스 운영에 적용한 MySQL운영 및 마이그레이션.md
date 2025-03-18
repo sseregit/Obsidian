@@ -37,6 +37,7 @@
 ****
 # 3. MySQL Security
 ## MySQL 설치 및 GPG 에러 디버깅 하는법
+[[GPG?]]
 ****
 # 4. Module Skelton
 
