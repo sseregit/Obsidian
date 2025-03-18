@@ -40,6 +40,7 @@
 [[GPG?]]
 ## MySQL 최초 설치에 따른 접근 제어하기
 ## MySQL 초기 비밀번호 추출 및 변경하기
+## MySQL Security를 위한 권한 제어하기
 ****
 # 4. Module Skelton
 
