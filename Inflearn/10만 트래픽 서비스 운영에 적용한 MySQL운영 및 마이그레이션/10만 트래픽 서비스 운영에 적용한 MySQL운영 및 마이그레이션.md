@@ -48,6 +48,7 @@
 ## 유연한 환경변수 관리하기
 [[*.toml?]]
 ## DB 접속 정보 전달하기
+## 일반적인 Migration Module 구성
 ****
 # 5. DB Optimize & Service Logic
 
