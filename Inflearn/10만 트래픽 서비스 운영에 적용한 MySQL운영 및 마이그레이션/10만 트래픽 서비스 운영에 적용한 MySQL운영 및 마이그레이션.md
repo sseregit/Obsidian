@@ -56,6 +56,7 @@
 ## Google Geocoding API Response 분석하기
 ## DB Insert 최적화
 ## MySQL Insert Optimization
+## DB 최적화를 위한 쿼리 작성
 
 ****
 # 6. Test 및 강의에 대한 추가적인 정보
