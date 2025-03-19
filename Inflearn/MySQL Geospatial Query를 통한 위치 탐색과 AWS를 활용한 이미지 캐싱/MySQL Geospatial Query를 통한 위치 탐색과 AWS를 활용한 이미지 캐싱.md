@@ -11,7 +11,7 @@
 
 ****
 # 3. MySQL Geospatial Query
-
+## 2.1 Gin을 활용한 API 구축
 ****
 # 4. AWS S3 For Object Control
 
