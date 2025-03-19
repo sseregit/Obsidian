@@ -4,6 +4,7 @@
 ****
 # 2. Project OverView
 ## 1.1 유연한 프로젝트 환경 관리하기
+## 1.2 Dependency Injection을 위한 MySQL
 
 ****
 # 3. MySQL Geospatial Query
