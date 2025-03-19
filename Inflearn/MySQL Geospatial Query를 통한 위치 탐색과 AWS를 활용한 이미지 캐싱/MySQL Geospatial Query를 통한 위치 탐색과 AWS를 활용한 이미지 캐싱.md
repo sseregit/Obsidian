@@ -3,6 +3,7 @@
 ## 😆 이런 서버를 구성해 보실 예정입니다.
 ****
 # 2. Project OverView
+## 1.1 유연한 프로젝트 환경 관리하기
 
 ****
 # 3. MySQL Geospatial Query
