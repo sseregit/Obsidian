@@ -20,6 +20,7 @@
 ## 2.6 Geospatial Query를 위한 로직 구성
 [[스로틀링?]]
 ## 2.7 Using MySQL Geospatial Query &amp; Handle JSON TYPE
+[[ST_Distance_Sphere(POINT(?,?) , POINT(?,?))?]]
 ****
 # 4. AWS S3 For Object Control
 
