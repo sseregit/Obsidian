@@ -15,6 +15,7 @@
 ## 2.2 Write Util Func For Router
 ## 2.3 Option을 활용한 Request Binding
 ## 2.4 API Skelton
+## 2.5 Insert Query Optimize &amp; Retry For DeadLock
 
 ****
 # 4. AWS S3 For Object Control
