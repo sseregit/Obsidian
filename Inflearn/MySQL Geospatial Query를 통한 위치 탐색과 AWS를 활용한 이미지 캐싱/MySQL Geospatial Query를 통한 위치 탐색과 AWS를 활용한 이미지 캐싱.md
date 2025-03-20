@@ -21,6 +21,7 @@
 [[스로틀링?]]
 ## 2.7 Using MySQL Geospatial Query &amp; Handle JSON TYPE
 [[ST_Distance_Sphere(POINT(?,?) , POINT(?,?))?]]
+## 👻 2.8 실제 지도를 통한 Geospatial Query Test
 ****
 # 4. AWS S3 For Object Control
 
