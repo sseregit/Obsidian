@@ -14,6 +14,7 @@
 ## 2.1 Gin을 활용한 API 구축
 ## 2.2 Write Util Func For Router
 ## 2.3 Option을 활용한 Request Binding
+## 2.4 API Skelton
 
 ****
 # 4. AWS S3 For Object Control
