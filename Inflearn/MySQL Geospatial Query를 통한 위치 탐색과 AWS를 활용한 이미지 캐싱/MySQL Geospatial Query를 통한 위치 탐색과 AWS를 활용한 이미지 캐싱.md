@@ -18,7 +18,7 @@
 ## 2.5 Insert Query Optimize &amp; Retry For DeadLock
 [[INSERT IGNORE...Query?]]
 ## 2.6 Geospatial Query를 위한 로직 구성
-
+[[스로틀링?]]
 ****
 # 4. AWS S3 For Object Control
 
