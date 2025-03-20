@@ -17,6 +17,7 @@
 ## 2.4 API Skelton
 ## 2.5 Insert Query Optimize &amp; Retry For DeadLock
 [[INSERT IGNORE...Query?]]
+## 2.6 Geospatial Query를 위한 로직 구성
 
 ****
 # 4. AWS S3 For Object Control
