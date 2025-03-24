@@ -28,7 +28,7 @@
 ## 👻 3.2 Set S3 Policy & Public Access
 ****
 # 5. S3 In Code
-
+## 4.1 S3 코드 작업하기 - 1
 ****
 # 6. AWS CloudFront
 
