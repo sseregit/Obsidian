@@ -30,6 +30,7 @@
 # 5. S3 In Code
 ## 4.1 S3 코드 작업하기 - 1
 ## 4.2 S3 코드 작업하기 - 2
+## 4.3 Using AWS IAM For S3 Access
 ****
 # 6. AWS CloudFront
 
