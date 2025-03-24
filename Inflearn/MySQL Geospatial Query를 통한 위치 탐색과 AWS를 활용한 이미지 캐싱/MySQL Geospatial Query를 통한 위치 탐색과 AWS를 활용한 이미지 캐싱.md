@@ -25,6 +25,7 @@
 ****
 # 4. AWS S3 For Object Control
 ## 3.1 What is S3 &amp; ACL
+## 👻 3.2 Set S3 Policy & Public Access
 ****
 # 5. S3 In Code
 
