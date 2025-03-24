@@ -31,6 +31,8 @@
 ## 4.1 S3 코드 작업하기 - 1
 ## 4.2 S3 코드 작업하기 - 2
 ## 4.3 Using AWS IAM For S3 Access
+## 👻 4.4 Handle Project Image File
+
 ****
 # 6. AWS CloudFront
 
