@@ -42,4 +42,6 @@
 ****
 # 7. Using AWS Lambda For S3
 ## 6.1 Lambda를 활용해 어떤것을 실습할까?
+## 6.2 Trigger할 Lambda 함수 작성하기
+
 ****
