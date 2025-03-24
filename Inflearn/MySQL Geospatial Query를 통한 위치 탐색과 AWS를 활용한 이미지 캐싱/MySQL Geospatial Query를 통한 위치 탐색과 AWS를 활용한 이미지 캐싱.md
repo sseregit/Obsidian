@@ -38,6 +38,7 @@
 ## 5.1 Why CloudFront &amp;amp; Why Edge Location
 [[Edge location?]]
 ## 5.2 Deploy CloudFront
+## 👻 5.3 Change S3 Policy For CDN Access
 ****
 # 7. Using AWS Lambda For S3
 
