@@ -44,5 +44,5 @@
 ## 6.1 Lambda를 활용해 어떤것을 실습할까?
 ## 6.2 Trigger할 Lambda 함수 작성하기
 ## 6.3 Script를 활용할 Package 압축
-
+[[AWS Lambda?]]
 ****
