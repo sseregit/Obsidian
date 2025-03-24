@@ -36,7 +36,7 @@
 ****
 # 6. AWS CloudFront
 ## 5.1 Why CloudFront &amp;amp; Why Edge Location
-
+[[Edge location?]]
 ****
 # 7. Using AWS Lambda For S3
 
