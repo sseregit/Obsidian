@@ -46,4 +46,5 @@
 ## 6.3 Script를 활용할 Package 압축
 [[AWS Lambda?]]
 ## 6.4 Lambda에 S3 &amp; CloudWatch를 위한 Policy 설정
+## 👻 6.5 Lambda를 활용한 S3 Image Resize
 ****
