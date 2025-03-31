@@ -25,6 +25,8 @@
 ## HTTP 통신을 websockets 통신으로 포팅하기
 ==HTTP 통신을 websockets 통신으로 포팅하는 Upgrader사용==
 ## websockets통신에 대한 연결 및 끊김 처리 로직 작성하기
+==생성한 Room에 Join과 defer를 이용한 Leave `<-` ==
+## socket 이벤트 감지를 위한 채널 처리 함수 작성하기
 
 ****
 
