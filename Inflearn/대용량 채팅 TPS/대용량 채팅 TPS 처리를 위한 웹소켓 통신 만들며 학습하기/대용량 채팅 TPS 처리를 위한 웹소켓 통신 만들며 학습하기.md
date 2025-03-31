@@ -9,6 +9,9 @@
 [draw.io](draw.io)
 - 다이어그램 만드는데 사용할 수 있다.
 [[event driven?]]
+==일반적인 webSocket이 동작하는 방식==
+## websockets 사용시 주의할 점
+
 ****
 
 # 3. 채팅 관리를 위한 websockets 서버 만들기
