@@ -29,6 +29,8 @@
 ## socket 이벤트 감지를 위한 채널 처리 함수 작성하기
 ==Golang의 chan type을 다루는 select {}를 활용해 join, leave, msg forward 작성==
 ## socket message 이벤트 처리를 위한 client 함수 작성하기
+==Goroutine을 활용한 msg 읽고 쓰기==
+## 작성된 코드를 통해 프로토타입 구동 확인하기
 
 ****
 
