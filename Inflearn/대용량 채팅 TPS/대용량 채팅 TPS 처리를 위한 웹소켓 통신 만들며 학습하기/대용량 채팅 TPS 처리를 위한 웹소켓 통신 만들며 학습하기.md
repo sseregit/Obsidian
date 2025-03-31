@@ -23,6 +23,8 @@
 ## 채팅방 구성을 위한 기본 객체 설정하기
 ==객체 생성==
 ## HTTP 통신을 websockets 통신으로 포팅하기
+==HTTP 통신을 websockets 통신으로 포팅하는 Upgrader사용==
+## websockets통신에 대한 연결 및 끊김 처리 로직 작성하기
 
 ****
 
