@@ -19,6 +19,8 @@
 ## Framework를 통해 서버 실행하기
 ==gin Framework로 서버 실행하기==
 ## 미들웨어, Cors 설정하기
+==logger, Recovery와 Cors 설정==
+## 채팅방 구성을 위한 기본 객체 설정하기
 
 ****
 
