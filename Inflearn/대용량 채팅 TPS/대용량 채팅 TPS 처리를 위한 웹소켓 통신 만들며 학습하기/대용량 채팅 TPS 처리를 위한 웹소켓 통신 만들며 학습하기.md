@@ -8,6 +8,7 @@
 ## webSocket이 동작하는 방식에 대해 알아봅시다.
 [draw.io](draw.io)
 - 다이어그램 만드는데 사용할 수 있다.
+[[event driven?]]
 ****
 
 # 3. 채팅 관리를 위한 websockets 서버 만들기
