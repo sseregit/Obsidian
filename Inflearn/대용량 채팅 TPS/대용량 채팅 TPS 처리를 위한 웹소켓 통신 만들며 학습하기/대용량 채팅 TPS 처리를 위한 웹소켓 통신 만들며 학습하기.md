@@ -21,6 +21,8 @@
 ## 미들웨어, Cors 설정하기
 ==logger, Recovery와 Cors 설정==
 ## 채팅방 구성을 위한 기본 객체 설정하기
+==객체 생성==
+## HTTP 통신을 websockets 통신으로 포팅하기
 
 ****
 
