@@ -51,6 +51,8 @@
 ## Class를 통한 소켓 통신 제어하기
 ==Room.go을 Room.js으로 구현==
 ## winston을 통한 로깅 설정 및 서버 시작하기
+==log추가 및 서버 시작==
+## Socket Connection 연결하기
 
 ****
 
