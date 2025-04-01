@@ -53,6 +53,8 @@
 ## winston을 통한 로깅 설정 및 서버 시작하기
 ==log추가 및 서버 시작==
 ## Socket Connection 연결하기
+==서버 실행후 Front에서 접근처리 확인하기==
+## Socket message 처리 함수 작성 및 유저 데이터 추출하기
 
 ****
 
