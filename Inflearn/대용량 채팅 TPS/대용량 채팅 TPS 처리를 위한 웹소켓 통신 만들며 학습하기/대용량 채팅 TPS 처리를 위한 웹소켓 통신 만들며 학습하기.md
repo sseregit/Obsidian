@@ -49,6 +49,8 @@
 ## 판교 개발자의 bolierplate logger
 ==판교 개발자..? 라기 보단 그냥 winston과 winston-daily를 활용한 format사용==
 ## Class를 통한 소켓 통신 제어하기
+==Room.go을 Room.js으로 구현==
+## winston을 통한 로깅 설정 및 서버 시작하기
 
 ****
 
