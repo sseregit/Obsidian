@@ -32,7 +32,9 @@
 - BIGINT -> unix
 	- default 불가능
 - dateTime -> timezone
-- timestamp -> 
+	- 실무에서는 dateTime을 쓸것
+- timestamp ->
+	- 2040년 특정 시간이후 오버플로우 발생 가능
 
 ****
 # 4. wss, HTTP 프로토콜을 활용하여 서버와 통신하고, DB에 접근해봐요.
