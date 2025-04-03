@@ -20,6 +20,8 @@
 ## Paging, Sort 쿼리도 한번 맛을 보면서 알아봐요.
 ==List형태로 리턴하는 Query작성==
 ## 실무에서는 이런 구조로 서버가 구성이 되고있어요.
+==기본적인 Repository => Service => Controller 같은 구조로 작성 하지만 go style==
+## API가 모두 작성이 되었으니, Request에 대한 검증을 진행할게요.
 
 ****
 # 3. MySQL을 통해서 Schema를 설계하며, 꿀팁을 배워가세요.
