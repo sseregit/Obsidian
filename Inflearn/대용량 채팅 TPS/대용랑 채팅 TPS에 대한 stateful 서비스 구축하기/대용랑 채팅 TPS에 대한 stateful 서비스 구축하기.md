@@ -26,7 +26,14 @@
 ****
 # 3. MySQL을 통해서 Schema를 설계하며, 꿀팁을 배워가세요.
 ## MySQL에서 테이블 생성은 어떻게하고, 시간에 대한 타입은 뭐가 다를까요?
+### ERD 다이어그램
 - 실무에서는 [ERD클라우드](https://www.erdcloud.com/) 사이드 프로젝트는 [Draw.io](https://app.diagrams.net/) 추천
+### MySQL 시간 타입
+- BIGINT -> unix
+	- default 불가능
+- dateTime -> timezone
+- timestamp -> 
+
 ****
 # 4. wss, HTTP 프로토콜을 활용하여 서버와 통신하고, DB에 접근해봐요.
 
