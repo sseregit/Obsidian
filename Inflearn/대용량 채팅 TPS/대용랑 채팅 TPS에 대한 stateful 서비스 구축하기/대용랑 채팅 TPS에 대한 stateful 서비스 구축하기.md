@@ -36,9 +36,11 @@
 - timestamp ->
 	- 2040년 특정 시간이후 오버플로우 발생 가능
 ## 강의에서 사용하는 나머지 테이블을 생성해보고, Bool 타입과 TinyInt 타입은 동일할까요?
-
+### bool Type?
+- 생성은 bool type describe를 하면 tinyint로 저장되어 있음.
 ****
 # 4. wss, HTTP 프로토콜을 활용하여 서버와 통신하고, DB에 접근해봐요.
+## HTTP Protocol을 활용해여 서버에 접근해봐요.
 
 ****
 # 5. 이제 Kafka를 내 컴퓨터에 한번 설정하고 구동해볼게요.
