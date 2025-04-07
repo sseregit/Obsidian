@@ -54,6 +54,8 @@
 ### Zookeeper와 kafka
 - kafka는 zookeeper가 존재해야만 kafka가 구동이 될 수 있다.(현재는 미래에는 아님!)
 - zookeeper는 카프카에서 발생하는 브로커나 메타데이터를 기본적으로 관리하는 컨트롤 서버 같은 느낌
+[Docker Compose zookeeper 참고 블로그](https://devocean.sk.com/blog/techBoardDetail.do?ID=164016)
+
 ****
 # 6. Kafka도 구동시켰으니, 서버에서 Kafka를 한번 활용해볼게요.
 
