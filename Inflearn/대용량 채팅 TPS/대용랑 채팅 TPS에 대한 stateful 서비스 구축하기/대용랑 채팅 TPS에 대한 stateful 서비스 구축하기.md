@@ -67,6 +67,9 @@
 - 일종의 키값
 `docker compose exec kafka-1 kafka-topics --create --topic test --bootstrap-server kafka-1:9092 --replication 1 --partitions 1`
 - 토픽을 생성한다
+`docker compose exec kafka-1 kafka-topics --describe --topic test --bootstrap-server kafka-1:9092`
+- 생성된 토픽을 확인한다.
+==아래 둘은 `docker compose exec kafka-1 bash`상태에서 가능==
 `kafka-console-producer --topic test --bootstrap-server kafka-1:9092`
 - 토픽을 날린다!
 `kafka-console-consumer --topic test --bootstrap-server kafka-1:9092`
