@@ -79,7 +79,8 @@
 ****
 # 6. Kafka도 구동시켰으니, 서버에서 Kafka를 한번 활용해볼게요.
 ## Server에서 Kafka에 접속해 봐요.
-
+==kafka golang에서 연결 (Failed)==
+## zero-downtime-deploy가 중요한데.. MySQL을 통해 관리할게요.
 ****
 # 7. 서버의 상태 관리를 위한 Controller Tower 서버를 추가로 만들어볼게요.
 
