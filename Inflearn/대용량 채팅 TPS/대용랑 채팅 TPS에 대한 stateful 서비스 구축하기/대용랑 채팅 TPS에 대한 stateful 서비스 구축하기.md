@@ -74,6 +74,8 @@
 - 토픽을 날린다!
 `kafka-console-consumer --topic test --bootstrap-server kafka-1:9092`
 - 받는다
+### --bootstrap-server
+- Kafka 클라이언트가 최초로 연결할 브로커 주소(들)
 ****
 # 6. Kafka도 구동시켰으니, 서버에서 Kafka를 한번 활용해볼게요.
 
