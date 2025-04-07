@@ -56,7 +56,11 @@
 - zookeeper는 카프카에서 발생하는 브로커나 메타데이터를 기본적으로 관리하는 컨트롤 서버 같은 느낌
 [Docker Compose zookeeper 참고 블로그](https://devocean.sk.com/blog/techBoardDetail.do?ID=164016)
 ## zookeeper의 앙상블은 무엇이고, 고가용성은 무엇일까요?
-
+`server.{x}={hostname}:{peerPort}:{leaderPort}`
+- x : 원하는 정수 값 순차적일 필요는 없다.
+- hostname: 앙상블안의 서버들이 내부 IP 주소
+- peerPort: 앙상블안의 서버들이 서로 통신할 때 사용하는 TCP 포트
+- leaderPort: 리더를 선출하는데 사용되는 TCP 포트
 ****
 # 6. Kafka도 구동시켰으니, 서버에서 Kafka를 한번 활용해볼게요.
 
