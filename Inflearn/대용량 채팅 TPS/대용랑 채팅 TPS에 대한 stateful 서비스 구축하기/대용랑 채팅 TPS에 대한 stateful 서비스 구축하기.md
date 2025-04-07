@@ -65,6 +65,8 @@
 ## kafka를 구동시키고, terminal를 통해서 Pub/Sub이 먼지 실습해볼게요.
 ### topic
 - 일종의 키값
+`docker compose exec kafka-1 kafka-topics --create --topic test --bootstrap-server kafka-1:9092 --replication 1 --partitions 1`
+- 토픽을 생성한다
 `kafka-console-producer --topic test --bootstrap-server kafka-1:9092`
 - 토픽을 날린다!
 `kafka-console-consumer --topic test --bootstrap-server kafka-1:9092`
