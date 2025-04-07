@@ -81,6 +81,8 @@
 ## Server에서 Kafka에 접속해 봐요.
 ==kafka golang에서 연결 (Failed)==
 ## zero-downtime-deploy가 중요한데.. MySQL을 통해 관리할게요.
+==서버 정보의 IP,Port 정보를 DB에 저장하기, 정확히 어떻게 다루는지는 이후 강의를 봐야할듯==
+## Kafka에 Server의 상태에 대한 message를 전송해야하니 서버의 상태를 감시할게요.
 ****
 # 7. 서버의 상태 관리를 위한 Controller Tower 서버를 추가로 만들어볼게요.
 
