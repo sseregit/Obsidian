@@ -61,6 +61,9 @@
 - hostname: 앙상블안의 서버들이 내부 IP 주소
 - peerPort: 앙상블안의 서버들이 서로 통신할 때 사용하는 TCP 포트
 - leaderPort: 리더를 선출하는데 사용되는 TCP 포트
+- clinet는 clientPort로 접근한다. 앙상블끼리는 내부적으로 프라이빗하게 통신하기 때문에 위 정보가 필요하다.
+## kafka를 구동시키고, terminal를 통해서 Pub/Sub이 먼지 실습해볼게요.
+
 ****
 # 6. Kafka도 구동시켰으니, 서버에서 Kafka를 한번 활용해볼게요.
 
