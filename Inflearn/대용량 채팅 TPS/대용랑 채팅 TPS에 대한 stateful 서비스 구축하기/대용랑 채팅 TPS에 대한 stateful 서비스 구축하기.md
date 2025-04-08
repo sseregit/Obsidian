@@ -89,6 +89,9 @@
 ****
 # 7. 서버의 상태 관리를 위한 Controller Tower 서버를 추가로 만들어볼게요.
 ## Controller Tower API도 같이 Skelton 구축해 볼게요.
+==Controller Tower를 위한 기본적인 세팅 약간의 구조만 다를뿐 기존 서버와 내용은 같다.==
+## MySQL을 통해서 서버의 초기 메모리 셋팅 진행할게요.
+
 ****
 # 8. Go너무 어려운데... Node.Js는 없나요??
 
