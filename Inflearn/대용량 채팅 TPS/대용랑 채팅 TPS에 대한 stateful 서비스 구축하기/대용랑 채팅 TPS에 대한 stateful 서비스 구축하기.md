@@ -83,6 +83,8 @@
 ## zero-downtime-deploy가 중요한데.. MySQL을 통해 관리할게요.
 ==서버 정보의 IP,Port 정보를 DB에 저장하기, 정확히 어떻게 다루는지는 이후 강의를 봐야할듯==
 ## Kafka에 Server의 상태에 대한 message를 전송해야하니 서버의 상태를 감시할게요.
+==golang의 channel을 이용해서 서버가 죽는 이벤트를 캐치해서 정보를 남길 수 있다.==
+## Kafka의 Pub/Sub Modeling을 활용해서, 데이터를 관리해봐요.
 ****
 # 7. 서버의 상태 관리를 위한 Controller Tower 서버를 추가로 만들어볼게요.
 
