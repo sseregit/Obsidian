@@ -91,6 +91,8 @@
 ## Controller Tower API도 같이 Skelton 구축해 볼게요.
 ==Controller Tower를 위한 기본적인 세팅 약간의 구조만 다를뿐 기존 서버와 내용은 같다.==
 ## MySQL을 통해서 서버의 초기 메모리 셋팅 진행할게요.
+==serverInfo Table의 값을 불러와서 Map에다가 저장하는 로직까지.==
+## avaiable 가능한 서버 리스트를 내려주는 Router를 작업할게요.
 
 ****
 # 8. Go너무 어려운데... Node.Js는 없나요??
