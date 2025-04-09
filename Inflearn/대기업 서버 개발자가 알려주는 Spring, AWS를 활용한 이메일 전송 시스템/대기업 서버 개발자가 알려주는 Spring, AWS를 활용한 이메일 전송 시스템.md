@@ -55,7 +55,8 @@
 ****
 # 8. AWS
 ## SES 전송을 위한 Service 작성
-
+==이메일 전송을 위한 서비스 로직 작성==
+## SES Template JSON
 ****
 # 9. Debug
 
