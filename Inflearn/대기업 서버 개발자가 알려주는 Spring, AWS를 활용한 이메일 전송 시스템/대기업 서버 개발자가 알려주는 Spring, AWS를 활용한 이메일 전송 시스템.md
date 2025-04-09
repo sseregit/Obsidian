@@ -33,6 +33,8 @@
 ## [[OTP?]] Generate
 ==OTP에서 사용할 QRCode를 만드는 오픈API에 값이 넣어주는 함수 작성==
 ## Swagger & Router
+==OTP 전송을 위한 Controller 작성 및 openapi annotaion 활용==
+## Req/Res Model
 
 ****
 # 6. Spring Controller
