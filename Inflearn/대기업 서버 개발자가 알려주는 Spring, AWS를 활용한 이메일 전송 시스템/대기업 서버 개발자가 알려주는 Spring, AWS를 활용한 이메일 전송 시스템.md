@@ -7,6 +7,8 @@
 ==spring.start.io 사용과 @SpringBootApplication의 대한 설명 [[2장 질문]]의 1번 문제의 답변을 참고하면 된다 ==
 ## Install Dependencies
 ==사용할 Dependencies에 대한 설명 대략적으로 jpa, web, gson, lombok, aws, openapi...==
+****
+# 3. Spring Common
 ## ErrorCode 정규화
 ==ErrorCode 관리를 위한 클래스 작성==
 ## CustomException
@@ -15,19 +17,20 @@
 ==자바에서 상수값을 다루는법과 해당 클래스를 private 생성자로 작성해 싱글톤을 만드는 것==
 ## Validator
 ==Email 정규표현식을 활용한 Validation 작성==
+
 ****
-# 3. Spring Common
+# 4. Spring Config
 ## AWS SES Client
 ==@Configuration과 @Value를 활용한 SesClient 빈 등록하기.==
 ## Bean For TransactionManager Annotation
 ### `@EnableTransactionManagement`
 - 스프링의 선언적 트랜잭션 기능을 활성화하는 애노테이션
 - 기본적으로 자동 설정이 되는 애노테이션 starter-jdbc, starter-jpa등등..을 사용할 시
-****
-# 4. Spring Config
+==보통은 application.yml 이나 properties를 활용해서 자동 빈 등록으로 DataSource나 TransactionManager를 쓰는데 직접 등록했다.==
 
 ****
 # 5. Spring Security
+## OTP Generate
 
 ****
 # 6. Spring Controller
