@@ -1,8 +1,9 @@
 # 1. 강의 소개
 ## 강의소개
-
+==해당 강의의 목표는 서비스 플랫폼에서 이메일을 다루는 법 패스워드, 인증등 어떤식으로 이메일을 활용할 수 있는지에 대한 강의가 될 것이다.==
 ****
 # 2. Spring Initializer
+## Spring 시작하기, @SpringBootApplication
 
 ****
 # 3. Spring Common
