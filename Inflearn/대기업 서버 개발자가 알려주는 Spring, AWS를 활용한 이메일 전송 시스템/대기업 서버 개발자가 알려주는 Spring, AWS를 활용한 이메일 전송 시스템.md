@@ -30,7 +30,7 @@
 
 ****
 # 5. Spring Security
-## OTP Generate
+## [[OTP?]] Generate
 
 ****
 # 6. Spring Controller
