@@ -18,6 +18,9 @@
 ****
 # 3. Spring Common
 ## AWS SES Client
+==@Configuration과 @Value를 활용한 SesClient 빈 등록하기.==
+## Bean For TransactionManager Annotation
+
 ****
 # 4. Spring Config
 
