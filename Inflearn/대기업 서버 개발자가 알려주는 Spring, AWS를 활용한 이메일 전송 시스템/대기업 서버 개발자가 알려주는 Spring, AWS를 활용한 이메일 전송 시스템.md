@@ -31,6 +31,8 @@
 ****
 # 5. Spring Security
 ## [[OTP?]] Generate
+==OTP에서 사용할 QRCode를 만드는 오픈API에 값이 넣어주는 함수 작성==
+## Swagger & Router
 
 ****
 # 6. Spring Controller
