@@ -41,6 +41,8 @@
 ==아주 아주 아주 단순한 요청 모델과 응답 모델 작성==
 ## Service Logic
 @GetMapping에서 @RequestBody의 사용은 좋은 선택이 아니다.
+==아주 아주 아주 단순한 Serice 작성 로직도 존재하지 않음 이후에 작성 예정==
+## AWS SES Service
 
 
 ****
