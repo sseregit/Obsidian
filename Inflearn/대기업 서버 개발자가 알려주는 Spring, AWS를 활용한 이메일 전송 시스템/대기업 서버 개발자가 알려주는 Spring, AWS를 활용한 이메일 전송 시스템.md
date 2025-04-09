@@ -14,9 +14,10 @@
 ## Constraints For Singleton
 ==자바에서 상수값을 다루는법과 해당 클래스를 private 생성자로 작성해 싱글톤을 만드는 것==
 ## Validator
+==Email 정규표현식을 활용한 Validation 작성==
 ****
 # 3. Spring Common
-
+## AWS SES Client
 ****
 # 4. Spring Config
 
