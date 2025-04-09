@@ -20,7 +20,9 @@
 ## AWS SES Client
 ==@Configuration과 @Value를 활용한 SesClient 빈 등록하기.==
 ## Bean For TransactionManager Annotation
-
+### `@EnableTransactionManagement`
+- 스프링의 선언적 트랜잭션 기능을 활성화하는 애노테이션
+- 기본적으로 자동 설정이 되는 애노테이션 starter-jdbc, starter-jpa등등..을 사용할 시
 ****
 # 4. Spring Config
 
