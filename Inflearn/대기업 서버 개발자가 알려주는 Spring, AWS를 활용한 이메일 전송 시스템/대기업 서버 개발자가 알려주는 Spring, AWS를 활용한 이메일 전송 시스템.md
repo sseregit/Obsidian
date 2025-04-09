@@ -10,7 +10,8 @@
 ## ErrorCode 정규화
 ==ErrorCode 관리를 위한 클래스 작성==
 ## CustomException
-
+==ErrorCode를 받아 사용하는 CustomException 작성==
+## Constraints For Singleton
 ****
 # 3. Spring Common
 
