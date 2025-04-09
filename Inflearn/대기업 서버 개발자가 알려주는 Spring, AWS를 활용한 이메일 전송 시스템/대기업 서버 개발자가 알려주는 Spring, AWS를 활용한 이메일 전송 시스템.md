@@ -43,10 +43,12 @@
 @GetMapping에서 @RequestBody의 사용은 좋은 선택이 아니다.
 ==아주 아주 아주 단순한 Serice 작성 로직도 존재하지 않음 이후에 작성 예정==
 ## AWS SES Service
-
+==SesClient를 활용해서 메일을 보내는 Service에 함수 작성==
 
 ****
 # 7. Spring Repository
+## JPA Entity
+
 
 ****
 # 8. AWS
