@@ -8,6 +8,9 @@
 ## Install Dependencies
 ==사용할 Dependencies에 대한 설명 대략적으로 jpa, web, gson, lombok, aws, openapi...==
 ## ErrorCode 정규화
+==ErrorCode 관리를 위한 클래스 작성==
+## CustomException
+
 ****
 # 3. Spring Common
 
