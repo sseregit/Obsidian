@@ -50,10 +50,11 @@
 ## JPA Entity
 ==아주 아주 아주 단순한 User Entity 작성==
 ## Repository & TMI
-
+==아주 아주 아주 단순한 JPARepository 작성 그리고 JPA를 사용할 때 설계에 대한 완성도가 중요하다는 말을 했는데 잘 이해가 안됨..?==
 
 ****
 # 8. AWS
+## SES 전송을 위한 Service 작성
 
 ****
 # 9. Debug
