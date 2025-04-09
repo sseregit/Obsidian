@@ -6,6 +6,8 @@
 ## Spring 시작하기, @SpringBootApplication
 ==spring.start.io 사용과 @SpringBootApplication의 대한 설명 [[2장 질문]]의 1번 문제의 답변을 참고하면 된다 ==
 ## Install Dependencies
+==사용할 Dependencies에 대한 설명 대략적으로 jpa, web, gson, lombok, aws, openapi...==
+## ErrorCode 정규화
 ****
 # 3. Spring Common
 
