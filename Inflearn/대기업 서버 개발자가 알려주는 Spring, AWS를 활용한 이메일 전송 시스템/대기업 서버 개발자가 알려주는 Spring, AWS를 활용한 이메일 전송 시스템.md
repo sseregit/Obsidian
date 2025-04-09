@@ -4,7 +4,8 @@
 ****
 # 2. Spring Initializer
 ## Spring 시작하기, @SpringBootApplication
-
+==spring.start.io 사용과 @SpringBootApplication의 대한 설명 [[2장 질문]]의 1번 문제의 답변을 참고하면 된다 ==
+## Install Dependencies
 ****
 # 3. Spring Common
 
