@@ -40,6 +40,7 @@
 ## Req/Res Model
 ==아주 아주 아주 단순한 요청 모델과 응답 모델 작성==
 ## Service Logic
+@GetMapping에서 @RequestBody의 사용은 좋은 선택이 아니다.
 
 
 ****
