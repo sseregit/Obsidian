@@ -12,6 +12,8 @@
 ## CustomException
 ==ErrorCode를 받아 사용하는 CustomException 작성==
 ## Constraints For Singleton
+==자바에서 상수값을 다루는법과 해당 클래스를 private 생성자로 작성해 싱글톤을 만드는 것==
+## Validator
 ****
 # 3. Spring Common
 
