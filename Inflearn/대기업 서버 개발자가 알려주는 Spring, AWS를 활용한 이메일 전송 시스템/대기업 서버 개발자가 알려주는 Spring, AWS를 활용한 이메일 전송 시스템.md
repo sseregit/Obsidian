@@ -48,6 +48,8 @@
 ****
 # 7. Spring Repository
 ## JPA Entity
+==아주 아주 아주 단순한 User Entity 작성==
+## Repository & TMI
 
 
 ****
