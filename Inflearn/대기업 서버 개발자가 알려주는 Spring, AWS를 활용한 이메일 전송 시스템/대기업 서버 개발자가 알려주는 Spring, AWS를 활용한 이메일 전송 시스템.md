@@ -59,6 +59,8 @@
 ## SES Template JSON
 ==SES에서 사용할 Template JSON 파일 작성==
 ## SES의 자격증명 및 SandBox 제약
+==SES 자격증명 등록과 SandBox에 대한 제약 이야기==
+## CLI 환경을 활용한 AWS Console 제어
 ****
 # 9. Debug
 
