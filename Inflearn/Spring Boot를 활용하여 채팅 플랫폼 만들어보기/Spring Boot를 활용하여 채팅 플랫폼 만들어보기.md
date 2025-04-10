@@ -19,7 +19,8 @@
 ## Swagger & API에 대한 클래스 주입하기
 ==기본적인 Service, Model, Controller 작성 및 Swagger 정보도 작성==
 ## Entity와 Lazy Fetch에 관하여
-
+==Entity 작성과 OneToOne에서 Lazy가아닌 eager fetch를 사용하는 이유와 Lazy에 대한 설명==
+## JPA를 활용한 Service 구성하기
 ****
 # 4. JWT에 대한 모든것
 
