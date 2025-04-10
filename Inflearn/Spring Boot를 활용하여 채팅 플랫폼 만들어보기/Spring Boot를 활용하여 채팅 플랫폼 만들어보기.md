@@ -6,7 +6,8 @@
 ****
 # 2. 프로젝트 구성하기
 ## initializer & dependencies build
-
+==spring websocket을위한 의존성 추가 및 JPA, Lombok 등등...==
+## yaml을 활용한 서버 환경 관리
 ****
 # 3. Auth에 대한 HTTP Router 작성하기
 
