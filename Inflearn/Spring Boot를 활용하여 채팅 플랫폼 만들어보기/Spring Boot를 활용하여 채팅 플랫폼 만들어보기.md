@@ -10,6 +10,8 @@
 ## yaml을 활용한 서버 환경 관리
 ==의존성에 필요한 설정과 JWT 토큰 관련 설정 작성==
 ## MySQL Transaction Manager Config
+==TransactionManager에 대한 빈 등록과 Custom TransactionManager를 등록하는 방법==
+## HTTP와 웹소켓의 Configuration
 
 ****
 # 3. Auth에 대한 HTTP Router 작성하기
