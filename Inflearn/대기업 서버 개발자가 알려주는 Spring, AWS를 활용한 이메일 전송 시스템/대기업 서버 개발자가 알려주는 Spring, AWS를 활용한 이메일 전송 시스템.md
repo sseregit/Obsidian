@@ -61,7 +61,8 @@
 ## SES의 자격증명 및 SandBox 제약
 ==SES 자격증명 등록과 SandBox에 대한 제약 이야기==
 ## CLI 환경을 활용한 AWS Console 제어
+==aws cli를 활용해 template 등록하기==
 ****
 # 9. Debug
-
+## Project 정상 동작 확인 및 yml 주입하기
 ****
