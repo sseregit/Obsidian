@@ -12,9 +12,10 @@
 ## MySQL Transaction Manager Config
 ==TransactionManager에 대한 빈 등록과 Custom TransactionManager를 등록하는 방법==
 ## HTTP와 웹소켓의 Configuration
-
+==Security가 아닌 WebMvcConfigurer로 CORS와 WebSocketConfigurer로 WebSocket  소켓도 처음에 HTTP도 handshake를 하기 때문에 CORS와 비슷한 느낌의 설정을 가져간다.==
 ****
 # 3. Auth에 대한 HTTP Router 작성하기
+## Swagger & API에 대한 클래스 주입하기
 
 ****
 # 4. JWT에 대한 모든것
