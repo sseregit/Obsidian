@@ -57,7 +57,8 @@
 ## SES 전송을 위한 Service 작성
 ==이메일 전송을 위한 서비스 로직 작성==
 ## SES Template JSON
-
+==SES에서 사용할 Template JSON 파일 작성==
+## SES의 자격증명 및 SandBox 제약
 ****
 # 9. Debug
 
