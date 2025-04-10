@@ -8,6 +8,9 @@
 ## initializer & dependencies build
 ==spring websocket을위한 의존성 추가 및 JPA, Lombok 등등...==
 ## yaml을 활용한 서버 환경 관리
+==의존성에 필요한 설정과 JWT 토큰 관련 설정 작성==
+## MySQL Transaction Manager Config
+
 ****
 # 3. Auth에 대한 HTTP Router 작성하기
 
