@@ -11,11 +11,14 @@
 ==의존성에 필요한 설정과 JWT 토큰 관련 설정 작성==
 ## MySQL Transaction Manager Config
 ==TransactionManager에 대한 빈 등록과 Custom TransactionManager를 등록하는 방법==
+**해당 강의의 DataSourceTransactionManager를 사용하는데 JPA를 사용하면 사실  JPA의 프록시를 이용한 기능들이 다 작동안함 LAZY, 영속성 컨텍스트로의 관리, dirty checking등등 JPA를 쓰는데 해당 TransactionManager를 사용하는건 치명적인 실수!!**
 ## HTTP와 웹소켓의 Configuration
 ==Security가 아닌 WebMvcConfigurer로 CORS와 WebSocketConfigurer로 WebSocket  소켓도 처음에 HTTP도 handshake를 하기 때문에 CORS와 비슷한 느낌의 설정을 가져간다.==
 ****
 # 3. Auth에 대한 HTTP Router 작성하기
 ## Swagger & API에 대한 클래스 주입하기
+==기본적인 Service, Model, Controller 작성 및 Swagger 정보도 작성==
+## Entity와 Lazy Fetch에 관하여
 
 ****
 # 4. JWT에 대한 모든것
