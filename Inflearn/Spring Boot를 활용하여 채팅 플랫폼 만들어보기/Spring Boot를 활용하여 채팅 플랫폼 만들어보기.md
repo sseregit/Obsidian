@@ -1,7 +1,11 @@
 # 1. 강의 소개
+## 강의 소개
+==Golang강의보다 더 자세히 다룬다..?!==
+## Source Code
 
 ****
 # 2. 프로젝트 구성하기
+## initializer & dependencies build
 
 ****
 # 3. Auth에 대한 HTTP Router 작성하기
