@@ -21,6 +21,9 @@
 ## Entity와 Lazy Fetch에 관하여
 ==Entity 작성과 OneToOne에서 Lazy가아닌 eager fetch를 사용하는 이유와 Lazy에 대한 설명==
 ## JPA를 활용한 Service 구성하기
+==JPARepository 만들고 Service에 유저 생성 로직 작성==
+## SHA-256을 활용한 Password 해싱하기
+
 ****
 # 4. JWT에 대한 모든것
 
