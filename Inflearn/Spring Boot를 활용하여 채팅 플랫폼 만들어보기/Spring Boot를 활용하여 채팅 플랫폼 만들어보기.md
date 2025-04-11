@@ -23,6 +23,8 @@
 ## JPA를 활용한 Service 구성하기
 ==JPARepository 만들고 Service에 유저 생성 로직 작성==
 ## SHA-256을 활용한 Password 해싱하기
+==spring security에 bcrypt를 사용해서 core를 의존성 추가한줄 알았는데 패스워드에 대한 해싱을 `MessageDigest.getInstance(“SHA-256”)`으로 처리==
+## RunTimeException에 대한 Customizing
 
 ****
 # 4. JWT에 대한 모든것
