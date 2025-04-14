@@ -27,9 +27,10 @@
 ## RunTimeException에 대한 Customizing
 ==enum, interface를 조합해 CustomException을 핸들링 하는 방법==
 ## Auth API 기본적인 마무리하기
-
+==보통 Spring Security로 이런 작업을 할테니 그렇게 좋은 방법은 아니지만 Spring Security를 사용해서 처리하더라도 보통 이런흐름으로 진행되니 상관없다.==
 ****
 # 4. JWT에 대한 모든것
+## 면접대비와 기능개발을 위한 JWT
 
 ****
 # 5. Spring Boot에서 웹소켓 Protocol 활용하기
