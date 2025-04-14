@@ -25,6 +25,8 @@
 ## SHA-256을 활용한 Password 해싱하기
 ==spring security에 bcrypt를 사용해서 core를 의존성 추가한줄 알았는데 패스워드에 대한 해싱을 `MessageDigest.getInstance(“SHA-256”)`으로 처리==
 ## RunTimeException에 대한 Customizing
+==enum, interface를 조합해 CustomException을 핸들링 하는 방법==
+## Auth API 기본적인 마무리하기
 
 ****
 # 4. JWT에 대한 모든것
