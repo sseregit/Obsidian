@@ -51,6 +51,8 @@
 ## Protocol을 적용하는 WebSocket 및 Long Poiing
 [[Long Polling?]]
 ==STOMP 기반의 WebSocketMessageBrokerConfigurer 세팅 과 Long Polling의 설명==
+## MessageMapping Annotation 활용하기
+
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
 
