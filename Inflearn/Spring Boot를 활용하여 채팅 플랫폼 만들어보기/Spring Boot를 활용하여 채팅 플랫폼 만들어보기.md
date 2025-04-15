@@ -47,7 +47,9 @@
 - 트래픽이 빈번한 요청 같은 경우에 많이 사용된다.
 ==WebSocket에 대한 설명과 이점 STOMP와 같은 프로토콜의 간단한 설명==
 ## TextSocketHandler를 활용한 Raw Level 코드 작성하기
-==말그대로 ==
+==말그대로 raw level 소켓 작성법==
+## Protocol을 적용하는 WebSocket 및 Long Poiing
+
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
 
