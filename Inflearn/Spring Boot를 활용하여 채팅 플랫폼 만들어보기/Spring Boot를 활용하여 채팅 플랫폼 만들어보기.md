@@ -58,9 +58,10 @@
 ## Transaction Manager을 활용한 WebSocket 경계 설정하기
 ==강의만 봣을땐 특별하게 경계를 처리한다는? 느낌은 없다 애초에 TransactionManager를 빈으로 등록하고 사용하고 있었기 때문에 따로 사용할 TransactionManager를 등록한거고 그냥 @Transactional에 새로 등록한 TransactionManager를 넣어줬을뿐.. 특별한게 없었다==
 ## 여러분들이 알아야하는 JDBC와 JPA
-
+==JDBC와 JPA에 대한 강사의 생각 장단점 기술적인 이야기보다는 사용함에 있어서의 장단점에 가깝게 설명==
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
+## 기능을 위한 부수적인 API 작성하기 Entity -> DTO
 
 ****
 # 7. 직접 구동하며 함께 디버깅하기
