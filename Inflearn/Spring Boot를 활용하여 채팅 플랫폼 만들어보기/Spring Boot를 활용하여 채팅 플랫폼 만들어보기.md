@@ -52,6 +52,8 @@
 [[Long Polling?]]
 ==STOMP 기반의 WebSocketMessageBrokerConfigurer 세팅 과 Long Polling의 설명==
 ## MessageMapping Annotation 활용하기
+==STOMP기반의 Pub/Sub을 활용하다보니 비동기 메시지 큐 같은 개념들과 섞이면서 이해하기좀 힘들었음.==
+## JPA 네이밍을 통한 쿼리 처리 및 @Query 활용법
 
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
