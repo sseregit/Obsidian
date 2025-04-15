@@ -56,6 +56,9 @@
 ## JPA 네이밍을 통한 쿼리 처리 및 @Query 활용법
 ==@Query를 활용한 jqpl작성과 Query Mehtod를 활용한 Jpa활용법 설명==
 ## Transaction Manager을 활용한 WebSocket 경계 설정하기
+==강의만 봣을땐 특별하게 경계를 처리한다는? 느낌은 없다 애초에 TransactionManager를 빈으로 등록하고 사용하고 있었기 때문에 따로 사용할 TransactionManager를 등록한거고 그냥 @Transactional에 새로 등록한 TransactionManager를 넣어줬을뿐.. 특별한게 없었다==
+## 여러분들이 알아야하는 JDBC와 JPA
+
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
 
