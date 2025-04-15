@@ -64,9 +64,10 @@
 ## 기능을 위한 부수적인 API 작성하기 Entity -> DTO
 ==그냥 단순한 Entity List를 stream을 활용해 DTO로 변경==
 ## equest의 Header 정보 추출하기 및 MySQL에서의 Like Search
+==user 검색 쿼리, 서비스, API, JWT Token에 헤더에서 추출하기 작업==
 ****
 # 7. 직접 구동하며 함께 디버깅하기
-
+## 서비스 구동하며 테스트와 디버깅하기 - 1
 ****
 # 8. 더 견고한 프로젝트를 위한 TODO List
 
