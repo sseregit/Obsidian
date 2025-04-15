@@ -49,7 +49,7 @@
 ## TextSocketHandler를 활용한 Raw Level 코드 작성하기
 ==말그대로 raw level 소켓 작성법==
 ## Protocol을 적용하는 WebSocket 및 Long Poiing
-
+[[Long Polling?]]
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
 
