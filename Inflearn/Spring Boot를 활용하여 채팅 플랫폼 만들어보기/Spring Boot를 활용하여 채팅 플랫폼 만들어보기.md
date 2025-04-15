@@ -62,7 +62,8 @@
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
 ## 기능을 위한 부수적인 API 작성하기 Entity -> DTO
-
+==그냥 단순한 Entity List를 stream을 활용해 DTO로 변경==
+## equest의 Header 정보 추출하기 및 MySQL에서의 Like Search
 ****
 # 7. 직접 구동하며 함께 디버깅하기
 
