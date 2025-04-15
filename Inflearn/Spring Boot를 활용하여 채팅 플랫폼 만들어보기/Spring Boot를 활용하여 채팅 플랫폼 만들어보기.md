@@ -43,7 +43,8 @@
 ****
 # 5. Spring Boot에서 웹소켓 Protocol 활용하기
 ## HTTP vs WebSocket 이론
-
+### WebSocket
+- 트래픽이 빈번한 요청 같은 경우에 많이 사용된다.
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
 
