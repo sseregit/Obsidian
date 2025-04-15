@@ -39,9 +39,10 @@
 ## 에러 핸들링을 활용한 JWT Verify
 ==JWT 검증 Exception, ErrorCode 작성==
 ## HTTP Protocol에 대한 로직 마무리하기
-
+==Login, JWT관련 API 작성==
 ****
 # 5. Spring Boot에서 웹소켓 Protocol 활용하기
+## HTTP vs WebSocket 이론
 
 ****
 # 6. 서비스 완성을 위한 부수적인 코드 작업하기
