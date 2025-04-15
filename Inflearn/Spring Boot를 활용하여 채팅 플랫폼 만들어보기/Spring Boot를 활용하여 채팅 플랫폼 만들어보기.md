@@ -35,6 +35,8 @@
 ## JWT 설정을 위한 factory Annotaion 사용하기
 ==강의는 @Component와 setter의 @Value를 활용해 yml값을 바인딩하는데 나는 @ConfigurationPropertiesScan과 @ConfigurationProperties를 활용했다. 결과는 다르지 않다.==
 ## JWT Token의 Playload에 값을 주입하기
+==JWT 생성 메서드 작성==
+## 에러 핸들링을 활용한 JWT Verify
 
 
 ****
