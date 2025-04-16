@@ -37,6 +37,11 @@
 1. 환경에서 Request Path를 추적한다.
 2. 어느 구간에서 병목이 발생하고 Request가 실패하였다면 어디에서 Error가 발생했는지 그에 따른 Critial Path가 무엇인지를 밝히는 작업
 전통적인 모니터링 툴들은 아직 이 동작 방법에 적합한 툴이 없다.
+## OpenTracing의 Basic Idea
+### Basic Idea
+- 각 단위, 단위의 프로세스 마다의 실행시간과 정보들을 Profiling하고
+- 중앙에서 Profiling 정보를 모아서 Request 별로 관계를 재조합 한뒤에
+- Visualization Tool 또는 분석해서 표기한다.
 ****
 # 4. 🖥️ Golang을 통한 OpenTracing 다루기 (실습)
 
