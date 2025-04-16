@@ -42,6 +42,12 @@
 - 각 단위, 단위의 프로세스 마다의 실행시간과 정보들을 Profiling하고
 - 중앙에서 Profiling 정보를 모아서 Request 별로 관계를 재조합 한뒤에
 - Visualization Tool 또는 분석해서 표기한다.
+## OpenTracing Concepts
+### Span
+- OpenTracing에서 다루고 있는 가장 작은 작업 단위
+- 일반 서비스 개발에서는 Context라는 개념으로 통상된다.
+- 모든 Span은 Root Span을 기반으로 생성이 되며, 이후에 Root Span에 붙어서 생성이 되는 Span은 Child Span이라 한다.
+- Span에 Tags, Baddage같은 옵션들을 붙여 추가적인 정ㅂ조를 주입할 수 있다.
 ****
 # 4. 🖥️ Golang을 통한 OpenTracing 다루기 (실습)
 
