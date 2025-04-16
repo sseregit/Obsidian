@@ -62,8 +62,17 @@
 #### Collector
 - Agent로 부터 들어온 데이터를 수신하고, 저장소에 저장하는 역할을 수행한다.
 - 원하는 아키텍처에 따라 `Kafka`, `Redis`를 활용하는 방법도 있다.
+#### Data store
+- 데이터를 저장하는 공간
+- 원하는 저장소를 사용할 수 있으며 커스터마이징 가능
+- 대표적으로 `ElasticSearch`를 많이 사용한다.
+#### Query
+- UI에 표기하기 위한 검색 툴
 ****
 # 4. 🖥️ Golang을 통한 OpenTracing 다루기 (실습)
+## 여러분들이 사용하셔야 하는 Docker 명령어 입니다.
+`docker run -p6831:6831/udp -p 6832:6832/udp -p16686:16686 jaegertracing/all-in-one:latest`
+## Jaeger Tracer 생성 코드 다루기
 
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
