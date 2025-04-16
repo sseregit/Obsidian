@@ -70,8 +70,8 @@
 ## 서비스 구동하며 테스트와 디버깅하기 - 1
 ==유저 생성에서 막혀서 강의가 그부분을 디버깅하는 강의가 되어버렸다.. 여기서 얻은건 @CreateDate를 사용하기 위해선 @EnableJpaAuditing Application Level에서과 Entity Class에 @EntityListeners(AuditingEntityListener.class)를 적어줘야 한다==
 ## 서비스 구동하며 테스트와 디버깅하기 - 2
-
+==이래저래 버그가 많구만 허허..==
 ****
 # 8. 더 견고한 프로젝트를 위한 TODO List
-
+## 강의 마무리 및 견고한 서비스를 위한 TODO
 ****
