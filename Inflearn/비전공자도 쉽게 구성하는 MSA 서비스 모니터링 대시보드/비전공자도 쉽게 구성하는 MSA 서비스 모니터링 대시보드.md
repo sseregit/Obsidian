@@ -48,6 +48,20 @@
 - 일반 서비스 개발에서는 Context라는 개념으로 통상된다.
 - 모든 Span은 Root Span을 기반으로 생성이 되며, 이후에 Root Span에 붙어서 생성이 되는 Span은 Child Span이라 한다.
 - Span에 Tags, Baddage같은 옵션들을 붙여 추가적인 정ㅂ조를 주입할 수 있다.
+### Trace
+- 여러개의 Span을 담고 있는 하나의 작업
+- Trace는 고유한 ID값이 존재하고, Trace를 담당하는 시스템을 말하기도 한다.
+## OpenTracing Architecture
+### Jaeger Architecture
+#### Jaeger client
+- 다양한 언어에 대해 OpenTracing 표준을 준수하는 SDK를 구현한다.
+- 응용 프로그램은 API를 사용하여 데이터를 기록하여, 지정된 응용 프로그램에 따라 trace 정보를 Jaeger 에이전트로 전송한다.
+#### Agent
+- UDP포트를 사용해서, 수신된 Span 데이터를 모니터링하고 처리를 한다.
+- 기본적인 구성요소이기 때문에, 모든 호스트에 배포가 된다.
+#### Collector
+- Agent로 부터 들어온 데이터를 수신하고, 저장소에 저장하는 역할을 수행한다.
+- 원하는 아키텍처에 따라 `Kafka`, `Redis`를 활용하는 방법도 있다.
 ****
 # 4. 🖥️ Golang을 통한 OpenTracing 다루기 (실습)
 
