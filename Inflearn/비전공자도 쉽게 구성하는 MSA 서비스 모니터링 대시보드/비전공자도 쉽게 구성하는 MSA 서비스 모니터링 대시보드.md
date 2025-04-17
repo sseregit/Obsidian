@@ -77,6 +77,9 @@
 ## 많이 사용되는 OpenTracing 설정 값
 ==jaeger에서 자주 사용하는 설정값들 세팅==
 ## 간단한 API 구동 시키기
+==gin을 활용한 서버 구동==
+## Test Case를 위한 Router Path 설정하기
+
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 
