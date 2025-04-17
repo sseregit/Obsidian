@@ -89,6 +89,7 @@
 ## Span에 Error 정보 심어보기
 ==Error의 정보를 넣어 jaeger의 표시가 다르게 되게끔 해주는 정도의 에러인데..?==
 ## Baggage를 통한 다른 Host간에 값 공유하기
+==Tag는 단기 정보, Log는 이벤트용, Baggage는 장기 정보==
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 
