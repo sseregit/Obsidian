@@ -81,6 +81,8 @@
 ## Test Case를 위한 Router Path 설정하기
 ==Test를 위한 Router 등록, Router 등록을 위한 utils 작성==
 ## API를 통해서 가장 간단한 추적 만들어보기
+==망할 강의에서 사용하는 jaegertracing/all-in-one 이미지가 버전업이되고 deprecated 될거라서 뭐 설명도 없고 1.60.0 에선 나오는데 1.68.0 에서는 안나오는데 설정법이나 이미지에 대한 설명이 싹 사라져서 원인을 찾기 힘들어 그냥 버전을 낮추는걸로 해결==
+## 추가적인 Tag 주입하기 &amp; Child를 활용한 Span 주입하기
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 
