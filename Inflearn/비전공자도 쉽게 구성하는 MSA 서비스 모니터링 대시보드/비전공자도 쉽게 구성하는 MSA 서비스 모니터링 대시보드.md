@@ -75,6 +75,8 @@
 ## Jaeger Tracer 생성 코드 다루기
 ==jaeger-client-go를 활용한 GlobalTrace 값 세팅==
 ## 많이 사용되는 OpenTracing 설정 값
+==jaeger에서 자주 사용하는 설정값들 세팅==
+## 간단한 API 구동 시키기
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 
