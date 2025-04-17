@@ -79,7 +79,8 @@
 ## 간단한 API 구동 시키기
 ==gin을 활용한 서버 구동==
 ## Test Case를 위한 Router Path 설정하기
-
+==Test를 위한 Router 등록, Router 등록을 위한 utils 작성==
+## API를 통해서 가장 간단한 추적 만들어보기
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 
