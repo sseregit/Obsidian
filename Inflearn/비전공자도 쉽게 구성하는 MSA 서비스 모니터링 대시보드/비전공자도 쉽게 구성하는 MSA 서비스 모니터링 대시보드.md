@@ -83,6 +83,9 @@
 ## API를 통해서 가장 간단한 추적 만들어보기
 ==망할 강의에서 사용하는 jaegertracing/all-in-one 이미지가 버전업이되고 deprecated 될거라서 뭐 설명도 없고 1.60.0 에선 나오는데 1.68.0 에서는 안나오는데 설정법이나 이미지에 대한 설명이 싹 사라져서 원인을 찾기 힘들어 그냥 버전을 낮추는걸로 해결==
 ## 추가적인 Tag 주입하기 &amp; Child를 활용한 Span 주입하기
+==Span을 계층적으로 추가하는 법과 Tag로 값을 보내는 방법==
+## 다른 Host간에 추적을 위한 Request Header 정보 활용하기
+
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 
