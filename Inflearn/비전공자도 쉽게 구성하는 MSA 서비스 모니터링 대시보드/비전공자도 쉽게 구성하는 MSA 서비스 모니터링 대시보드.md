@@ -87,7 +87,8 @@
 ## 다른 Host간에 추적을 위한 Request Header 정보 활용하기
 ==HTTP Header를 통해서 Span을 전달한다. 그래서 RootSpan에 아래 ChileSpan 계층이 계속 생겨나가게 된다.==
 ## Span에 Error 정보 심어보기
-
+==Error의 정보를 넣어 jaeger의 표시가 다르게 되게끔 해주는 정도의 에러인데..?==
+## Baggage를 통한 다른 Host간에 값 공유하기
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 
