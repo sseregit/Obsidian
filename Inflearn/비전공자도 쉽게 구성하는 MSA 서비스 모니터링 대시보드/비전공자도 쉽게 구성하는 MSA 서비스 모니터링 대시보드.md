@@ -71,7 +71,7 @@
 ****
 # 4. 🖥️ Golang을 통한 OpenTracing 다루기 (실습)
 ## 여러분들이 사용하셔야 하는 Docker 명령어 입니다.
-`docker run --rm -p6831:6831/udp -p6832:6832/udp -p16686:16686 jaegertracing/all-in-one:latest`
+`docker run --rm -p6831:6831/udp -p6832:6832/udp -p16686:16686 jaegertracing/all-in-one:1.60.0`
 ## Jaeger Tracer 생성 코드 다루기
 ==jaeger-client-go를 활용한 GlobalTrace 값 세팅==
 ## 많이 사용되는 OpenTracing 설정 값
