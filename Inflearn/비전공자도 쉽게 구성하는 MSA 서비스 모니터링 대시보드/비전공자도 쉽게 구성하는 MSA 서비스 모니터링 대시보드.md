@@ -97,4 +97,6 @@
 ## Project 시작을 위한 Package Init
 ==express, jaeger-client, opentracing, ts-node 패키지 설치==
 ## Tracer 연결을 위한 코드 작성
+==GlobalTracer 위한 코드 작성==
+## TypeScript을 활용한 Root Span 생성하기
 ****
