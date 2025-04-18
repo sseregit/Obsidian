@@ -101,5 +101,5 @@
 ## TypeScript을 활용한 Root Span 생성하기
 ==Root span 작성==
 ## TypeScript에서 HTTP를 활용한 OpenTracing 다루기
-
+==child Span을 추가하는 방법 설명==
 ****
