@@ -93,5 +93,5 @@
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
 ## TypeScript에서는 이렇게 만들어 볼 예정입니다.
-
+==Go project보다는 디테일하지 않더라도 Typescript로 opentracing을 작성할수 있는 인사이트==
 ****
