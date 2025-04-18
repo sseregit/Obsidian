@@ -92,5 +92,6 @@
 ==Tag는 단기 정보, Log는 이벤트용, Baggage는 장기 정보==
 ****
 # 5. 🖥️ TypeScript를 활용한 OpenTracing 다루기 (실습)
+## TypeScript에서는 이렇게 만들어 볼 예정입니다.
 
 ****
