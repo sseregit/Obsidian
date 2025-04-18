@@ -95,4 +95,6 @@
 ## TypeScript에서는 이렇게 만들어 볼 예정입니다.
 ==Go project보다는 디테일하지 않더라도 Typescript로 opentracing을 작성할수 있고 그걸로 인사이트를 얻을 수 있을 정도의 강의가 될것이다.==
 ## Project 시작을 위한 Package Init
+==express, jaeger-client, opentracing, ts-node 패키지 설치==
+## Tracer 연결을 위한 코드 작성
 ****
