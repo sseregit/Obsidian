@@ -15,6 +15,8 @@
 ****
 # 3. Router 환경 변수 및 Kafka 환경 변수 구성하기
 ## client 호출을 위한 Router yaml 객체 작성하기
+==Http 통신을 위한 struct 세팅==
+## Message 전송을 위한 Producer yaml struct 작성하기
 
 ****
 # 4. Kafka Producer 및 Http Client 작성하기
