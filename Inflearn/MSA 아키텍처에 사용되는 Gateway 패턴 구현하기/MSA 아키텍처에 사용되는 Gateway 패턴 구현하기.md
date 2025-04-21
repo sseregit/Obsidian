@@ -17,10 +17,10 @@
 ## client 호출을 위한 Router yaml 객체 작성하기
 ==Http 통신을 위한 struct 세팅==
 ## Message 전송을 위한 Producer yaml struct 작성하기
-
+==Kafka를 위한 Config struct 작성==
 ****
 # 4. Kafka Producer 및 Http Client 작성하기
-
+## Kafka Producer 구현하기
 ****
 # 5. Routing engin 및 Routing 처리하기
 
