@@ -3,6 +3,9 @@
 ### Gateway가 활용되는 곳
 - 단일 진입을 위한 API 패턴을 활용할 때
 	- 단일 지점이기 때문에 단일 실패 지점으로서 동작할 수 있다는 단점!
+==Gateway, circuit breaker를 다루어 본다!==
+## 사용하는 package
+==사용하게 될 go package==
 ****
 # 2. Diagram 및 환경 변수 구성하기
 
