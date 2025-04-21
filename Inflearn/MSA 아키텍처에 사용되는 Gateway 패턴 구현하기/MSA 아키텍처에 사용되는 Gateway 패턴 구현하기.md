@@ -8,6 +8,7 @@
 ==사용하게 될 go package==
 ****
 # 2. Diagram 및 환경 변수 구성하기
+## Module 구성도 Diagram
 
 ****
 # 3. Router 환경 변수 및 Kafka 환경 변수 구성하기
