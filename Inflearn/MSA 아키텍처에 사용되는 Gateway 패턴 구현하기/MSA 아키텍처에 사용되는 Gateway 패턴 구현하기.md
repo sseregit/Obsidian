@@ -23,6 +23,9 @@
 ## Kafka Producer 구현하기
 ==Kafka Producer를 위한 코드 작성==
 ## builder pattern 및 restry를 활용한 Http Client 커스터마이징
+==client를 사용하는것과 외부 패키지를 사용하는 것에 있어서 커스텀하게 컨트롤 할수 있는 방법 제시==
+## 함수 추상화를 활용한 Client 리시버 작성하기
+
 ****
 # 5. Routing engin 및 Routing 처리하기
 
