@@ -21,6 +21,8 @@
 ****
 # 4. Kafka Producer 및 Http Client 작성하기
 ## Kafka Producer 구현하기
+==Kafka Producer를 위한 코드 작성==
+## builder pattern 및 restry를 활용한 Http Client 커스터마이징
 ****
 # 5. Routing engin 및 Routing 처리하기
 
