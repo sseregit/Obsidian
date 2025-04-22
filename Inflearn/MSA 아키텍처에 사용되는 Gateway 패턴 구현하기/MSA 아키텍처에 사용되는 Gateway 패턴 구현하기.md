@@ -33,9 +33,10 @@
 ## Module에서의 Routing 처리 1
 ==Router를 DELETE, POST, PUT에 대한 handler 작성==
 ## Module에서의 Routing 처리 2
-
+==Router Get에 대한 handler 작성==
 ****
 # 6. Module 구동 및 테스트 진행하기
+## 구동을 위한 dependency Injection
 
 ****
 # 7. Kafka를 활용한 Api Trace하기
