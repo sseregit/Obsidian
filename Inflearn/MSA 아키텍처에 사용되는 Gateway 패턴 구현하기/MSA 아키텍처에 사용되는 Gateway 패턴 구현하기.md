@@ -39,7 +39,8 @@
 ## 구동을 위한 dependency Injection
 ==go.uber.org/fx 를 활용한 Module 생성 Producer, HttpClient, Router==
 ## lifecycle 관리하기
-
+==fx를 활용해서 Provide도 하고 실행도하고 하는데 꾀나 복잡해서 따라가기 벅차네?==
+## 포멧팅 형식을 따르는 yaml 작업 및 client 코드 수정
 ****
 # 7. Kafka를 활용한 Api Trace하기
 
