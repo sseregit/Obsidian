@@ -37,6 +37,8 @@
 ****
 # 6. Module 구동 및 테스트 진행하기
 ## 구동을 위한 dependency Injection
+==go.uber.org/fx 를 활용한 Module 생성 Producer, HttpClient, Router==
+## lifecycle 관리하기
 
 ****
 # 7. Kafka를 활용한 Api Trace하기
