@@ -48,6 +48,8 @@
 ****
 # 7. Kafka를 활용한 Api Trace하기
 ## Kafka에 대한 Topic 타입 설정하기
+==Kafka에 전송할 struct 작성==
+## 비동기 처리를 위한 client에서 lock 제어하기
 
 ****
 # 8. Cricuit breaker
