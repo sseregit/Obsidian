@@ -50,6 +50,8 @@
 ## Kafka에 대한 Topic 타입 설정하기
 ==Kafka에 전송할 struct 작성==
 ## 비동기 처리를 위한 client에서 lock 제어하기
+==chan과 lock을 활용해서 메시지를 보내는 로직 작성==
+## 변수 메모리 접근을 위한 코드 수정하기
 
 ****
 # 8. Cricuit breaker
