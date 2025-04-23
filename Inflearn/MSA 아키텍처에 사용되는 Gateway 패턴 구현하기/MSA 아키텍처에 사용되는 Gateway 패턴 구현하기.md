@@ -54,8 +54,9 @@
 ## 변수 메모리 접근을 위한 코드 수정하기
 ==포인터가 아닌 값을 포인터로 변경하고 몇몇 코드 리팩토링==
 ## Docker를 활용한 Kafka Message 테스트
-
+==docker로 zookeeper, kafka, kafka-ui를 활용해서 테스트 진행==
 ****
 # 8. Cricuit breaker
+## Circuit breaker 알아보고 구현하기
 
 ****
