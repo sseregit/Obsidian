@@ -58,5 +58,6 @@
 ****
 # 8. Cricuit breaker
 ## Circuit breaker 알아보고 구현하기
-
+### Circuit breaker
+- MSA환경에서 서비스간의 호출에서 장애를 전파되는 것을 방지하기 위해 사용한다.
 ****
