@@ -40,6 +40,8 @@
 ## PasetoToken에 대한 비지니스 로직 구현하기
 ==paseto.V2를 활용한 Encrypt, Decrypt==
 ## GRPC Client의 요청을 처리할 수 있는 백그라운드 Server 구동하기
+==GRPC서버를 다른 스레드에서 구동하게끔 go func{}() 사용==
+## GRPC Server의 interface 구현을 위한 메서드 추가하기
 
 ****
 # 5. RPC 서버와 HTTP 서버 연동하기
