@@ -30,7 +30,7 @@
 [[Paseto?]]
 ==활용보다는 Paseto를 사용하기 위한 struct와 코드 작성==
 ## Google의 GRPC언어인 Proto 작성하기
-
+==proto 파일 작성 message는 기본적인 string, int64와 같은 필드들을 가질 수도 있고 message를 필드로도 가질 수 있다 1, 2, 3같이 인덱스같은 것을 지정하는데 중복은 불가능 service는 함수들을 선언==
 
 ****
 # 5. RPC 서버와 HTTP 서버 연동하기
