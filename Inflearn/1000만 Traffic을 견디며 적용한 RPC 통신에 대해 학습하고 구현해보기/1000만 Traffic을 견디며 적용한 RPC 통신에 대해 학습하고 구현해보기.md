@@ -36,6 +36,9 @@
 ## RPC통신을 위한 GRPC Client 생성하기
 ==GRPCClient struct 생성==
 ## RPC 통신을 위한 GRPC Client 연결하기
+==말그대로 grpc와 연결하기 위한 코드 작성==
+## PasetoToken에 대한 비지니스 로직 구현하기
+
 ****
 # 5. RPC 서버와 HTTP 서버 연동하기
 
