@@ -42,9 +42,10 @@
 ## GRPC Client의 요청을 처리할 수 있는 백그라운드 Server 구동하기
 ==GRPC서버를 다른 스레드에서 구동하게끔 go func{}() 사용==
 ## GRPC Server의 interface 구현을 위한 메서드 추가하기
-
+==GRPC Server의 AuthServiceServe interface 구현==
 ****
 # 5. RPC 서버와 HTTP 서버 연동하기
+## HTTP 라우터와 GRPC 서버 연결하기
 
 ****
 # 6. 프로젝트 디버깅 및 강의 마무리
