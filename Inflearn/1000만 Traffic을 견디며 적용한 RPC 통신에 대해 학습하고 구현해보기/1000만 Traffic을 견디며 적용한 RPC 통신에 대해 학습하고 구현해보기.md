@@ -28,6 +28,9 @@
 # 4. RPC 서버 구동 및 Google의 언어인 Proto작성하기
 ## JWT와 Paseto 비교 및 Paseto 활용하기
 [[Paseto?]]
+==활용보다는 Paseto를 사용하기 위한 struct와 코드 작성==
+## Google의 GRPC언어인 Proto 작성하기
+
 
 ****
 # 5. RPC 서버와 HTTP 서버 연동하기
