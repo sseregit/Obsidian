@@ -32,7 +32,7 @@
 ## Google의 GRPC언어인 Proto 작성하기
 ==proto 파일 작성 message는 기본적인 string, int64와 같은 필드들을 가질 수도 있고 message를 필드로도 가질 수 있다 1, 2, 3같이 인덱스같은 것을 지정하는데 중복은 불가능 service는 함수들을 선언==
 ## Proto Build하기 위한 명령어 알아보기
-
+==protoc를 사용하기 위해서는 protobuf를 사용해야 한다.==
 ****
 # 5. RPC 서버와 HTTP 서버 연동하기
 
