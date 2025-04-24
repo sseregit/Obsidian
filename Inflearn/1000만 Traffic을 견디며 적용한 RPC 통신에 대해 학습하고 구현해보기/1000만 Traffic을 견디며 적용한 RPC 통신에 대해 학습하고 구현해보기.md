@@ -34,7 +34,8 @@
 ## Proto Build하기 위한 명령어 알아보기
 ==protoc를 사용하기 위해서는 protobuf를 사용해야 한다. protoc를 활용한 커맨드로 go파일을 자동으로 생성할 수 있다.==
 ## RPC통신을 위한 GRPC Client 생성하기
-
+==GRPCClient struct 생성==
+## RPC 통신을 위한 GRPC Client 연결하기
 ****
 # 5. RPC 서버와 HTTP 서버 연동하기
 
