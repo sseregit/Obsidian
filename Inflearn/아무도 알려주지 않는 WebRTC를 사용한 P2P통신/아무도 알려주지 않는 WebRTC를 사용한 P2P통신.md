@@ -54,6 +54,9 @@
 ## 브라우저 동적 작업을 위한 Script 작성하기
 ==업로드, 레코딩 script 작성==
 ## UI 디버깅 및 테스트 하기
+==html 파일 테스트==
+## 서버, FFmpeg 통한 데이터 확장자 변경 및 저장하기
+
 ****
 # 6. WebRTC를 활용한 RTCPeerConnection
 
