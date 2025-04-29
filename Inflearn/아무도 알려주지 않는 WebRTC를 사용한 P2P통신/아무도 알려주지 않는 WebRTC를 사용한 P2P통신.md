@@ -46,9 +46,10 @@
 ## Header를 활용한 구간 설정을 통해 스트리밍 해볼게요
 ==Header Range를 활용해서 영상의 시작과 끝을 계산하는 로직 작성==
 ## 테스트 및 디버깅
-
+==http state에 206과 Content-Range를 활용하는 법 등에 대한 테스트및 디버깅==
 ****
 # 5. Chunk를 활용한 비디오 녹화하기
+## 웹캠 노출을 위한 UI 그리기
 
 ****
 # 6. WebRTC를 활용한 RTCPeerConnection
