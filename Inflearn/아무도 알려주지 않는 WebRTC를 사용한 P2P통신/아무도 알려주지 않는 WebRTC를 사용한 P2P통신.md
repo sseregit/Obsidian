@@ -50,6 +50,8 @@
 ****
 # 5. Chunk를 활용한 비디오 녹화하기
 ## 웹캠 노출을 위한 UI 그리기
+==웹캠 노출을 위한 html 작성==
+## 브라우저 동적 작업을 위한 Script 작성하기
 
 ****
 # 6. WebRTC를 활용한 RTCPeerConnection
