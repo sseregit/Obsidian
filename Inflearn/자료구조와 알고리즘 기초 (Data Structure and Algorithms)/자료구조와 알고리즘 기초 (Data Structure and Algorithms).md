@@ -62,3 +62,4 @@
 - 후입선출(LIFO, Last-In, First-Out)
 ## 4. 큐
 ### 큐(Queue)
+- 선입선출(FIFO, First-In, First-Out)
