@@ -60,3 +60,5 @@
 ## 3. 스택
 ### 스택(Stack)
 - 후입선출(LIFO, Last-In, First-Out)
+## 4. 큐
+### 큐(Queue)
