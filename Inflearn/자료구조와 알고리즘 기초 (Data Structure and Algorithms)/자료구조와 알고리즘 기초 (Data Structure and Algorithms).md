@@ -63,3 +63,4 @@
 ## 4. 큐
 ### 큐(Queue)
 - 선입선출(FIFO, First-In, First-Out)
+## 5. 연결 리스트
