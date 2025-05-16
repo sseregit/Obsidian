@@ -1,0 +1,12 @@
+- `ls -l ~/.ssh/id_rsa ~/.ssh/id_rsa.pub`
+	- 로컬에 rsa가 존재하는지 안하는지 확인하는 커맨드 결과가 없으면 없다.
+- `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+	- 생성 커맨드
+	- `-t rsa`
+		- RSA 타입 지정
+	- `-b 4096`
+		- 키 길이 4096bit (2048 이상 권장)
+	- `-C`
+		- 키에 넣을 주석 (보통 이메일이나 용도 표시)
+- `ssh-copy-id {사용자명}}@{remote_host_ip_address}`
+	- 사용자계정과 패스워드를 알고있으면 사용가능
