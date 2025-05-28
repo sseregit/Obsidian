@@ -51,3 +51,5 @@
 `helm upgrade hands-on-dev-env ./kubernetes/helm/environments/dev-env -n hands-on`
 - helm을 업그레이드 한다.
 - values.yaml을 수정하는등을 하고 나서 그걸 업그레이드하고 업그레이드를 하면 version이 올라감
+- `./kubernetes/helm/environments/dev-env`
+	- 최종적으로 저장하는 느낌이 있어서 dev-env가 의존성 업데이트가 필요하면 하고 나서 봐야함
