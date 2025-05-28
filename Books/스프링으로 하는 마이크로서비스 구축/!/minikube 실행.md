@@ -1,4 +1,4 @@
-```
+```bash
 unset KUBECONFIG
 
 minikube start \
@@ -6,5 +6,11 @@ minikube start \
 --memory=10240 \
 --cpus=4 \
 --disk-size=30g \
---kubernetes-version=
+--kubernetes-version=v1.33.1
+--driver=docker
+
+minikube profile handson-spring-boot-cloud
+
+minikube addons enable ingress
+minikube addons enable metrics-server
 ```
