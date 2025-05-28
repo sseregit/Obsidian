@@ -29,3 +29,4 @@
 
 `helm install hands-on-dev-env kubernetes/helm/environments/dev-env -n hands-on --create-namespace`
 
+`helm uninstall hands-on-dev-env -n hands-on`
