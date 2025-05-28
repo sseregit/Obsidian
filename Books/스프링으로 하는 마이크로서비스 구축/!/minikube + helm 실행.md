@@ -28,5 +28,13 @@
 - `--debug` 플래그를 전달하면 헬름이 매니페스트를 렌더링할 때 사용하는 사용자 제공 값과 계산 값도 표시한다.
 
 `helm install hands-on-dev-env kubernetes/helm/environments/dev-env -n hands-on --create-namespace`
+- hands-on 네임스페이스를 생성하고 전체 시스템 환경을 배포한다.
 
 `helm uninstall hands-on-dev-env -n hands-on`
+- 삭제 네임스페이스가 생성되어 있기 때문에 지우고 하지 않으면 실행되지 않음
+
+`kubectl config set-context $(kubectl config current-context) --namespace=hands-on`
+- 새로 생성한 네임스페이스를 kubectl의 기본 네임스페이스로 설정한다.
+
+`kubectl get pods --watch`
+- 포드 시작 과정을 볼수 있다.
