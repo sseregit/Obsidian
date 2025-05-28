@@ -38,3 +38,6 @@
 
 `kubectl get pods --watch`
 - 포드 시작 과정을 볼수 있다.
+
+`kubectl wait --timeout=600s --for=condition=ready pod --all`
+- 네임스페이스의 모든 포드가 준비될 때까지 기다린다.
