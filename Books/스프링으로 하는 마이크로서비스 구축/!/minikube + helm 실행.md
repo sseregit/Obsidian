@@ -47,3 +47,6 @@
 
 `kubectl logs mysql-747f8d8c78-mkjmh -n hands-on`
 - 로그 확인
+
+`helm upgrade hands-on-dev-env ./kubernetes/helm/environments/dev-env -n hands-on`
+- helm을 업그레이드 한다.
