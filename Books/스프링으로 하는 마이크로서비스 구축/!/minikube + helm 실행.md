@@ -56,3 +56,6 @@
 
 `helm get values hands-on-dev-env -n hands-on --all`
 - 설정 확인
+
+`kubectl get pods -o json | jq -r '.items[].spec.containers[] | .image'`
+- 도커 이미지 확인
