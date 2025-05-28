@@ -41,3 +41,9 @@
 
 `kubectl wait --timeout=600s --for=condition=ready pod --all`
 - 네임스페이스의 모든 포드가 준비될 때까지 기다린다.
+
+`kubectl describe pod mysql-747f8d8c78-mkjmh -n hands-on`
+- Pod 상세 확인
+
+`kubectl logs mysql-747f8d8c78-mkjmh -n hands-on`
+- 로그 확인
