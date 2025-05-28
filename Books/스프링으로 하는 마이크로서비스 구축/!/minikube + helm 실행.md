@@ -27,5 +27,5 @@
 - `helm install`뒤에 `--dry-run` 플래그를 전달해 설치 테스트를 실행해볼수 있다.
 - `--debug` 플래그를 전달하면 헬름이 매니페스트를 렌더링할 때 사용하는 사용자 제공 값과 계산 값도 표시한다.
 
-
+`helm install hands-on-dev-env kubernetes/helm/environments/dev-env -n hands-on --create-namespace`
 
