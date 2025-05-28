@@ -2,7 +2,7 @@
 unset KUBECONFIG
 
 minikube start \
--- profile=handson-spring-boot-cloud \
+--profile=handson-spring-boot-cloud \
 --memory=10240 \
 --cpus=4 \
 --disk-size=30g \
@@ -11,6 +11,6 @@ minikube start \
 
 minikube profile handson-spring-boot-cloud
 
-minikube addons enable ingress
-minikube addons enable metrics-server
+minikube addons enable ingress --profile=handson-spring-boot-cloud
+minikube addons enable metrics-server --profile=handson-spring-boot-cloud
 ```
