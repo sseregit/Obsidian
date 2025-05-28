@@ -1,5 +1,8 @@
 `minikube start`
 - minikube가 실행되어 있어야함
+- 도커 컨테이너에 존재한다고 그냥 실행하면 kubelet등등이 다 스킵된다 조심 반드시 커맨드로 시작
+`minikube status`
+- minikube 상태 체크
 ### 도커 이미지 빌드
 `eval $(minikube docker-env)`
 - 커맨드를 실행하고 도커 이미지를 빌드하면 미니큐브의 도커 엔진과 도커 클라이언트가 통신하게 된다.
