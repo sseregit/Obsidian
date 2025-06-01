@@ -59,3 +59,6 @@
 
 `kubectl get pods -o json | jq -r '.items[].spec.containers[] | .image'`
 - 도커 이미지 확인
+
+`kubectl get services -n hands-on`
+- 열려있는 서비스 확인 커맨드
