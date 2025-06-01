@@ -62,3 +62,6 @@
 
 `kubectl get services -n hands-on`
 - 열려있는 서비스 확인 커맨드
+
+`minikube tunnel`
+- 쿠버네티스의 LoadBalancer 타입 서비스를 로컬 개발 환경(macOS, Windows)에서도 외부에서 접근 가능하게 만드는 역할을 합니다.
