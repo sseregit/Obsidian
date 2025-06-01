@@ -68,3 +68,7 @@
 
 `kubectl exec -it gateway-5867b46795-nx2j5 -- sh`
 - shell 접근
+
+`kubectl port-forward svc/gateway 8443:443`
+- minikube의 m1/m2의 이슈라는거 같은데 NodePort를 사용하지 않는걸 권장하는거 같고
+- 해당 커맨드로 직접 포트포워딩을 해준다.
