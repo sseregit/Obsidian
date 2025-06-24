@@ -13,6 +13,4 @@ CREATE TABLE contract_inspection_map (
 );
 ```
 1. Entity, Repository 작성
-
-2. 저장 버튼 API 작성
-3. 테스트
+2. 테스트
