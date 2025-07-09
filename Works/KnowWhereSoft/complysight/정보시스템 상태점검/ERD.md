@@ -9,7 +9,7 @@ cm_contract_new_mg ||--|{ cm_asset_mg : contains
 
 contract_inspection_map ||--|{ inspection_code_detail : contains
 
-cm_contract_mg ||--o{ contract_inspection_result : generates
+cm_contract_mg ||--|{ contract_inspection_result : generates
 
   
 
@@ -65,16 +65,21 @@ string ins_cd
 
 contract_inspection_result {
 
-int id
+    int id
 
-int contract_id
+    int contract_id
 
-string ins_cd
+    string ins_cd
 
-timestamp reg_dtm
+    boolean result
 
-string reg_id
+    string remark
+
+    timestamp reg_dtm
+
+    string reg_id
 
 }
 ```
+
 
