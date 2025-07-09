@@ -68,6 +68,8 @@ contract_inspection_result {
     int id
 
     int contract_id
+	
+	string grp_cd
 
     string ins_cd
 
@@ -81,5 +83,6 @@ contract_inspection_result {
 
 }
 ```
+
 
 
