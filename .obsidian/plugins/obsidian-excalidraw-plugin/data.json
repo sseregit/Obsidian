@@ -103,7 +103,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.11.1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.13.1",
     "libraryItems": [
       {
         "status": "unpublished",
@@ -183,7 +183,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           }
         ],
         "id": "3SJ4BjfOF7xVRPnJWwjOo",
@@ -269,7 +270,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           }
         ],
         "id": "mCBq92nkr34llcpb_wmsz",
@@ -442,7 +444,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "aONelPTE1W0_iLNTSVHfF",
@@ -4039,7 +4042,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "X4EA16nlIEXC8-C9pc7p3",
@@ -4086,7 +4090,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "MucHlj0TAsKTTi-IiuOQ3",
@@ -4133,7 +4138,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           }
         ],
         "id": "0aeKvmiLGenn-gpVc1Fe4",
@@ -4187,7 +4193,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "sQx7EShrgXb8JXjCsjlCI",
@@ -4234,7 +4241,8 @@
             "boundElements": [],
             "updated": 1747704489091,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           }
         ],
         "id": "TpIBCf3D-IxadYiJ6zz7S",
@@ -4288,7 +4296,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "BtPWUWawIdw1oxttlR1gK",
@@ -4335,7 +4344,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -4382,7 +4392,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "DvaDR-6_6BpF4FPirVQ_U",
@@ -4429,7 +4440,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "nTtIGa4p58VGw81EPENN3",
@@ -4476,7 +4488,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "qS7xChR9CP0O_pOh_GSkV",
@@ -4523,7 +4536,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "dVVnzrG4QV2p6ksFiqr3n",
@@ -4570,7 +4584,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           }
         ],
         "id": "pHwOriAJ0NZlsFz7SjN7r",
@@ -4624,7 +4639,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -4671,7 +4687,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -4718,7 +4735,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -4765,7 +4783,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -4812,7 +4831,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "TxiyzHPoaP5oyRX3ukd0D",
@@ -4926,7 +4946,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -4973,7 +4994,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -5020,7 +5042,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           }
         ],
         "id": "rXqlIsbqUbaWY4i_YILD6",
@@ -5074,7 +5097,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -5121,7 +5145,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -5168,7 +5193,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "ellipse",
@@ -5495,7 +5521,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "B0OGPKhCFJbj2kNcQ8Bi-",
@@ -5542,7 +5569,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "Gr83aUSFpEzVjMCaCdeRD",
@@ -5589,7 +5617,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "id": "aTHZgUbwCBpntFF_RLVrV",
@@ -5636,7 +5665,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           }
         ],
         "id": "HSaeg98xSA6LPkTDJtCj8",
@@ -5768,7 +5798,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -5813,7 +5844,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "rectangle",
@@ -5923,7 +5955,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "line",
@@ -5968,7 +6001,8 @@
             "boundElements": [],
             "updated": 1747704489092,
             "link": null,
-            "locked": false
+            "locked": false,
+            "polygon": false
           },
           {
             "type": "rectangle",
