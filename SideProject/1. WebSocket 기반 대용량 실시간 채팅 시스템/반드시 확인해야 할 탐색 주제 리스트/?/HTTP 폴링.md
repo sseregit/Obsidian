@@ -29,3 +29,30 @@ sequenceDiagram
 	- 다운스트림이 일정 시간마다 폴링 요청을 보내기 때문에, 그 시간 동안 데이터가 변경되지 않더라도 폴링 요청을 보내기 위해 리소스를 소비해야 한다.
 	- 반대로, 그 시간 동안 데이터가 너무 자주 변경될 경우, 업스트림과 다운스트림 모두 대량의 폴링 요청을 처리해야 하므로, 양쪽 모두에서 리소스가 낭비될 수 있다.
 # Long Polling
+```mermaid
+sequenceDiagram
+    participant Downstream
+    participant Upstream
+
+    loop Every request
+        Downstream->>Upstream: Poll for data
+
+        alt Data is changed
+            Upstream-->>Downstream: Respond with data
+        else Timeout
+            Upstream-->>Downstream: Timeout (no data)
+        end
+    end
+```
+- 다운스트림이 업스트림에 최신 데이터를 요청하는 폴링 방식
+- **업스트림은 가져올 데이터가 변경될 때까지** 데이터를 즉시 반환하지 않는다.
+## Advantages
+- 지연 시간 감소
+	- 롱 폴링은 가져올 데이터가 변경된 경우에만 다운스트림이 데이터를 수신하므로, 최신 데이터를 업데이트하는 데 있어서 지연 시간을 줄이는 데 도움이된다.
+- 리소스 소비 감소
+	- 롱 폴링은 일정 시간 동안 데이터가 변경되지 않으면 업스트림이 다수의 폴링 요청을 처리할 필요가 없기 때문에, 리소스 소비를 줄이는데 도움이 된다.
+## Disadvantages
+- 구현이 복잡하다.
+	- 롱 폴링은 가져올 데이터가 변경될 때까지 업스트림이 연결을 유지해야 하므로, 구현이 복잡하다.
+- 타임아웃 관리 필요
+	- 롱 폴링은 업스트림이 연결을 지나치게 오래 유지하는 것을 방지하기 위해, 타임아웃 관리를 필요로 하며, 그렇지 않으면 리소스 고갈로 이어질 수 있다.
