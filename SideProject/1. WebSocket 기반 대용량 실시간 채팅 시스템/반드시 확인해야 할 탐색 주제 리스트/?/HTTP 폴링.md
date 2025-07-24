@@ -2,24 +2,18 @@
 [웹 브라우저에서 통신 방법(Polling, Long Polling, Streaming, Socket)](https://warmth424.tistory.com/18)
 [What is polling technique? Short polling vs long polling](https://ductruong.com/en/blog/2024/04/what-is-polling-technique-short-polling-vs-long-polling/?utm_source=chatgpt.com)
 # Polling
-- HTTP Request를 **계속** 보내서 이벤트 내용을 전달받는다.
 ```mermaid
 sequenceDiagram
-    participant Client
-    participant Server
+    participant Downstream
+    participant Upstream
 
     loop Every 5 seconds
-        Client->>Server: "데이터 있나요?"
+        Downstream->>Upstream: "데이터 있나요?"
         alt 데이터 있음
-            Server-->>Client: "여기 있어요!"
+            Upstream-->>Downstream: "여기 있어요!"
         else 데이터 없음
-            Server-->>Client: "없음"
+            Upstream-->>Downstream: "없음"
         end
     end
 ```
-## 장점
-- **일정하게 갱신되는 서버** 데이터의 경우 유용하게 사용될 수 있는 방식
-## 단점
-- Client가 많아지면 Server의 부담이 급증
-- Client 측에서 실시간 정도의 빠른 응답을 기대하기 어려움.
-- HTTP 오버헤드 (전송하는 데이터 양에 비해 header의 양이 큰 문제)발생.
+- 다운스트림에서 업스트림에 **지속적으로 요청을 보내서** 최신 상태나 데이터를 확인하고, 가능하다면 이를 가져오는 기술
