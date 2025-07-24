@@ -1,6 +1,20 @@
 [Long polling: What it is and when to use it](https://sendbird.com/developer/tutorials/what-is-long-polling?utm_source=chatgpt.com)
 [웹 브라우저에서 통신 방법(Polling, Long Polling, Streaming, Socket)](https://warmth424.tistory.com/18)
 # Polling
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Server
+
+    loop Every 5 seconds
+        Client->>Server: "데이터 있나요?"
+        alt 데이터 있음
+            Server-->>Client: "여기 있어요!"
+        else 데이터 없음
+            Server-->>Client: "없음"
+        end
+    end
+```
 ## 장점
 - 일정하게 갱신되는 서버 데이터의 경우 유용하게 사용될 수 있는 방식
 ## 단점
