@@ -1,1 +1,3 @@
-- [ ] #task 말해보카 100% ➕ 2025-08-28
+- [x] #task 말해보카 100% ➕ 2025-08-28 ✅ 2025-08-28
+- [ ] #task Batch 문서 Unit Testing 읽기 ➕ 2025-08-28
+	- [ ] #task End-To-End Testing of Batch Jobs ➕ 2025-08-28
