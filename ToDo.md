@@ -1,4 +1,4 @@
-- [ ] #task 말해보카 100% ➕ 2025-08-29
+- [x] #task 말해보카 100% ➕ 2025-08-29 ✅ 2025-08-29
 - [ ] #task Spring Batch The Domain Language of Batch 정리 필요 ➕ 2025-08-29
 ****
 # CheckList
