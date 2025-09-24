@@ -27,6 +27,7 @@
 		- 노드사이의 관계
 ## 2.2 간단한 Retrieval 에이전트 (feat. PDF 전처리 꿀팁)
 
+## 2.3 공식문서 따라하면 실패하는 Agentic RAG
 ---
 # 섹션 3. LangGraph 120% 활용방법
 
