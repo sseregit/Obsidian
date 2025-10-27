@@ -16,12 +16,12 @@
 		- 글로벌
 
 ### serena
-`claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant --project "$(pwd)" --enable-web-dashboard false`
+`claude mcp add serena --scope user -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant --project "$(pwd)" --enable-web-dashboard false`
 - `--enable-web-dashboard false `
 	- 대시보드 안뜨게 하는 옵션
 
 ### context7
 `claude mcp add --transport http context7 https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: YOUR_API_KEY"`
 
-`claude mcp add --transport http context7 https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: $CONTEXT7_API_KEY”`
+`claude mcp add --scope user --transport http context7 https://mcp.context7.com/mcp --header "CONTEXT7_API_KEY: $CONTEXT7_API_KEY”`
 - 환경변수로 해야함.!
