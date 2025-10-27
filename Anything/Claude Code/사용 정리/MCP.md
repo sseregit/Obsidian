@@ -1,3 +1,6 @@
+`~/.claude.json`
+- mcp 정보가 있다. 확인할것 scope user
+
 `claude mcp list`
 - 설치된 scope의 mcp 리스트
 
