@@ -30,4 +30,4 @@
 - 환경변수로 해야함.!
 
 ### playwright
-`claude mcp add playwright -s user -- npx -y @modelcontextprotocol/server-playwright`
+`claude mcp add playwright -s user -- npx @playwright/mcp@latest`
