@@ -1,5 +1,5 @@
 [# 새롭게 개편된 TTA의 GS시험인증 서비스를 소개합니다 🌐TTA, ICT 표준화 🌐](https://www.youtube.com/watch?v=bnd2hygebbc)
-
+[**[GS시험·인증] 서비스 소개 및 사전 체크리스트, 인증 기준 설명서**](https://cs.tta.or.kr/comm/board/boardView.do)
 # GS인증제도
 - SW 품질 경쟁력 향상 및 유통 활성화를 위해 2001년도부터 시행된 제도
 - 실제 운영환경과 유사한 시험환경에서 체계적인 시험 평가를 통해 SW 제품의 품질을 인증하는 제도
