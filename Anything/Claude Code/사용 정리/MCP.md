@@ -8,7 +8,9 @@
 - mcp 삭제
 
 ### postgresql
-`claude mcp add complysight-dev -s project -- npx -y @modelcontextprotocol/server-postgres {DBURL}`
+`claude mcp add postgresql-mcp -s project -- npx -y @modelcontextprotocol/server-postgres {DBURL}`
+- {DBURL}
+	- `postgresql://ID:PW@경로/디비네임`
 - add {mcp의 이름}
 - -s scope
 	- project
