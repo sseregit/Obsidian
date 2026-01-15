@@ -15,3 +15,12 @@ command = "npx"
 startup_timeout_ms = 20000
 ```
 - $CONTEXT7_API_KEY 환경변수 적용 안되니 직접 입력해야함
+
+### postgresql
+```toml
+[mcp_servers.postgresql-poc]  
+type = "stdio"  
+command = "npx"  
+args = ["-y", "@modelcontextprotocol/server-postgres", "postgresql://id:password@host:port/db”]  
+env = {}
+```
