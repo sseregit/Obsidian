@@ -97,3 +97,13 @@ try with resources - Kotlin엔 없음 대신 `use`사용
 
 ---
 함수
+
+가변인자
+```kotlin
+printAll(“A”, “B”)
+or
+val array = arrayOf(“A”, “B”)
+printAll(*array)
+
+fun printAll(vararg strings: String) {...}
+```
