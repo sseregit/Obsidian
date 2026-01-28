@@ -50,3 +50,21 @@ val a: String = str[0]
 - a부터 b까지의 범위 객체 생성
 ---
 조건문
+
+`number in 0..100` == `(number >= 0 && number <= 100)`
+
+```kotlin
+when (score / 10) {
+	9 -> “A”
+	8 -> “B”
+	7 -> “C”
+	else -> “D”
+}
+
+when (score) {
+	in 90..99 -> “A”
+	in 80..89 -> “B”
+	in 70..79 -> “C”
+	else -> “D”
+}
+```
