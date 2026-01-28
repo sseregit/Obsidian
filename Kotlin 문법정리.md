@@ -67,4 +67,17 @@ when (score) {
 	in 70..79 -> “C”
 	else -> “D”
 }
+
+when (score) {
+	0, 1, -1 -> “A”
+	else -> “D”
+}
+
+when {
+	number == 0 -> “A”
+	else -> “D”
+}
+
 ```
+---
+반복문
