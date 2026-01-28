@@ -107,3 +107,6 @@ printAll(*array)
 
 fun printAll(vararg strings: String) {...}
 ```
+
+---
+클래스
