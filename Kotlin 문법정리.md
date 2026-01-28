@@ -90,6 +90,7 @@ for (i in 1..3 step 2) {}
 ```
 ---
 예외
-```kotlin
+Kotlin에서는 Checked Exception 과 Unchecked Exception을 구분하지않는다 모두 Unchecked Exception
 
-```
+try with resources - Kotlin엔 없음 대신 `use`사용
+`BufferedReader(FileReader(path)).use {reader -> ...}`
