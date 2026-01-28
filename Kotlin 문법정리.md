@@ -88,3 +88,8 @@ for (i in 3 downTo 1) {}
 
 for (i in 1..3 step 2) {}
 ```
+---
+예외
+```kotlin
+
+```
