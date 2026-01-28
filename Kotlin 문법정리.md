@@ -1,0 +1,43 @@
+Primitive type도 Long, String으로 씀 컴파일러가 알아서 변환
+
+?. Safe Call
+
+?: null일 경우 삼항연산자
+
+!!. 절대 not null
+
+플랫폼타입 Java Type -> Kotlin
+
+---
+Type
+
+Int, Long, Float, String...
+
+java `instanceof` == kotlin `is` or `!is` Java처럼 전체 조건식에 !가 아닌 is앞에 !추가
+
+obj as Person 형변환
+obj as? Person null이면 null
+
+Kotlin `Any` == Java `Object`
+
+Kotlin `Unit` == Java `void`
+
+Kotlin `Nothing` 
+함수가 정상적으로 끝나지 않았다는 사실을 표현하는 역할
+
+`val log = 사람의 이름은 ${person.name}이다.` 
+중괄호 생략 가능
+쓰는것이 가독성, 일괄변환, 정규식활용 측면에서 더 좋았음.
+
+```kotlin
+val str = “ABCD”
+val a: String = str[0]
+```
+
+---
+연산자
+
+단항,산술연산자 동일
+
+비교 연산자 Java와 동일
+객체를 비교할 때 비교 연산자를 사용하면 자동으로 `compareTo`호출
